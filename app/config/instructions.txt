@@ -12,9 +12,15 @@ php composer.phar create-project laravel/laravel --prefer-dist
 
 php composer.phar update
 
-# create users table
+# create tables
 
 php artisan migrate:make create_users_table
+
+php artisan migrate:make create_projects_table
+
+php artisan migrate:make create_project_images_table
+
+
 
 # run migrations
 
