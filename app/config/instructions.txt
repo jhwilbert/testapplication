@@ -1,0 +1,26 @@
+# install composer
+
+curl -sS https://getcomposer.org/installer | php
+#or
+php -r "readfile('https://getcomposer.org/installer');" | php
+
+# create project
+
+php composer.phar create-project laravel/laravel --prefer-dist
+
+# update libraries
+
+php composer.phar update
+
+# create users table
+
+php artisan migrate:make create_users_table
+
+# run migrations
+
+php artisan migrate
+
+#run seeds
+
+php artisan db:seed
+
