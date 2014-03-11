@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', array('uses' => 'HomeController@index', 'as' => 'home'));
+
+/* admin routes */
+
+Route::get('admin/login', array('uses' => 'AdminController@login', 'as' => 'login'));
+Route::post('admin/login', array('uses' => 'AdminController@do_login'));
+Route::get('admin/logout', array('uses' => 'AdminController@logout', 'as' => 'logout'));
+Route::get('admin/', array('uses' => 'AdminController@index', 'as' => 'admin_index'));
