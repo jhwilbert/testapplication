@@ -19,3 +19,6 @@ Route::get('admin/login', array('uses' => 'AdminController@login', 'as' => 'logi
 Route::post('admin/login', array('uses' => 'AdminController@do_login'));
 Route::get('admin/logout', array('uses' => 'AdminController@logout', 'as' => 'logout'));
 Route::get('admin/', array('uses' => 'AdminController@index', 'as' => 'admin_index'));
+Route::get('admin/users', array('uses' => 'AdminController@users', 'as' => 'admin_users'));
+
+Route::resource('admin/projects', 'ProjectController');
