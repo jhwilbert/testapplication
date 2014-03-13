@@ -1,11 +1,16 @@
 <?php
 
-class AdminController extends BaseController {
+namespace Admin;
 
-    public function __construct() {
+use User;
+use View;
+use Redirect;
+use Auth;
+use Input;
+use Request;
 
-        $this->beforeFilter('auth', array('except' => array('login', 'do_login')));
-    }
+class AdminController extends AdminBaseController {
+
 
     /* Auth */
 
@@ -54,9 +59,6 @@ class AdminController extends BaseController {
 
 
 
-
-
-
-
-
 }
+
+

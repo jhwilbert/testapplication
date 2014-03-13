@@ -7,7 +7,7 @@
 		<h1>Login</h1>
 		<?php echo $errors->first(); ?>
 
-	{{ Form::model($user, array('action' => 'AdminController@do_login')) }}
+	{{ Form::model($user, array('action' => 'Admin\AdminController@do_login')) }}
 	    
 	     <div class="form-planos">
 
