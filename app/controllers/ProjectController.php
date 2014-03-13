@@ -24,7 +24,8 @@ class ProjectController extends \BaseController {
 	 * @return Response
 	 */
 	public function create() {
-		$project = new Project;
+		if (!Input::has('title')) $project = new Project;
+		else $project = null;
 		$route = 'admin.projects.store';
 		$method = 'POST';
 		return View::make('admin.projects.create', array('project' => $project, 'route' => $route, 'method' => $method));
@@ -37,12 +38,13 @@ class ProjectController extends \BaseController {
 	 */
 	public function store() {
 		$project = new Project;
-		$project->title = Input::get('title');
-		$project->description = Input::get('description');
-		$project->featured = Input::get('featured');
-		$project->save();
+		$result = $this::save($project);
 
-		return Redirect::route('admin.projects.index')->with(array('success' => 'Projeto criado com sucesso.'));
+		if ($result === true) {
+			return Redirect::route('admin.projects.index')->with(array('success' => 'Projeto criado com sucesso.'));
+		} else {
+			return Redirect::route('admin.projects.create')->withInput()->withErrors($result);
+		}
 	}
 
 	/**
@@ -77,12 +79,12 @@ class ProjectController extends \BaseController {
 	 */
 	public function update($id) {
 		$project = Project::findOrFail($id);
-		$project->title = Input::get('title');
-		$project->description = Input::get('description');
-		$project->featured = Input::get('featured');
-		$project->save();
-
-		return Redirect::route('admin.projects.index')->with(array('success' => 'Projeto alterado com sucesso.'));
+		$result = $this::save($project);
+		if ($result === true) {
+			return Redirect::route('admin.projects.index')->with(array('success' => 'Projeto alterado com sucesso.'));
+		} else {
+			return Redirect::route('admin.projects.edit', $project->id)->withErrors($result);
+		}
 	}
 
 	/**
@@ -96,7 +98,24 @@ class ProjectController extends \BaseController {
 		$project->delete();
 
 		return Redirect::route('admin.projects.index')->with(array('success' => 'Projeto excluído com sucesso.'));
+	}
 
+	protected function save($project) {
+
+		$project->title = Input::get('title');
+		$project->description = Input::get('description');
+		$project->featured = Input::get('featured') ? 1 : 0;
+
+		$validator = Validator::make(
+		    array(
+		    	'title' => Input::get('title')
+		    ), array(
+		    	'title' => 'required'
+		    )
+		);
+
+		if ($validator->fails()) return $validator;
+		return $project->save();
 	}
 
 

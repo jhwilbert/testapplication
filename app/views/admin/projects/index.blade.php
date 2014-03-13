@@ -12,11 +12,11 @@
 	<table class="table table-striped">
 		<tr>
 			<th>id</th>
-			<th>title</th>
-			<th>description</th>
-			<th>featured</th>
-			<th>created_at</th>
-			<th>updated_at</th>
+			<th>{{ Lang::get('validation.attributes.title') }}</th>
+			<th>{{ Lang::get('validation.attributes.description') }}</th>
+			<th>{{ Lang::get('validation.attributes.featured') }}</th>
+			<th>{{ Lang::get('validation.attributes.created_at') }}</th>
+			<th>{{ Lang::get('validation.attributes.updated_at') }}</th>
 			<th></th>
 		</tr>
 		@foreach ($projects as $project)
@@ -28,7 +28,7 @@
 			<td>{{{ $project->created_at }}}</td>
 			<td>{{{ $project->updated_at }}}</td>
 			<td>
-				{{ Form::open(array('route' => array('admin.projects.destroy', $project->id), 'method' => 'DELETE', 'class' => 'form-inline')) }}
+				{{ Form::open(array('route' => array('admin.projects.destroy', $project->id), 'method' => 'DELETE', 'class' => 'form-inline confirm-destroy')) }}
 					{{ link_to_route('admin.projects.show', 'Visualizar', $project->id, array('class' => 'btn btn-info btn-xs')) }}
 					{{ link_to_route('admin.projects.edit', 'Editar', $project->id, array('class' => 'btn btn-warning btn-xs')) }}
 					{{ Form::submit('Excluir', array('class' => 'btn btn-danger btn-xs')) }}
