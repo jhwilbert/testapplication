@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost:8888/victor/projesom/public',
+	'url' => 'http://localhost:8888/victor/projesom',
 
 	/*
 	|--------------------------------------------------------------------------
