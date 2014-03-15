@@ -94,11 +94,12 @@ return array(
 	*/
 
 	'attributes' => array(
-		'title' => 'Título',
+		'created_at' => 'Criado em',
 		'description' => 'Descrição',
 		'featured' => 'Destaque',
-		'created_at' => 'Criado em',
-		'updated_at' => 'Atualizado em'
+		'subtitle' => 'Legenda',
+		'title' => 'Título',
+		'updated_at' => 'Atualizado em',
 	),
 
 );

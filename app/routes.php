@@ -22,3 +22,4 @@ Route::get('admin/', array('uses' => 'Admin\AdminController@index', 'as' => 'adm
 Route::get('admin/users', array('uses' => 'Admin\AdminController@users', 'as' => 'admin_users'));
 
 Route::resource('admin/projects', 'Admin\ProjectController');
+Route::resource('admin/projects.images', 'Admin\ProjectImageController');

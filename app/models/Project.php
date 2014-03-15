@@ -2,7 +2,7 @@
 
 class Project extends Eloquent {
 
-    public function images() {
+    public function projectImages() {
         return $this->hasMany('ProjectImage');
     }
 

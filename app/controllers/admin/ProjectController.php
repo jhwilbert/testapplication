@@ -4,6 +4,7 @@ namespace Admin;
 
 use Project;
 use View;
+use Input;
 use Validator;
 use Redirect;
 
@@ -27,7 +28,7 @@ class ProjectController extends AdminBaseController {
 	 * @return Response
 	 */
 	public function create() {
-		if (!\Input::has('title')) $project = new Project;
+		if (!Input::has('title')) $project = new Project;
 		else $project = null;
 		$route = 'admin.projects.store';
 		$method = 'POST';
@@ -105,13 +106,13 @@ class ProjectController extends AdminBaseController {
 
 	protected function save($project) {
 
-		$project->title = \Input::get('title');
-		$project->description = \Input::get('description');
-		$project->featured = \Input::get('featured') ? 1 : 0;
+		$project->title = Input::get('title');
+		$project->description = Input::get('description');
+		$project->featured = Input::get('featured') ? 1 : 0;
 
 		$validator = Validator::make(
 		    array(
-		    	'title' => \Input::get('title')
+		    	'title' => Input::get('title')
 		    ), array(
 		    	'title' => 'required'
 		    )
