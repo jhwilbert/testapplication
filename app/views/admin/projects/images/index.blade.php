@@ -33,5 +33,5 @@
 		</tr>
 		@endforeach
 	</table>
-		
+	{{ link_to_route('admin.projects.show', 'Visualizar Projeto', $project->id, array('class' => 'btn btn-info btn-xs')) }}
 @stop
