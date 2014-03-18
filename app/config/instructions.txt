@@ -33,3 +33,8 @@ php artisan db:seed
 #create controller
 
 php artisan controller:make ProjectController
+
+
+# dump auto load
+
+php composer.phar dump-autoload
