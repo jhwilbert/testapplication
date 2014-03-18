@@ -8,17 +8,9 @@ use View;
 use Validator;
 use Redirect;
 use Input;
+use App\Services\Image;
 
 class ProjectImageController extends AdminBaseController {
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index($project_id) {
-		$project = Project::findOrFail($project_id);
-		return View::make('admin.projects.images.index', array('project' => $project));
-	}
 
 	/**
 	 * Show the form for creating a new resource.
@@ -50,7 +42,7 @@ class ProjectImageController extends AdminBaseController {
 		$result = $this::save($project_id, $project_image);
 
 		if ($result === true) {
-			return Redirect::route('admin.projects.images.index', $project_id)->with(array('success' => 'Imagem do projeto criada com sucesso.'));
+			return Redirect::route('admin.projects.show', $project_id)->with(array('success' => 'Imagem do projeto criada com sucesso.'));
 		} else {
 			return Redirect::route('admin.projects.images.create', $project_id)->withInput()->withErrors($result);
 		}
@@ -93,7 +85,7 @@ class ProjectImageController extends AdminBaseController {
 		$project_image = ProjectImage::findOrFail($id);
 		$result = $this::save($project_id, $project_image);
 		if ($result === true) {
-			return Redirect::route('admin.projects.images.index', $project_id)->with(array('success' => 'Imagem alterada com sucesso.'));
+			return Redirect::route('admin.projects.show', $project_id)->with(array('success' => 'Imagem alterada com sucesso.'));
 		} else {
 			return Redirect::route('admin.projects.images.edit', array($project_id, $id))->withErrors($result);
 		}
@@ -110,19 +102,13 @@ class ProjectImageController extends AdminBaseController {
 		$project_image = ProjectImage::findOrFail($id);
 		$project_image->delete();
 
-		return Redirect::route('admin.projects.images.index', $project_id)->with(array('success' => 'Imagem excluída com sucesso.'));
+		return Redirect::route('admin.projects.show', $project_id)->with(array('success' => 'Imagem excluída com sucesso.'));
 	}
 
 
 	protected function save($project_id, $project_image) {
 
 		$file = Input::file('file');
-		if ($file) {
-			$destinationPath = 'public/upload/project_images/';
-			$filename = $file->getClientOriginalName();
-			Input::file('file')->move($destinationPath, $filename);
-			$project_image->file_name = $filename;
-		}
 		
 		$project_image->project_id = $project_id;
 		$project_image->subtitle = Input::get('subtitle');
@@ -132,7 +118,7 @@ class ProjectImageController extends AdminBaseController {
 			$validator_rules = array();
 		} else {
 			$validator_attributes = array(
-		    	'file' => Input::file('file')
+		    	'file' => $file
 		    );
 			$validator_rules = array(
 		    	'file' => 'required'
@@ -141,6 +127,20 @@ class ProjectImageController extends AdminBaseController {
 		$validator = Validator::make($validator_attributes, $validator_rules);
 
 		if ($validator->fails()) return $validator;
-		return $project_image->save();
+		else {
+			$project_image->save();
+			if ($file) {
+				$destinationPath = 'project/'.$project_id.'/project_images/'.$project_image->id;
+
+				$filename = $file->getClientOriginalName();
+
+				$image = new Image;
+				$image->upload($file, $destinationPath, true);
+
+				$project_image->file_name = $filename;
+				$project_image->save();
+			}
+			return true;
+		}
 	}
 }

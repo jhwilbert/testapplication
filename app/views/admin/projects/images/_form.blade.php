@@ -28,7 +28,7 @@
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-9">
 			{{ Form::submit('Enviar', array('class' => 'btn btn-primary btn-lg')) }}
-			{{ link_to_route('admin.projects.images.index', 'Cancelar', $project->id, array('class' => 'btn btn-default')) }}
+			{{ link_to_route('admin.projects.show', 'Cancelar', $project->id, array('class' => 'btn btn-default')) }}
 		</div>
 	</div>
 

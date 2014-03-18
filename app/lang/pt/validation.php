@@ -97,6 +97,7 @@ return array(
 		'created_at' => 'Criado em',
 		'description' => 'Descrição',
 		'featured' => 'Destaque',
+		'image' => 'Imagem',
 		'subtitle' => 'Legenda',
 		'title' => 'Título',
 		'updated_at' => 'Atualizado em',

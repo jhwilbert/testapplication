@@ -6,7 +6,7 @@
 
 	<hr>
 
-	{{ link_to_route('admin.projects.images.index', 'Listar Imagens do Projeto', $project->id, array('class' => 'btn btn-info')) }}
+	{{ link_to_route('admin.projects.show', 'Listar Imagens do Projeto', $project->id, array('class' => 'btn btn-info')) }}
 	{{ link_to_route('admin.projects.images.create', 'Criar Imagem do Projeto',  $project->id, array('class' => 'btn btn-primary')) }}
 
 	<hr>
@@ -18,7 +18,7 @@
 		</tr>
 		<tr>
 			<th>{{ Lang::get('validation.attributes.image') }}</th>
-			<td><img src="{{ asset('public/upload/project_images/'.$project_image->file_name); }}"></td>
+			<td><img src="{{ asset($project_image->getImagePath('medium')) }}"></td>
 		</tr>
 		<tr>
 			<th>{{ Lang::get('validation.attributes.subtitle') }}</th>
