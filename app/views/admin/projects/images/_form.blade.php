@@ -1,5 +1,5 @@
 
-{{ Form::model($project_image, array('route' => $route, 'method' => $method, 'class' => 'form-horizontal', 'role' => 'form', 'files'=> true)) }}
+{{ Form::model($project_image, array('route' => $route, 'method' => $method, 'class' => 'form-horizontal', 'role' => 'form', 'files' => true)) }}
     
 	<div class="form-group">
 		<?php $error_class = ($errors->first('file')) ? ' has-error' : ''; ?>
@@ -17,14 +17,13 @@
 	</div>
 
 	<div class="form-group">
-		<div class="col-sm-offset-2 col-sm-9">
-			<div class="checkbox">
-				<label>
-					{{ Form::checkbox('position') }} {{ Lang::get('validation.attributes.position') }}
-				</label>
-			</div>
+		{{ Form::label('position', Lang::get('validation.attributes.position'), array('class' => 'col-sm-3 control-label')); }}
+		<div class="col-sm-3">
+			{{ Form::text('position', null, array('class' => 'form-control')) }}
 		</div>
-	</div>					
+		<div class="col-sm-6"></div>
+	</div>
+
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-9">
 			{{ Form::submit('Enviar', array('class' => 'btn btn-primary btn-lg')) }}

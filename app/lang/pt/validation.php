@@ -98,6 +98,7 @@ return array(
 		'description' => 'Descrição',
 		'featured' => 'Destaque',
 		'image' => 'Imagem',
+		'position' => 'Posição',
 		'subtitle' => 'Legenda',
 		'title' => 'Título',
 		'updated_at' => 'Atualizado em',

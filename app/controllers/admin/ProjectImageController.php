@@ -112,6 +112,7 @@ class ProjectImageController extends AdminBaseController {
 		
 		$project_image->project_id = $project_id;
 		$project_image->subtitle = Input::get('subtitle');
+		$project_image->position = Input::get('position');
 
 		if ($project_image->exists) {
 			$validator_attributes = array();

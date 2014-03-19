@@ -45,7 +45,7 @@ class ProjectController extends AdminBaseController {
 		$result = $this::save($project);
 
 		if ($result === true) {
-			return Redirect::route('admin.projects.index')->with(array('success' => 'Projeto criado com sucesso.'));
+			return Redirect::route('admin.projects.show', $project->id)->with(array('success' => 'Projeto criado com sucesso.'));
 		} else {
 			return Redirect::route('admin.projects.create')->withInput()->withErrors($result);
 		}
