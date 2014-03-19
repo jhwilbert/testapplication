@@ -7,7 +7,7 @@
     @include('shared._head')
     
     <body>
-    	@include('shared._header')
+    	@include('shared._nav')
         <div class="main" role="main">
             <div class="container">
 		        @yield('content')
