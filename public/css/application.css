@@ -1,4 +1,39 @@
 
-body {
+
+ul.nav {
 	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	padding: 0;
 }
+
+	ul.nav li { float: left; }
+
+#main-menu { 
+	width: 100%;
+}
+	
+	#main-menu .menu-container {
+		width: 100%;
+		background-color: #d95a49;
+		border-bottom: 2px solid #b24538;
+	}	
+
+		#main-menu ul.nav {
+			margin: 0 auto;
+			border-left: 2px solid #b24538;
+			width: 660px;
+			height: 30px;
+		}
+
+			#main-menu ul.nav li {
+				text-transform: uppercase;
+				border-right: 2px solid #b24538;
+				height: 30px;
+			}
+
+				#main-menu ul.nav li a {
+					color: #FFFFFF;
+					text-decoration: none;
+					padding: 5px 10px 4px;
+					display: block;
+				}
