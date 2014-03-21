@@ -12,7 +12,7 @@
         <![endif]-->
     	@include('shared._nav')
         <div class="main" role="main">
-            <div class="container">
+            <div class="container" id="main_container">
 		        @yield('content')
 		    </div>
 		</div>

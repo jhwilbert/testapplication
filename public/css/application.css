@@ -1,7 +1,6 @@
 
 
 ul.nav {
-	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	padding: 0;
 }
@@ -24,13 +23,14 @@ ul.nav {
 	}	
 
 		#main-menu ul.nav {
-			margin: 0 auto;
 			border-left: 2px solid #b24538;
 			width: 640px;
+			margin: 0 auto;
 			height: 40px;
 		}
 
 			#main-menu ul.nav li {
+				font-family: 'Montserrat', sans-serif;
 				font-size: 12px;
 				text-transform: uppercase;
 				border-right: 2px solid #b24538;
@@ -46,3 +46,18 @@ ul.nav {
 				#main-menu ul.nav li a:hover {
 					background-color: #b24538;
 				}
+
+
+#main_container {
+	margin: 0 auto;
+	width: 1008px;	
+}
+
+	h1 { 
+		font-family: 'Montserrat', sans-serif;
+		font-weight: normal;
+		font-size: 30px;
+		color: #878787;
+		text-align: center;
+		margin-top: 40px;
+	}

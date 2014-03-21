@@ -2,6 +2,6 @@
 
 @section('content')
 
-	<h1>Hello</h1>
+	@include('pages/_home')
 
 @stop
