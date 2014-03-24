@@ -110,7 +110,7 @@ class Image {
      * @param  File $file
      * @return string
      */
-    public function upload($file, $dir = null, $createDimensions = false)
+    public function upload($file, $dir = null, $createDimensions = false, $dimensions = array())
     {
         if ($file)
         {
@@ -125,7 +125,7 @@ class Image {
      
             if ($uploaded)
             {
-                if ($createDimensions) $this->createDimensions($path);
+                if ($createDimensions) $this->createDimensions($path, $dimensions);
      
                 return $path;
             }

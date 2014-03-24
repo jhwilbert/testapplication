@@ -136,7 +136,7 @@ class ProjectImageController extends AdminBaseController {
 				$filename = $file->getClientOriginalName();
 
 				$image = new Image;
-				$image->upload($file, $destinationPath, true);
+				$image->upload($file, $destinationPath, true, ProjectImage::$dimensions);
 
 				$project_image->file_name = $filename;
 				$project_image->save();
