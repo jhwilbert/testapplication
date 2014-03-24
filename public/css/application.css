@@ -53,11 +53,65 @@ ul.nav {
 	width: 1008px;	
 }
 
-	h1 { 
+	div.section {
+		padding: 40px;
+	}
+
+
+	h2 {
+		display: block;
+		width: 170px;
+		padding: 15px;
+		text-align: center;
+		margin: 20px auto;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 30px;
+		color: #d95a49;
+		border: 3px solid #d95a49;
+	}
+
+	h3 { 
 		font-family: 'Montserrat', sans-serif;
 		font-weight: normal;
-		font-size: 30px;
+		font-size: 22px;
 		color: #878787;
 		text-align: center;
 		margin-top: 40px;
 	}
+
+	/* HOME */
+
+	div.home {
+		padding-top: 0;
+	}
+
+	div.home h3 {
+		font-size: 30px;
+	}
+
+	/* PROJECTS */
+
+	div#section-projects {
+		background-color: #ebebeb;
+		border-bottom: 5px solid #cecece;
+	}
+
+		div.project {
+			width: 276px;
+			float: left;
+			margin: 0 15px;
+		}
+
+			div.project-image {
+				background-color: #FFFFFF;
+				padding: 8px
+			}
+
+			.project h4 {
+				text-align: center;
+				margin-top: 15px;
+				color: #878787;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: normal;
+				font-size: 18px;
+			}
