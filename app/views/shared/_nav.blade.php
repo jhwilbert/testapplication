@@ -7,7 +7,7 @@
 			<li><a href="#">Soluções</a></li>
 			<li><a href="#">Clientes</a></li>
 			<li><a href="#">Contato</a></li>
-			<li><a href="#">Newsfeed</a></li>
+			<li class="newsfeed"><a href="#"><img src="{{ asset('public/img/nav_newsfeed_ico.png') }}"> Newsfeed</a></li>
 		</ul>
 		<div class="clearfix"></div>
 	</div>

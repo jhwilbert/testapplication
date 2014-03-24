@@ -24,7 +24,7 @@ ul.nav {
 
 		#main-menu ul.nav {
 			border-left: 2px solid #b24538;
-			width: 640px;
+			width: 625px;
 			margin: 0 auto;
 			height: 40px;
 		}
@@ -47,6 +47,8 @@ ul.nav {
 					background-color: #b24538;
 				}
 
+				#main-menu li.newsfeed img { vertical-align: text-top; }
+
 
 #main_container {
 	margin: 0 auto;
@@ -67,7 +69,7 @@ ul.nav {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 30px;
 		color: #d95a49;
-		border: 3px solid #d95a49;
+		border: 4px solid #d95a49;
 	}
 
 	h3 { 
@@ -87,6 +89,12 @@ ul.nav {
 
 	div.home h3 {
 		font-size: 30px;
+	}
+
+	a#home-arrow-dn {
+		display: block;
+		width: 34px;
+		margin: 0 auto;
 	}
 
 	/* PROJECTS */
