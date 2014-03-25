@@ -6,4 +6,6 @@
 
 	@include('pages/_projects')
 
+	@include('pages/_clients')
+
 @stop

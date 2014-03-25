@@ -123,3 +123,8 @@ ul.nav {
 				font-weight: normal;
 				font-size: 18px;
 			}
+
+	/* CLIENTS */
+
+	div#section-clients div.clients { width: 790px; margin: 20px auto 0; }
+	div#section-clients img.client { margin: 25px 0; }
