@@ -1,4 +1,4 @@
-<div class="section" id="section-projects">
+<div class="section section-gray" id="section-projects">
 
 	<h2>Trabalhos</h2>
 	<h3>Conheça nossos projetos mais recentes</h3>

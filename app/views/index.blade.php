@@ -8,4 +8,6 @@
 
 	@include('pages/_clients')
 
+	@include('pages/_timeline')
+
 @stop

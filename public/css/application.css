@@ -59,6 +59,11 @@ ul.nav {
 		padding: 40px;
 	}
 
+	div.section-gray {
+		background-color: #ebebeb;
+		border-bottom: 5px solid #cecece;
+	}
+
 
 	h2 {
 		display: block;
@@ -99,11 +104,6 @@ ul.nav {
 
 	/* PROJECTS */
 
-	div#section-projects {
-		background-color: #ebebeb;
-		border-bottom: 5px solid #cecece;
-	}
-
 		div.project {
 			width: 276px;
 			float: left;
@@ -128,3 +128,7 @@ ul.nav {
 
 	div#section-clients div.clients { width: 790px; margin: 20px auto 0; }
 	div#section-clients img.client { margin: 25px 0; }
+
+	/* TIMELINE */
+
+	div#section-timeline h2 { width: 250px; }
