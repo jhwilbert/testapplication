@@ -3,32 +3,19 @@
 	<h2>Linha do tempo</h2>
 	<h3>Experiência de X anos aliada a muita pesquisa e trabalho</h3>
 
-
 	<ul class="timeline">
-		<li class="year-left">
-			<div class="year"><span>1977</span></div>
-			<div class="description">
-				<div class="d-arrow"></div>
-				<div class="description-container">Inspirados no boom tecnológico em todo o mundo, surge a Projesom como referência no mercado de tecnologia audiovisual em Minas Gerais.
+		<?php $scrollpos = 1500; $half = 50; ?>
+		@foreach($timelineEvents as $event)
+			<li class="year-{{ $event['left'] ? 'left' : 'right' }}" data-{{{ $scrollpos }}}="background-image:url(public/img/timeline/bullet.png);" data-{{{ $scrollpos+$half }}}="background-image:url(public/img/timeline/bullet_selected.png);" data-{{{ $scrollpos + 2*$half }}}="background-image:url(public/img/timeline/bullet.png);">
+				<div class="year"><span>{{{ $event['year'] }}}</span></div>
+				<div class="description" data-{{{ $scrollpos }}}="opacity:0;" data-{{{ $scrollpos+=$half }}}="opacity:1" data-{{{ $scrollpos+=$half }}}="opacity:1;" data-{{{ $scrollpos+$half }}}="opacity:0;">
+					<div class="d-arrow"></div>
+					<div class="description-container">
+						{{{ $event['description'] }}}
+					</div>
 				</div>
-			</div>
-		</li>
-		<li class="year-left">
-			<div class="year"><span>1995</span></div>
-			<div class="description">
-				<div class="d-arrow"></div>
-				<div class="description-container">Inspirados no boom tecnológico em todo o mundo, surge a Projesom como referência no mercado de tecnologia audiovisual em Minas Gerais.
-				</div>
-			</div>
-		</li>
-		<li class="year-right">
-			<div class="description">
-				<div class="description-container">Reformulação de identidade visual e participação no evento etc e formulação de identidade visual e participação no evento Tal...
-				</div>
-				<div class="d-arrow"></div>
-			</div>
-			<div class="year"><span>1995</span></div>
-		</li>
+			</li>
+		@endforeach
 	</ul>
-
+	
 </div>
