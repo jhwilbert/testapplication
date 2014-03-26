@@ -12,5 +12,7 @@
 	<hr>
 
 	@include('admin.projects._form')
+	
+	{{ link_to_route('admin.projects.images.create', 'Criar Imagem', $project->id, array('class' => 'btn btn-primary')) }}
 		
 @stop
