@@ -8,7 +8,7 @@
 		@foreach($timelineEvents as $event)
 			<li class="year-{{ $event['left'] ? 'left' : 'right' }}" data-{{{ $scrollpos }}}="background-image:url(public/img/timeline/bullet.png);" data-{{{ $scrollpos+$half }}}="background-image:url(public/img/timeline/bullet_selected.png);" data-{{{ $scrollpos + 2*$half }}}="background-image:url(public/img/timeline/bullet.png);">
 				<div class="year"><span>{{{ $event['year'] }}}</span></div>
-				<div class="description" data-{{{ $scrollpos }}}="opacity:0;" data-{{{ $scrollpos+=$half }}}="opacity:1" data-{{{ $scrollpos+=$half }}}="opacity:1;" data-{{{ $scrollpos+$half }}}="opacity:0;">
+				<div class="description" data-{{{ $scrollpos }}}="height[cubic]:0%;" data-{{{ $scrollpos+=$half }}}="height:100%" data-{{{ $scrollpos+=$half }}}="height[outCubic]:100%;" data-{{{ $scrollpos+$half }}}="height:0%;">
 					<div class="d-arrow"></div>
 					<div class="description-container">
 						{{{ $event['description'] }}}

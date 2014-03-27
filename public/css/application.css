@@ -137,7 +137,7 @@ h3 {
 			ul.timeline li.year-right div.year { text-align: left; float: right; }
 			ul.timeline li div.year span { display: block; padding: 31px 30px 0; font-size: 18px; }
 
-			ul.timeline li div.description { position: absolute; }
+			ul.timeline li div.description { position: absolute; overflow: hidden; }
 			ul.timeline li.year-left div.description { left: 50%; margin-left: 20px; }
 			ul.timeline li.year-right div.description { right: 50%; margin-right: 20px; }
 			ul.timeline li div.description div.description-container {
