@@ -10,6 +10,6 @@
 
 	@include('pages/_timeline')
 
-	@include('pages/_contacts')
+	@include('pages/_contact')
 
 @stop
