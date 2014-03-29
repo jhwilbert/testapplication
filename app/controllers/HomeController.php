@@ -35,12 +35,25 @@ class HomeController extends BaseController {
 			),
 		);
 
-
 		return View::make('index', array(
 			'projects' => $projects, 
 			'clients' => $clients, 
-			'timelineEvents' => $timelineEvents)
+			'timelineEvents' => $timelineEvents
+			)
 		);
+	}
+
+	public static function getSkrollrData($section) {
+		$skrollrData = array(
+			'projects' 	=> array(0		, 1000 	, 1500 	, 2500),
+			'clients' 	=> array(2500	, 3500	, 4000	, 5000),
+			'timeline' 	=> array(5000	, 6000	, 9000	, 10000),
+			'contact' 	=> array(10000	, 11000	, 11500	, 12500)
+		);
+		if (!isset($skrollrData[$section])) return '';
+		$data = $skrollrData[$section];
+
+		return ' data-'.$data[0].'="top[outCubic]:100%" data-'.$data[1].'="top:0%" data-'.$data[2].'="top[cubic]:0%" data-'.$data[3].'="top:-100%"';
 	}
 
 }

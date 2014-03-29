@@ -1,4 +1,4 @@
-<div class="section" id="section-clients">
+<div class="section skrollable" id="section-clients"{{ $sd }}>
 
 	<h2>Clientes</h2>
 

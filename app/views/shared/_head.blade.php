@@ -10,7 +10,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	{{ HTML::style('public/css/normalize.css'); }}
 	{{ HTML::style('public/css/main.css'); }}
-	{{ HTML::style('public/css/application.css'); }}
+    {{ HTML::style('public/css/application.css'); }}
+	{{ HTML::style('public/css/skrollr.css'); }}
 
 	{{ HTML::script('public/js/vendor/modernizr-2.6.2.min.js'); }}
 </head>

@@ -28,7 +28,7 @@ h3 {
 	margin-top: 40px;
 }
 
-#main-menu { width: 100%; }
+#main-menu { width: 100%; background-color: #FFFFFF; z-index: 999; }
 	
 	#main-menu .logo { display: block; margin: 20px; }
 
@@ -63,13 +63,13 @@ h3 {
 
 #main_container { margin: 0 auto; width: 1008px; }
 
-	#section-home { height: 540px; }
+	#section-home { height: 540px; padding-top: 0 !important; }
 	#section-projects { height: 440px; }
 	#section-clients { height: 420px; }
 	#section-timeline { height: 500px; }
 	#section-contacts { height: 500px; }
 
-	div.section { padding: 40px; }
+	#main_container div.section { padding: 40px; margin-top: 142px; min-width: 918px; }
 
 	div.section-gray { background-color: #ebebeb; border-bottom: 5px solid #cecece; }
 
