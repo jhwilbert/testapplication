@@ -137,7 +137,7 @@ h3 {
 			ul.timeline li.year-right div.year { text-align: left; float: right; }
 			ul.timeline li div.year span { display: block; padding: 31px 30px 0; font-size: 18px; }
 
-			ul.timeline li div.description { position: absolute; overflow: hidden; }
+			ul.timeline li div.description { position: absolute !important; overflow: hidden; }
 			ul.timeline li.year-left div.description { left: 50%; margin-left: 20px; }
 			ul.timeline li.year-right div.description { right: 50%; margin-right: 20px; }
 			ul.timeline li div.description div.description-container {
@@ -149,8 +149,8 @@ h3 {
 				font-size: 16px;
 				color: #aeaeae;
 			}
-			ul.timeline li.year-left div.description-container { float: right; }
-			ul.timeline li.year-right div.description-container { float: left; }
+			ul.timeline li.year-left div.description-container { float: left; }
+			ul.timeline li.year-right div.description-container { float: right; }
 			ul.timeline li.year-left div.d-arrow {
 				background-image: url("../img/timeline/arrow_left.png");
 				background-repeat: no-repeat;

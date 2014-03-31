@@ -48,7 +48,7 @@ class HomeController extends BaseController {
 		$skrollrData = array(
 			'projects' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
 			'clients' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
-			'timeline' 	=> array($i		, $i+=1000 	, $i+=3000 	, $i + 400),
+			'timeline' 	=> array($i		, $i+=1000 	, $i+=3500 	, $i + 400),
 			'contact' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
 		);
 		if (!isset($skrollrData[$section])) return null;
