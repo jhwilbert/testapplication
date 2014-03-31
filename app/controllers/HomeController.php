@@ -44,16 +44,23 @@ class HomeController extends BaseController {
 	}
 
 	public static function getSkrollrData($section) {
+		$i = 0;
 		$skrollrData = array(
-			'projects' 	=> array(0		, 1000 	, 1500 	, 2500),
-			'clients' 	=> array(2500	, 3500	, 4000	, 5000),
-			'timeline' 	=> array(5000	, 6000	, 9000	, 10000),
-			'contact' 	=> array(10000	, 11000	, 11500	, 12500)
+			'projects' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
+			'clients' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
+			'timeline' 	=> array($i		, $i+=1000 	, $i+=3000 	, $i + 400),
+			'contact' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
 		);
-		if (!isset($skrollrData[$section])) return '';
-		$data = $skrollrData[$section];
+		if (!isset($skrollrData[$section])) return null;
+		return $skrollrData[$section];
+	}
 
-		return ' data-'.$data[0].'="top[outCubic]:100%" data-'.$data[1].'="top:0%" data-'.$data[2].'="top[cubic]:0%" data-'.$data[3].'="top:-100%"';
+	public static function getSkrollrParams($section, $end = false) {
+		$data = self::getSkrollrData($section);
+		if (!$data) return '';
+		$ret = ' data-'.$data[0].'="top[outCubic]:100%" data-'.$data[1].'="top:0%"';
+		if (!$end) $ret .= ' data-'.$data[2].'="top[cubic]:0%" data-'.$data[3].'="top:-100%"';
+		return $ret;
 	}
 
 }
