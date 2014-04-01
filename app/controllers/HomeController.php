@@ -35,15 +35,6 @@ class HomeController extends BaseController {
 			),
 		);
 
-		return View::make('index', array(
-			'projects' => $projects, 
-			'clients' => $clients, 
-			'timelineEvents' => $timelineEvents
-			)
-		);
-	}
-
-	public static function getSkrollrData($section) {
 		$i = 0;
 		$skrollrData = array(
 			'projects' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
@@ -51,16 +42,27 @@ class HomeController extends BaseController {
 			'timeline' 	=> array($i		, $i+=1000 	, $i+=3500 	, $i + 400),
 			'contact' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
 		);
-		if (!isset($skrollrData[$section])) return null;
-		return $skrollrData[$section];
+
+		return View::make('index', array(
+			'projects' => $projects, 
+			'clients' => $clients, 
+			'timelineEvents' => $timelineEvents,
+			'skrollrData' => $skrollrData
+			)
+		);
 	}
 
-	public static function getSkrollrParams($section, $end = false) {
-		$data = self::getSkrollrData($section);
+	public static function getSkrollrParams($data, $end = false) {
 		if (!$data) return '';
 		$ret = ' data-'.$data[0].'="top[outCubic]:100%" data-'.$data[1].'="top:0%"';
 		if (!$end) $ret .= ' data-'.$data[2].'="top[cubic]:0%" data-'.$data[3].'="top:-100%"';
 		return $ret;
+	}
+
+	public static function getMenuParams($data) {
+		$bgs = 'background-color:!#B24538'; $bg = 'background-color:!#D95A49';
+		$data1 = $data[1]-1;
+		return "data-{$data[0]}=\"{$bg}\" data-{$data1}=\"{$bgs}\" data-{$data[3]}=\"{$bg}\"";
 	}
 
 }

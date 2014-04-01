@@ -54,6 +54,7 @@ h3 {
 					display: block;
 					height: 27px;
 					padding: 13px 16px 0;
+					position: static;
 				}
 
 				#main-menu ul.nav li a:hover { background-color: #b24538; }
@@ -69,9 +70,9 @@ h3 {
 	#section-timeline { height: 500px; }
 	#section-contacts { height: 500px; }
 
-	#main_container div.section { padding: 40px; margin-top: 142px; min-width: 918px; }
+	#main_container section.section { padding: 40px; margin-top: 142px; min-width: 918px; }
 
-	div.section-gray { background-color: #ebebeb; border-bottom: 5px solid #cecece; }
+	section.section-gray { background-color: #ebebeb; border-bottom: 5px solid #cecece; }
 
 
 	/* HOME */
@@ -107,13 +108,13 @@ h3 {
 
 	/* CLIENTS */
 
-	div#section-clients div.clients { width: 790px; margin: 20px auto 0; }
-	div#section-clients img.client { margin: 25px 0; }
+	section#section-clients div.clients { width: 790px; margin: 20px auto 0; }
+	section#section-clients img.client { margin: 25px 0; }
 
 
 	/* TIMELINE */
 
-	div#section-timeline h2 { width: 250px; }
+	section#section-timeline h2 { width: 250px; }
 
 	ul.timeline { 
 		list-style: none; 

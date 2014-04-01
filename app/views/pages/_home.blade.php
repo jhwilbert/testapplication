@@ -1,4 +1,4 @@
-<div class="section home" id="section-home">
+<section class="section home" id="section-home">
 
 	<img src="{{ asset('public/img/home_megabanner.jpg') }}">
 
@@ -7,4 +7,4 @@
 
 	<a href="#" id="home-arrow-dn"><img src="{{ asset('public/img/nav_arrow_dn.png') }}"></a>
 
-</div>
+</section>

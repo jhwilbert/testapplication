@@ -1,4 +1,4 @@
-<div class="section section-gray skrollable" id="section-projects"{{ $sd }}>
+<section class="section section-gray skrollable" id="section-projects"{{ $sd }}>
 
 	<h2>Trabalhos</h2>
 	<h3>Conheça nossos projetos mais recentes</h3>
@@ -22,4 +22,4 @@
 
 	<div class="clearfix"></div>
 
-</div>
+</section>

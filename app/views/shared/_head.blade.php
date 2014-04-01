@@ -10,6 +10,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	{{ HTML::style('public/css/normalize.css'); }}
 	{{ HTML::style('public/css/main.css'); }}
+
+    <script type="text/javascript">
+        var positions = [];
+        positions['#section-home'] = 0;
+        positions['#section-projects'] = {{ $skrollrData['projects'][1] }};
+        positions['#section-clients'] = {{ $skrollrData['clients'][1] }};
+        positions['#section-timeline'] = {{ $skrollrData['timeline'][1] }};
+        positions['#section-contact'] = {{ $skrollrData['contact'][1] }};
+    </script>
+
     {{ HTML::style('public/css/application.css'); }}
 	{{ HTML::style('public/css/skrollr.css'); }}
 
