@@ -32,7 +32,7 @@ h3 {
 	
 	#main-menu .logo { display: block; margin: 20px; }
 
-	#main-menu .menu-container {
+	#main-menu .menu-container { 
 		width: 100%;
 		background-color: #d95a49;
 		border-bottom: 2px solid #b24538;
@@ -179,7 +179,23 @@ h3 {
 	div.contact p a:hover { text-decoration: underline; }
 
 
+	/* FOOTER */
 
+	footer { 
+		width: 100%;
+		background-color: #d95a49;
+		border-bottom: 2px solid #b24538;
+		height: 71px; 
+	}
+
+		footer a {
+		    color: #FFFFFF;
+		    display: block;
+		    font-size: 18px;
+		    margin-top: 25px;
+		    text-decoration: none;
+		    text-align: center;
+   		}
 
 
 

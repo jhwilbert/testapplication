@@ -4,7 +4,12 @@ class HomeController extends BaseController {
 
 	public function index()	{
 
+		/* projects contents*/
+
 		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->take(3)->get();
+
+
+		/* clients contents*/
 
 		$clients = array(
 			'fundacao-carlos-chagas' => 'Fundação Carlos Chagas',
@@ -16,6 +21,9 @@ class HomeController extends BaseController {
 			'sesc' => 'SESC',
 			'apex-brasil' => 'Apex Brasil',
 		);
+
+
+		/* timeline contents*/
 
 		$timelineEvents = array(
 			array(
@@ -35,6 +43,9 @@ class HomeController extends BaseController {
 			),
 		);
 
+
+		/* skrollr attributes*/
+
 		$i = 0;
 		$skrollrData = array(
 			'projects' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
@@ -43,11 +54,18 @@ class HomeController extends BaseController {
 			'contact' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
 		);
 
+		$data = $skrollrData['contact'];
+		$sd_footer = ' data-'.$data[1].'="bottom[outCubic]:-80px" data-'.$data[2].'="bottom:0px"';
+
+
+		/* make view */
+
 		return View::make('index', array(
 			'projects' => $projects, 
 			'clients' => $clients, 
 			'timelineEvents' => $timelineEvents,
-			'skrollrData' => $skrollrData
+			'skrollrData' => $skrollrData,
+			'sd_footer' => $sd_footer
 			)
 		);
 	}
