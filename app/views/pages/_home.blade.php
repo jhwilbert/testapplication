@@ -1,6 +1,8 @@
 <section class="section home" id="section-home">
 
-	<img src="{{ asset('public/img/home_megabanner.jpg') }}">
+	<div class="megabanner">
+		<img src="{{ asset('public/img/home_megabanner.jpg') }}">
+	</div>
 
 	<h3>Projeto, venda e instalação de sistemas <br /> audiovisuais de alta tecnologia.</h3>
 

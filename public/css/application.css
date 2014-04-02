@@ -40,7 +40,7 @@ h3 {
 
 		#main-menu ul.nav {
 			border-left: 2px solid #b24538;
-			width: 625px;
+			width: 628px;
 			margin: 0 auto;
 			height: 40px;
 		}
@@ -57,7 +57,7 @@ h3 {
 					position: static;
 				}
 
-				#main-menu ul.nav li a:hover { background-color: #b24538; }
+				#main-menu ul.nav li a:hover { background-color: #b24538 !important; }
 
 				#main-menu li.newsfeed img { vertical-align: text-top; }
 
@@ -80,6 +80,8 @@ h3 {
 	div.home { padding-top: 0; }
 
 	div.home h3 { font-size: 30px; }
+
+	div.megabanner img { margin-left: -40px; }
 
 	a#home-arrow-dn {
 		display: block;
