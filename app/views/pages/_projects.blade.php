@@ -7,14 +7,16 @@
 
 		<div class="project">
 
-			<div class="project-image">
+			<a href="{{ route('show_project', $project->id) }}" class="project-link">
+				<div class="project-image">
 
-				@if($project_image = $project->project_images->first())
-					<img src="{{ asset($project_image->getImagePath('thumb')) }}">
-				@endif
+					@if($project_image = $project->image())
+						<img src="{{ asset($project_image->getImagePath('thumb')) }}">
+					@endif
 
-			</div>
-			<h4>{{{ $project->title }}}</h4>
+				</div>
+				<h4>{{{ $project->title }}}</h4>
+			</a>
 
 		</div>
 

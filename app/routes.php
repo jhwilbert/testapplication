@@ -12,6 +12,7 @@
 */
 
 Route::get('/', array('uses' => 'HomeController@index', 'as' => 'home'));
+Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
 
 /* admin routes */
 

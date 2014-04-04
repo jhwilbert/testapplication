@@ -6,4 +6,10 @@ class Project extends Eloquent {
         return $this->hasMany('ProjectImage');
     }
 
+
+    public function image() {
+    	return $this->projectImages()->orderby('position')->first();
+    }
+
+
 }

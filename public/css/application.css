@@ -107,6 +107,9 @@ h3 {
 			font-size: 18px;
 		}
 
+		div.project a { text-decoration: none; }
+		div.project a:hover { text-decoration: underline; }
+
 
 	/* CLIENTS */
 

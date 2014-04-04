@@ -12,10 +12,12 @@ class ProjectImage extends Eloquent {
         return $this->belongsTo('Project');
     }
 
+
     public function getImagePath($size = 'thumb') {
         $dim = $this::$dimensions[$size];
-    	$dir = $dim[0] . 'x' . $dim[1];
+        $dir = $dim[0] . 'x' . $dim[1];
         if ($dim[2] == true) $dir .= '_crop';
-    	return 'public/uploads/project/'.$this->project->id.'/project_images/'.$this->id.'/'.$dir.'/'.$this->file_name;
+        return 'public/uploads/project/'.$this->project->id.'/project_images/'.$this->id.'/'.$dir.'/'.$this->file_name;
     }
+
 }
