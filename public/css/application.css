@@ -98,17 +98,29 @@ h3 {
 		margin: 0 15px;
 	}
 
-		div.project-image { background-color: #FFFFFF; padding: 8px }
-
-		.project h4 {
-			text-align: center;
-			margin-top: 15px;
-			font-weight: normal;
-			font-size: 18px;
-		}
-
 		div.project a { text-decoration: none; }
-		div.project a:hover { text-decoration: underline; }
+
+			div.project .plus-icon { 
+				position: absolute;
+				width: 260px; 
+				height: 160px; 
+				margin: 8px;
+				background-image: url(../img/projects/plus_icon.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: 213;
+			}
+			div.project .hover { position: absolute; width: 260px; height: 160px; margin: 8px; }
+			div.project a:hover .hover { background-color: #FF0000; opacity: .5; }
+
+			div.project-image { background-color: #FFFFFF; padding: 8px }
+
+			.project h4 {
+				text-align: center;
+				margin-top: 15px;
+				font-weight: normal;
+				font-size: 18px;
+			}
 
 
 	/* CLIENTS */

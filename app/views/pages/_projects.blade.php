@@ -8,6 +8,8 @@
 		<div class="project">
 
 			<a href="{{ route('show_project', $project->id) }}" class="project-link">
+				<div class="plus-icon"></div>
+				<div class="hover"></div>
 				<div class="project-image">
 
 					@if($project_image = $project->image())
