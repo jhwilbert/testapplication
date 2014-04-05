@@ -19,7 +19,13 @@ $(document).ready(function() {
 			},
 			contactpos: function() {
 				return getPosition('#section-contact');
-			}
+			},
+			tleventpos: function() {
+				return getPosition('#section-timeline', true);
+			},
+			footerpos: function() {
+				return getPosition('#section-contact', true);
+			},
 		}
 	});
 

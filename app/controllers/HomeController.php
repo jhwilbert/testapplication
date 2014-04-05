@@ -55,7 +55,7 @@ class HomeController extends BaseController {
 		);
 
 		$data = $skrollrData['contact'];
-		$sd_footer = ' data-'.$data[1].'="bottom[outCubic]:-80px" data-'.$data[2].'="bottom:0px"';
+		$sd_footer = ' data-_footerpos="bottom[outCubic]:-80px" data-_footerpos-'.($data[2]-$data[1]).'="bottom:0px"';
 
 
 		/* make view */
