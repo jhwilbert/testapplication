@@ -12,12 +12,13 @@
 	{{ HTML::style('public/css/main.css'); }}
 
     <script type="text/javascript">
+        var posOffset = {{ $posOffset }};
         var positions = [];
-        positions['#section-home'] = 0;
-        positions['#section-projects'] = {{ $skrollrData['projects'][1] }};
-        positions['#section-clients'] = {{ $skrollrData['clients'][1] }};
-        positions['#section-timeline'] = {{ $skrollrData['timeline'][1] }};
-        positions['#section-contact'] = {{ $skrollrData['contact'][1] }};
+        positions['#section-home'] = -posOffset;
+        positions['#section-projects'] = {{ $skrollrData['projects'][0] }};
+        positions['#section-clients'] = {{ $skrollrData['clients'][0] }};
+        positions['#section-timeline'] = {{ $skrollrData['timeline'][0] }};
+        positions['#section-contact'] = {{ $skrollrData['contact'][0] }};
     </script>
 
     {{ HTML::style('public/css/application.css'); }}

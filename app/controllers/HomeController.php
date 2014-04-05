@@ -46,12 +46,12 @@ class HomeController extends BaseController {
 
 		/* skrollr attributes*/
 
-		$i = 0;
+		$i = 0; $posOffset = 1000;
 		$skrollrData = array(
-			'projects' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
-			'clients' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
-			'timeline' 	=> array($i		, $i+=1000 	, $i+=3500 	, $i + 400),
-			'contact' 	=> array($i		, $i+=1000 	, $i+=200 	, $i + 400),
+			'projects' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),
+			'clients' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),
+			'timeline' 	=> array($i		, $i+=$posOffset 	, $i+=3500 	, $i + 400),
+			'contact' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),
 		);
 
 		$data = $skrollrData['contact'];
@@ -65,22 +65,22 @@ class HomeController extends BaseController {
 			'clients' => $clients, 
 			'timelineEvents' => $timelineEvents,
 			'skrollrData' => $skrollrData,
+			'posOffset' => $posOffset,
 			'sd_footer' => $sd_footer
 			)
 		);
 	}
 
-	public static function getSkrollrParams($data, $end = false) {
+	public static function getSkrollrParams($section, $data, $end = false) {
 		if (!$data) return '';
-		$ret = ' data-'.$data[0].'="top[outCubic]:100%" data-'.$data[1].'="top:0%"';
-		if (!$end) $ret .= ' data-'.$data[2].'="top[cubic]:0%" data-'.$data[3].'="top:-100%"';
+		$ret = ' data-_'.$section.'pos="top[outCubic]:100%" data-_'.$section.'pos-'.($data[1]-$data[0]).'="top:0%"';
+		if (!$end) $ret .= ' data-_'.$section.'pos-'.($data[2]-$data[0]).'="top[cubic]:0%" data-_'.$section.'pos-'.($data[3]-$data[0]).'="top:-100%"';
 		return $ret;
 	}
 
-	public static function getMenuParams($data) {
+	public static function getMenuParams($section, $data) {
 		$bgs = 'background-color:!#B24538'; $bg = 'background-color:!#D95A49';
-		$data1 = $data[1]-1;
-		return "data-{$data[0]}=\"{$bg}\" data-{$data1}=\"{$bgs}\" data-{$data[3]}=\"{$bg}\"";
+		return 'data-_'.$section.'pos="'.$bg.'" data-_'.$section.'pos-'.($data[1]-$data[0]-1).'="'.$bgs.'" data-_'.$section.'pos-'.($data[3]-$data[0]).'="'. $bg .'"';
 	}
 
 }
