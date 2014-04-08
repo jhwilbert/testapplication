@@ -22,7 +22,8 @@
     </script>
 
     {{ HTML::style('public/css/application.css'); }}
-	{{ HTML::style('public/css/skrollr.css'); }}
+    {{ HTML::style('public/css/skrollr.css'); }}
+	{{ HTML::style('public/css/jquery.slides.css'); }}
 
 	{{ HTML::script('public/js/vendor/modernizr-2.6.2.min.js'); }}
 </head>

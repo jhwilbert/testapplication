@@ -3,26 +3,34 @@
 	<h2>Trabalhos</h2>
 	<h3>Conheça nossos projetos mais recentes</h3>
 
-	@foreach($projects as $project)
+	<div id="show-project" style="display:none;">
+		<div id="slides"></div>
+		<h3 id="project-title"></h3>
+		<div id="project-description"></div>
+	</div>
 
-		<div class="project">
+	<div class="projects">
+		@foreach($projects as $project)
 
-			<a href="{{ route('show_project', $project->id) }}" class="project-link">
-				<div class="plus-icon"></div>
-				<div class="hover"></div>
-				<div class="project-image">
+			<div class="project">
 
-					@if($project_image = $project->image())
-						<img src="{{ asset($project_image->getImagePath('thumb')) }}">
-					@endif
+				<a href="{{ route('show_project', $project->id) }}" class="project-link">
+					<div class="plus-icon"></div>
+					<div class="hover"></div>
+					<div class="project-image">
 
-				</div>
-				<h4>{{{ $project->title }}}</h4>
-			</a>
+						@if($project_image = $project->image())
+							<img src="{{ asset($project_image->getImagePath('thumb')) }}">
+						@endif
 
-		</div>
+					</div>
+					<h4>{{{ $project->title }}}</h4>
+				</a>
 
-	@endforeach
+			</div>
+
+		@endforeach
+	</div>
 
 	<div class="clearfix"></div>
 

@@ -12,14 +12,14 @@ class ProjectController extends BaseController {
 
 		$project = Project::findOrFail($id);
 		$project_images = $project->projectImages()->orderby('position')->get();
-		$images_paths = array();
+		$image_paths = array();
 		foreach ($project_images as $project_image) {
-			array_push($images_paths, $project_image->getImagePath('medium'));
+			array_push($image_paths, $project_image->getImagePath('medium'));
 		}
 		$result = array(
 			'title' => $project->title,
 			'description' => $project->description,
-			'images_paths' => $images_paths
+			'image_paths' => $image_paths
 		);
 		return Response::json( $result );
 	}

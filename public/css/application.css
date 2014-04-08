@@ -65,7 +65,7 @@ h3 {
 #main_container { margin: 0 auto; width: 1008px; }
 
 	#section-home { height: 540px; padding-top: 0 !important; }
-	#section-projects { height: 440px; }
+	#section-projects { }
 	#section-clients { height: 420px; }
 	#section-timeline { height: 500px; }
 	#section-contacts { height: 500px; }
