@@ -72,7 +72,7 @@ function initProjects() {
 		        	$('#slides').removeData('plugin_slidesjs');
                 	$('#slides').html('');
 		        }
-                for(var i in data.image_paths) {
+                for (var i in data.image_paths) {
                 	$('#slides').append('<img src="'+data.image_paths[i]+'">');
                 }
 				$('#slides').slidesjs({
@@ -86,7 +86,7 @@ function initProjects() {
         );
 
         /* add extra pixel for the vertical position of sections below Projects */
-        extrapos = 2000;
+        extrapos = 1000;
         s.refresh();
  
         return false;

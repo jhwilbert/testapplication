@@ -75,6 +75,7 @@ class HomeController extends BaseController {
 		if (!$data) return '';
 		$ret = ' data-_'.$section.'pos="top[outCubic]:100%" data-_'.$section.'pos-'.($data[1]-$data[0]).'="top:0%"';
 		if (!$end) $ret .= ' data-_'.$section.'pos-'.($data[2]-$data[0]).'="top[cubic]:0%" data-_'.$section.'pos-'.($data[3]-$data[0]).'="top:-100%"';
+		if ($section == 'projects') $ret .= ' data-_'.$section.'pos-'.($data[3]-$data[0]+500).'="top:-200%"';
 		return $ret;
 	}
 
