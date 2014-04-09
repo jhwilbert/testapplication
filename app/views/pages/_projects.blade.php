@@ -8,6 +8,7 @@
 		<h3 id="project-title"></h3>
 		<div id="project-description"></div>
 	</div>
+	<div class="clearfix"></div>
 
 	<div class="projects">
 		@foreach($projects as $project)

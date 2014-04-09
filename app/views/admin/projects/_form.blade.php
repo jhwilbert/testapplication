@@ -12,7 +12,7 @@
 	<div class="form-group">
 		{{ Form::label('description', Lang::get('validation.attributes.description'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::text('description', null, array('class' => 'form-control')) }}
+			{{ Form::textarea('description', null, array('class' => 'form-control')) }}
 		</div>
 	</div>
 

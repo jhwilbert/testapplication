@@ -65,8 +65,9 @@ function initProjects() {
             $(this).attr('href'),
             function( data ) {
                 $('#project-title').html(data.title);
-                $('#project-description').html(data.description);
-		        $('#show-project').animate({height: 'auto'});
+                $('#project-description').html('<p>'+data.description+'</p>');
+                $('#project-description').columnize();
+                $('#show-project').animate({height: 'auto'});
 		        if ($('#slides').data('plugin_slidesjs')) {
 		        	$('#slides').data('plugin_slidesjs').stop();
 		        	$('#slides').removeData('plugin_slidesjs');
@@ -80,7 +81,12 @@ function initProjects() {
 					height: 480,
 					navigation: false
 				});
-				$('#slides .slidesjs-pagination').css('width', data.image_paths.length * 15);
+				var l = data.image_paths.length;
+				if (l > 1) {
+					$('#slides .slidesjs-pagination').show().css('width', l * 15);
+				} else {
+					$('#slides .slidesjs-pagination').hide();
+				}
             },
             'json'
         );

@@ -3,6 +3,7 @@
 {{ HTML::script('public/js/vendor/skrollr.min.js'); }}
 {{ HTML::script('public/js/vendor/skrollr.menu.min.js'); }}
 {{ HTML::script('public/js/vendor/jquery.slides.min.js'); }}
+{{ HTML::script('public/js/vendor/jquery.columnizer.js'); }}
 {{ HTML::script('public/js/plugins.js'); }}
 {{ HTML::script('public/js/application.js'); }}
 
