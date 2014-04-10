@@ -17,33 +17,37 @@ function initSkrollr() {
 
 	s = skrollr.init({
 		constants: {
-			homepos: function() {
-				return getPosition('#section-home');
-			},
-			projectspos: function() {
-				return getPosition('#section-projects');
-			},
-			clientspos: function() {
-				return getPosition('#section-clients');
-			},
-			timelinepos: function() {
-				return getPosition('#section-timeline');
-			},
-			contactpos: function() {
-				return getPosition('#section-contact');
-			},
+			home_0: function() { return getPosition('#section-home', 0); },
+			projects_0: function() { return getPosition('#section-projects', 0); },
+			projects_1: function() { return getPosition('#section-projects', 1); },
+			projects_2: function() { return getPosition('#section-projects', 2); },
+			projects_3: function() { return getPosition('#section-projects', 3); },
+			projects_4: function() { return getPosition('#section-projects', 4); },
+			clients_0: function() { return getPosition('#section-clients', 0); },
+			clients_1: function() { return getPosition('#section-clients', 1); },
+			clients_2: function() { return getPosition('#section-clients', 2); },
+			clients_3: function() { return getPosition('#section-clients', 3); },
+			timeline_0: function() { return getPosition('#section-timeline', 0); },
+			timeline_1: function() { return getPosition('#section-timeline', 1); },
+			timeline_2: function() { return getPosition('#section-timeline', 2); },
+			timeline_3: function() { return getPosition('#section-timeline', 3); },
+			contact_0: function() { return getPosition('#section-contact', 0); },
+			contact_1: function() { return getPosition('#section-contact', 1); },
+			contact_2: function() { return getPosition('#section-contact', 2); },
+			contact_3: function() { return getPosition('#section-contact', 3); },
+
 			tleventpos: function() {
-				return getPosition('#section-timeline', true);
+				return getPosition('#section-timeline', 0, true);
 			},
 			footerpos: function() {
-				return getPosition('#section-contact', true);
+				return getPosition('#section-contact', 0, true);
 			},
 		}
 	});
 
 	skrollr.menu.init(s, {
 	    handleLink: function(link) {
-	        return getPosition($(link).attr('href'), true);
+	        return getPosition($(link).attr('href'), 0, true);
 	    }
 	});	
 }
@@ -104,8 +108,9 @@ function initProjects() {
 /*
 * gets the vertical position of a section for skrollr tags
 */
-function getPosition(sectionLink, withOffset) {
-	var pos = positions[sectionLink];
+function getPosition(sectionLink, state, withOffset) {
+	var pos = positions[sectionLink][state];
+
 	if (sectionLink != '#section-home' && sectionLink != '#section-projects') {
 		pos += extrapos;
 	}

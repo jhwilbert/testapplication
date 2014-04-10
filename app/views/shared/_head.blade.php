@@ -14,11 +14,11 @@
     <script type="text/javascript">
         var posOffset = {{ $posOffset }};
         var positions = [];
-        positions['#section-home'] = -posOffset;
-        positions['#section-projects'] = {{ $skrollrData['projects'][0] }};
-        positions['#section-clients'] = {{ $skrollrData['clients'][0] }};
-        positions['#section-timeline'] = {{ $skrollrData['timeline'][0] }};
-        positions['#section-contact'] = {{ $skrollrData['contact'][0] }};
+        positions['#section-home'] = [-posOffset];
+        positions['#section-projects'] = [{{ implode(',', $skrollrData['projects']) }}];
+        positions['#section-clients'] = [{{ implode(',', $skrollrData['clients']) }}];
+        positions['#section-timeline'] = [{{ implode(',', $skrollrData['timeline']) }}];
+        positions['#section-contact'] = [{{ implode(',', $skrollrData['contact']) }}];
     </script>
 
     {{ HTML::style('public/css/application.css'); }}

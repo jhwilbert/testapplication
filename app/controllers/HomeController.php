@@ -48,7 +48,7 @@ class HomeController extends BaseController {
 
 		$i = 0; $posOffset = 1000;
 		$skrollrData = array(
-			'projects' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),
+			'projects' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400,  $i + 500),
 			'clients' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),
 			'timeline' 	=> array($i		, $i+=$posOffset 	, $i+=3500 	, $i + 400),
 			'contact' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),
@@ -73,15 +73,20 @@ class HomeController extends BaseController {
 
 	public static function getSkrollrParams($section, $data, $end = false) {
 		if (!$data) return '';
-		$ret = ' data-_'.$section.'pos="top[outCubic]:100%" data-_'.$section.'pos-'.($data[1]-$data[0]).'="top:0%"';
-		if (!$end) $ret .= ' data-_'.$section.'pos-'.($data[2]-$data[0]).'="top[cubic]:0%" data-_'.$section.'pos-'.($data[3]-$data[0]).'="top:-100%"';
-		if ($section == 'projects') $ret .= ' data-_'.$section.'pos-'.($data[3]-$data[0]+500).'="top:-200%"';
+		if ($section == 'projects') {
+			$ret  = ' data-_'.$section.'_0="top[outCubic]:100%" data-_'.$section.'_1'.'="top:0%"';
+			$ret .= ' data-_'.$section.'_2'.'="top[cubic]:0%" data-_'.$section.'_3="top:-100%"';
+			$ret .= ' data-_'.$section.'_4'.'="top:-200%"';
+		} else {
+			$ret = ' data-_'.$section.'_0="top[outCubic]:100%" data-_'.$section.'_1'.'="top:0%"';
+			if (!$end) $ret .= ' data-_'.$section.'_2'.'="top[cubic]:0%" data-_'.$section.'_3="top:-100%"';
+		}
 		return $ret;
 	}
 
 	public static function getMenuParams($section, $data) {
 		$bgs = 'background-color:!#B24538'; $bg = 'background-color:!#D95A49';
-		return 'data-_'.$section.'pos="'.$bg.'" data-_'.$section.'pos-'.($data[1]-$data[0]-1).'="'.$bgs.'" data-_'.$section.'pos-'.($data[3]-$data[0]).'="'. $bg .'"';
+		return 'data-_'.$section.'_0="'.$bg.'" data-_'.$section.'_1--1="'.$bgs.'" data-_'.$section.'_3="'. $bg .'"';
 	}
 
 }
