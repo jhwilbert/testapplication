@@ -111,6 +111,8 @@ function initProjects() {
 function getPosition(sectionLink, state, withOffset) {
 	var pos = positions[sectionLink][state];
 
+	if (sectionLink == '#section-projects' && state > 2) return pos + extrapos*.8;
+
 	if (sectionLink != '#section-home' && sectionLink != '#section-projects') {
 		pos += extrapos;
 	}
