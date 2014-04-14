@@ -71,7 +71,6 @@ function initProjects() {
                 $('#project-title').html(data.title);
                 $('#project-description').html('<p>'+data.description+'</p>');
                 $('#project-description').columnize();
-                $('#show-project').animate({height: 'auto'});
 		        if ($('#slides').data('plugin_slidesjs')) {
 		        	$('#slides').data('plugin_slidesjs').stop();
 		        	$('#slides').removeData('plugin_slidesjs');
@@ -82,7 +81,6 @@ function initProjects() {
                 }
 				$('#slides').slidesjs({
 					width: 780,
-					height: 480,
 					navigation: false
 				});
 				var l = data.image_paths.length;
@@ -91,13 +89,16 @@ function initProjects() {
 				} else {
 					$('#slides .slidesjs-pagination').hide();
 				}
+
+				/* add extra pixel for the vertical position of sections below Projects */
+                $('#show-project').animate({height: 'auto'}, function(){
+					extrapos = $('#show-project').height() + 200;
+					s.refresh();
+                });
+
             },
             'json'
         );
-
-        /* add extra pixel for the vertical position of sections below Projects */
-        extrapos = 1000;
-        s.refresh();
  
         return false;
 	});
