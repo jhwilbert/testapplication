@@ -21,9 +21,9 @@
         positions['#section-contact'] = [{{ implode(',', $skrollrData['contact']) }}];
     </script>
 
-    {{ HTML::style('public/css/application.css'); }}
     {{ HTML::style('public/css/skrollr.css'); }}
-	{{ HTML::style('public/css/jquery.slides.css'); }}
+    {{ HTML::style('public/css/jquery.slides.css'); }}
+    {{ HTML::style('public/css/application.css'); }}
 
 	{{ HTML::script('public/js/vendor/modernizr-2.6.2.min.js'); }}
 </head>
