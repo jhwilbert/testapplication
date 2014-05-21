@@ -62,7 +62,7 @@ h3 {
 				#main-menu li.newsfeed img { vertical-align: text-top; }
 
 
-#main_container { margin: 0 auto; width: 1008px; }
+#main_container { margin: 0; width: 100%; }
 
 	#section-home { height: 540px; padding-top: 0 !important; }
 	#section-projects { }
@@ -70,7 +70,9 @@ h3 {
 	#section-timeline { height: 500px; }
 	#section-contacts { height: 500px; }
 
-	#main_container section.section { padding: 40px; margin-top: 142px; min-width: 918px; }
+	#main_container section.section { padding: 40px 0; margin-top: 142px; width: 100%; }
+
+		#main_container section.section .inner-content { width: 910px; margin: 0 auto; }
 
 	section.section-gray { background-color: #ebebeb; border-bottom: 5px solid #cecece; }
 
@@ -81,7 +83,8 @@ h3 {
 
 	div.home h3 { font-size: 30px; }
 
-	div.megabanner img { margin-left: -40px; }
+	div.megabanner { margin: 0 auto; width: 1008px; }
+		div.megabanner img {  }
 
 	a#home-arrow-dn {
 		display: block;
