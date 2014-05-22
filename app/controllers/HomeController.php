@@ -46,7 +46,7 @@ class HomeController extends BaseController {
 
 		/* skrollr attributes*/
 
-		$i = 0; $posOffset = 1000;
+		$i = 200; $posOffset = 1000;
 		$skrollrData = array(
 			'projects' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400,  $i + 500),
 			'clients' 	=> array($i		, $i+=$posOffset 	, $i+=200 	, $i + 400),

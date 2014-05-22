@@ -83,8 +83,10 @@ h3 {
 
 	div.home h3 { font-size: 30px; }
 
-	div.megabanner { margin: 0 auto; width: 1008px; }
-		div.megabanner img {  }
+	div.megabanner { margin: 0 auto; width: 1008px; height: 350px; overflow: hidden; }
+		div.megabanner img { margin-top: 142px; }
+
+	div.home-content { background-color: #FFFFFF; z-index: 101; padding: 50px 0; width: 100% !important; margin-top: 492px !important; }
 
 	a#home-arrow-dn {
 		display: block;
