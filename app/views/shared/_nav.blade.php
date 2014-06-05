@@ -9,6 +9,7 @@
 			<li><a href="#section-contact" {{ HomeController::getMenuParams('contact', $skrollrData['contact']) }}>Contato</a></li>
 			<li class="newsfeed"><a href="#"><img src="{{ asset('public/img/nav_newsfeed_ico.png') }}"> Newsfeed</a></li>
 		</ul>
+		<div id="menu_marker"></div>
 		<div class="clearfix"></div>
 	</div>
 </div>

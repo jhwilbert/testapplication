@@ -43,6 +43,8 @@ h3 {
 			width: 628px;
 			margin: 0 auto;
 			height: 40px;
+			position: relative;
+			z-index: 2;
 		}
 
 			#main-menu ul.nav li { text-transform: uppercase; border-right: 2px solid #b24538; }
@@ -57,9 +59,17 @@ h3 {
 					position: static;
 				}
 
-				#main-menu ul.nav li a:hover { background-color: #b24538 !important; }
 
 				#main-menu li.newsfeed img { vertical-align: text-top; }
+
+		#menu_marker {
+			background-color: #B24538;
+			height: 40px;
+			left: 428px;
+			position: absolute;
+			top: 100px;
+			width: 105px;
+		}
 
 
 #main_container { margin: 0; width: 100%; }

@@ -85,8 +85,8 @@ class HomeController extends BaseController {
 	}
 
 	public static function getMenuParams($section, $data) {
-		$bgs = 'background-color:!#B24538'; $bg = 'background-color:!#D95A49';
-		return 'data-_'.$section.'_0="'.$bg.'" data-_'.$section.'_1--1="'.$bgs.'" data-_'.$section.'_3="'. $bg .'"';
+		$current = '@class:!selected'; $other = '@class:!';
+		return 'data-_'.$section.'_0="'.$other.'" data-_'.$section.'_1--1="'.$current.'" data-_'.$section.'_3="'. $other .'"';
 	}
 
 }

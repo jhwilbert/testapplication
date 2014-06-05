@@ -5,6 +5,8 @@ $(document).ready(function() {
 
 	initSkrollr();
 
+	initMenu();
+
 	initProjects();
 
 });
@@ -45,11 +47,32 @@ function initSkrollr() {
 		}
 	});
 
+}
+
+function initMenu() {
+
 	skrollr.menu.init(s, {
 	    handleLink: function(link) {
 	        return getPosition($(link).attr('href'), 0, true);
 	    }
 	});	
+
+	$('#main-menu ul.nav li a').mouseenter(function() {
+
+		$('#menu_marker').animate({left: $(this).offset().left, width: $(this).parent().width()});
+
+	});
+
+	$('#main-menu ul.nav').mouseleave(function(){
+		
+		var $current = $('#main-menu ul.nav li a.selected');
+		if ($current.length == 0) {
+			$current = $('#main-menu ul.nav li a').first();
+		}
+		$('#menu_marker').animate({left: $current.offset().left, width: $current.parent().width()});
+
+	});
+
 }
 
 
