@@ -81,6 +81,7 @@ class HomeController extends BaseController {
 			$ret = ' data-_'.$section.'_0="top[outCubic]:100%" data-_'.$section.'_1'.'="top:0%"';
 			if (!$end) $ret .= ' data-_'.$section.'_2'.'="top[cubic]:0%" data-_'.$section.'_3="top:-100%"';
 		}
+		$ret .= ' data-emit-events';
 		return $ret;
 	}
 
