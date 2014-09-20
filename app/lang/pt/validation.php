@@ -97,6 +97,7 @@ return array(
 		'created_at' => 'Criado em',
 		'description' => 'Descrição',
 		'featured' => 'Destaque',
+		'file' => 'Arquivo',
 		'image' => 'Imagem',
 		'position' => 'Posição',
 		'subtitle' => 'Legenda',
