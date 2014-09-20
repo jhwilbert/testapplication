@@ -3,6 +3,7 @@
 namespace Admin;
 
 use User;
+use Attendance;
 use View;
 use Redirect;
 use Auth;
@@ -10,9 +11,6 @@ use Input;
 use Request;
 
 class AdminController extends AdminBaseController {
-
-
-    /* Auth */
 
 	public function login()	{
 
@@ -33,6 +31,7 @@ class AdminController extends AdminBaseController {
 		} else {
 			return Redirect::route('login')->withInput()->withErrors(array('password' => 'Usuário ou senha incorretos.'));
 		}
+
 	}
 
 	public function logout() {
@@ -40,25 +39,9 @@ class AdminController extends AdminBaseController {
 		return Redirect::route('home');
 	}
 
-
-	/* Dashboard*/
-
 	public function index()	{
+
 		return View::make('admin.index');
 	}
 
-
-	/* Users */
-
-	public function users() {
-
-		$users = User::all();
-
-		return View::make('admin.users.index', array('users' => $users));
-	}
-
-
-
 }
-
-

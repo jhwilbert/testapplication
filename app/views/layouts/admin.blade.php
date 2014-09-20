@@ -2,7 +2,7 @@
 <html lang='pt'>
     @include('admin.shared._head')
     <body>
-        @include('admin.shared._header')
+        @include('admin.shared._nav')
         <div class="container">
 
             <!-- Success-Messages -->

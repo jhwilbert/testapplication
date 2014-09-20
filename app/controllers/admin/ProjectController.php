@@ -7,6 +7,7 @@ use View;
 use Input;
 use Validator;
 use Redirect;
+use Auth;
 
 class ProjectController extends AdminBaseController {
 
@@ -120,6 +121,30 @@ class ProjectController extends AdminBaseController {
 
 		if ($validator->fails()) return $validator;
 		return $project->save();
+	}
+
+	#####################
+	#   AUTHORIZATION
+	#####################
+
+	public static function can($action, $price = null) {
+
+		$current_user = Auth::user();
+
+		return ($current_user->role == 'superadmin' || $current_user->role == 'admin' || $current_user->role == 'editor');
+
+		//
+
+		return false;
+	}
+
+	public static function cannot($action, $price = null) {
+		return !self::can($action, $price);
+	}
+
+
+	public static function forbidden() {
+		return Redirect::route('admin_index')->withErrors(array('forbidden' => 'Permissão negada.'));
 	}
 
 

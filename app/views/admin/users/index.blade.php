@@ -3,6 +3,10 @@
 @section('content')
     
 	<h1>Administradores</h1>
+	
+	<hr>
+	@include('admin.users._actions')
+	<hr>
 
 	<table class="table table-striped">
 		<tr>
@@ -16,10 +20,10 @@
 		<tr>
 			<td>{{{ $user->name }}}</td>
 			<td>{{{ $user->email }}}</td>
-			<td>{{{ $user->role }}}</td>
+			<td>{{{ $user->role == 'superadmin' ? 'admin*' : $user->role }}}</td>
 			<td>{{{ $user->last_login_date }}}</td>
 			<td>
-				
+				@include('admin.users._actions-single')
 			</td>
 		</tr>
 		@endforeach

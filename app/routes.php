@@ -20,7 +20,7 @@ Route::get('admin', array('uses' => 'Admin\AdminController@index', 'as' => 'admi
 Route::get('admin/login', array('uses' => 'Admin\AdminController@login', 'as' => 'login'));
 Route::post('admin/login', array('uses' => 'Admin\AdminController@do_login'));
 Route::get('admin/logout', array('uses' => 'Admin\AdminController@logout', 'as' => 'logout'));
-Route::get('admin/users', array('uses' => 'Admin\AdminController@users', 'as' => 'admin_users'));
+Route::resource('admin/usuarios', 'Admin\UserController');
 
 Route::resource('admin/projects', 'Admin\ProjectController');
 Route::resource('admin/projects.images', 'Admin\ProjectImageController', array('except' => array('index')));
