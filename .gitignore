@@ -15,3 +15,4 @@ composer.lock
 Thumbs.db
 public/upload/
 public/uploads/
+.sass-cache/
