@@ -2,16 +2,37 @@ var s;
 var extrapos = 0;
 var menu_target = null;
 
+var home_img_prop = 2.8636363636363636363636363636364;
+var home_orig_height = 352;
+var home_height = 352;
+
 $(document).ready(function() {
 
 	initSkrollr();
 
+	initResize();
+	
 	initMenu();
 
 	initProjects();
 
 });
 
+
+
+function initResize() {
+	$(window).on('resize', function() {
+		updateHomeHeight();
+	});
+	updateHomeHeight();
+}
+
+function updateHomeHeight() {
+	var w = $(window).width();
+	home_height = w / home_img_prop;
+	$('#home-text-box').css({'margin-top': home_height + 142});
+	s.refresh();
+}
 
 /*
 * initializes the Skrollr parallax plugin
@@ -167,6 +188,10 @@ function getPosition(sectionLink, state, withOffset) {
 	var pos = positions[sectionLink][state];
 
 	if (sectionLink == '#section-projects' && state > 2) return pos + extrapos*.8;
+
+	if (sectionLink != '#section-home') {
+		pos += home_height - home_orig_height;
+	}
 
 	if (sectionLink != '#section-home' && sectionLink != '#section-projects') {
 		pos += extrapos;

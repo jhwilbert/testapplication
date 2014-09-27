@@ -4,7 +4,8 @@
 		<img src="{{ asset('public/img/home_megabanner.jpg') }}" id="megabanner2" data-0="top:0%;" data-200="top[cubic]:0%;" data-500="top:-100%;">
 		<img src="{{ asset('public/img/home_megabanner.jpg') }}" id="megabanner1" data-0="top[cubic]:0%;" data-200="top:-100%;">
 	</div>
-	<div class="inner-content home-content" data-0="top:0%;" data-300="top[cubic]:0%;" data-500="top:-100%;">
+
+	<div id="home-text-box" class="inner-content home-content" data-0="top:0%;" data-300="top[cubic]:0%;" data-500="top:-100%;">
 
 		<h3>Projeto, venda e instalação de sistemas <br /> audiovisuais de alta tecnologia.</h3>
 
