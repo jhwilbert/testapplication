@@ -131,9 +131,9 @@ class ProjectController extends AdminBaseController {
 
 		$current_user = Auth::user();
 
-		return ($current_user->role == 'superadmin' || $current_user->role == 'admin' || $current_user->role == 'editor');
-
-		//
+		if (isset($current_user) && ($current_user->role == 'superadmin' || $current_user->role == 'admin' || $current_user->role == 'editor')) {
+			return true;
+		}
 
 		return false;
 	}
