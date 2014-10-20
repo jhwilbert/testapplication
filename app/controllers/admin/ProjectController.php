@@ -127,7 +127,7 @@ class ProjectController extends AdminBaseController {
 	#   AUTHORIZATION
 	#####################
 
-	public static function can($action, $price = null) {
+	public static function can($action, $project = null) {
 
 		$current_user = Auth::user();
 
@@ -138,8 +138,8 @@ class ProjectController extends AdminBaseController {
 		return false;
 	}
 
-	public static function cannot($action, $price = null) {
-		return !self::can($action, $price);
+	public static function cannot($action, $project = null) {
+		return !self::can($action, $project);
 	}
 
 
