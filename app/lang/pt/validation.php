@@ -94,6 +94,7 @@ return array(
 	*/
 
 	'attributes' => array(
+		'active' => 'Ativo',
 		'created_at' => 'Criado em',
 		'description' => 'Descrição',
 		'featured' => 'Destaque',
@@ -102,7 +103,9 @@ return array(
 		'position' => 'Posição',
 		'subtitle' => 'Legenda',
 		'title' => 'Título',
+		'text' => 'Texto',
 		'updated_at' => 'Atualizado em',
+		'url' => 'Link',
 	),
 
 );

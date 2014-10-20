@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{ link_to_route('admin_index', 'Projesom', null, array('class' => 'navbar-brand')) }}
+      {{ link_to_route('home', 'Projesom', null, array('class' => 'navbar-brand')) }}
     </div>
     @if (isset($current_user))
       <div class="navbar-collapse collapse">
@@ -16,6 +16,9 @@
           <li>{{ link_to_route('admin_index', 'Painel') }}</li>
           @if (Admin\ProjectController::can('index'))
             <li>{{ link_to_route('admin.projects.index', 'Projetos') }}</li>
+          @endif
+          @if (Admin\MegabannerController::can('index'))
+            <li>{{ link_to_route('admin.megabanners.index', 'Megabanners') }}</li>
           @endif
         </ul>
         <ul class="nav navbar-nav navbar-right">

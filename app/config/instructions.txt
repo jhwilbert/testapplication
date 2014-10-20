@@ -22,6 +22,8 @@ php artisan migrate:make create_project_images_table
 
 php artisan migrate:make add_token_to_user_table --table=users
 
+php artisan migrate:make create_megabanners_table
+
 # run migrations
 
 php artisan migrate
