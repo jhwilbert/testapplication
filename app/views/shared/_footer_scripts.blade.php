@@ -1,11 +1,15 @@
 
-{{ HTML::script('public/js/vendor/jquery-1.11.0.min.js'); }}
+{{ HTML::script('public/js/vendor/jquery-1.11.1.min.js'); }}
 {{ HTML::script('public/js/vendor/skrollr.min.js'); }}
 {{ HTML::script('public/js/vendor/skrollr.menu.min.js'); }}
-{{ HTML::script('public/js/vendor/jquery.slides.min.js'); }}
-{{ HTML::script('public/js/vendor/jquery.columnizer.js'); }}
 {{ HTML::script('public/js/plugins.js'); }}
 {{ HTML::script('public/js/application.js'); }}
+
+@if (isset($scripts)) 
+	@foreach ($scripts as $script)
+		{{ HTML::script('public/js/'.$script); }}
+	@endforeach
+@endif
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

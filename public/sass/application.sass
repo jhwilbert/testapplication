@@ -1,274 +1,119 @@
-@import "lib" 
-
+@import lib
+@import bootstrap-app
 
 html *
-  font-family: 'Montserrat', sans-serif
-  color: $texts-color
-  font-size: 16px
+    font-family: "Montserrat", sans-serif
+    color: $texts-color
+    font-size: 16px
 
 ul.nav
-  list-style: none
-  padding: 0
-  li
-    float: left
+    list-style: none
+    padding: 0
+    li
+        float: left
 
 h2
-  display: block
-  width: 170px
-  padding: 15px
-  text-align: center
-  margin: 20px auto
-  font-size: 30px
-  color: $primary-color
-  border: 4px solid $primary-color
+    display: block
+    width: 170px
+    padding: 15px
+    text-align: center
+    margin: 20px auto
+    font-size: 30px
+    color: $primary-color
+    border: 4px solid $primary-color
 
 h3
-  font-weight: normal
-  font-size: 22px
-  text-align: center
-  margin-top: 40px
+    font-weight: normal
+    font-size: 22px
+    text-align: center
+    margin-top: 40px
 
 #main-menu
-  width: 100%
-  background-color: #FFFFFF
-  z-index: 999
-  .logo
+    width: 100%
+    background-color: white
+    z-index: 999
+    .logo
+        display: block
+        margin: 20px
+    .menu-container
+        width: 100%
+        background-color: $primary-color
+        border-bottom: 2px solid $secondary-color
+    ul.nav
+        border-left: 2px solid $secondary-color
+        width: 628px
+        margin: 0 auto
+        height: 40px
+        position: relative
+        z-index: 2
+        li
+            text-transform: uppercase
+            border-right: 2px solid $secondary-color
+            a
+                color: white
+                font-size: 12px
+                text-decoration: none
+                display: block
+                height: 40px
+                padding: 13px 16px 0
+                position: static
+    li.newsfeed img
+        vertical-align: text-top
+
+#menu_marker
+    background-color: $secondary-color
+    height: 40px
+    left: 428px
+    position: absolute
+    top: 100px
+    width: 105px
+    display: none
+
+#main_container
+    margin: 0
+    width: 100%
+    padding: 0
+
+#main_container section.section
+    padding: 40px 0
+    margin-top: 142px
+    width: 100%
+    .inner-content
+        margin: 0 auto
+
+section.section-gray
+    background-color: #ebebeb
+    border-bottom: 5px solid #cecece
+
+/* MEGABANNER */
+
+
+#section-megabanner
+    padding: 0 !important
+    margin-top: 0 !important
+    .megabanner-image
+        img
+            @extend .img-responsive
+            width: 100%
+
+
+
+
+a#home-arrow-dn
     display: block
-    margin: 20px
-  .menu-container
+    width: 34px
+    margin: 0 auto
+
+footer
     width: 100%
     background-color: $primary-color
     border-bottom: 2px solid $secondary-color
-  ul.nav
-    border-left: 2px solid $secondary-color
-    width: 628px
-    margin: 0 auto
-    height: 40px
-    position: relative
-    z-index: 2
-    li
-      text-transform: uppercase
-      border-right: 2px solid $secondary-color
-      a
-        color: #FFFFFF
-        font-size: 12px
-        text-decoration: none
-        display: block
-        height: 27px
-        padding: 13px 16px 0
-        position: static
-  li.newsfeed img
-    vertical-align: text-top
-
-#menu_marker
-  background-color: $secondary-color
-  height: 40px
-  left: 428px
-  position: absolute
-  top: 100px
-  width: 105px
-
-#main_container
-  margin: 0
-  width: 100%
-
-#section-home
-  height: 540px
-  padding-top: 0 !important
-
-#section-projects!
-
-#section-clients
-  height: 420px
-
-#section-timeline, #section-contacts
-  height: 500px
-
-#main_container section.section
-  padding: 40px 0
-  margin-top: 142px
-  width: 100%
-  .inner-content
-    width: 910px
-    margin: 0 auto
-
-section.section-gray
-  background-color: #ebebeb
-  border-bottom: 5px solid #cecece
-
-/* HOME */
-
-div
-  &.home
-    padding-top: 0
-    h3
-      font-size: 30px
-  &.megabanner
-    margin: 0 auto
-    width: 100%
-    height: 350px
-    overflow: hidden
-    img
-      margin-top: 142px
-      width: 100%
-  &.home-content
-    background-color: #FFFFFF
-    z-index: 101
-    padding: 50px 0
-    width: 100% !important
-
-a#home-arrow-dn
-  display: block
-  width: 34px
-  margin: 0 auto
-
-/* PROJECTS */
-
-div
-  &.project
-    width: 276px
-    float: left
-    margin: 0 15px
+    height: 71px
     a
-      text-decoration: none
-    .plus-icon
-      position: absolute
-      width: 260px
-      height: 160px
-      margin: 8px
-      background-image: url(../img/projects/plus_icon.png)
-      background-repeat: no-repeat
-      background-position: center
-      z-index: 213
-    .hover
-      position: absolute
-      width: 260px
-      height: 160px
-      margin: 8px
-    a:hover .hover
-      background-color: #FF0000
-      opacity: .5
-  &.project-image
-    background-color: #FFFFFF
-    padding: 8px
-
-.project h4
-  text-align: center
-  margin-top: 15px
-  font-weight: normal
-  font-size: 18px
-
-#show-project
-  width: 918px
-
-/* CLIENTS */
-
-section
-  &#section-clients
-    div.clients
-      width: 790px
-      margin: 20px auto 0
-    img.client
-      margin: 25px 0
-  &#section-timeline h2
-    width: 250px
-
-/* TIMELINE */
-
-ul.timeline
-  list-style: none
-  background-image: url(../img/timeline/timeline_line.gif)
-  background-repeat: repeat-y
-  background-position: center
-  width: 890px
-  margin: 0 auto
-  padding: 0
-  li
-    background-image: url(../img/timeline/bullet.png)
-    background-repeat: no-repeat
-    background-position: center 35px
-    height: 100px
-    div.year
-      width: 445px
-    &.year-left div.year
-      text-align: right
-      float: left
-    &.year-right div.year
-      text-align: left
-      float: right
-    div
-      &.year span
+        color: white
         display: block
-        padding: 31px 30px 0
         font-size: 18px
-      &.description
-        position: absolute !important
-        overflow: hidden
-    &.year-left div.description
-      left: 50%
-      margin-left: 20px
-    &.year-right div.description
-      right: 50%
-      margin-right: 20px
-    div.description div.description-container
-      background-color: #FFFFFF
-      width: 335px
-      padding: 20px 35px
-      border-bottom: 3px solid #b2b2b2
-      text-align: left
-      font-size: 16px
-      color: #aeaeae
-    &.year-left div.description-container
-      float: left
-    &.year-right div.description-container
-      float: right
-    &.year-left div.d-arrow
-      background-image: url("../img/timeline/arrow_left.png")
-      background-repeat: no-repeat
-      float: left
-      height: 29px
-      margin-top: 30px
-      width: 16px
-    &.year-right div.d-arrow
-      background-image: url("../img/timeline/arrow_right.png")
-      background-repeat: no-repeat
-      float: right
-      height: 29px
-      margin-top: 30px
-      width: 16px
+        margin-top: 25px
+        text-decoration: none
+        text-align: center
 
-/* CONTACT */
-
-div.contact
-  div
-    &.col-md-6
-      width: 350px
-      padding: 30px 0 30px 30px
-      margin-right: 150px
-      margin-top: 30px
-      float: left
-    &.last
-      margin-right: 0px
-  p
-    margin-bottom: 35px
-    font-size: 21px
-    margin-top: 10px
-    a
-      text-decoration: none
-      &:hover
-        text-decoration: underline
-
-/* FOOTER */
-
-footer
-  width: 100%
-  background-color: $primary-color
-  border-bottom: 2px solid $secondary-color
-  height: 71px
-  a
-    color: #FFFFFF
-    display: block
-    font-size: 18px
-    margin-top: 25px
-    text-decoration: none
-    text-align: center

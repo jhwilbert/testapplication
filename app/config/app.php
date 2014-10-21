@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/victor/projesom.com',
+	'url' => 'http://victorvolker.com/projetos/2014/projesom/',
 
 	/*
 	|--------------------------------------------------------------------------

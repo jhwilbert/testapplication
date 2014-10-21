@@ -1,3 +1,3 @@
-<footer id="section-footer" class="skrollable"{{ $sd_footer }}>
+<footer id="section-footer">
 	<a href="#section-home">Back to Top</a>
 </footer>
