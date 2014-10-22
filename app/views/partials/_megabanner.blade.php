@@ -1,17 +1,21 @@
 <section class="section megabanner" id="section-megabanner">
 
 	<?php 
+		$total_megabanners = sizeof($megabanners);
 		$skPos = 0;
-		$skStart = 150;
-		$slHeight = 400;
+		$skStart = 100;
+		$slHeight = 500;
+		$i = 0;
 	?>
 
 	@foreach($megabanners as $megabanner)
 
 		<?php 
 			$skData = '';
-			if ($skPos > 0) $skData .= 'data-' . ($skPos - $skStart) . '="top:100%;"';
-			$skData .= 'data-' . ($skPos) . '="top:0%;" data-' . ($skPos + $skStart) . '="top[cubic]:0%;" data-' . ($skPos + $skStart + $slHeight) . '="top:-100%;"';
+			if ($skPos > 0) $skData .= 'data-' . ($skPos - $skStart - $slHeight) . '="left:100%;"';
+			$skData .= 'data-' . ($skPos) . '="left:0%;top:0%" data-' . ($skPos + $skStart) . '="left[cubic]:0%;"';
+			if ($i < $total_megabanners - 1) $skData .= ' data-' . ($skPos + $skStart + $slHeight) . '="left:-100%;"';
+			else $skData .= ' data-' . ($skPos + $skStart + $slHeight) . '="top:-100%;"';
 		?>
 
 		<div class="megabanner-image" {{$skData}}>
@@ -19,7 +23,7 @@
 			<h3>{{ $megabanner->title }}</h3>
 		</div>
 
-		<?php $skPos += $skStart + $slHeight; ?>
+		<?php $skPos += $skStart + $slHeight; $i++; ?>
 
 	@endforeach
 
