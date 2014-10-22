@@ -43,10 +43,11 @@ function setMenuPosition($item) {
 		$item = $('#main-menu ul.nav li a.selected');
 	}
 	if ($item.length == 1) {
+		var w = $item.parent().width() + 1;
 		if ($('#menu_marker').is(":visible")) {
-			$('#menu_marker').fadeIn('fast').animate({left: $item.offset().left, width: $item.parent().width()});
+			$('#menu_marker').fadeIn('fast').animate({left: $item.offset().left, width: w});
 		} else {
-			$('#menu_marker').css({left: $item.offset().left, width: $item.parent().width()}).fadeIn('fast');
+			$('#menu_marker').css({left: $item.offset().left, width: w}).fadeIn('fast');
 		}
 	} else {
 		$('#menu_marker').fadeOut();
