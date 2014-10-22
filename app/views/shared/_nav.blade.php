@@ -1,4 +1,4 @@
-<div id="main-menu">
+<div id="main-menu" class="skrollable">
 	<a class="logo" href="#section-home" id="logo">{{ HTML::image('public/img/logo.png') }}</a>
 	<div class="menu-container">
 		<ul class="nav">

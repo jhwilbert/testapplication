@@ -1992,46 +1992,50 @@ h3 {
 /* line 77, ../sass/application.sass */
 #main_container section.section {
   padding: 40px 0;
-  margin-top: 142px;
   width: 100%;
 }
-/* line 81, ../sass/application.sass */
+/* line 80, ../sass/application.sass */
 #main_container section.section .inner-content {
   margin: 0 auto;
 }
 
-/* line 84, ../sass/application.sass */
+/* line 83, ../sass/application.sass */
 section.section-gray {
   background-color: #ebebeb;
   border-bottom: 5px solid #cecece;
 }
 
 /* MEGABANNER */
-/* line 91, ../sass/application.sass */
+/* line 90, ../sass/application.sass */
 #section-megabanner {
   padding: 0 !important;
   margin-top: 0 !important;
 }
-/* line 95, ../sass/application.sass */
+/* line 93, ../sass/application.sass */
+#section-megabanner .megabanner-image {
+  width: 100%;
+  padding-top: 142px;
+}
+/* line 96, ../sass/application.sass */
 #section-megabanner .megabanner-image img {
   width: 100%;
 }
 
-/* line 102, ../sass/application.sass */
+/* line 103, ../sass/application.sass */
 a#home-arrow-dn {
   display: block;
   width: 34px;
   margin: 0 auto;
 }
 
-/* line 107, ../sass/application.sass */
+/* line 108, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 112, ../sass/application.sass */
+/* line 113, ../sass/application.sass */
 footer a {
   color: white;
   display: block;
