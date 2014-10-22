@@ -1,8 +1,11 @@
 <section class="section megabanner" id="section-megabanner">
 
-	<?php 
-		$total_megabanners = sizeof($megabanners);
+	<?php
+
+		global $skPos;
 		$skPos = 0;
+		
+		$total_megabanners = sizeof($megabanners);
 		$skStart = 1000;
 		$slHeight = 500;
 		$i = 0;
