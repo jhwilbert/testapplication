@@ -1907,7 +1907,7 @@ ul.nav li {
 
 /* line 15, ../sass/application.sass */
 h2 {
-  display: block;
+  display: table;
   width: 170px;
   padding: 15px;
   text-align: center;
@@ -1993,49 +1993,99 @@ h3 {
 #main_container section.section {
   padding: 40px 0;
   width: 100%;
+  padding-top: 142px;
 }
-/* line 80, ../sass/application.sass */
+/* line 81, ../sass/application.sass */
 #main_container section.section .inner-content {
   margin: 0 auto;
 }
 
-/* line 83, ../sass/application.sass */
+/* line 84, ../sass/application.sass */
 section.section-gray {
   background-color: #ebebeb;
   border-bottom: 5px solid #cecece;
 }
 
 /* MEGABANNER */
-/* line 90, ../sass/application.sass */
+/* line 91, ../sass/application.sass */
 #section-megabanner {
   padding: 0 !important;
   margin-top: 0 !important;
 }
-/* line 93, ../sass/application.sass */
+/* line 94, ../sass/application.sass */
 #section-megabanner .megabanner-image {
   width: 100%;
   padding-top: 142px;
 }
-/* line 96, ../sass/application.sass */
+/* line 97, ../sass/application.sass */
 #section-megabanner .megabanner-image img {
   width: 100%;
 }
 
-/* line 103, ../sass/application.sass */
+/* PROJECTS */
+/* line 105, ../sass/application.sass */
+.project {
+  width: 276px;
+  float: left;
+  margin: 0 15px;
+}
+/* line 109, ../sass/application.sass */
+.project a {
+  text-decoration: none;
+}
+/* line 111, ../sass/application.sass */
+.project .plus-icon {
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  margin: 8px;
+  background-image: url(../img/projects/plus_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 213;
+}
+/* line 120, ../sass/application.sass */
+.project .hover {
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  margin: 8px;
+}
+/* line 125, ../sass/application.sass */
+.project a:hover .hover {
+  background-color: red;
+  opacity: 0.5;
+}
+
+/* line 128, ../sass/application.sass */
+.project-image {
+  background-color: white;
+  padding: 8px;
+}
+
+/* line 132, ../sass/application.sass */
+.project h4 {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* line 139, ../sass/application.sass */
 a#home-arrow-dn {
   display: block;
   width: 34px;
   margin: 0 auto;
 }
 
-/* line 108, ../sass/application.sass */
+/* line 144, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 113, ../sass/application.sass */
+/* line 149, ../sass/application.sass */
 footer a {
   color: white;
   display: block;

@@ -54,3 +54,4 @@ function setMenuPosition($item) {
 	}
 
 }
+

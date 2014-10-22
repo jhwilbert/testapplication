@@ -1,4 +1,16 @@
-<section class="section section-gray skrollable" id="section-projects"{{ $sd }}>
+
+<?php
+
+	global $skPos;
+
+	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
+	$skData .= ' data-'.($skPos+=400).'="top:0%"';
+	$skData .= ' data-'.($skPos+=900).'="top:0%"';
+	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
+
+?>
+
+<section class="section section-gray skrollable" id="section-projects"{{ $skData }}>
 
 	<div class="inner-content">
 		
