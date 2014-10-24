@@ -5,8 +5,7 @@
   <title>Projesom Admin</title>
 
   <!-- Bootstrap -->
-  {{ HTML::style('public/css/bootstrap.min.css'); }}
-  {{ HTML::style('public/css/bootstrap-theme.min.css'); }}
+  {{ HTML::style('public/css/bootstrap.css'); }}
   {{ HTML::style('public/css/admin.css'); }}
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

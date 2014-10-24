@@ -1,4 +1,9 @@
+/* line 4, ../sass/admin.sass */
+span.glyphicon-ok {
+  color: green;
+}
 
-
-span.glyphicon-ok { color: green; }
-span.glyphicon-remove { color: red; }
+/* line 6, ../sass/admin.sass */
+span.glyphicon-remove {
+  color: red;
+}
