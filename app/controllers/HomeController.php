@@ -13,7 +13,7 @@ class HomeController extends BaseController {
 		return View::make('index', array(
 			'megabanners' => $megabanners,
 			'projects' => $projects,
-			'scripts' => array('projects.js')
+			'scripts' => array('vendor/jquery.slides.min.js', 'projects.js')
 		));
 	}
 

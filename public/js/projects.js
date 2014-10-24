@@ -14,7 +14,7 @@ function initProjects() {
 
 	$('a.project-link').on('click', function() {
 
-		$('#show-project').show().animate({height: 400});
+		$('#show-project').modal();
 
 		/* get project data */
         $.get(
@@ -24,24 +24,24 @@ function initProjects() {
                 $('#project-description').html('<p>'+data.description+'</p>');
                 /*
                 $('#project-description').columnize();
-		        if ($('#slides').data('plugin_slidesjs')) {
-		        	$('#slides').data('plugin_slidesjs').stop();
-		        	$('#slides').removeData('plugin_slidesjs');
-                	$('#slides').html('');
-		        }
 		        */
-                for (var i in data.image_paths) {
-                	$('#slides').append('<img src="'+data.image_paths[i]+'">');
-                }
-				$('#slides').slidesjs({
+				if ($('#project-slides').data('plugin_slidesjs')) {
+					$('#project-slides').data('plugin_slidesjs').stop();
+					$('#project-slides').removeData('plugin_slidesjs');
+					$('#project-slides').html('');
+				}
+				for (var i in data.image_paths) {
+					$('#project-slides').append('<img src="'+data.image_paths[i]+'">');
+				}
+				$('#project-slides').slidesjs({
 					width: 780,
 					navigation: false
 				});
 				var l = data.image_paths.length;
 				if (l > 1) {
-					$('#slides .slidesjs-pagination').show().css('width', l * 15);
+					$('#project-slides .slidesjs-pagination').show().css('width', l * 15);
 				} else {
-					$('#slides .slidesjs-pagination').hide();
+					$('#project-slides .slidesjs-pagination').hide();
 				}
 
 				/* add extra pixel for the vertical position of sections below Projects */
@@ -56,6 +56,10 @@ function initProjects() {
  
         return false;
 	});
+
+	$('#show-project').on('hidden.bs.modal', function (e) {
+		$('#project-title, #project-description, #project-slides').html('');
+	})
 
 }
 

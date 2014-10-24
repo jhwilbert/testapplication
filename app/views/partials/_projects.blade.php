@@ -17,13 +17,6 @@
 		<h2>Trabalhos</h2>
 		<h3>Conheça nossos projetos mais recentes</h3>
 
-		<div id="show-project" style="display:none;">
-			<div id="slides"></div>
-			<h3 id="project-title"></h3>
-			<div id="project-description"></div>
-		</div>
-		<div class="clearfix"></div>
-
 		<div class="projects">
 			@foreach($projects as $project)
 
@@ -51,3 +44,16 @@
 	</div>
 
 </section>
+
+
+<div class="modal fade" id="show-project">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="project-slides"></div>
+        <h3 id="project-title"></h3>
+        <div id="project-description"></div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
