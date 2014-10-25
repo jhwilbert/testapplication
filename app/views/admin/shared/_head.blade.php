@@ -14,4 +14,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  {{ HTML::script('public/js/vendor/jquery-1.11.1.min.js'); }}
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  {{ HTML::script('public/js/vendor/bootstrap.min.js'); }}
+  {{ HTML::script('public/js/vendor/tinymce/tinymce.min.js'); }}
+  {{ HTML::script('public/js/admin.js'); }}
+  
 </head>

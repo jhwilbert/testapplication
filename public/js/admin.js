@@ -1,3 +1,7 @@
+tinymce.init({
+    selector: "textarea.wysiwyg"
+ });
+
 $(document).ready(function() {
 
 
