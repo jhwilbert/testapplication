@@ -102,6 +102,7 @@ return array(
 		'image' => 'Imagem',
 		'position' => 'Posição',
 		'subtitle' => 'Legenda',
+		'technology' => 'Tecnologia',
 		'title' => 'Título',
 		'text' => 'Texto',
 		'updated_at' => 'Atualizado em',

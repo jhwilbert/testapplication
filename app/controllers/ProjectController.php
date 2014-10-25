@@ -19,6 +19,7 @@ class ProjectController extends BaseController {
 		$result = array(
 			'title' => $project->title,
 			'description' => $project->description,
+			'technology' => $project->technology,
 			'image_paths' => $image_paths
 		);
 		return Response::json( $result );

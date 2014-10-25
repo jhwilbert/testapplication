@@ -21,8 +21,24 @@
 			<td>{{{ $project->title }}}</td>
 		</tr>
 		<tr>
+			<th>{{ Lang::get('validation.attributes.title', array(), 'en') }}</th>
+			<td>{{{ $project->title_en }}}</td>
+		</tr>
+		<tr>
 			<th>{{ Lang::get('validation.attributes.description') }}</th>
 			<td>{{{ $project->description }}}</td>
+		</tr>
+		<tr>
+			<th>{{ Lang::get('validation.attributes.description', array(), 'en') }}</th>
+			<td>{{{ $project->description_en }}}</td>
+		</tr>
+		<tr>
+			<th>{{ Lang::get('validation.attributes.technology') }}</th>
+			<td>{{{ $project->technology }}}</td>
+		</tr>
+		<tr>
+			<th>{{ Lang::get('validation.attributes.technology', array(), 'en') }}</th>
+			<td>{{{ $project->technology_en }}}</td>
 		</tr>
 		<tr>
 			<th>{{ Lang::get('validation.attributes.featured') }}</th>

@@ -108,14 +108,20 @@ class ProjectController extends AdminBaseController {
 	protected function save($project) {
 
 		$project->title = Input::get('title');
+		$project->title_en = Input::get('title_en');
 		$project->description = Input::get('description');
+		$project->description_en = Input::get('description_en');
+		$project->technology = Input::get('technology');
+		$project->technology_en = Input::get('technology_en');
 		$project->featured = Input::get('featured') ? 1 : 0;
 
 		$validator = Validator::make(
 		    array(
-		    	'title' => Input::get('title')
+		    	'title' => Input::get('title'),
+		    	'title_en' => Input::get('title_en'),
 		    ), array(
-		    	'title' => 'required'
+		    	'title' => 'required',
+		    	'title_en' => 'required',
 		    )
 		);
 

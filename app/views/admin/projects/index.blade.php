@@ -13,7 +13,6 @@
 		<tr>
 			<th>id</th>
 			<th>{{ Lang::get('validation.attributes.title') }}</th>
-			<th>{{ Lang::get('validation.attributes.description') }}</th>
 			<th>{{ Lang::get('validation.attributes.featured') }}</th>
 			<th>{{ Lang::get('validation.attributes.created_at') }}</th>
 			<th>{{ Lang::get('validation.attributes.updated_at') }}</th>
@@ -23,7 +22,6 @@
 		<tr>
 			<td>{{{ $project->id }}}</td>
 			<td>{{{ $project->title }}}</td>
-			<td>{{{ $project->description }}}</td>
 			<td>{{{ $project->featured }}}</td>
 			<td>{{{ $project->created_at }}}</td>
 			<td>{{{ $project->updated_at }}}</td>

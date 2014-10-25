@@ -93,6 +93,20 @@ return array(
 	|
 	*/
 
-	'attributes' => array(),
 
+	'attributes' => array(
+		'active' => 'Active',
+		'created_at' => 'Created at',
+		'description' => 'Description',
+		'featured' => 'Featured',
+		'file' => 'File',
+		'image' => 'Image',
+		'position' => 'Position',
+		'subtitle' => 'Subtitle',
+		'technology' => 'Technology',
+		'title' => 'Title',
+		'text' => 'Text',
+		'updated_at' => 'Updated at',
+		'url' => 'Link',
+	),
 );
