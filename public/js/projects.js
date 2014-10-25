@@ -1,4 +1,6 @@
 
+var projectsModalOpened = false;
+
 $(document).ready(function() {
 
 	initProjects();
@@ -15,6 +17,7 @@ function initProjects() {
 	$('a.project-link').on('click', function() {
 
 		$('#show-project').modal();
+		projectsModalOpened = true;
 
 		/* get project data */
         $.get(
@@ -59,7 +62,17 @@ function initProjects() {
 
 	$('#show-project').on('hidden.bs.modal', function (e) {
 		$('#project-title, #project-description, #project-slides').html('');
+		projectsModalOpened = false;
 	})
 
 }
 
+function getProjectsSkrollrEvents(name, direction) {
+	//console.log(name, direction);
+	if (projectsModalOpened && (
+		(name == projectsBpUp && direction == 'up') ||
+		(name == projectsBpDn && direction == 'down')
+	)) 
+		$('#show-project').modal('hide');
+
+}

@@ -2,13 +2,24 @@
 <?php
 
 	global $skPos;
+	if (!$skPos) $skPos = 0;
+
 
 	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
 	$skData .= ' data-'.($skPos+=400).'="top:0%"';
+	$breakPointUp = $skPos;
 	$skData .= ' data-'.($skPos+=900).'="top:0%"';
+	$breakPointDown = $skPos;
 	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
+	$skData .= ' data-emit-events';
+
 
 ?>
+<script type="text/javascript">
+	var projectsBpUp = 'data<?php echo $breakPointUp; ?>';
+	var projectsBpDn = 'data<?php echo $breakPointDown; ?>';
+</script>
+
 
 <section class="section section-gray skrollable" id="section-projects"{{ $skData }}>
 

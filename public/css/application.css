@@ -1,3 +1,5 @@
+/* bootstrap vars */
+/* $modal-lg: 1200px */
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../sass/bootstrap/_normalize.scss */
 html {
@@ -335,7 +337,7 @@ img {
 
 /* line 86, ../sass/bootstrap/_scaffolding.scss */
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 93, ../sass/bootstrap/_scaffolding.scss */
@@ -344,7 +346,7 @@ img {
   line-height: 1;
   background-color: white;
   border: 1px solid #dddddd;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1618,7 +1620,7 @@ button.close {
   background-color: white;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 6px;
+  border-radius: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
   background-clip: padding-box;
@@ -2124,7 +2126,7 @@ h3 {
 #main-menu {
   width: 100%;
   background-color: white;
-  z-index: 999;
+  z-index: 1999;
 }
 /* line 35, ../sass/application.sass */
 #main-menu .logo {
@@ -2267,17 +2269,21 @@ section.section-gray {
 }
 
 /* line 139, ../sass/application.sass */
+#show-project .modal-dialog {
+  margin-top: 142px;
+}
+/* line 141, ../sass/application.sass */
 #show-project .slidesjs-pagination {
   margin: 6px auto 0;
   list-style: none;
   padding: 0;
 }
-/* line 143, ../sass/application.sass */
+/* line 145, ../sass/application.sass */
 #show-project .slidesjs-pagination li {
   float: left;
   margin: 0 1px;
 }
-/* line 147, ../sass/application.sass */
+/* line 149, ../sass/application.sass */
 #show-project .slidesjs-pagination li a {
   display: block;
   width: 13px;
@@ -2288,30 +2294,30 @@ section.section-gray {
   float: left;
   overflow: hidden;
 }
-/* line 156, ../sass/application.sass */
+/* line 158, ../sass/application.sass */
 #show-project .slidesjs-pagination li a.active, #show-project .slidesjs-pagination li a:hover.active {
   background-position: 0 -13px;
 }
-/* line 158, ../sass/application.sass */
+/* line 160, ../sass/application.sass */
 #show-project .slidesjs-pagination li a:hover {
   background-position: 0 -26px;
 }
 
-/* line 161, ../sass/application.sass */
+/* line 163, ../sass/application.sass */
 a#home-arrow-dn {
   display: block;
   width: 34px;
   margin: 0 auto;
 }
 
-/* line 166, ../sass/application.sass */
+/* line 168, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 171, ../sass/application.sass */
+/* line 173, ../sass/application.sass */
 footer a {
   color: white;
   display: block;
