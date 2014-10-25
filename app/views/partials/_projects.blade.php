@@ -23,7 +23,7 @@
 
 <section class="section section-gray skrollable" id="section-projects"{{ $skData }}>
 
-	<div class="inner-content">
+	<div class="inner-content container">
 		
 		<h2>Trabalhos</h2>
 		<h3>Conheça nossos projetos mais recentes</h3>
