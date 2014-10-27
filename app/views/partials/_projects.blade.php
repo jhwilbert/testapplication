@@ -3,6 +3,7 @@
 
 	global $skPos;
 	if (!$skPos) $skPos = 0;
+	else $skPos -= 500;
 
 
 	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';

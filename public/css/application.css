@@ -2340,14 +2340,104 @@ a#home-arrow-dn {
   margin: 0 auto;
 }
 
-/* line 190, ../sass/application.sass */
+/* TIMELINE */
+/* line 193, ../sass/application.sass */
+ul.timeline {
+  list-style: none;
+  background-image: url(../img/timeline/timeline_line.gif);
+  background-repeat: repeat-y;
+  background-position: center;
+  width: 890px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 201, ../sass/application.sass */
+ul.timeline li {
+  background-image: url(../img/timeline/bullet.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  height: 100px;
+}
+/* line 206, ../sass/application.sass */
+ul.timeline li div.year {
+  width: 445px;
+}
+/* line 208, ../sass/application.sass */
+ul.timeline li.year-left div.year {
+  text-align: right;
+  float: left;
+}
+/* line 211, ../sass/application.sass */
+ul.timeline li.year-right div.year {
+  text-align: left;
+  float: right;
+}
+/* line 215, ../sass/application.sass */
+ul.timeline li div.year span {
+  display: block;
+  padding: 31px 30px 0;
+  font-size: 18px;
+}
+/* line 219, ../sass/application.sass */
+ul.timeline li div.description {
+  position: absolute !important;
+  overflow: hidden;
+}
+/* line 222, ../sass/application.sass */
+ul.timeline li.year-left div.description {
+  left: 50%;
+  margin-left: 20px;
+}
+/* line 225, ../sass/application.sass */
+ul.timeline li.year-right div.description {
+  right: 50%;
+  margin-right: 20px;
+}
+/* line 228, ../sass/application.sass */
+ul.timeline li div.description div.description-container {
+  background-color: white;
+  width: 335px;
+  padding: 20px 35px;
+  border-bottom: 3px solid #b2b2b2;
+  text-align: left;
+  font-size: 16px;
+  color: #aeaeae;
+}
+/* line 236, ../sass/application.sass */
+ul.timeline li.year-left div.description-container {
+  float: left;
+}
+/* line 238, ../sass/application.sass */
+ul.timeline li.year-right div.description-container {
+  float: right;
+}
+/* line 240, ../sass/application.sass */
+ul.timeline li.year-left div.d-arrow {
+  background-image: url("../img/timeline/arrow_left.png");
+  background-repeat: no-repeat;
+  float: left;
+  height: 29px;
+  margin-top: 30px;
+  width: 16px;
+}
+/* line 247, ../sass/application.sass */
+ul.timeline li.year-right div.d-arrow {
+  background-image: url("../img/timeline/arrow_right.png");
+  background-repeat: no-repeat;
+  float: right;
+  height: 29px;
+  margin-top: 30px;
+  width: 16px;
+}
+
+/* line 256, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 195, ../sass/application.sass */
+/* line 261, ../sass/application.sass */
 footer a {
   color: white;
   display: block;

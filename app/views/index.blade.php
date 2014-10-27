@@ -4,5 +4,7 @@
 
 	@include('partials/_megabanner')
 	@include('partials/_projects')
+	@include('partials/_solutions')
+	@include('partials/_timeline')
 
 @stop
