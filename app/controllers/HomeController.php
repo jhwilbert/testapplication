@@ -26,6 +26,16 @@ class HomeController extends BaseController {
 			),
 		);
 
+		$clients = array(
+			'fundacao-carlos-chagas' => 'Fundação Carlos Chagas',
+			'usiminas' => 'Usiminas',
+			'teatro-oi-brasilia' => 'Teatro Oi Brasília',
+			'fundacao-clovis-salgado' => 'Fundação Clóvis Salgado',
+			'fundacao-bradesco' => 'Fundação Bradesco',
+			'fundacao-universa' => 'Fundação Universa',
+			'sesc' => 'SESC',
+			'apex-brasil' => 'Apex Brasil',
+		);
 
 		/* make view */
 
@@ -33,6 +43,7 @@ class HomeController extends BaseController {
 			'megabanners' => $megabanners,
 			'projects' => $projects,
 			'timelineEvents' => $timelineEvents,
+			'clients' => $clients,
 			'scripts' => array('vendor/jquery.slides.min.js', 'projects.js')
 		));
 	}

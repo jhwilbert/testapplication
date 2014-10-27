@@ -9,7 +9,6 @@
 	$skData .= ' data-'.($skPos+=400).'="top:0%"';
 	$skData .= ' data-'.($skPos+=900).'="top:0%"';
 	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
-	$skData .= ' data-emit-events';
 ?>
 
 <section class="section section-gray skrollable" id="section-solutions"{{ $skData }}>

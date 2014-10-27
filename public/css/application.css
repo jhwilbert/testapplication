@@ -2430,14 +2430,29 @@ ul.timeline li.year-right div.d-arrow {
   width: 16px;
 }
 
-/* line 256, ../sass/application.sass */
+/* CLIENTS */
+/* line 261, ../sass/application.sass */
+section#section-clients div.clients {
+  width: 790px;
+  margin: 20px auto 0;
+}
+/* line 264, ../sass/application.sass */
+section#section-clients img.client {
+  margin: 25px 0;
+}
+/* line 266, ../sass/application.sass */
+section#section-timeline h2 {
+  width: 250px;
+}
+
+/* line 269, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 261, ../sass/application.sass */
+/* line 274, ../sass/application.sass */
 footer a {
   color: white;
   display: block;
