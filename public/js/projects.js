@@ -25,9 +25,7 @@ function initProjects() {
             function( data ) {
                 $('#project-title').html(data.title);
                 $('#project-description').html('<p>'+data.description+'</p>');
-                /*
-                $('#project-description').columnize();
-		        */
+                $('#project-technology').html('<p>'+data.technology+'</p>');
 				if ($('#project-slides').data('plugin_slidesjs')) {
 					$('#project-slides').data('plugin_slidesjs').stop();
 					$('#project-slides').removeData('plugin_slidesjs');

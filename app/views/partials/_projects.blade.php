@@ -63,7 +63,10 @@
       <div class="modal-body">
         <div id="project-slides"></div>
         <h3 id="project-title"></h3>
-        <div id="project-description"></div>
+        <div class="row">
+        	<div id="project-description" class="col-md-6"></div>
+        	<div id="project-technology" class="col-md-6"></div>
+        </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
