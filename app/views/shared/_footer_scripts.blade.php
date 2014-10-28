@@ -1,6 +1,7 @@
 
 {{ HTML::script('public/js/vendor/jquery-1.11.1.min.js'); }}
 {{ HTML::script('public/js/vendor/skrollr.min.js'); }}
+{{ HTML::script('public/js/vendor/skrollr.menu.min.js'); }}
 {{ HTML::script('public/js/vendor/bootstrap.min.js'); }}
 {{ HTML::script('public/js/plugins.js'); }}
 {{ HTML::script('public/js/application.js'); }}

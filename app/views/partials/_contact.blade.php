@@ -7,7 +7,7 @@
 	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
 	$skData .= ' data-'.($skPos+=400).'="top:0%"';
 	$skData .= ' data-'.($skPos+=900).'="top:0%"';
-	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
+	//$skData .= ' data-'.($skPos+=400).'="top:-100%"';
 ?>
 
 <section class="section skrollable" id="section-contact"{{ $skData }}>

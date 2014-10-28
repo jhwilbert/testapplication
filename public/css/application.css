@@ -284,7 +284,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.42857;
   color: #333333;
   background-color: white;
 }
@@ -342,7 +342,7 @@ img {
 /* line 93, ../sass/bootstrap/_scaffolding.scss */
 .img-thumbnail {
   padding: 4px;
-  line-height: 1;
+  line-height: 1.42857;
   background-color: white;
   border: 1px solid #dddddd;
   border-radius: 0;
@@ -362,10 +362,10 @@ img {
 
 /* line 113, ../sass/bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #eeeeee;
 }
 
 /* line 125, ../sass/bootstrap/_scaffolding.scss */
@@ -1541,21 +1541,21 @@ hr {
 /* line 6, ../sass/bootstrap/_close.scss */
 .close {
   float: right;
-  font-size: 14px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 1;
   color: black;
   text-shadow: 0 1px 0 white;
-  opacity: 0;
-  filter: alpha(opacity=0);
+  opacity: 0.2;
+  filter: alpha(opacity=20);
 }
 /* line 16, ../sass/bootstrap/_close.scss */
 .close:hover, .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0;
-  filter: alpha(opacity=0);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 /* line 29, ../sass/bootstrap/_close.scss */
@@ -1618,10 +1618,10 @@ button.close {
   position: relative;
   background-color: white;
   border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
 }
@@ -1643,15 +1643,15 @@ button.close {
 }
 /* line 74, ../sass/bootstrap/_modals.scss */
 .modal-backdrop.in {
-  opacity: 0;
-  filter: alpha(opacity=0);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 /* line 79, ../sass/bootstrap/_modals.scss */
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16px;
+  min-height: 16.42857px;
 }
 
 /* line 85, ../sass/bootstrap/_modals.scss */
@@ -1662,7 +1662,7 @@ button.close {
 /* line 90, ../sass/bootstrap/_modals.scss */
 .modal-title {
   margin: 0;
-  line-height: 1;
+  line-height: 1.42857;
 }
 
 /* line 97, ../sass/bootstrap/_modals.scss */
@@ -1718,8 +1718,8 @@ button.close {
 
   /* line 140, ../sass/bootstrap/_modals.scss */
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 
   /* line 145, ../sass/bootstrap/_modals.scss */
@@ -2243,19 +2243,32 @@ section.section-gray {
 #section-megabanner .megabanner-image img {
   width: 100%;
 }
+/* line 121, ../sass/application.sass */
+#section-megabanner .megabanner-nav {
+  background-color: white;
+  z-index: 101;
+  padding: 50px 0;
+  width: 100% !important;
+}
+/* line 126, ../sass/application.sass */
+#section-megabanner .megabanner-nav a#home-arrow-dn {
+  display: block;
+  width: 34px;
+  margin: 0 auto;
+}
 
 /* PROJECTS */
-/* line 125, ../sass/application.sass */
+/* line 135, ../sass/application.sass */
 .project {
   width: 276px;
   float: left;
   margin: 0 15px;
 }
-/* line 129, ../sass/application.sass */
+/* line 139, ../sass/application.sass */
 .project a {
   text-decoration: none;
 }
-/* line 131, ../sass/application.sass */
+/* line 141, ../sass/application.sass */
 .project .plus-icon {
   position: absolute;
   width: 260px;
@@ -2266,26 +2279,26 @@ section.section-gray {
   background-position: center;
   z-index: 213;
 }
-/* line 140, ../sass/application.sass */
+/* line 150, ../sass/application.sass */
 .project .hover {
   position: absolute;
   width: 260px;
   height: 160px;
   margin: 8px;
 }
-/* line 145, ../sass/application.sass */
+/* line 155, ../sass/application.sass */
 .project a:hover .hover {
   background-color: red;
   opacity: 0.5;
 }
 
-/* line 148, ../sass/application.sass */
+/* line 158, ../sass/application.sass */
 .project-image {
   background-color: white;
   padding: 8px;
 }
 
-/* line 152, ../sass/application.sass */
+/* line 162, ../sass/application.sass */
 .project h4 {
   text-align: center;
   margin-top: 15px;
@@ -2293,27 +2306,27 @@ section.section-gray {
   font-size: 18px;
 }
 
-/* line 159, ../sass/application.sass */
+/* line 169, ../sass/application.sass */
 #show-project .modal-dialog {
   margin-top: 242px;
 }
-/* line 161, ../sass/application.sass */
+/* line 171, ../sass/application.sass */
 #show-project #project-slides {
   width: 640px;
   margin: 0 auto;
 }
-/* line 164, ../sass/application.sass */
+/* line 174, ../sass/application.sass */
 #show-project .slidesjs-pagination {
   margin: 6px auto 0;
   list-style: none;
   padding: 0;
 }
-/* line 168, ../sass/application.sass */
+/* line 178, ../sass/application.sass */
 #show-project .slidesjs-pagination li {
   float: left;
   margin: 0 1px;
 }
-/* line 171, ../sass/application.sass */
+/* line 181, ../sass/application.sass */
 #show-project .slidesjs-pagination li a {
   display: block;
   width: 13px;
@@ -2324,16 +2337,16 @@ section.section-gray {
   float: left;
   overflow: hidden;
 }
-/* line 180, ../sass/application.sass */
+/* line 190, ../sass/application.sass */
 #show-project .slidesjs-pagination li a.active, #show-project .slidesjs-pagination li a:hover.active {
   background-position: 0 -13px;
 }
-/* line 182, ../sass/application.sass */
+/* line 192, ../sass/application.sass */
 #show-project .slidesjs-pagination li a:hover {
   background-position: 0 -26px;
 }
 
-/* line 185, ../sass/application.sass */
+/* line 195, ../sass/application.sass */
 a#home-arrow-dn {
   display: block;
   width: 34px;
@@ -2341,7 +2354,7 @@ a#home-arrow-dn {
 }
 
 /* TIMELINE */
-/* line 193, ../sass/application.sass */
+/* line 203, ../sass/application.sass */
 ul.timeline {
   list-style: none;
   background-image: url(../img/timeline/timeline_line.gif);
@@ -2351,49 +2364,49 @@ ul.timeline {
   margin: 0 auto;
   padding: 0;
 }
-/* line 201, ../sass/application.sass */
+/* line 211, ../sass/application.sass */
 ul.timeline li {
   background-image: url(../img/timeline/bullet.png);
   background-repeat: no-repeat;
   background-position: center 35px;
   height: 100px;
 }
-/* line 206, ../sass/application.sass */
+/* line 216, ../sass/application.sass */
 ul.timeline li div.year {
   width: 445px;
 }
-/* line 208, ../sass/application.sass */
+/* line 218, ../sass/application.sass */
 ul.timeline li.year-left div.year {
   text-align: right;
   float: left;
 }
-/* line 211, ../sass/application.sass */
+/* line 221, ../sass/application.sass */
 ul.timeline li.year-right div.year {
   text-align: left;
   float: right;
 }
-/* line 215, ../sass/application.sass */
+/* line 225, ../sass/application.sass */
 ul.timeline li div.year span {
   display: block;
   padding: 31px 30px 0;
   font-size: 18px;
 }
-/* line 219, ../sass/application.sass */
+/* line 229, ../sass/application.sass */
 ul.timeline li div.description {
   position: absolute !important;
   overflow: hidden;
 }
-/* line 222, ../sass/application.sass */
+/* line 232, ../sass/application.sass */
 ul.timeline li.year-left div.description {
   left: 50%;
   margin-left: 20px;
 }
-/* line 225, ../sass/application.sass */
+/* line 235, ../sass/application.sass */
 ul.timeline li.year-right div.description {
   right: 50%;
   margin-right: 20px;
 }
-/* line 228, ../sass/application.sass */
+/* line 238, ../sass/application.sass */
 ul.timeline li div.description div.description-container {
   background-color: white;
   width: 335px;
@@ -2403,15 +2416,15 @@ ul.timeline li div.description div.description-container {
   font-size: 16px;
   color: #aeaeae;
 }
-/* line 236, ../sass/application.sass */
+/* line 246, ../sass/application.sass */
 ul.timeline li.year-left div.description-container {
   float: left;
 }
-/* line 238, ../sass/application.sass */
+/* line 248, ../sass/application.sass */
 ul.timeline li.year-right div.description-container {
   float: right;
 }
-/* line 240, ../sass/application.sass */
+/* line 250, ../sass/application.sass */
 ul.timeline li.year-left div.d-arrow {
   background-image: url("../img/timeline/arrow_left.png");
   background-repeat: no-repeat;
@@ -2420,7 +2433,7 @@ ul.timeline li.year-left div.d-arrow {
   margin-top: 30px;
   width: 16px;
 }
-/* line 247, ../sass/application.sass */
+/* line 257, ../sass/application.sass */
 ul.timeline li.year-right div.d-arrow {
   background-image: url("../img/timeline/arrow_right.png");
   background-repeat: no-repeat;
@@ -2431,50 +2444,50 @@ ul.timeline li.year-right div.d-arrow {
 }
 
 /* CLIENTS */
-/* line 261, ../sass/application.sass */
+/* line 271, ../sass/application.sass */
 section#section-clients div.clients {
   width: 790px;
   margin: 20px auto 0;
 }
-/* line 264, ../sass/application.sass */
+/* line 274, ../sass/application.sass */
 section#section-clients img.client {
   margin: 25px 0;
 }
-/* line 266, ../sass/application.sass */
+/* line 276, ../sass/application.sass */
 section#section-timeline h2 {
   width: 250px;
 }
 
 /* CONTACT */
-/* line 273, ../sass/application.sass */
+/* line 283, ../sass/application.sass */
 div.contact div.col-md-6 {
   padding: 30px 0 30px 30px;
   margin-top: 30px;
 }
-/* line 276, ../sass/application.sass */
+/* line 286, ../sass/application.sass */
 div.contact p {
   margin-bottom: 35px;
   font-size: 21px;
   margin-top: 10px;
 }
-/* line 280, ../sass/application.sass */
+/* line 290, ../sass/application.sass */
 div.contact p a {
   text-decoration: none;
 }
-/* line 282, ../sass/application.sass */
+/* line 292, ../sass/application.sass */
 div.contact p a:hover {
   text-decoration: underline;
 }
 
 /* FOOTER */
-/* line 288, ../sass/application.sass */
+/* line 298, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 293, ../sass/application.sass */
+/* line 303, ../sass/application.sass */
 footer a {
   color: white;
   display: block;

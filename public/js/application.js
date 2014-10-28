@@ -17,7 +17,10 @@ function initSkrollr() {
 		keyframe: function(element, name, direction) {
 			if ($(element).attr('id') == 'section-projects') getProjectsSkrollrEvents(name, direction);
 		}
-	});	
+	});
+
+	skrollr.menu.init(s);
+
 }
 
 
