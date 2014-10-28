@@ -2306,55 +2306,113 @@ section.section-gray {
   font-size: 18px;
 }
 
-/* line 169, ../sass/application.sass */
-#show-project .modal-dialog {
-  margin-top: 242px;
-}
-/* line 171, ../sass/application.sass */
-#show-project #project-slides {
-  width: 640px;
-  margin: 0 auto;
-}
-/* line 174, ../sass/application.sass */
-#show-project .slidesjs-pagination {
-  margin: 6px auto 0;
-  list-style: none;
-  padding: 0;
-}
-/* line 178, ../sass/application.sass */
-#show-project .slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
-}
-/* line 181, ../sass/application.sass */
-#show-project .slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(..//img/pagination.png);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden;
-}
-/* line 190, ../sass/application.sass */
-#show-project .slidesjs-pagination li a.active, #show-project .slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px;
-}
-/* line 192, ../sass/application.sass */
-#show-project .slidesjs-pagination li a:hover {
-  background-position: 0 -26px;
-}
-
-/* line 195, ../sass/application.sass */
+/* line 168, ../sass/application.sass */
 a#home-arrow-dn {
   display: block;
   width: 34px;
   margin: 0 auto;
 }
 
+/* modal */
+/* line 177, ../sass/application.sass */
+.gallery-modal .modal-dialog {
+  margin-top: 242px;
+}
+/* line 179, ../sass/application.sass */
+.gallery-modal .slides {
+  width: 640px;
+  margin: 0 auto;
+}
+/* line 182, ../sass/application.sass */
+.gallery-modal .slidesjs-pagination {
+  margin: 6px auto 0;
+  list-style: none;
+  padding: 0;
+}
+/* line 186, ../sass/application.sass */
+.gallery-modal .slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+/* line 189, ../sass/application.sass */
+.gallery-modal .slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+/* line 198, ../sass/application.sass */
+.gallery-modal .slidesjs-pagination li a.active, .gallery-modal .slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px;
+}
+/* line 200, ../sass/application.sass */
+.gallery-modal .slidesjs-pagination li a:hover {
+  background-position: 0 -26px;
+}
+
+/* line 204, ../sass/application.sass */
+#show-solution .modal-content {
+  background-color: #d4d4d4;
+}
+
+/* line 207, ../sass/application.sass */
+.modal-backdrop {
+  background-color: white;
+}
+/* line 209, ../sass/application.sass */
+.modal-backdrop.in {
+  opacity: 0;
+}
+
+/* SOLUTIONS */
+/* line 218, ../sass/application.sass */
+.solutions-row .solution-image img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 221, ../sass/application.sass */
+.solutions-row h4 {
+  color: #d95a49;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  width: 200px;
+  margin: 15px auto 0;
+  min-height: 60px;
+}
+/* line 229, ../sass/application.sass */
+.solutions-row p {
+  color: rgba(135, 135, 135, 0.6);
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 30px;
+  margin: 0 0 15px;
+}
+/* line 236, ../sass/application.sass */
+.solutions-row a.solution-plus {
+  background-image: url(../img/solutions/plus-btn.gif);
+  background-repeat: no-repeat;
+  background-position: center left;
+  width: 33px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 245, ../sass/application.sass */
+.solutions-row a.solution-plus:hover {
+  background-position: center right;
+}
+
 /* TIMELINE */
-/* line 203, ../sass/application.sass */
+/* line 252, ../sass/application.sass */
 ul.timeline {
   list-style: none;
   background-image: url(../img/timeline/timeline_line.gif);
@@ -2364,49 +2422,49 @@ ul.timeline {
   margin: 0 auto;
   padding: 0;
 }
-/* line 211, ../sass/application.sass */
+/* line 260, ../sass/application.sass */
 ul.timeline li {
   background-image: url(../img/timeline/bullet.png);
   background-repeat: no-repeat;
   background-position: center 35px;
   height: 100px;
 }
-/* line 216, ../sass/application.sass */
+/* line 265, ../sass/application.sass */
 ul.timeline li div.year {
   width: 445px;
 }
-/* line 218, ../sass/application.sass */
+/* line 267, ../sass/application.sass */
 ul.timeline li.year-left div.year {
   text-align: right;
   float: left;
 }
-/* line 221, ../sass/application.sass */
+/* line 270, ../sass/application.sass */
 ul.timeline li.year-right div.year {
   text-align: left;
   float: right;
 }
-/* line 225, ../sass/application.sass */
+/* line 274, ../sass/application.sass */
 ul.timeline li div.year span {
   display: block;
   padding: 31px 30px 0;
   font-size: 18px;
 }
-/* line 229, ../sass/application.sass */
+/* line 278, ../sass/application.sass */
 ul.timeline li div.description {
   position: absolute !important;
   overflow: hidden;
 }
-/* line 232, ../sass/application.sass */
+/* line 281, ../sass/application.sass */
 ul.timeline li.year-left div.description {
   left: 50%;
   margin-left: 20px;
 }
-/* line 235, ../sass/application.sass */
+/* line 284, ../sass/application.sass */
 ul.timeline li.year-right div.description {
   right: 50%;
   margin-right: 20px;
 }
-/* line 238, ../sass/application.sass */
+/* line 287, ../sass/application.sass */
 ul.timeline li div.description div.description-container {
   background-color: white;
   width: 335px;
@@ -2416,15 +2474,15 @@ ul.timeline li div.description div.description-container {
   font-size: 16px;
   color: #aeaeae;
 }
-/* line 246, ../sass/application.sass */
+/* line 295, ../sass/application.sass */
 ul.timeline li.year-left div.description-container {
   float: left;
 }
-/* line 248, ../sass/application.sass */
+/* line 297, ../sass/application.sass */
 ul.timeline li.year-right div.description-container {
   float: right;
 }
-/* line 250, ../sass/application.sass */
+/* line 299, ../sass/application.sass */
 ul.timeline li.year-left div.d-arrow {
   background-image: url("../img/timeline/arrow_left.png");
   background-repeat: no-repeat;
@@ -2433,7 +2491,7 @@ ul.timeline li.year-left div.d-arrow {
   margin-top: 30px;
   width: 16px;
 }
-/* line 257, ../sass/application.sass */
+/* line 306, ../sass/application.sass */
 ul.timeline li.year-right div.d-arrow {
   background-image: url("../img/timeline/arrow_right.png");
   background-repeat: no-repeat;
@@ -2444,50 +2502,50 @@ ul.timeline li.year-right div.d-arrow {
 }
 
 /* CLIENTS */
-/* line 271, ../sass/application.sass */
+/* line 320, ../sass/application.sass */
 section#section-clients div.clients {
   width: 790px;
   margin: 20px auto 0;
 }
-/* line 274, ../sass/application.sass */
+/* line 323, ../sass/application.sass */
 section#section-clients img.client {
   margin: 25px 0;
 }
-/* line 276, ../sass/application.sass */
+/* line 325, ../sass/application.sass */
 section#section-timeline h2 {
   width: 250px;
 }
 
 /* CONTACT */
-/* line 283, ../sass/application.sass */
+/* line 332, ../sass/application.sass */
 div.contact div.col-md-6 {
   padding: 30px 0 30px 30px;
   margin-top: 30px;
 }
-/* line 286, ../sass/application.sass */
+/* line 335, ../sass/application.sass */
 div.contact p {
   margin-bottom: 35px;
   font-size: 21px;
   margin-top: 10px;
 }
-/* line 290, ../sass/application.sass */
+/* line 339, ../sass/application.sass */
 div.contact p a {
   text-decoration: none;
 }
-/* line 292, ../sass/application.sass */
+/* line 341, ../sass/application.sass */
 div.contact p a:hover {
   text-decoration: underline;
 }
 
 /* FOOTER */
-/* line 298, ../sass/application.sass */
+/* line 347, ../sass/application.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 303, ../sass/application.sass */
+/* line 352, ../sass/application.sass */
 footer a {
   color: white;
   display: block;

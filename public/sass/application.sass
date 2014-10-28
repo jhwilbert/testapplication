@@ -165,10 +165,18 @@ section.section-gray
     font-weight: normal
     font-size: 18px
 
-#show-project
+a#home-arrow-dn
+    display: block
+    width: 34px
+    margin: 0 auto
+
+
+/* modal */
+
+.gallery-modal
     .modal-dialog
         margin-top: $menu-height + 100px
-    #project-slides
+    .slides
         width: 640px
         margin: 0 auto
     .slidesjs-pagination
@@ -183,7 +191,7 @@ section.section-gray
                 width: 13px
                 height: 0
                 padding-top: 13px
-                background-image: url(..//img/pagination.png)
+                background-image: url(../img/pagination.png)
                 background-position: 0 0
                 float: left
                 overflow: hidden
@@ -192,10 +200,51 @@ section.section-gray
                 &:hover
                     background-position: 0 -26px
 
-a#home-arrow-dn
-    display: block
-    width: 34px
-    margin: 0 auto
+#show-solution
+    .modal-content
+        background-color: #d4d4d4
+        
+.modal-backdrop
+    background-color: #FFFFFF
+    &.in
+        opacity: 0
+
+
+
+/* SOLUTIONS */
+
+.solutions-row
+    .solution-image
+        img
+            display: block
+            margin: 0 auto
+    h4 
+        color: $primary-color
+        text-align: center
+        font-weight: 400
+        font-size: 17px
+        width: 200px
+        margin: 15px auto 0
+        min-height: 60px
+    p
+        color: transparentize($texts-color, 0.4)
+        text-align: center
+        font-size: 14px
+        line-height: 20px
+        padding: 0 30px
+        margin: 0 0 15px
+    a.solution-plus
+        @include bg-norepeat("solutions/plus-btn.gif", center left)
+        width: 33px
+        height: 35px
+        display: block
+        margin: 0 auto
+        text-indent: 100%
+        white-space: nowrap
+        overflow: hidden
+        &:hover
+            background-position: center right
+
 
 
 /* TIMELINE */

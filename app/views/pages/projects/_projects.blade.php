@@ -58,11 +58,11 @@
 </section>
 
 
-<div class="modal fade" id="show-project">
+<div class="modal fade gallery-modal" id="show-project">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
-        <div id="project-slides"></div>
+        <div id="project-slides" class="slides"></div>
         <h3 id="project-title"></h3>
         <div class="row">
         	<div id="project-description" class="col-md-6"></div>

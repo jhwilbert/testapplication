@@ -18,3 +18,12 @@ $menu-height: 142px
 $border-radius-base:  0
 $border-radius-large: 0
 $border-radius-small: 0
+
+
+
+
+@mixin bg-norepeat($img, $position: left top)
+	background:
+		image: url(../img/#{$img})
+		repeat: no-repeat
+		position: $position

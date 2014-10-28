@@ -44,7 +44,7 @@ class PageController extends BaseController {
 			'projects' => $projects,
 			'timelineEvents' => $timelineEvents,
 			'clients' => $clients,
-			'scripts' => array('vendor/jquery.slides.min.js', 'projects.js')
+			'scripts' => array('vendor/jquery.slides.min.js', 'solutions.js', 'projects.js')
 		));
 	}
 

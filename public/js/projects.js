@@ -14,7 +14,9 @@ function initProjects() {
 
 	/* Projects */
 
-	$('a.project-link').on('click', function() {
+	$('a.project-link').on('click', function(e) {
+
+		e.preventDefault();
 
 		$('#show-project').modal();
 		projectsModalOpened = true;
@@ -45,17 +47,10 @@ function initProjects() {
 					$('#project-slides .slidesjs-pagination').hide();
 				}
 
-				/* add extra pixel for the vertical position of sections below Projects */
-                $('#show-project').animate({height: 'auto'}, function(){
-					extrapos = $('#show-project').height() + 200;
-					s.refresh();
-                });
-
             },
             'json'
         );
  
-        return false;
 	});
 
 	$('#show-project').on('hidden.bs.modal', function (e) {

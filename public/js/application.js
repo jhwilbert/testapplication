@@ -16,6 +16,7 @@ function initSkrollr() {
 	s = skrollr.init({
 		keyframe: function(element, name, direction) {
 			if ($(element).attr('id') == 'section-projects') getProjectsSkrollrEvents(name, direction);
+			else if ($(element).attr('id') == 'section-solutions') getSolutionsSkrollrEvents(name, direction);
 		}
 	});
 
