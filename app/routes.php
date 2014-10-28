@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', array('uses' => 'HomeController@index', 'as' => 'home'));
+Route::get('/', array('uses' => 'PageController@index', 'as' => 'home'));
+Route::get('/a-empresa', array('uses' => 'PageController@the_company', 'as' => 'the_company'));
+
 Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
 
 /* admin routes */

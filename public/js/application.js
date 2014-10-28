@@ -24,9 +24,8 @@ function initSkrollr() {
 }
 
 
-
-
 function turnMenuMouseEventsOn() {
+	setMenuPosition();
 
 	$('#main-menu ul.nav li a').on('mouseenter', function() {
 		setMenuPosition($(this));
@@ -47,7 +46,7 @@ function turnMenuMouseEventsOff() {
 function setMenuPosition($item) {
 	$('#menu_marker').stop();
 	if (!$item) {
-		$item = $('#main-menu ul.nav li a.selected');
+		$item = $('#main-menu ul.nav li a.active');
 	}
 	if ($item.length == 1) {
 		var w = $item.parent().width() + 1;
