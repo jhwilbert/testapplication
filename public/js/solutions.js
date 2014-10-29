@@ -24,7 +24,7 @@ $(document).ready(function() {
 				}
 				$('#solution-slides').slidesjs({
 					width: 780,
-					navigation: false
+					navigation: { active: true, effect: "slide"}
 				});
 				var l = data.images.length;
 				if (l > 1) {

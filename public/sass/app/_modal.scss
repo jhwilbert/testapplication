@@ -1,0 +1,101 @@
+
+.gallery-modal {
+    .modal-dialog {
+        margin-top: $menu-height + 100px;
+    }
+    .slides {
+        width: 640px;
+        margin: 0 auto;
+    }
+    .slidesjs-pagination {
+        margin: 6px auto 0;
+        list-style: none;
+        padding: 0;
+        li {
+            float: left;
+            margin: 0 1px;
+            a {
+                display: block;
+                width: 13px;
+                height: 0;
+                padding-top: 13px;
+                background-image: url(../img/pagination.png);
+                background-position: 0 0;
+                float: left;
+                overflow: hidden;
+                &.active, &:hover.active {
+                    background-position: 0 -13px;
+                }
+                &:hover {
+                    background-position: 0 -26px;
+                }
+            }
+        }
+    }
+
+    .slidesjs-navigation {
+        width: 32px;
+        height: 32px;
+        display: block;
+        @include hide-text;
+        margin-top: -260px;
+        position: absolute;
+    }
+        
+    .slidesjs-previous {
+        @include bg-norepeat("modal_prev_btn.png");
+        left: 220px;
+        @media(max-width: $screen-md-min) {
+            left: 40px;
+            z-index: 99;
+        }
+        @media(min-width: $screen-md-min) {
+            left: 80px;
+        }
+    }
+    .slidesjs-next {
+        @include bg-norepeat("modal_next_btn.png");
+        right: 220px;
+        @media(max-width: $screen-md-min) {
+            right: 40px;
+            z-index: 99;
+        }
+        @media(min-width: $screen-md-min) {
+            right: 80px;
+        }
+    }
+}
+
+
+ .modal-lg {
+    /* Small devices (tablets, 768px and up) */
+    @media(max-width: $screen-md-min) {
+        width: 700px;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media(min-width: $screen-md-min) {
+        width: 900px;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media(min-width: $screen-lg-min) {
+        width: 1170px;
+    }
+ }
+
+
+
+#show-solution {
+    .modal-content {
+        background-color: #d4d4d4;
+    }
+}
+        
+.modal-backdrop {
+    background-color: #FFFFFF;
+    &.in {
+        opacity: 0;
+    }
+}
+
