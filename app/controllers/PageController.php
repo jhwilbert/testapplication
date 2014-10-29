@@ -79,6 +79,7 @@ class PageController extends BaseController {
 		return View::make('pages.the_company.index', array(
 			'megabanners' => $megabanners,
 			'timelineEvents' => $timelineEvents,
+			'scripts' => array('vendor/jquery.slides.min.js', 'company.js')
 		));		
 	}
 

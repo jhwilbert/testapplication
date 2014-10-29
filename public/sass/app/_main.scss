@@ -51,3 +51,20 @@ section.section-gray {
     border-bottom: 5px solid #cecece;
 }
 
+/* Slide Navigation */
+
+.slidesjs-navigation {
+    width: 32px;
+    height: 32px;
+    display: block;
+    @include hide-text;
+    position: absolute;
+}
+    
+.slidesjs-previous {
+    @include bg-norepeat("modal_prev_btn.png");
+}
+.slidesjs-next {
+    @include bg-norepeat("modal_next_btn.png");
+}
+

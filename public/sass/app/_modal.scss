@@ -32,18 +32,11 @@
             }
         }
     }
-
     .slidesjs-navigation {
-        width: 32px;
-        height: 32px;
-        display: block;
-        @include hide-text;
         margin-top: -260px;
-        position: absolute;
     }
         
     .slidesjs-previous {
-        @include bg-norepeat("modal_prev_btn.png");
         left: 220px;
         @media(max-width: $screen-md-min) {
             left: 40px;
@@ -54,7 +47,6 @@
         }
     }
     .slidesjs-next {
-        @include bg-norepeat("modal_next_btn.png");
         right: 220px;
         @media(max-width: $screen-md-min) {
             right: 40px;
@@ -66,8 +58,7 @@
     }
 }
 
-
- .modal-lg {
+.modal-lg {
     /* Small devices (tablets, 768px and up) */
     @media(max-width: $screen-md-min) {
         width: 700px;
