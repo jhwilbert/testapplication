@@ -3,6 +3,7 @@
 @section('content')
 
 	@include('shared/_megabanner')
+	@include('pages/the_company/_company')
 	@include('pages/the_company/_timeline')
 	@include('shared/_contact')
 
