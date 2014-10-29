@@ -2592,16 +2592,64 @@ footer a {
   }
 }
 
-/* line 90, ../sass/app/_modal.scss */
-#show-solution .modal-content {
-  background-color: #d4d4d4;
-}
-
-/* line 95, ../sass/app/_modal.scss */
+/* line 87, ../sass/app/_modal.scss */
 .modal-backdrop {
   background-color: #FFFFFF;
 }
-/* line 97, ../sass/app/_modal.scss */
+/* line 89, ../sass/app/_modal.scss */
 .modal-backdrop.in {
   opacity: 0;
+}
+
+/* SOLUTIONS */
+/* line 5, ../sass/app/_solution.scss */
+.solutions-row .solution-image img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 10, ../sass/app/_solution.scss */
+.solutions-row h4 {
+  color: #d95a49;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  width: 200px;
+  margin: 15px auto 0;
+  min-height: 60px;
+}
+/* line 19, ../sass/app/_solution.scss */
+.solutions-row p {
+  color: rgba(135, 135, 135, 0.6);
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 30px;
+  margin: 0 0 15px;
+}
+/* line 27, ../sass/app/_solution.scss */
+.solutions-row a.solution-plus {
+  background-image: url(../img/solutions/plus-btn.gif);
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 33px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 34, ../sass/app/_solution.scss */
+.solutions-row a.solution-plus:hover {
+  background-position: center right;
+}
+
+/* line 42, ../sass/app/_solution.scss */
+#show-solution .modal-content {
+  background-color: #d4d4d4;
+}
+/* line 46, ../sass/app/_solution.scss */
+#show-solution #solution-description {
+  text-align: center;
+  margin-top: 15px;
 }

@@ -20,11 +20,16 @@ $(document).ready(function() {
 					$('#solution-slides').html('');
 				}
 				for (var i in data.images) {
-					$('#solution-slides').append('<img src="'+data.images[i].path+'">');
+					$('#solution-slides').append('<img src="'+data.images[i].path+'" title="'+data.images[i].description+'">');
 				}
 				$('#solution-slides').slidesjs({
 					width: 780,
-					navigation: { active: true, effect: "slide"}
+					navigation: { active: true, effect: "slide"},
+					callback: {
+						complete: function(number) {
+							$('#solution-description').html($('.slidesjs-container img').eq(number-1).attr('title'));
+						}
+					}
 				});
 				var l = data.images.length;
 				if (l > 1) {
@@ -32,6 +37,7 @@ $(document).ready(function() {
 				} else {
 					$('#solution-slides .slidesjs-pagination').hide();
 				}
+				$('#solution-description').html($('.slidesjs-container img').first().attr('title'));
             },
             'json'
         );
