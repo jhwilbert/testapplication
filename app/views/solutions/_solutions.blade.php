@@ -25,7 +25,15 @@
 	<div class="inner-content container">
 		
 		<h2>Soluções</h2>
-		<h3>Conheça nossos serviços</h3>
+
+		<h3>
+			@if (Route::currentRouteName() == 'home')
+				Conheça nossos serviços
+			@else
+				São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar. 
+			@endif
+		</h3>
+
 		<div class="row solutions-row">
 			<div class="col-md-4">
 				<div class="solution-image">

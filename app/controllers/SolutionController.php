@@ -2,6 +2,19 @@
 
 class SolutionController extends BaseController {
 
+
+	public function index() {
+		$megabanners = Megabanner::where('active', 1)->get();
+
+		/* make view */
+
+		return View::make('solutions.index', array(
+			'megabanners' => $megabanners,
+			'scripts' => array('solutions.js')
+		));		
+	}
+
+
 	/**
 	 * Display the specified resource.
 	 *

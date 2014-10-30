@@ -1,10 +1,13 @@
 <?php
 
-class PagesController extends BaseController {
+class HomeController extends BaseController {
 
-	public function the_company() {
+	public function index()	{
 
 		$megabanners = Megabanner::where('active', 1)->get();
+
+		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->take(3)->get();
+
 
 		$timelineEvents = array(
 			array(
@@ -24,14 +27,27 @@ class PagesController extends BaseController {
 			),
 		);
 
+		$clients = array(
+			'fundacao-carlos-chagas' => 'Fundação Carlos Chagas',
+			'usiminas' => 'Usiminas',
+			'teatro-oi-brasilia' => 'Teatro Oi Brasília',
+			'fundacao-clovis-salgado' => 'Fundação Clóvis Salgado',
+			'fundacao-bradesco' => 'Fundação Bradesco',
+			'fundacao-universa' => 'Fundação Universa',
+			'sesc' => 'SESC',
+			'apex-brasil' => 'Apex Brasil',
+		);
+
 		/* make view */
 
-		return View::make('the_company.index', array(
+		return View::make('home.index', array(
 			'megabanners' => $megabanners,
+			'projects' => $projects,
 			'timelineEvents' => $timelineEvents,
-			'scripts' => array('company.js')
-		));		
+			'clients' => $clients,
+			'scripts' => array('solutions.js', 'projects.js')
+		));
 	}
-
-
 }
+
+?>

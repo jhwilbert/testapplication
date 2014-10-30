@@ -11,7 +11,7 @@ class ProjectController extends BaseController {
 		return View::make('projects.index', array(
 			'megabanners' => $megabanners,
 			'projects' => $projects,
-			'scripts' => array('vendor/jquery.slides.min.js', 'projects.js')
+			'scripts' => array('projects.js')
 		));		
 	}
 

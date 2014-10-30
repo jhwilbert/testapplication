@@ -26,14 +26,15 @@
 
 	<div class="inner-content container">
 		
-		<h2>{{ isset($projects_title) ? $projects_title : 'Projetos' }}</h2>
-		<h3>
-			@if ( isset($projects_description) )
-				{{ $projects_description }}
-			@else
+		@if (Route::currentRouteName() == 'home')
+			<h2>Trabalhos</h2>
+			<h3>Nossos trabalhos mais recentes</h3>
+		@else
+			<h2>Projetos</h2>
+			<h3>
 				A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. Confira alguns projetos e instalações que deixam isso bem claro e mostram porque estamos no mercado há tanto tempo e continuaremos por muito mais.
-			@endif
-		</h3>
+			</h3>
+		@endif
 
 		<div class="projects row">
 			@foreach($projects as $project)
