@@ -2,6 +2,20 @@
 
 class ProjectController extends BaseController {
 
+	public function index() {
+		$megabanners = Megabanner::where('active', 1)->get();
+		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->get();
+
+		/* make view */
+
+		return View::make('projects.index', array(
+			'megabanners' => $megabanners,
+			'projects' => $projects,
+			'scripts' => array('vendor/jquery.slides.min.js', 'projects.js')
+		));		
+	}
+
+
 	/**
 	 * Display the specified resource.
 	 *

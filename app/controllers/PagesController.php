@@ -7,6 +7,8 @@ class PagesController extends BaseController {
 		$megabanners = Megabanner::where('active', 1)->get();
 
 		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->take(3)->get();
+		$projects_title = 'Trabalhos';
+		$projects_description = 'Nossos trabalhos mais recentes';
 
 		$timelineEvents = array(
 			array(
@@ -39,9 +41,11 @@ class PagesController extends BaseController {
 
 		/* make view */
 
-		return View::make('index', array(
+		return View::make('home.index', array(
 			'megabanners' => $megabanners,
 			'projects' => $projects,
+			'projects_title' => $projects_title,
+			'projects_description' => $projects_description,
 			'timelineEvents' => $timelineEvents,
 			'clients' => $clients,
 			'scripts' => array('vendor/jquery.slides.min.js', 'solutions.js', 'projects.js')

@@ -26,33 +26,34 @@
 
 	<div class="inner-content container">
 		
-		<h2>Trabalhos</h2>
-		<h3>Conheça nossos projetos mais recentes</h3>
+		<h2>{{ isset($projects_title) ? $projects_title : 'Projetos' }}</h2>
+		<h3>
+			@if ( isset($projects_description) )
+				{{ $projects_description }}
+			@else
+				A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. Confira alguns projetos e instalações que deixam isso bem claro e mostram porque estamos no mercado há tanto tempo e continuaremos por muito mais.
+			@endif
+		</h3>
 
-		<div class="projects">
+		<div class="projects row">
 			@foreach($projects as $project)
-
-				<div class="project">
-
-					<a href="{{ route('show_project', $project->id) }}" class="project-link">
-						<div class="plus-icon"></div>
-						<div class="hover"></div>
-						<div class="project-image">
-
-							@if($project_image = $project->image())
-								<img src="{{ asset($project_image->getImagePath('thumb')) }}">
-							@endif
-
-						</div>
-						<h4>{{{ $project->title }}}</h4>
-					</a>
-
+				<div class="col-md-4">
+					<div class="project">
+						<a href="{{ route('show_project', $project->id) }}" class="project-link">
+							<div class="plus-icon"></div>
+							<div class="hover"></div>
+							<div class="project-image">
+								@if($project_image = $project->image())
+									<img src="{{ asset($project_image->getImagePath('thumb')) }}">
+								@endif
+							</div>
+							<h4>{{{ $project->title }}}</h4>
+						</a>
+					</div>
 				</div>
-
 			@endforeach
 		</div>
 
-		<div class="clearfix"></div>
 	</div>
 
 </section>

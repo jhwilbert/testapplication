@@ -4,7 +4,7 @@
 		<ul class="nav">
 			<?php $crn = Route::currentRouteName(); ?>	 
 			<li>{{ link_to_route('the_company', 'A Empresa', null, array('class' => ($crn == 'the_company') ? 'active' : null )) }}</li>
-			<li><a href="#section-projects">Projetos</a></li>
+			<li>{{ link_to_route('projects', 'Projetos', null, array('class' => ($crn == 'projects') ? 'active' : null )) }}</li>
 			<li><a href="#">Soluções</a></li>
 			<li><a href="#section-clients">Clientes</a></li>
 			<li><a href="#section-contact">Contato</a></li>

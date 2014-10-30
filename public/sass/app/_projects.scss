@@ -1,0 +1,41 @@
+
+.project {
+    width: 276px;
+    a {
+        text-decoration: none;
+    }
+    .plus-icon {
+        position: absolute;
+        width: 260px;
+        height: 160px;
+        margin: 8px;
+        @include bg-norepeat("projects/plus_icon.png", center);
+        z-index: 213;
+    }
+    .hover {
+        position: absolute;
+        width: 260px;
+        height: 160px;
+        margin: 8px;
+    }
+    a:hover .hover {
+        background-color: #FF0000;
+        opacity: .5;
+    }
+}
+
+.project-image {
+    background-color: #FFFFFF;
+    padding: 8px;
+}
+.project h4 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 18px;
+}
+a#home-arrow-dn {
+    display: block;
+    width: 34px;
+    margin: 0 auto;
+}
