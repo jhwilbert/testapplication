@@ -14,6 +14,14 @@
 	<div class="inner-content">
 		<h2>Clientes</h2>
 
+		<h3>
+			@if (Route::currentRouteName() == 'home')
+				Parceiros comerciais de tradição
+			@else
+				Conheça algumas empresas e instituições que confiaram à Projesom seus projetos
+			@endif
+		</h3>
+
 		<div class="clients">
 			@foreach($clients as $client_slug => $client_name)
 				<img src="{{ asset('public/img/clients/'.$client_slug.'.gif') }}" class="client" alt="{{{$client_name}}}">

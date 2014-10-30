@@ -15,6 +15,7 @@ Route::get('/', array('uses' => 'HomeController@index', 'as' => 'home'));
 Route::get('/a-empresa', array('uses' => 'PagesController@the_company', 'as' => 'the_company'));
 Route::get('/projetos', array('uses' => 'ProjectController@index', 'as' => 'projects'));
 Route::get('/solucoes', array('uses' => 'SolutionController@index', 'as' => 'solutions'));
+Route::get('/clientes', array('uses' => 'ClientController@index', 'as' => 'clients'));
 
 Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
 Route::get('/solution/{id}', array('uses' => 'SolutionController@show', 'as' => 'show_solution'));
