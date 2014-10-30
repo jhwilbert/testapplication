@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', array('uses' => 'PageController@index', 'as' => 'home'));
-Route::get('/a-empresa', array('uses' => 'PageController@the_company', 'as' => 'the_company'));
+Route::get('/', array('uses' => 'PagesController@index', 'as' => 'home'));
+Route::get('/a-empresa', array('uses' => 'PagesController@the_company', 'as' => 'the_company'));
 
 Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
 Route::get('/solution/{id}', array('uses' => 'SolutionController@show', 'as' => 'show_solution'));

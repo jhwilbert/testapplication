@@ -1,6 +1,6 @@
 <?php
 
-class PageController extends BaseController {
+class PagesController extends BaseController {
 
 	public function index()	{
 
@@ -76,7 +76,7 @@ class PageController extends BaseController {
 
 		/* make view */
 
-		return View::make('pages.the_company.index', array(
+		return View::make('the_company.index', array(
 			'megabanners' => $megabanners,
 			'timelineEvents' => $timelineEvents,
 			'scripts' => array('vendor/jquery.slides.min.js', 'company.js')
