@@ -1,11 +1,27 @@
 
 .gallery-modal {
+    h3 {
+        color: $primary-color;
+        margin-top: 0;
+    }
     .modal-dialog {
         margin-top: $menu-height + 100px;
     }
+    .slidesjs-container {
+        max-height: 570px;
+    }
     .slides {
-        width: 640px;
-        margin: 0 auto;
+        .slidesjs-slide {
+            img {
+                @extend .img-responsive;
+                margin: 0 auto;
+            }
+            span.subtitle {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
     }
     .slidesjs-pagination {
         margin: 6px auto 0;
@@ -19,8 +35,7 @@
                 width: 13px;
                 height: 0;
                 padding-top: 13px;
-                background-image: url(../img/pagination.png);
-                background-position: 0 0;
+                @include bg-norepeat("pagination.png", 0 0);
                 float: left;
                 overflow: hidden;
                 &.active, &:hover.active {
@@ -33,27 +48,34 @@
         }
     }
     .slidesjs-navigation {
-        margin-top: -260px;
+        z-index: 10;
+        @media(max-width: $screen-md-min) {
+            margin-top: -200px;
+        }
+        @media(min-width: $screen-md-min) {
+            margin-top: -260px;
+        }
+        @media(min-width: $screen-lg-min) {
+            margin-top: -300px;
+        }        
     }
         
     .slidesjs-previous {
         left: 220px;
         @media(max-width: $screen-md-min) {
-            left: 40px;
-            z-index: 99;
+            left: 30px;
         }
         @media(min-width: $screen-md-min) {
-            left: 80px;
+            left: 30px;
         }
     }
     .slidesjs-next {
         right: 220px;
         @media(max-width: $screen-md-min) {
-            right: 40px;
-            z-index: 99;
+            right: 30px;
         }
         @media(min-width: $screen-md-min) {
-            right: 80px;
+            right: 30px;
         }
     }
 }
@@ -82,3 +104,13 @@
     }
 }
 
+.modal-header {
+    border-bottom: none;
+    .close {
+        @include bg-norepeat("close_btn.png", 0 0);
+        @include hide-text(32px, 32px);
+        opacity: 1;
+        z-index: 10;
+        position: relative;
+    }
+}

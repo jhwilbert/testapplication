@@ -25,6 +25,9 @@ function initSkrollr() {
 }
 
 
+
+/* Menu marker animation functions */
+
 function turnMenuMouseEventsOn() {
 	setMenuPosition();
 

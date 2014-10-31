@@ -54,10 +54,7 @@ section.section-gray {
 /* Slide Navigation */
 
 .slidesjs-navigation {
-    width: 32px;
-    height: 32px;
-    display: block;
-    @include hide-text;
+    @include hide-text(32px, 32px);
     position: absolute;
 }
     

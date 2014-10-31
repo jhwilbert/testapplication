@@ -29,7 +29,10 @@ $border-radius-small: 0
 		position: $position
 
 
-@mixin hide-text
+@mixin hide-text($width, $height)
 	text-indent: 100%
 	white-space: nowrap
 	overflow: hidden
+	display: block
+	width: $width
+	height: $height

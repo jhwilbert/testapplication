@@ -26,10 +26,7 @@
     }
     a.solution-plus {
         @include bg-norepeat("solutions/plus-btn.gif", center left);
-        @include hide-text;
-        width: 33px;
-        height: 35px;
-        display: block;
+        @include hide-text(33px, 35px);
         margin: 0 auto;
         &:hover {
             background-position: center right;

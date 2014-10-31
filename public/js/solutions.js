@@ -19,17 +19,14 @@ $(document).ready(function() {
 					$('#solution-slides').removeData('plugin_slidesjs');
 					$('#solution-slides').html('');
 				}
+				var img_html;
 				for (var i in data.images) {
-					$('#solution-slides').append('<img src="'+data.images[i].path+'" title="'+data.images[i].description+'">');
+					img_html = '<div><img src="'+data.images[i].path+'">';
+					img_html += '<span class="subtitle">'+data.images[i].description+'</span></div>';
+					$('#solution-slides').append(img_html);
 				}
 				$('#solution-slides').slidesjs({
-					width: 780,
-					navigation: { active: true, effect: "slide"},
-					callback: {
-						complete: function(number) {
-							$('#solution-description').html($('.slidesjs-container img').eq(number-1).attr('title'));
-						}
-					}
+					navigation: { active: true, effect: "slide"}
 				});
 				var l = data.images.length;
 				if (l > 1) {
