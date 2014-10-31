@@ -7,6 +7,6 @@
 	@include('solutions/_solutions')
 	@include('the_company/_timeline')
 	@include('clients/_clients')
-	@include('shared/_contact')
+	@include('contact/_contact')
 
 @stop

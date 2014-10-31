@@ -4,6 +4,6 @@
 
 	@include('shared/_megabanner')
 	@include('projects/_projects')
-	@include('shared/_contact')
+	@include('contact/_contact')
 
 @stop
