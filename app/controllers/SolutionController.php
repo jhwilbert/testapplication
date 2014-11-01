@@ -4,7 +4,7 @@ class SolutionController extends BaseController {
 
 
 	public function index() {
-		$megabanners = Megabanner::where('active', 1)->get();
+		$megabanners = Megabanner::where('active', 1)->where('show_in_solutions', 1)->get();
 
 		/* make view */
 

@@ -26,6 +26,8 @@ php artisan migrate:make create_megabanners_table
 
 php artisan migrate:make add_fields_to_projects_table --table=projects
 
+php artisan migrate:make add_fields_to_megabanners_table --table=megabanners
+
 # run migrations
 
 php artisan migrate

@@ -16,7 +16,7 @@ class ClientController extends BaseController {
 
 	public function index() {
 
-		$megabanners = Megabanner::where('active', 1)->get();
+		$megabanners = Megabanner::where('active', 1)->where('show_in_clients', 1)->get();
 
 		$clients = self::$clients;
 

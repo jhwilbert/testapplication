@@ -53,7 +53,10 @@
 				</label>
 			</div>
 		</div>
-	</div>					
+	</div>
+
+	<?php $areas = array(); ?>
+
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-9">
 			{{ Form::submit('Enviar', array('class' => 'btn btn-primary btn-lg')) }}

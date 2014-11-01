@@ -3,7 +3,7 @@
 class ProjectController extends BaseController {
 
 	public function index() {
-		$megabanners = Megabanner::where('active', 1)->get();
+		$megabanners = Megabanner::where('active', 1)->where('show_in_projects', 1)->get();
 		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->get();
 
 		/* make view */

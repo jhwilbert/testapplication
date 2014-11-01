@@ -4,7 +4,7 @@ class HomeController extends BaseController {
 
 	public function index()	{
 
-		$megabanners = Megabanner::where('active', 1)->get();
+		$megabanners = Megabanner::where('active', 1)->where('show_in_home', 1)->get();
 
 		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->take(3)->get();
 

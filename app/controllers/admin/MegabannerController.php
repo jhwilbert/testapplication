@@ -110,9 +110,15 @@ class MegabannerController extends AdminBaseController {
 		$file = Input::file('file');
 		
 		$megabanner->title = Input::get('title');
+		$megabanner->title_en = Input::get('title_en');
 		$megabanner->text = Input::get('text');
+		$megabanner->text_en = Input::get('text_en');
 		$megabanner->url = Input::get('url');
+		$megabanner->url_en = Input::get('url_en');
 		$megabanner->position = Input::get('position');
+		foreach (Megabanner::$areas as $area) {
+			$megabanner["show_in_$area"] = Input::get('show_in_'.$area) ? 1 : 0;
+		}
 		$megabanner->active = Input::get('active') ? 1 : 0;
 
 		if ($megabanner->exists) {

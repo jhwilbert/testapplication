@@ -107,6 +107,6 @@ return array(
 		'title' => 'Title',
 		'text' => 'Text',
 		'updated_at' => 'Updated at',
-		'url' => 'Link',
+		'url' => 'Link (en)',
 	),
 );

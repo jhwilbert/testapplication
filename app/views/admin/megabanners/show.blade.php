@@ -20,12 +20,20 @@
 			<td>{{{ $megabanner->title }}}</td>
 		</tr>
 		<tr>
+			<th>{{ Lang::get('validation.attributes.title_en') }}</th>
+			<td>{{{ $megabanner->title_en }}}</td>
+		</tr>
+		<tr>
 			<th>{{ Lang::get('validation.attributes.image') }}</th>
 			<td><img src="{{ asset($megabanner->getImagePath('big')) }}"></td>
 		</tr>
 		<tr>
 			<th>{{ Lang::get('validation.attributes.url') }}</th>
 			<td>{{{ $megabanner->url }}}</td>
+		</tr>
+		<tr>
+			<th>{{ Lang::get('validation.attributes.url_en') }}</th>
+			<td>{{{ $megabanner->url_en }}}</td>
 		</tr>
 		<tr>
 			<th>{{ Lang::get('validation.attributes.position') }}</th>
@@ -35,6 +43,16 @@
 			<th>{{ Lang::get('validation.attributes.text') }}</th>
 			<td>{{{ $megabanner->text }}}</td>
 		</tr>
+		<tr>
+			<th>{{ Lang::get('validation.attributes.text_en') }}</th>
+			<td>{{{ $megabanner->text_en }}}</td>
+		</tr>
+		@foreach (Megabanner::$areas as $area)
+			<tr>
+				<th>Exibir em {{ $area }}</th>
+				<td>{{{ $megabanner["show_in_$area"] }}}</td>
+			</tr>
+		@endforeach
 		<tr>
 			<th>{{ Lang::get('validation.attributes.active') }}</th>
 			<td>{{{ $megabanner->active }}}</td>
