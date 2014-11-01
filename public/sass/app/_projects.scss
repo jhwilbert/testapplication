@@ -39,3 +39,16 @@ a#home-arrow-dn {
     width: 34px;
     margin: 0 auto;
 }
+
+/* modal projects */
+#show-project {
+    .slides {
+        width: 640px;
+        margin: 0 auto;
+    }
+    h3 {
+        color: $texts-color;
+        text-align: left;
+        margin: 25px 0 0;
+    }
+}

@@ -16,6 +16,7 @@ Route::get('/a-empresa', array('uses' => 'PagesController@the_company', 'as' => 
 Route::get('/projetos', array('uses' => 'ProjectController@index', 'as' => 'projects'));
 Route::get('/solucoes', array('uses' => 'SolutionController@index', 'as' => 'solutions'));
 Route::get('/clientes', array('uses' => 'ClientController@index', 'as' => 'clients'));
+Route::get('/contato', array('uses' => 'PagesController@contact', 'as' => 'contact'));
 
 Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
 Route::get('/solution/{id}', array('uses' => 'SolutionController@show', 'as' => 'show_solution'));

@@ -11,7 +11,7 @@
 			<li>{{ link_to_route('projects', 'Projetos', null, array('class' => ($crn == 'projects') ? 'active' : null )) }}</li>
 			<li>{{ link_to_route('solutions', 'Soluções', null, array('class' => ($crn == 'solutions') ? 'active' : null )) }}</li>
 			<li>{{ link_to_route('clients', 'Clientes', null, array('class' => ($crn == 'clients') ? 'active' : null )) }}</li>
-			<li><a href="#section-contact">Contato</a></li>
+			<li>{{ link_to_route('contact', 'Contato', null, array('class' => ($crn == 'contact') ? 'active' : null )) }}</li>
 			<li class="newsfeed"><a href="#"><img src="{{ asset('public/img/nav_newsfeed_ico.png') }}"> Newsfeed</a></li>
 		</ul>
 		<div id="menu_marker"></div>
