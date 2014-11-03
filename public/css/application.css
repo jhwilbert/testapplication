@@ -2664,8 +2664,14 @@ a#home-arrow-dn {
   right: 10px;
 }
 
+/* line 28, ../sass/app/_company.scss */
+#structure_slides {
+  height: 300px;
+  overflow: hidden;
+}
+
 /* TIMELINE */
-/* line 33, ../sass/app/_company.scss */
+/* line 37, ../sass/app/_company.scss */
 ul.timeline {
   list-style: none;
   background-image: url(../img/timeline/timeline_line.gif);
@@ -2676,49 +2682,49 @@ ul.timeline {
   padding: 0;
   position: relative !important;
 }
-/* line 42, ../sass/app/_company.scss */
+/* line 46, ../sass/app/_company.scss */
 ul.timeline li {
   background-image: url(../img/timeline/bullet.png);
   background-repeat: no-repeat;
   background-position: center 35px;
   height: 100px;
 }
-/* line 45, ../sass/app/_company.scss */
+/* line 49, ../sass/app/_company.scss */
 ul.timeline li div.year {
   width: 445px;
 }
-/* line 48, ../sass/app/_company.scss */
+/* line 52, ../sass/app/_company.scss */
 ul.timeline li.year-left div.year {
   text-align: right;
   float: left;
 }
-/* line 52, ../sass/app/_company.scss */
+/* line 56, ../sass/app/_company.scss */
 ul.timeline li.year-right div.year {
   text-align: left;
   float: right;
 }
-/* line 57, ../sass/app/_company.scss */
+/* line 61, ../sass/app/_company.scss */
 ul.timeline li div.year span {
   display: block;
   padding: 31px 30px 0;
   font-size: 18px;
 }
-/* line 62, ../sass/app/_company.scss */
+/* line 66, ../sass/app/_company.scss */
 ul.timeline li div.description {
   position: absolute !important;
   overflow: hidden;
 }
-/* line 67, ../sass/app/_company.scss */
+/* line 71, ../sass/app/_company.scss */
 ul.timeline li.year-left div.description {
   left: 50%;
   margin-left: 20px;
 }
-/* line 71, ../sass/app/_company.scss */
+/* line 75, ../sass/app/_company.scss */
 ul.timeline li.year-right div.description {
   right: 50%;
   margin-right: 20px;
 }
-/* line 75, ../sass/app/_company.scss */
+/* line 79, ../sass/app/_company.scss */
 ul.timeline li div.description div.description-container {
   background-color: #FFFFFF;
   width: 335px;
@@ -2728,15 +2734,15 @@ ul.timeline li div.description div.description-container {
   font-size: 16px;
   color: #aeaeae;
 }
-/* line 84, ../sass/app/_company.scss */
+/* line 88, ../sass/app/_company.scss */
 ul.timeline li.year-left div.description-container {
   float: left;
 }
-/* line 87, ../sass/app/_company.scss */
+/* line 91, ../sass/app/_company.scss */
 ul.timeline li.year-right div.description-container {
   float: right;
 }
-/* line 90, ../sass/app/_company.scss */
+/* line 94, ../sass/app/_company.scss */
 ul.timeline li.year-left div.d-arrow {
   background-image: url(../img/timeline/arrow_left.png);
   background-repeat: no-repeat;
@@ -2746,7 +2752,7 @@ ul.timeline li.year-left div.d-arrow {
   margin-top: 30px;
   width: 16px;
 }
-/* line 97, ../sass/app/_company.scss */
+/* line 101, ../sass/app/_company.scss */
 ul.timeline li.year-right div.d-arrow {
   background-image: url(../img/timeline/arrow_right.png);
   background-repeat: no-repeat;

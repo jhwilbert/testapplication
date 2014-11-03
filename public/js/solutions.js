@@ -26,6 +26,7 @@ $(document).ready(function() {
 					$('#solution-slides').append(img_html);
 				}
 				$('#solution-slides').slidesjs({
+					height: '300px',
 					navigation: { active: true, effect: "slide"}
 				});
 				var l = data.images.length;

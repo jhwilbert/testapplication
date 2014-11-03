@@ -35,6 +35,9 @@ function callOnResize() {
 		cch = $this.height();
 		mt = Math.max(0, ((wh - cch) / 2) - 200);
 		$this.css('margin-top', mt);
+		if ($this.attr('id') == 'structure_slides') {
+			$this.children('.slidesjs-navigation').css('margin-top', mt/2);
+		}
 	});
 }
 
