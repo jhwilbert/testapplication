@@ -2193,7 +2193,7 @@ section.section-gray {
 /* line 13, ../sass/app/_app.sass */
 #main-menu ul.nav {
   border-left: 2px solid #b24538;
-  width: 628px;
+  width: 640px;
   margin: 0 auto;
   height: 40px;
   position: relative;
@@ -2277,7 +2277,7 @@ section.section-gray {
 }
 /* line 86, ../sass/app/_app.sass */
 .solutions-row p {
-  color: #878787;
+  color: rgba(135, 135, 135, 0.6);
   text-align: center;
   font-size: 14px;
   line-height: 20px;

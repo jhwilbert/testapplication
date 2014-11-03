@@ -1,7 +1,6 @@
 <section class="section megabanner" id="section-megabanner">
 
 	<?php
-
 		global $skPos;
 		$skPos = 0;
 		
@@ -32,7 +31,7 @@
 
 			<div class="megabanner-image" {{$skData}}>
 				<img src="{{ asset($megabanner->getImagePath('big')) }}">
-				<h3>{{ $megabanner->title }}</h3>
+				<h3>{{ $megabanner["title$lpr"] }}</h3>
 			</div>
 
 			<?php $skPos += $skStart + $slHeight; $i++; ?>
