@@ -14,7 +14,7 @@
 
 	<div class="inner-content container">
 		
-		<h2>Contato</h2>
+		<h2>{{Lang::get('messages.contact.title')}}</h2>
 
 		<div class="row contact">
 			<div class="col-md-6">

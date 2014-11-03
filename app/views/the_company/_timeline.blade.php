@@ -21,8 +21,8 @@
 <section class="section section-gray" id="section-timeline"{{ $skData }}>
 
 	<div class="inner-content">
-		<h2>Linha do tempo</h2>
-		<h3>Experiência de X anos aliada a muita pesquisa e trabalho</h3>
+		<h2>{{Lang::get('messages.timeline.title')}}</h2>
+		<h3>{{Lang::get('messages.timeline.intro')}}</h3>
 
 		<ul class="timeline skrollable">
 			<?php $bull = 'background-image:!url(public/img/timeline/bullet.png)'; ?>

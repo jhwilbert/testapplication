@@ -12,13 +12,13 @@
 <section class="section skrollable" id="section-clients"{{ $skData }}>
 
 	<div class="inner-content">
-		<h2>Clientes</h2>
+		<h2>{{Lang::get('messages.clients.title')}}</h2>
 
 		<h3>
 			@if (Route::currentRouteName() == 'home')
-				Parceiros comerciais de tradição
+				{{Lang::get('messages.home.clients_intro')}}
 			@else
-				Conheça algumas empresas e instituições que confiaram à Projesom seus projetos
+				{{Lang::get('messages.clients.intro')}}
 			@endif
 		</h3>
 

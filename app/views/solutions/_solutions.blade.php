@@ -24,39 +24,39 @@
 
 	<div class="inner-content container">
 		
-		<h2>Soluções</h2>
+		<h2>{{Lang::get('messages.solutions.title')}}</h2>
 
 		<h3>
 			@if (Route::currentRouteName() == 'home')
-				Conheça nossos serviços
+				{{Lang::get('messages.home.intro_solutions')}}
 			@else
-				São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar. 
+				{{Lang::get('messages.solutions.intro')}}
 			@endif
 		</h3>
 
 		<div class="row solutions-row">
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/engenharia.gif') }}" alt="Engenharia de áudio e vídeo">
+					<img src="{{ asset('public/img/solutions/engenharia.gif') }}" alt="{{Lang::get('messages.solutions.item1.title')}}">
 				</div>
-				<h4>Engenharia de áudio e vídeo</h4>
-				<p>Salas de cinema, auditórios e plenários, equipamentos de tradução simultânea, venda e importação de equipamentos, instalação, manutenção e assistência técnica</p>
-				<a href="{{ route('show_solution', 1) }}" class="solution-plus">+</a>
+				<h4>{{Lang::get('messages.solutions.item1.title')}}</h4>
+				<p>{{Lang::get('messages.solutions.item1.text')}}</p>
+				<a href="{{ route('show_solution', array(1, App::getLocale())) }}" class="solution-plus">+</a>
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/conectividade.gif') }}" alt="Conectividade em tempo real">
+					<img src="{{ asset('public/img/solutions/conectividade.gif') }}" alt="{{Lang::get('messages.solutions.item2.title')}}">
 				</div>
-				<h4>Conectividade em tempo real</h4>
-				<p>Projeto e montagem de salas de videoconferência profissionais, sistemas de tradução simultânea, venda e importação de equipamentos, instalação, manutenção e assistência técnica</p>
+				<h4>{{Lang::get('messages.solutions.item2.title')}}</h4>
+				<p>{{Lang::get('messages.solutions.item2.text')}}</p>
 				<a href="#" class="solution-plus">+</a>
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="Estúdios de rádio e TV">
+					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
-				<h4>Estúdios de rádio e TV</h4>
-				<p>Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica</p>
+				<h4>{{Lang::get('messages.solutions.item3.title')}}</h4>
+				<p>{{Lang::get('messages.solutions.item3.text')}}</p>
 				<a href="#" class="solution-plus">+</a>
 			</div>
 		</div>

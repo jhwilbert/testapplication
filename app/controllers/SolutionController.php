@@ -21,11 +21,11 @@ class SolutionController extends BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id) {
+	public function show($id, $lang) {
 
 		if ($id == '1') {
 			$result = array(
-				'title' => 'Engenharia de áudio e vídeo',
+				'title' => $lang == 'en' ? 'Audio and Video' : 'Engenharia de áudio e vídeo',
 				'images' => array(
 					array('path' => 'public/img/solutions/image1.jpg', 'description' => 'Reforma do teatro SESC Ceilândia (DF)'),
 					array('path' => 'public/img/solutions/image1.jpg', 'description' => 'teste'),
