@@ -19,21 +19,18 @@ Route::get('/clientes', array('uses' => 'ClientController@index', 'as' => 'clien
 Route::get('/contato', array('uses' => 'PagesController@contact', 'as' => 'contact'));
 Route::get('/newsfeed', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed'));
 
-Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
-Route::get('/solution/{id}', array('uses' => 'SolutionController@show', 'as' => 'show_solution'));
+Route::get('/project/{id}/{lang}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
+Route::get('/solution/{id}/{lang}', array('uses' => 'SolutionController@show', 'as' => 'show_solution'));
 
 /* english routes */
 
 Route::get('/en', array('uses' => 'HomeController@index_en', 'as' => 'home_en'));
-Route::get('/the-company', array('uses' => 'PagesController@the_company', 'as' => 'the_company_en'));
-Route::get('/projects', array('uses' => 'ProjectController@index', 'as' => 'projects_en'));
-Route::get('/solutions', array('uses' => 'SolutionController@index', 'as' => 'solutions_en'));
-Route::get('/clients', array('uses' => 'ClientController@index', 'as' => 'clients_en'));
-Route::get('/contact', array('uses' => 'PagesController@contact', 'as' => 'contact_en'));
-Route::get('/newsfeed-en', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed_en'));
-
-Route::get('/project/{id}', array('uses' => 'ProjectController@show', 'as' => 'show_project_en'));
-Route::get('/solution/{id}', array('uses' => 'SolutionController@show', 'as' => 'show_solution_en'));
+Route::get('/en/the-company', array('uses' => 'PagesController@the_company', 'as' => 'the_company_en'));
+Route::get('/en/projects', array('uses' => 'ProjectController@index', 'as' => 'projects_en'));
+Route::get('/en/solutions', array('uses' => 'SolutionController@index', 'as' => 'solutions_en'));
+Route::get('/en/clients', array('uses' => 'ClientController@index', 'as' => 'clients_en'));
+Route::get('/en/contact', array('uses' => 'PagesController@contact', 'as' => 'contact_en'));
+Route::get('/en/newsfeed-en', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed_en'));
 
 /* admin routes */
 

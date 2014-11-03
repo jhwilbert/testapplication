@@ -22,7 +22,10 @@ class ProjectController extends BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id) {
+	public function show($id, $lang = 'pt') {
+
+		App::setLocale($lang);
+		$lpr = ($lang == 'pt') ? '' : "_$lang";
 
 		$project = Project::findOrFail($id);
 		$project_images = $project->projectImages()->orderby('position')->get();
@@ -31,9 +34,9 @@ class ProjectController extends BaseController {
 			array_push($image_paths, $project_image->getImagePath('medium'));
 		}
 		$result = array(
-			'title' => $project->title,
-			'description' => $project->description,
-			'technology' => $project->technology,
+			'title' => $project["title$lpr"],
+			'description' => $project["description$lpr"],
+			'technology' => $project["technology$lpr"],
 			'image_paths' => $image_paths
 		);
 		return Response::json( $result );

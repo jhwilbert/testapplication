@@ -27,20 +27,18 @@
 	<div class="inner-content container">
 		
 		@if (Route::currentRouteName() == 'home')
-			<h2>Trabalhos</h2>
-			<h3>Nossos trabalhos mais recentes</h3>
+			<h2>{{Lang::get('messages.home.title_projects')}}</h2>
+			<h3>{{Lang::get('messages.home.intro_projects')}}</h3>
 		@else
-			<h2>Projetos</h2>
-			<h3>
-				A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. Confira alguns projetos e instalações que deixam isso bem claro e mostram porque estamos no mercado há tanto tempo e continuaremos por muito mais.
-			</h3>
+			<h2>{{Lang::get('messages.projects.title')}}</h2>
+			<h3>{{Lang::get('messages.projects.intro')}}</h3>
 		@endif
 
 		<div class="projects row">
 			@foreach($projects as $project)
 				<div class="col-md-4">
 					<div class="project">
-						<a href="{{ route('show_project', $project->id) }}" class="project-link">
+						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link">
 							<div class="plus-icon"></div>
 							<div class="hover"></div>
 							<div class="project-image">
@@ -48,7 +46,7 @@
 									<img src="{{ asset($project_image->getImagePath('thumb')) }}">
 								@endif
 							</div>
-							<h4>{{{ $project->title }}}</h4>
+							<h4>{{{ $project["title$lpr"] }}}</h4>
 						</a>
 					</div>
 				</div>
