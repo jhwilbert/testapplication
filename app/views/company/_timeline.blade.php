@@ -32,7 +32,7 @@
 					<div class="description" data-{{{ $scrollpos }}}="height[cubic]:0%;" data-{{{ $scrollpos + $qt }}}="height:100%" data-{{{ $scrollpos + ($ps - 1)*$qt }}}="height[outCubic]:100%;" data-{{{ $scrollpos + $ps*$qt }}}="height:0%;">
 						<div class="d-arrow"></div>
 						<div class="description-container">
-							{{{ $event['description'] }}}
+							{{{ $event["description$lpr"] }}}
 						</div>
 					</div>
 				</li>

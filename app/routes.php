@@ -12,7 +12,7 @@
 */
 
 Route::get('/', array('uses' => 'HomeController@index', 'as' => 'home'));
-Route::get('/a-empresa', array('uses' => 'PagesController@the_company', 'as' => 'the_company'));
+Route::get('/a-empresa', array('uses' => 'CompanyController@index', 'as' => 'company'));
 Route::get('/projetos', array('uses' => 'ProjectController@index', 'as' => 'projects'));
 Route::get('/solucoes', array('uses' => 'SolutionController@index', 'as' => 'solutions'));
 Route::get('/clientes', array('uses' => 'ClientController@index', 'as' => 'clients'));
@@ -24,8 +24,8 @@ Route::get('/solution/{id}/{lang}', array('uses' => 'SolutionController@show', '
 
 /* english routes */
 
-Route::get('/en', array('uses' => 'HomeController@index_en', 'as' => 'home_en'));
-Route::get('/en/the-company', array('uses' => 'PagesController@the_company', 'as' => 'the_company_en'));
+Route::get('/en', array('uses' => 'HomeController@index', 'as' => 'home_en'));
+Route::get('/en/the-company', array('uses' => 'CompanyController@index', 'as' => 'company_en'));
 Route::get('/en/projects', array('uses' => 'ProjectController@index', 'as' => 'projects_en'));
 Route::get('/en/solutions', array('uses' => 'SolutionController@index', 'as' => 'solutions_en'));
 Route::get('/en/clients', array('uses' => 'ClientController@index', 'as' => 'clients_en'));

@@ -6,5 +6,5 @@
 ?>
 
 <footer id="section-footer" class="skrollable" {{$sd_footer}}>
-	<a href="#section-megabanner">Back to Top</a>
+	<a href="#section-megabanner">{{Lang::get('messages.back_to_top')}}</a>
 </footer>

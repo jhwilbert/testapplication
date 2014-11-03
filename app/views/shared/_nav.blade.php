@@ -7,7 +7,7 @@
 	<a class="logo" href="{{ $home_url }}" id="logo">{{ HTML::image('public/img/logo.png') }}</a>
 	<div class="menu-container">
 		<ul class="nav">
-			<li>{{ link_to_route("the_company$lpr", Lang::get('messages.nav.the_company'), null, array('class' => ($crn == 'the_company') ? 'active' : null )) }}</li>
+			<li>{{ link_to_route("company$lpr", Lang::get('messages.nav.company'), null, array('class' => ($crn == 'company') ? 'active' : null )) }}</li>
 			<li>{{ link_to_route("projects$lpr", Lang::get('messages.nav.projects'), null, array('class' => ($crn == 'projects') ? 'active' : null )) }}</li>
 			<li>{{ link_to_route("solutions$lpr", Lang::get('messages.nav.solutions'), null, array('class' => ($crn == 'solutions') ? 'active' : null )) }}</li>
 			<li>{{ link_to_route("clients$lpr", Lang::get('messages.nav.clients'), null, array('class' => ($crn == 'clients') ? 'active' : null )) }}</li>

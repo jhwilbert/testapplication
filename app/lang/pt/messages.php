@@ -2,7 +2,7 @@
 
 return array(
 	'nav' => array(
-		'the_company' => 'A Empresa',
+		'company' => 'A Empresa',
 		'projects' => 'Projetos',
 		'solutions' => 'Soluções',
 		'clients' => 'Clientes',
@@ -45,6 +45,13 @@ return array(
 	'contact' => array(
 		'title' => 'Contato',
 	),
+	'company' => array(
+		'title' => 'A Empresa',
+	),
+	'structure' => array(
+		'title' => 'Estrutura',
+	),	
+	'back_to_top' => 'Voltar para o topo',
 
 );
 

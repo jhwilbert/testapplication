@@ -2,7 +2,7 @@
 
 return array(
 	'nav' => array(
-		'the_company' => 'The Company',
+		'company' => 'The Company',
 		'projects' => 'Projects',
 		'solutions' => 'Solutions',
 		'clients' => 'Clients',
@@ -45,6 +45,13 @@ return array(
 	'contact' => array(
 		'title' => 'Contact',
 	),
+	'company' => array(
+		'title' => 'The Company',
+	),
+	'structure' => array(
+		'title' => 'Structure',
+	),
+	'back_to_top' => 'Back to top',
 
 );
 
