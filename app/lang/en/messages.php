@@ -16,7 +16,7 @@ return array(
 	),
 	'projects' => array(
 		'title' => 'Projects',
-		'intro' => 'A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. Confira alguns projetos e instalações que deixam isso bem claro e mostram porque estamos no mercado há tanto tempo e continuaremos por muito mais.',
+		'intro' => '[en] A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. Confira alguns projetos e instalações que deixam isso bem claro e mostram porque estamos no mercado há tanto tempo e continuaremos por muito mais.',
 	),
 	'solutions' => array(
 		'title' => 'Solutions',

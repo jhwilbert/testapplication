@@ -3,6 +3,14 @@
 class ProjectController extends BaseController {
 
 	public function index() {
+
+		if (Route::currentRouteName() == 'projects_en') {
+			App::setLocale('en');
+			$lpr = '_en';
+		} else {
+			$lpr = '';
+		}
+
 		$megabanners = Megabanner::where('active', 1)->where('show_in_projects', 1)->get();
 		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->get();
 
@@ -11,6 +19,7 @@ class ProjectController extends BaseController {
 		return View::make('projects.index', array(
 			'megabanners' => $megabanners,
 			'projects' => $projects,
+			'lpr' => $lpr,
 			'scripts' => array('projects.js')
 		));		
 	}
@@ -30,8 +39,9 @@ class ProjectController extends BaseController {
 		$project = Project::findOrFail($id);
 		$project_images = $project->projectImages()->orderby('position')->get();
 		$image_paths = array();
+		$root_url = route('home');
 		foreach ($project_images as $project_image) {
-			array_push($image_paths, $project_image->getImagePath('medium'));
+			array_push($image_paths, $root_url.'/'.$project_image->getImagePath('medium'));
 		}
 		$result = array(
 			'title' => $project["title$lpr"],
