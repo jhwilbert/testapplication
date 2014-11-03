@@ -16,7 +16,7 @@ Route::get('/a-empresa', array('uses' => 'CompanyController@index', 'as' => 'com
 Route::get('/projetos', array('uses' => 'ProjectController@index', 'as' => 'projects'));
 Route::get('/solucoes', array('uses' => 'SolutionController@index', 'as' => 'solutions'));
 Route::get('/clientes', array('uses' => 'ClientController@index', 'as' => 'clients'));
-Route::get('/contato', array('uses' => 'PagesController@contact', 'as' => 'contact'));
+Route::get('/contato', array('uses' => 'ContactController@index', 'as' => 'contact'));
 Route::get('/newsfeed', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed'));
 
 Route::get('/project/{id}/{lang}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
@@ -29,7 +29,7 @@ Route::get('/en/the-company', array('uses' => 'CompanyController@index', 'as' =>
 Route::get('/en/projects', array('uses' => 'ProjectController@index', 'as' => 'projects_en'));
 Route::get('/en/solutions', array('uses' => 'SolutionController@index', 'as' => 'solutions_en'));
 Route::get('/en/clients', array('uses' => 'ClientController@index', 'as' => 'clients_en'));
-Route::get('/en/contact', array('uses' => 'PagesController@contact', 'as' => 'contact_en'));
+Route::get('/en/contact', array('uses' => 'ContactController@index', 'as' => 'contact_en'));
 Route::get('/en/newsfeed-en', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed_en'));
 
 /* admin routes */

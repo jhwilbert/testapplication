@@ -16,6 +16,14 @@ class ClientController extends BaseController {
 
 	public function index() {
 
+		if (Route::currentRouteName() == 'clients_en') {
+			App::setLocale('en');
+			$lpr = '_en';
+		} else {
+			$lpr = '';
+		}
+
+
 		$megabanners = Megabanner::where('active', 1)->where('show_in_clients', 1)->get();
 
 		$clients = self::$clients;
@@ -25,6 +33,7 @@ class ClientController extends BaseController {
 		return View::make('clients.index', array(
 			'megabanners' => $megabanners,
 			'clients' => $clients,
+			'lpr' => $lpr,
 		));		
 	}
 }
