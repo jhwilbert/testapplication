@@ -1,16 +1,10 @@
 var s;
 
 $(document).ready(function() {
-
-
 	initSkrollr();
-
-
+	initWindowResize();
 	turnMenuMouseEventsOn();
-
 });
-
-
 
 function initSkrollr() {
 	s = skrollr.init({
@@ -21,9 +15,28 @@ function initSkrollr() {
 	});
 
 	skrollr.menu.init(s);
-
 }
 
+
+/* manage window resize actions */
+
+function initWindowResize() {
+	$(window).on('resize', function() {
+		callOnResize();
+	});
+	callOnResize();
+}
+
+function callOnResize() {
+	var wh = $(window).height();
+	var $this, cch, mt; 
+	$('.core-contents').each(function(){
+		$this = $(this);
+		cch = $this.height();
+		mt = Math.max(0, ((wh - cch) / 2) - 200);
+		$this.css('margin-top', mt);
+	});
+}
 
 
 /* Menu marker animation functions */

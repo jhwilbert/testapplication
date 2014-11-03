@@ -2277,7 +2277,7 @@ section.section-gray {
 }
 /* line 86, ../sass/app/_app.sass */
 .solutions-row p {
-  color: rgba(135, 135, 135, 0.6);
+  color: #878787;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
@@ -2302,141 +2302,51 @@ section.section-gray {
   background-position: center right;
 }
 
-/* TIMELINE */
-/* line 104, ../sass/app/_app.sass */
-ul.timeline {
-  list-style: none;
-  background-image: url(../img/timeline/timeline_line.gif);
-  background-repeat: repeat-y;
-  background-position: center;
-  width: 890px;
-  margin: 0 auto;
-  padding: 0;
-}
-/* line 112, ../sass/app/_app.sass */
-ul.timeline li {
-  background-image: url(../img/timeline/bullet.png);
-  background-repeat: no-repeat;
-  background-position: center 35px;
-  height: 100px;
-}
-/* line 117, ../sass/app/_app.sass */
-ul.timeline li div.year {
-  width: 445px;
-}
-/* line 119, ../sass/app/_app.sass */
-ul.timeline li.year-left div.year {
-  text-align: right;
-  float: left;
-}
-/* line 122, ../sass/app/_app.sass */
-ul.timeline li.year-right div.year {
-  text-align: left;
-  float: right;
-}
-/* line 126, ../sass/app/_app.sass */
-ul.timeline li div.year span {
-  display: block;
-  padding: 31px 30px 0;
-  font-size: 18px;
-}
-/* line 130, ../sass/app/_app.sass */
-ul.timeline li div.description {
-  position: absolute !important;
-  overflow: hidden;
-}
-/* line 133, ../sass/app/_app.sass */
-ul.timeline li.year-left div.description {
-  left: 50%;
-  margin-left: 20px;
-}
-/* line 136, ../sass/app/_app.sass */
-ul.timeline li.year-right div.description {
-  right: 50%;
-  margin-right: 20px;
-}
-/* line 139, ../sass/app/_app.sass */
-ul.timeline li div.description div.description-container {
-  background-color: white;
-  width: 335px;
-  padding: 20px 35px;
-  border-bottom: 3px solid #b2b2b2;
-  text-align: left;
-  font-size: 16px;
-  color: #aeaeae;
-}
-/* line 147, ../sass/app/_app.sass */
-ul.timeline li.year-left div.description-container {
-  float: left;
-}
-/* line 149, ../sass/app/_app.sass */
-ul.timeline li.year-right div.description-container {
-  float: right;
-}
-/* line 151, ../sass/app/_app.sass */
-ul.timeline li.year-left div.d-arrow {
-  background-image: url("../img/timeline/arrow_left.png");
-  background-repeat: no-repeat;
-  float: left;
-  height: 29px;
-  margin-top: 30px;
-  width: 16px;
-}
-/* line 158, ../sass/app/_app.sass */
-ul.timeline li.year-right div.d-arrow {
-  background-image: url("../img/timeline/arrow_right.png");
-  background-repeat: no-repeat;
-  float: right;
-  height: 29px;
-  margin-top: 30px;
-  width: 16px;
-}
-
 /* CLIENTS */
-/* line 172, ../sass/app/_app.sass */
+/* line 105, ../sass/app/_app.sass */
 section#section-clients div.clients {
   width: 790px;
   margin: 20px auto 0;
 }
-/* line 175, ../sass/app/_app.sass */
+/* line 108, ../sass/app/_app.sass */
 section#section-clients img.client {
   margin: 25px 0;
 }
-/* line 177, ../sass/app/_app.sass */
+/* line 110, ../sass/app/_app.sass */
 section#section-timeline h2 {
   width: 250px;
 }
 
 /* CONTACT */
-/* line 184, ../sass/app/_app.sass */
+/* line 117, ../sass/app/_app.sass */
 div.contact div.col-md-6 {
   padding: 30px 0 30px 30px;
   margin-top: 30px;
 }
-/* line 187, ../sass/app/_app.sass */
+/* line 120, ../sass/app/_app.sass */
 div.contact p {
   margin-bottom: 35px;
   font-size: 21px;
   margin-top: 10px;
 }
-/* line 191, ../sass/app/_app.sass */
+/* line 124, ../sass/app/_app.sass */
 div.contact p a {
   text-decoration: none;
 }
-/* line 193, ../sass/app/_app.sass */
+/* line 126, ../sass/app/_app.sass */
 div.contact p a:hover {
   text-decoration: underline;
 }
 
 /* FOOTER */
-/* line 199, ../sass/app/_app.sass */
+/* line 132, ../sass/app/_app.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 204, ../sass/app/_app.sass */
+/* line 137, ../sass/app/_app.sass */
 footer a {
   color: white;
   display: block;
@@ -2752,4 +2662,97 @@ a#home-arrow-dn {
 /* line 22, ../sass/app/_company.scss */
 .inner-content .structure .slidesjs-next {
   right: 10px;
+}
+
+/* TIMELINE */
+/* line 33, ../sass/app/_company.scss */
+ul.timeline {
+  list-style: none;
+  background-image: url(../img/timeline/timeline_line.gif);
+  background-repeat: repeat-y;
+  background-position: center;
+  width: 890px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative !important;
+}
+/* line 42, ../sass/app/_company.scss */
+ul.timeline li {
+  background-image: url(../img/timeline/bullet.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  height: 100px;
+}
+/* line 45, ../sass/app/_company.scss */
+ul.timeline li div.year {
+  width: 445px;
+}
+/* line 48, ../sass/app/_company.scss */
+ul.timeline li.year-left div.year {
+  text-align: right;
+  float: left;
+}
+/* line 52, ../sass/app/_company.scss */
+ul.timeline li.year-right div.year {
+  text-align: left;
+  float: right;
+}
+/* line 57, ../sass/app/_company.scss */
+ul.timeline li div.year span {
+  display: block;
+  padding: 31px 30px 0;
+  font-size: 18px;
+}
+/* line 62, ../sass/app/_company.scss */
+ul.timeline li div.description {
+  position: absolute !important;
+  overflow: hidden;
+}
+/* line 67, ../sass/app/_company.scss */
+ul.timeline li.year-left div.description {
+  left: 50%;
+  margin-left: 20px;
+}
+/* line 71, ../sass/app/_company.scss */
+ul.timeline li.year-right div.description {
+  right: 50%;
+  margin-right: 20px;
+}
+/* line 75, ../sass/app/_company.scss */
+ul.timeline li div.description div.description-container {
+  background-color: #FFFFFF;
+  width: 335px;
+  padding: 20px 35px;
+  border-bottom: 3px solid #b2b2b2;
+  text-align: left;
+  font-size: 16px;
+  color: #aeaeae;
+}
+/* line 84, ../sass/app/_company.scss */
+ul.timeline li.year-left div.description-container {
+  float: left;
+}
+/* line 87, ../sass/app/_company.scss */
+ul.timeline li.year-right div.description-container {
+  float: right;
+}
+/* line 90, ../sass/app/_company.scss */
+ul.timeline li.year-left div.d-arrow {
+  background-image: url(../img/timeline/arrow_left.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  float: left;
+  height: 29px;
+  margin-top: 30px;
+  width: 16px;
+}
+/* line 97, ../sass/app/_company.scss */
+ul.timeline li.year-right div.d-arrow {
+  background-image: url(../img/timeline/arrow_right.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  float: right;
+  height: 29px;
+  margin-top: 30px;
+  width: 16px;
 }

@@ -14,7 +14,7 @@
 	<div class="inner-content container">
 		<h2>{{Lang::get('messages.company.title')}}</h2>
 
-		<div class="row company">
+		<div class="row company core-contents">
 
 			<div class="col-md-6">
 				@if (App::getLocale() == 'en')

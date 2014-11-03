@@ -23,7 +23,6 @@
 	<div class="inner-content">
 		<h2>{{Lang::get('messages.timeline.title')}}</h2>
 		<h3>{{Lang::get('messages.timeline.intro')}}</h3>
-
 		<ul class="timeline skrollable">
 			<?php $bull = 'background-image:!url(public/img/timeline/bullet.png)'; ?>
 			@foreach($timelineEvents as $event)
