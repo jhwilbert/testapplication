@@ -44,7 +44,7 @@ ul.nav {
     }
     ul.nav {
         border-left: 2px solid $secondary-color;
-        width: 640px;
+        width: 642px;
         margin: 0 auto;
         height: 40px;
         position: relative;
@@ -133,4 +133,35 @@ section.section-gray {
 .slidesjs-next {
     @include bg-norepeat("modal_next_btn.png");
 }
+
+
+.slidesjs-pagination {
+    margin: 6px auto 0;
+    list-style: none;
+    padding: 0;
+    li {
+        float: left;
+        margin: 0 1px;
+        a {
+            display: block;
+            width: 13px;
+            height: 0;
+            padding-top: 13px;
+            @include bg-norepeat("pagination.png", 0 0);
+            float: left;
+            overflow: hidden;
+            &.active, &:hover.active {
+                background-position: 0 -13px;
+            }
+            &:hover {
+                background-position: 0 -26px;
+            }
+        }
+    }
+    #section-megabanner & {
+    }
+}
+
+
+
 

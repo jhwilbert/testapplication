@@ -1,42 +1,28 @@
 @if (count($megabanners) > 0)
 
+	<?php
+
+		global $skPos;
+		if (!$skPos) $skPos = 0;
+		else $skPos -= 500;
+
+		$skData  = '';
+		if ($skPos != 0) $skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
+		$skData .= ' data-'.($skPos+=400).'="top:0%"';
+		$skData .= ' data-'.($skPos+=900).'="top:0%"';
+		$skData .= ' data-'.($skPos+=400).'="top:-100%"';
+
+	?>
+
 	<section class="section megabanner" id="section-megabanner">
 
-		<?php
-			global $skPos;
-			$skPos = 0;
-		
-			$total_megabanners = sizeof($megabanners);
-			$skStart = 1000;
-			$slHeight = 500;
-			$i = 0;
-		?>
-		<div class="megabanners">
+		<div class="megabanners" id="megabanners">
 			@foreach($megabanners as $megabanner)
 
-				<?php 
-					$skData = '';
-					$is_first = ($i == 0);
-					$is_last = ($i == $total_megabanners - 1);
-
-					if (!$is_first) $skData .= 'data-' . ($skPos - $skStart - $slHeight) . '="left:100%;"';
-
-					if (!$is_last) {
-						$skData .= 'data-' . ($skPos) . '="left:0%;top:0%" data-' . ($skPos + $skStart) . '="left[cubic]:0%;"';
-						$skData .= ' data-' . ($skPos + $skStart + $slHeight) . '="left:-100%;"';
-					} else {
-						$skData .= 'data-' . ($skPos) . '="left:0%;top:0%" data-' . ($skPos + $skStart) . '="left[cubic]:0%;"';
-						$skData .= ' data-' . ($skPos + $skStart + $slHeight) . '="top:-100%;"';
-					}
-
-				?>
-
-				<div class="megabanner-image" {{$skData}}>
+				<div class="megabanner-image">
 					<img src="{{ asset($megabanner->getImagePath('big')) }}">
 					<h3>{{ $megabanner["title$lpr"] }}</h3>
 				</div>
-
-				<?php $skPos += $skStart + $slHeight; $i++; ?>
 
 			@endforeach
 		</div>

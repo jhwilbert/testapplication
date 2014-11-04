@@ -23,30 +23,7 @@
             }
         }
     }
-    .slidesjs-pagination {
-        margin: 6px auto 0;
-        list-style: none;
-        padding: 0;
-        li {
-            float: left;
-            margin: 0 1px;
-            a {
-                display: block;
-                width: 13px;
-                height: 0;
-                padding-top: 13px;
-                @include bg-norepeat("pagination.png", 0 0);
-                float: left;
-                overflow: hidden;
-                &.active, &:hover.active {
-                    background-position: 0 -13px;
-                }
-                &:hover {
-                    background-position: 0 -26px;
-                }
-            }
-        }
-    }
+
     .slidesjs-navigation {
         z-index: 10;
         @media(max-width: $screen-md-min) {

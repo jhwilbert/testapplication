@@ -6,6 +6,7 @@
 {{ HTML::script('public/js/vendor/jquery.slides.min.js'); }}
 {{ HTML::script('public/js/plugins.js'); }}
 {{ HTML::script('public/js/application.js'); }}
+{{ HTML::script('public/js/megabanners.js'); }}
 
 @if (isset($scripts)) 
 	@foreach ($scripts as $script)
