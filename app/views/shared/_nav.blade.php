@@ -5,6 +5,12 @@
 		$home_url = ($crn == 'home') ? '#section-megabanner' : route("home$lpr"); 
 	?>
 	<a class="logo" href="{{ $home_url }}" id="logo">{{ HTML::image('public/img/logo.png') }}</a>
+	@if (App::getLocale() == 'en')
+		{{ link_to_route('home', 'Português', null, array('class' => 'language-btn')) }}
+	@else
+		{{ link_to_route('home_en', 'English', null, array('class' => 'language-btn')) }}
+	@endif
+	<div class="clearfix"></div>
 	<div class="menu-container">
 		<ul class="nav">
 			<?php $areas = array('company', 'projects', 'solutions', 'clients', 'contact'); ?>
