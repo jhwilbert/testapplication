@@ -110,6 +110,9 @@ h3 {
     padding-top: $menu-height;
     .inner-content {
         margin: 0 auto;
+        p.text {
+            line-height: 28px;
+        }
     }
 }
 section.section-gray {

@@ -2215,15 +2215,19 @@ h3 {
 #main_container section.section .inner-content {
   margin: 0 auto;
 }
+/* line 113, ../sass/app/_main.scss */
+#main_container section.section .inner-content p.text {
+  line-height: 28px;
+}
 
-/* line 115, ../sass/app/_main.scss */
+/* line 118, ../sass/app/_main.scss */
 section.section-gray {
   background-color: #ebebeb;
   border-bottom: 5px solid #cecece;
 }
 
 /* Slide Navigation */
-/* line 122, ../sass/app/_main.scss */
+/* line 125, ../sass/app/_main.scss */
 .slidesjs-navigation {
   text-indent: 100%;
   white-space: nowrap;
@@ -2234,14 +2238,14 @@ section.section-gray {
   position: absolute;
 }
 
-/* line 127, ../sass/app/_main.scss */
+/* line 130, ../sass/app/_main.scss */
 .slidesjs-previous {
   background-image: url(../img/modal_prev_btn.png);
   background-repeat: no-repeat;
   background-position: left top;
 }
 
-/* line 130, ../sass/app/_main.scss */
+/* line 133, ../sass/app/_main.scss */
 .slidesjs-next {
   background-image: url(../img/modal_next_btn.png);
   background-repeat: no-repeat;
