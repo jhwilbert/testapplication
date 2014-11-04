@@ -3,8 +3,9 @@
 	global $skPos;
 	if (!$skPos) $skPos = 0;
 	else $skPos -= 300;
-
-	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
+	
+	$skData  = '';
+	if ($skPos != 0) $skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
 	$skData .= ' data-'.($skPos+=400).'="top:0%"';
 	$skData .= ' data-'.($skPos+=900).'="top:0%"';
 	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
