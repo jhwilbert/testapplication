@@ -17,6 +17,7 @@ ul.nav {
     width: 100%;
     background-color: white;
     z-index: 1999;
+    border: none;
     .logo {
         display: block;
         margin: 20px;
@@ -49,6 +50,7 @@ ul.nav {
         height: 40px;
         position: relative;
         z-index: 2;
+        float: none;
         li {
             text-transform: uppercase;
             border-right: 2px solid $secondary-color;
@@ -66,7 +68,29 @@ ul.nav {
     li.newsfeed img{
         vertical-align: text-top;
     }
+
+    .in, .collapsing {
+        width: 100%;
+        height: auto;
+        ul {
+            width: 100%;
+            height: auto;
+            border: none !important;
+        }
+        li {
+            width: 100%;
+            border: none !important;
+            a:hover, a.active {
+                background-color: $secondary-color;
+            }
+        }
+        #menu_marker {
+            display: none !important;
+        }
+    }
 }
+
+
 #menu_marker {
     background-color: $secondary-color;
     height: 40px;
@@ -77,6 +101,10 @@ ul.nav {
     display: none;
 
 }
+
+
+
+
 
 
 h2 {
