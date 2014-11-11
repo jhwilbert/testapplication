@@ -3450,33 +3450,38 @@ ul.timeline li.year-right div.d-arrow {
 /* line 2, ../sass/app/_newsfeed.scss */
 div.feed {
   border-bottom: 1px solid #d95a49;
-  padding: 0 20px 20px;
+  margin: 0 20px;
+  padding-bottom: 20px;
 }
-/* line 7, ../sass/app/_newsfeed.scss */
+/* line 8, ../sass/app/_newsfeed.scss */
 div.feed.last {
   border-bottom: none;
 }
-/* line 11, ../sass/app/_newsfeed.scss */
-div.feed h3 {
+/* line 12, ../sass/app/_newsfeed.scss */
+div.feed h4 {
   text-align: left;
   font-size: 18px;
   text-transform: uppercase;
+  background-image: url(../img/newsfeed/newsfeed_title_bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding-left: 22px;
 }
-/* line 15, ../sass/app/_newsfeed.scss */
-div.feed h3 a {
+/* line 18, ../sass/app/_newsfeed.scss */
+div.feed h4 a {
   color: #d95a49;
 }
-/* line 20, ../sass/app/_newsfeed.scss */
+/* line 23, ../sass/app/_newsfeed.scss */
 div.feed ul {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
-/* line 24, ../sass/app/_newsfeed.scss */
+/* line 27, ../sass/app/_newsfeed.scss */
 div.feed ul li {
   margin-bottom: 4px;
 }
-/* line 26, ../sass/app/_newsfeed.scss */
+/* line 29, ../sass/app/_newsfeed.scss */
 div.feed ul li a {
   font-size: 14px;
 }

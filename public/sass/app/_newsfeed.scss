@@ -2,16 +2,19 @@
 div.feed {
 
 	border-bottom: 1px solid $primary-color;
-	padding: 0 20px 20px;
+	margin: 0 20px;
+	padding-bottom: 20px;
 
 	&.last {
 		border-bottom: none;
 	}
 
-	h3 {
+	h4 {
 		text-align: left;
 		font-size: 18px;
 		text-transform: uppercase;
+		@include bg-norepeat("newsfeed/newsfeed_title_bg.png", 0 5px);
+		padding-left: 22px;
 		a {
 			color: $primary-color;
 		}
