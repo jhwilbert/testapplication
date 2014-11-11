@@ -326,7 +326,7 @@ img {
 }
 
 /* line 81, ../sass/bootstrap/_scaffolding.scss */
-.img-responsive, #section-megabanner .megabanner-image img, .gallery-modal .slides .slidesjs-slide img {
+.img-responsive, .gallery-modal .slides .slidesjs-slide img {
   display: block;
   width: 100% \9;
   max-width: 100%;
@@ -2284,42 +2284,13 @@ section.section-gray {
   background-position: 0 -26px;
 }
 
-/* MEGABANNER */
-/* line 6, ../sass/app/_app.sass */
-#section-megabanner {
-  padding: 0 !important;
-  margin-top: 0 !important;
-}
-/* line 9, ../sass/app/_app.sass */
-#section-megabanner .megabanner-image {
-  width: 100%;
-  padding-top: 142px;
-}
-/* line 12, ../sass/app/_app.sass */
-#section-megabanner .megabanner-image img {
-  width: 100%;
-}
-/* line 15, ../sass/app/_app.sass */
-#section-megabanner .megabanner-nav {
-  background-color: white;
-  z-index: 101;
-  padding: 50px 0;
-  width: 100% !important;
-}
-/* line 20, ../sass/app/_app.sass */
-#section-megabanner .megabanner-nav a#home-arrow-dn {
-  display: block;
-  width: 34px;
-  margin: 0 auto;
-}
-
 /* SOLUTIONS */
-/* line 32, ../sass/app/_app.sass */
+/* line 7, ../sass/app/_app.sass */
 .solutions-row .solution-image img {
   display: block;
   margin: 0 auto;
 }
-/* line 35, ../sass/app/_app.sass */
+/* line 10, ../sass/app/_app.sass */
 .solutions-row h4 {
   color: #d95a49;
   text-align: center;
@@ -2329,7 +2300,7 @@ section.section-gray {
   margin: 15px auto 0;
   min-height: 60px;
 }
-/* line 43, ../sass/app/_app.sass */
+/* line 18, ../sass/app/_app.sass */
 .solutions-row p {
   color: rgba(135, 135, 135, 0.6);
   text-align: center;
@@ -2338,7 +2309,7 @@ section.section-gray {
   padding: 0 30px;
   margin: 0 0 15px;
 }
-/* line 50, ../sass/app/_app.sass */
+/* line 25, ../sass/app/_app.sass */
 .solutions-row a.solution-plus {
   background-image: url(../img/solutions/plus-btn.gif);
   background-repeat: no-repeat;
@@ -2351,56 +2322,56 @@ section.section-gray {
   height: 35px;
   margin: 0 auto;
 }
-/* line 54, ../sass/app/_app.sass */
+/* line 29, ../sass/app/_app.sass */
 .solutions-row a.solution-plus:hover {
   background-position: center right;
 }
 
 /* CLIENTS */
-/* line 62, ../sass/app/_app.sass */
+/* line 37, ../sass/app/_app.sass */
 section#section-clients div.clients {
   width: 790px;
   margin: 20px auto 0;
 }
-/* line 65, ../sass/app/_app.sass */
+/* line 40, ../sass/app/_app.sass */
 section#section-clients img.client {
   margin: 25px 0;
 }
-/* line 67, ../sass/app/_app.sass */
+/* line 42, ../sass/app/_app.sass */
 section#section-timeline h2 {
   width: 250px;
 }
 
 /* CONTACT */
-/* line 74, ../sass/app/_app.sass */
+/* line 49, ../sass/app/_app.sass */
 div.contact div.col-md-6 {
   padding: 30px 0 30px 30px;
   margin-top: 30px;
 }
-/* line 77, ../sass/app/_app.sass */
+/* line 52, ../sass/app/_app.sass */
 div.contact p {
   margin-bottom: 35px;
   font-size: 21px;
   margin-top: 10px;
 }
-/* line 81, ../sass/app/_app.sass */
+/* line 56, ../sass/app/_app.sass */
 div.contact p a {
   text-decoration: none;
 }
-/* line 83, ../sass/app/_app.sass */
+/* line 58, ../sass/app/_app.sass */
 div.contact p a:hover {
   text-decoration: underline;
 }
 
 /* FOOTER */
-/* line 89, ../sass/app/_app.sass */
+/* line 64, ../sass/app/_app.sass */
 footer {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
   height: 71px;
 }
-/* line 94, ../sass/app/_app.sass */
+/* line 69, ../sass/app/_app.sass */
 footer a {
   color: white;
   display: block;
@@ -2408,6 +2379,54 @@ footer a {
   margin-top: 25px;
   text-decoration: none;
   text-align: center;
+}
+
+/* MEGABANNER */
+/* line 5, ../sass/app/_megabanner.scss */
+#section-megabanner {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+/* line 9, ../sass/app/_megabanner.scss */
+#section-megabanner .megabanner-container {
+  margin-top: 142px;
+  width: auto;
+}
+/* line 13, ../sass/app/_megabanner.scss */
+#section-megabanner .slidesjs-container {
+  margin-bottom: 63px;
+  overflow: visible !important;
+}
+/* line 17, ../sass/app/_megabanner.scss */
+#section-megabanner #megabanners {
+  display: none;
+}
+/* line 21, ../sass/app/_megabanner.scss */
+#section-megabanner .megabanner-image img {
+  width: 100%;
+}
+/* line 26, ../sass/app/_megabanner.scss */
+#section-megabanner .megabanner-nav {
+  z-index: 101;
+  padding: 50px 0;
+  width: 100% !important;
+}
+/* line 30, ../sass/app/_megabanner.scss */
+#section-megabanner .megabanner-nav a#home-arrow-dn {
+  display: block;
+  width: 34px;
+  margin: 0 auto;
+}
+
+/* line 38, ../sass/app/_megabanner.scss */
+#section-megabanner .slidesjs-pagination {
+  position: relative;
+  z-index: 102;
+}
+
+/* line 44, ../sass/app/_megabanner.scss */
+.megabanners h3 {
+  margin-top: 10px;
 }
 
 /* line 3, ../sass/app/_modal.scss */
