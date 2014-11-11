@@ -3446,3 +3446,37 @@ ul.timeline li.year-right div.d-arrow {
   margin-top: 30px;
   width: 16px;
 }
+
+/* line 2, ../sass/app/_newsfeed.scss */
+div.feed {
+  border-bottom: 1px solid #d95a49;
+  padding: 0 20px 20px;
+}
+/* line 7, ../sass/app/_newsfeed.scss */
+div.feed.last {
+  border-bottom: none;
+}
+/* line 11, ../sass/app/_newsfeed.scss */
+div.feed h3 {
+  text-align: left;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 15, ../sass/app/_newsfeed.scss */
+div.feed h3 a {
+  color: #d95a49;
+}
+/* line 20, ../sass/app/_newsfeed.scss */
+div.feed ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 24, ../sass/app/_newsfeed.scss */
+div.feed ul li {
+  margin-bottom: 4px;
+}
+/* line 26, ../sass/app/_newsfeed.scss */
+div.feed ul li a {
+  font-size: 14px;
+}

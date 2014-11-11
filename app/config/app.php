@@ -118,6 +118,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Orchestra\Imagine\ImagineServiceProvider',
+		'Awjudd\FeedReader\FeedReaderServiceProvider',
 
 	),
 
@@ -185,6 +186,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Imagine'         => 'Orchestra\Imagine\Facade',
+		'FeedReader'      => 'Awjudd\FeedReader\Facades\FeedReader',
 
 	),
 

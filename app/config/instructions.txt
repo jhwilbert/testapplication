@@ -44,3 +44,7 @@ php artisan controller:make ProjectController
 # dump auto load
 
 php composer.phar dump-autoload
+
+# publish feed-reader config
+
+php artisan config:publish awjudd/feed-reader

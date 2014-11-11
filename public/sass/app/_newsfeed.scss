@@ -1,0 +1,31 @@
+
+div.feed {
+
+	border-bottom: 1px solid $primary-color;
+	padding: 0 20px 20px;
+
+	&.last {
+		border-bottom: none;
+	}
+
+	h3 {
+		text-align: left;
+		font-size: 18px;
+		text-transform: uppercase;
+		a {
+			color: $primary-color;
+		}
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+		li {
+			margin-bottom: 4px;
+			a {
+				font-size: 14px;
+			}
+		}
+	}
+}
