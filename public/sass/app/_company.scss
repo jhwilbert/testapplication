@@ -87,23 +87,26 @@ ul.timeline {
 		}
 		&.year-left div.description-container {
 			float: left;
+			margin-left: 15px;
 		}
 		&.year-right div.description-container {
 			float: right;
+			margin-right: 15px;
+		}
+		div.d-arrow {
+			height: 29px;
+			margin-top: 30px;
+			width: 16px;
+			position: absolute;
+			
 		}
 		&.year-left div.d-arrow {
 			@include bg-norepeat("timeline/arrow_left.png");
-			float: left;
-			height: 29px;
-			margin-top: 30px;
-			width: 16px;
 		}
 		&.year-right div.d-arrow {
 			@include bg-norepeat("timeline/arrow_right.png");
-			float: right;
-			height: 29px;
-			margin-top: 30px;
-			width: 16px;
+			right: 0;
 		}
 	}
 }
+

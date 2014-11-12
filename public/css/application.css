@@ -3421,30 +3421,32 @@ ul.timeline li div.description div.description-container {
 /* line 88, ../sass/app/_company.scss */
 ul.timeline li.year-left div.description-container {
   float: left;
+  margin-left: 15px;
 }
-/* line 91, ../sass/app/_company.scss */
+/* line 92, ../sass/app/_company.scss */
 ul.timeline li.year-right div.description-container {
   float: right;
+  margin-right: 15px;
 }
-/* line 94, ../sass/app/_company.scss */
+/* line 96, ../sass/app/_company.scss */
+ul.timeline li div.d-arrow {
+  height: 29px;
+  margin-top: 30px;
+  width: 16px;
+  position: absolute;
+}
+/* line 103, ../sass/app/_company.scss */
 ul.timeline li.year-left div.d-arrow {
   background-image: url(../img/timeline/arrow_left.png);
   background-repeat: no-repeat;
   background-position: left top;
-  float: left;
-  height: 29px;
-  margin-top: 30px;
-  width: 16px;
 }
-/* line 101, ../sass/app/_company.scss */
+/* line 106, ../sass/app/_company.scss */
 ul.timeline li.year-right div.d-arrow {
   background-image: url(../img/timeline/arrow_right.png);
   background-repeat: no-repeat;
   background-position: left top;
-  float: right;
-  height: 29px;
-  margin-top: 30px;
-  width: 16px;
+  right: 0;
 }
 
 /* line 2, ../sass/app/_newsfeed.scss */

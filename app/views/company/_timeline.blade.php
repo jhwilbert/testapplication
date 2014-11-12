@@ -26,9 +26,21 @@
 		<ul class="timeline skrollable">
 			<?php $bull = 'background-image:!url(public/img/timeline/bullet.png)'; ?>
 			@foreach($timelineEvents as $event)
-				<li class="year-{{ $event['left'] ? 'left' : 'right' }}" data-{{{ $scrollpos }}}="{{ $bull }}" data-{{{ $scrollpos + $qt }}}="background-image:!url(public/img/timeline/bullet_selected.png);" data-{{{ $scrollpos + ($ps - 1)*$qt }}}="{{ $bull }}">
+				<?php
+					$skData_li  = '';
+					$skData_li .= ' data-'. $scrollpos .'="'. $bull .'"';
+					$skData_li .= ' data-'. ($scrollpos + $qt) .'="background-image:!url(public/img/timeline/bullet_selected.png);"';
+					$skData_li .= ' data-'. ($scrollpos + ($ps - 1)*$qt) .'="'. $bull .'"';
+
+					$skData_desc  = '';
+ 					$skData_desc .= 'data-'. $scrollpos . '="width[cubic]:0%;"';
+ 					$skData_desc .= 'data-'. ($scrollpos + $qt) . '="width:50%"';
+ 					$skData_desc .= 'data-'. ($scrollpos + ($ps - 1)*$qt) . '="width[outCubic]:50%;"';
+ 					$skData_desc .= 'data-'. ($scrollpos + $ps*$qt) . '="width:0%;"';
+				?>
+				<li class="year-{{ $event['left'] ? 'left' : 'right' }}"{{ $skData_li }}>
 					<div class="year"><span>{{{ $event['year'] }}}</span></div>
-					<div class="description" data-{{{ $scrollpos }}}="height[cubic]:0%;" data-{{{ $scrollpos + $qt }}}="height:100%" data-{{{ $scrollpos + ($ps - 1)*$qt }}}="height[outCubic]:100%;" data-{{{ $scrollpos + $ps*$qt }}}="height:0%;">
+					<div class="description"{{ $skData_desc }}>
 						<div class="d-arrow"></div>
 						<div class="description-container">
 							{{{ $event["description$lpr"] }}}
