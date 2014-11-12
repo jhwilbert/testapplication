@@ -6,6 +6,10 @@ $(document).ready(function() {
 	turnMenuMouseEventsOn();
 });
 
+$(window).load(function() {
+	setMenuPosition();
+});
+
 function initSkrollr() {
 	s = skrollr.init({
 		keyframe: function(element, name, direction) {
