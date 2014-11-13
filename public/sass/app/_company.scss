@@ -34,6 +34,11 @@
 
 /* TIMELINE */
 
+#timeline-container {
+	max-height: 350px;
+	overflow: hidden;
+}
+
 ul.timeline {
 	list-style: none;
 	background-image: url(../img/timeline/timeline_line.gif);
