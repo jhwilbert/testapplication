@@ -46,7 +46,7 @@ ul.timeline {
 	background-position: center;
 	width: 890px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 0 120px;
 	position: relative !important;
 	li {
 		@include bg-norepeat("timeline/bullet.png", center 35px);

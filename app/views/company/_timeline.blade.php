@@ -5,12 +5,14 @@
 	if (!$skPos) $skPos = 0;
 	else $skPos -= 500;
 
+	$total_events = sizeof($timelineEvents);
+
 	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
 	$skData .= ' data-'.($skPos+=400).'="top:0%"';
 	// timeline vars
 	$qt = 400; $ps = 4;
 	$scrollpos = $skPos;
-	$skPosOffset = sizeof($timelineEvents) * $ps * $qt;
+	$skPosOffset = $total_events * $ps * $qt;
 
 	$skData .= ' data-'.($skPos+=$skPosOffset).'="top:0%"';
 	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
@@ -24,7 +26,21 @@
 		<h2>{{Lang::get('messages.timeline.title')}}</h2>
 		<h3>{{Lang::get('messages.timeline.intro')}}</h3>
 		<div id="timeline-container">
-			<ul class="timeline skrollable">
+			<?php
+				$eps = 3; // events per scroll
+				$nscrolls = ceil($total_events / $eps);
+				$skData_ul  = '';
+				$skData_ul .= ' data-0="margin-top:0px"';
+				for($i = 1; $i <= $nscrolls; $i++) {
+					$pos = $scrollpos + ($i * $ps * $qt * 3);
+					$margin1 = ($i - 1) * 300;
+					$margin2 = $i * 300;
+					$skData_ul .= ' data-' . ($pos - 100) . '="margin-top:-' . $margin1 . 'px"';
+					$skData_ul .= ' data-' . ($pos + 300) . '="margin-top[outCubic]:-' . $margin2 . 'px"';
+				}
+
+			?>
+			<ul class="timeline skrollable"{{ $skData_ul }}>
 				<?php $bull = 'background-image:!url(public/img/timeline/bullet.png)'; ?>
 				@foreach($timelineEvents as $event)
 					<?php
