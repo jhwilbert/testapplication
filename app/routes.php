@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', array('uses' => 'HomeController@index', 'as' => 'home'));
+Route::get('/', array('uses' => 'HomeController@splash', 'as' => 'splash'));
+Route::get('/home', array('uses' => 'HomeController@index', 'as' => 'home'));
 Route::get('/a-empresa', array('uses' => 'CompanyController@index', 'as' => 'company'));
 Route::get('/projetos', array('uses' => 'ProjectController@index', 'as' => 'projects'));
 Route::get('/solucoes', array('uses' => 'SolutionController@index', 'as' => 'solutions'));
