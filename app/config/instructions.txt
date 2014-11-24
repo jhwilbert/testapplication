@@ -28,6 +28,8 @@ php artisan migrate:make add_fields_to_projects_table --table=projects
 
 php artisan migrate:make add_fields_to_megabanners_table --table=megabanners
 
+php artisan migrate:make create_timeline_events_table
+
 # run migrations
 
 php artisan migrate

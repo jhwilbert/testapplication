@@ -43,3 +43,4 @@ Route::resource('admin/usuarios', 'Admin\UserController');
 Route::resource('admin/projects', 'Admin\ProjectController');
 Route::resource('admin/projects.images', 'Admin\ProjectImageController', array('except' => array('index')));
 Route::resource('admin/megabanners', 'Admin\MegabannerController');
+Route::resource('admin/timeline_events', 'Admin\TimelineEventController');

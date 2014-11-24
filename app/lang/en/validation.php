@@ -97,6 +97,7 @@ return array(
 	'attributes' => array(
 		'active' => 'Active',
 		'created_at' => 'Created at',
+		'date' => 'Date',
 		'description' => 'Description',
 		'featured' => 'Featured',
 		'file' => 'File',

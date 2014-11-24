@@ -20,6 +20,9 @@
           @if (Admin\MegabannerController::can('index'))
             <li>{{ link_to_route('admin.megabanners.index', 'Megabanners') }}</li>
           @endif
+          @if (Admin\TimelineEventController::can('index'))
+            <li>{{ link_to_route('admin.timeline_events.index', 'Timeline') }}</li>
+          @endif
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
