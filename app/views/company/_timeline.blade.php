@@ -41,7 +41,10 @@
 
 			?>
 			<ul class="timeline skrollable"{{ $skData_ul }}>
-				<?php $bull = 'background-image:!url(public/img/timeline/bullet.png)'; ?>
+				<?php 
+					$left = true;
+					$bull = 'background-image:!url(public/img/timeline/bullet.png)';
+				?>
 				@foreach($timelineEvents as $event)
 					<?php
 						$p1 = $scrollpos;
@@ -60,16 +63,22 @@
 	 					$skData_desc .= 'data-'. $p3 . '="width[outCubic]:50%;"';
 	 					$skData_desc .= 'data-'. $p4 . '="width:0%;"';
 					?>
-					<li class="year-{{ $event['left'] ? 'left' : 'right' }}"{{ $skData_li }}>
-						<div class="year"><span>{{{ $event['year'] }}}</span></div>
+					<li class="year-{{ $left ? 'left' : 'right' }}"{{ $skData_li }}>
+						<div class="year"><span>{{{ date('Y', strtotime($event->date)) }}}</span></div>
 						<div class="description"{{ $skData_desc }}>
 							<div class="d-arrow"></div>
 							<div class="description-container">
-								{{{ $event["description$lpr"] }}}
+								@if($event->file_name)
+									<img src="{{ asset($event->getImagePath('medium')) }}">
+								@endif
+								{{ $event["text$lpr"] }}
 							</div>
 						</div>
 					</li>
-					<?php $scrollpos += $ps*$qt; ?>
+					<?php
+						$scrollpos += $ps*$qt;
+						$left = !$left;
+					?>
 				@endforeach
 			</ul>
 		</div>
