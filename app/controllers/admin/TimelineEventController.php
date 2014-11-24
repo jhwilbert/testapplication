@@ -29,8 +29,8 @@ class TimelineEventController extends AdminBaseController {
 	 * @return Response
 	 */
 	public function create() {
-		if (!Input::has('title')) $timeline_event = new TimelineEvent;
-		else $timeline_event = null;
+		$timeline_event = new TimelineEvent;
+		$timeline_event->active = true;
 		$route = 'admin.timeline_events.store';
 		$method = 'POST';
 		return View::make('admin.timeline_events.create', array('timeline_event' => $timeline_event, 'route' => $route, 'method' => $method));

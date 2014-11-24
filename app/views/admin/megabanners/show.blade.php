@@ -20,7 +20,7 @@
 			<td>{{{ $megabanner->title }}}</td>
 		</tr>
 		<tr>
-			<th>{{ Lang::get('validation.attributes.title_en') }}</th>
+			<th>{{ Lang::get('validation.attributes.title', array(), 'en') }}</th>
 			<td>{{{ $megabanner->title_en }}}</td>
 		</tr>
 		<tr>
@@ -32,7 +32,7 @@
 			<td>{{{ $megabanner->url }}}</td>
 		</tr>
 		<tr>
-			<th>{{ Lang::get('validation.attributes.url_en') }}</th>
+			<th>{{ Lang::get('validation.attributes.url', array(), 'en') }}</th>
 			<td>{{{ $megabanner->url_en }}}</td>
 		</tr>
 		<tr>
@@ -44,7 +44,7 @@
 			<td>{{{ $megabanner->text }}}</td>
 		</tr>
 		<tr>
-			<th>{{ Lang::get('validation.attributes.text_en') }}</th>
+			<th>{{ Lang::get('validation.attributes.text', array(), 'en') }}</th>
 			<td>{{{ $megabanner->text_en }}}</td>
 		</tr>
 		@foreach (Megabanner::$areas as $area)

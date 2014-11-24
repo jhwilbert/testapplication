@@ -29,8 +29,8 @@ class MegabannerController extends AdminBaseController {
 	 * @return Response
 	 */
 	public function create() {
-		if (!Input::has('title')) $megabanner = new Megabanner;
-		else $megabanner = null;
+		$megabanner = new Megabanner;
+		$megabanner->active = true;
 		$route = 'admin.megabanners.store';
 		$method = 'POST';
 		return View::make('admin.megabanners.create', array('megabanner' => $megabanner, 'route' => $route, 'method' => $method));

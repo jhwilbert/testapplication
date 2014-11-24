@@ -4,9 +4,10 @@
 	<div class="form-group">
 		<?php $error_class = ($errors->first('date')) ? ' has-error' : ''; ?>
 		{{ Form::label('date', Lang::get('validation.attributes.date'), array('class' => 'col-sm-3 control-label')); }}
-		<div class="col-sm-9<?php echo $error_class ?>">
+		<div class="col-sm-3<?php echo $error_class ?>">
 			{{ Form::text('date', ($timeline_event->date) ? date('d/m/Y', strtotime($timeline_event->date)) : '', array('class' => 'form-control', 'placeholder' => 'dd/mm/aaaa')) }}
 		</div>
+		<div class="col-sm-6"></div>
 	</div>
     
 	<div class="form-group">
