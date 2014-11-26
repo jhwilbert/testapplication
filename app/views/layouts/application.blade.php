@@ -11,7 +11,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     	@include('shared._nav')
-        <div class="main" role="main">
+        <div class="main" role="main" id="skrollr-body">
             <div class="container-fluid" id="main_container">
 		        @yield('content')
 		    </div>
