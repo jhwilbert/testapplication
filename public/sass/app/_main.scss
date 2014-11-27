@@ -23,9 +23,11 @@ ul.nav {
         margin: 20px;
         width: 300px;
         float: left;
-        img {
-            @media(max-width: $screen-sm-min) {
-                width: 160px;
+        @media(max-width: $screen-sm-min) {
+            width: 145px;
+            margin: 25px 8px 10px;
+            img {
+                width: 145px;
             }            
         }
 
@@ -45,7 +47,7 @@ ul.nav {
         }
         @media(max-width: $screen-sm-min) {
             float: left;
-            margin: 25px 10px 0 30px;
+            margin: 25px 5px 0 20px;
         }
     }
     .menu-container {
