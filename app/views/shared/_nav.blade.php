@@ -9,7 +9,6 @@
 	@else
 		{{ link_to_route('home_en', 'English', null, array('class' => 'language-btn')) }}
 	@endif
-	<div class="clearfix"></div>
 
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -20,6 +19,7 @@
 		</button>
 	</div>
 
+	<div class="clearfix"></div>
 	<div class="collapse navbar-collapse menu-container" id="navbar-collapse">
 		<ul class="nav navbar-nav">
 			<?php $areas = array('company', 'projects', 'solutions', 'clients', 'contact'); ?>

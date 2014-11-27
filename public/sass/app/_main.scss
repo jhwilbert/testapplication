@@ -23,6 +23,12 @@ ul.nav {
         margin: 20px;
         width: 300px;
         float: left;
+        img {
+            @media(max-width: $screen-sm-min) {
+                width: 160px;
+            }            
+        }
+
     }
     .language-btn {
         float: right;
@@ -37,11 +43,18 @@ ul.nav {
             color: #FFFFFF;
             text-decoration: none;
         }
+        @media(max-width: $screen-sm-min) {
+            float: left;
+            margin: 25px 10px 0 30px;
+        }
     }
     .menu-container {
         width: 100%;
         background-color: $primary-color;
         border-bottom: 2px solid $secondary-color;
+    }
+    .navbar-toggle {
+        margin-top: 25px;
     }
     ul.nav {
         border-left: 2px solid $secondary-color;
@@ -141,6 +154,9 @@ h3 {
         p.text {
             line-height: 28px;
         }
+    }
+    @media(max-width: $screen-sm-min) {
+        padding-top: 100px;
     }
 }
 section.section-gray {
