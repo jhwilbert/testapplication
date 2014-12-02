@@ -34,10 +34,16 @@
 
 /* TIMELINE */
 
+#section-timeline h2 {
+	width: 280px;
+}
+
 #timeline-container {
-	max-height: 350px;
+	max-height: 450px;
 	overflow: hidden;
 }
+
+
 
 ul.timeline {
 	list-style: none;
@@ -50,7 +56,7 @@ ul.timeline {
 	position: relative !important;
 	li {
 		@include bg-norepeat("timeline/bullet.png", center 35px);
-		height: 100px;
+		height: 75px;
 		div.year {
 			width: 445px;
 		}

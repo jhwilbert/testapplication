@@ -27,14 +27,15 @@
 		<h3>{{Lang::get('messages.timeline.intro')}}</h3>
 		<div id="timeline-container">
 			<?php
-				$eps = 3; // events per scroll
+				$eps = 5; // events per scroll
+				$scroll_h = 370;
 				$nscrolls = ceil($total_events / $eps);
 				$skData_ul  = '';
 				$skData_ul .= ' data-0="margin-top:0px"';
 				for($i = 1; $i <= $nscrolls; $i++) {
-					$pos = $scrollpos + ($i * $ps * $qt * 3);
-					$margin1 = ($i - 1) * 300;
-					$margin2 = $i * 300;
+					$pos = $scrollpos + ($i * $ps * $qt * $eps);
+					$margin1 = ($i - 1) * $scroll_h;
+					$margin2 = $i * $scroll_h;
 					$skData_ul .= ' data-' . ($pos - 100) . '="margin-top:-' . $margin1 . 'px"';
 					$skData_ul .= ' data-' . ($pos + 300) . '="margin-top[outCubic]:-' . $margin2 . 'px"';
 				}
