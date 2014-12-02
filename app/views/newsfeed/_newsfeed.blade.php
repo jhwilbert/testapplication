@@ -27,10 +27,10 @@
 
 						<?php $feed = FeedReader::read($feed_url); ?>						
 						<div class="feed<?php if ($feed_url == end($feed_list)) echo " last"; ?>">
-							<h4><a href="{{ $feed->get_permalink() }}">{{ $feed->get_title() }}</a></h4>
+							<h4><a href="{{ $feed->get_permalink() }}" target="_blank">{{ $feed->get_title() }}</a></h4>
 							<ul>
-								@foreach ($feed->get_items(0, 10) as $item)
-									<li>&bull; <a href="{{ $item->get_permalink() }}">{{ $item->get_title() }}</a></li>
+								@foreach ($feed->get_items(0, 6) as $item)
+									<li>&bull; <a href="{{ $item->get_permalink() }}" target="_blank">{{ $item->get_title() }}</a></li>
 								@endforeach
 							</ul>
 						</div>
