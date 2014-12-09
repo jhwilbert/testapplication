@@ -32,7 +32,7 @@ class SolutionController extends BaseController {
 	 */
 	public function show($id, $lang = 'pt') {
 
-		$root_url = route('home');
+		$root_url = URL::to('/');
 		if ($id == '1') {
 			if ($lang == 'en') {
 				$result = array(

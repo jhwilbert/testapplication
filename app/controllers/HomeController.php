@@ -10,7 +10,7 @@ class HomeController extends BaseController {
 
 		$megabanners = Megabanner::where('active', 1)->where('show_in_home', 1)->get();
 		$projects = Project::where('featured', 1)->orderBy('created_at', 'desc')->take(3)->get();
-		$timelineEvents = TimelineEvent::where('active', 1)->get();
+		$timelineEvents = TimelineEvent::where('active', 1)->orderBy('date', 'ASC')->get();
 		$clients = ClientController::$clients;
 
 		$resources = array(
