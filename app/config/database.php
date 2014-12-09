@@ -1,13 +1,5 @@
 <?php
 
-$my_hostname = 'localhost';
-$my_port     = '8889';
-
-if (App::runningInConsole()) {        // artisan runs from the command line
-    // change 'localhost' to 'localhost:8889'
-    $my_hostname = $my_hostname.':'.$my_port;
-}
-
 return array(
 
 	/*
@@ -62,11 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => $my_hostname,
-    		'port'      => $my_port,
-			'database'  => 'projesom',
-			'username'  => 'root',
-			'password'  => 'root',
+			'host'      => 'localhost',
+			'database'  => 'projesbr_app',
+			'username'  => 'projesbr_app',
+			'password'  => 'pR4PP@50m',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
