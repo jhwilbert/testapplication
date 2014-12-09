@@ -39,7 +39,7 @@ class ProjectController extends BaseController {
 		$project = Project::findOrFail($id);
 		$project_images = $project->projectImages()->orderby('position')->get();
 		$image_paths = array();
-		$root_url = route('home');
+		$root_url = URL::to('/');
 		foreach ($project_images as $project_image) {
 			array_push($image_paths, $root_url.'/'.$project_image->getImagePath('medium'));
 		}
