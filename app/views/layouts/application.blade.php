@@ -17,6 +17,7 @@
 		    </div>
 		</div>
     	@include('shared._footer')
+        @yield('footer')
     	@include('shared._footer_scripts')
     </body>
     

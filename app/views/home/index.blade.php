@@ -10,3 +10,10 @@
 	@include('contact/_contact')
 
 @stop
+
+@section('footer')
+
+	@include('projects/_modal')
+	@include('solutions/_modal')
+	
+@stop

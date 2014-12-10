@@ -7,3 +7,9 @@
 	@include('contact/_contact')
 
 @stop
+
+@section('footer')
+
+	@include('projects/_modal')
+
+@stop
