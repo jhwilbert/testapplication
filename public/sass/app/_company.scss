@@ -41,6 +41,9 @@
 #timeline-container {
 	max-height: 450px;
 	overflow: hidden;
+	body.mobile & {
+		max-height: inherit;
+	}
 }
 
 

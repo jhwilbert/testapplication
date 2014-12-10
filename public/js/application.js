@@ -1,7 +1,9 @@
 var s;
+var is_mobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
 
 $(document).ready(function() {
-	initSkrollr();
+	if (is_mobile) mobileHacks();
+	else initSkrollr();
 	initWindowResize();
 	turnMenuMouseEventsOn();
 });
@@ -86,3 +88,7 @@ function setMenuPosition($item) {
 
 }
 
+
+function mobileHacks() {
+	$('body').addClass('mobile');
+}
