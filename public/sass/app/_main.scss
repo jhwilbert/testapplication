@@ -5,6 +5,7 @@ html * {
     font-size: 16px;
 }
 
+
 ul.nav {
     list-style: none;
     padding: 0;
@@ -144,7 +145,10 @@ h3 {
     margin: 0;
     width: 100%;
     padding: 0;
+    float: left;
+    height: 100%;    
 }
+
 #main_container section.section {
     padding: 40px 0;
     width: 100%;

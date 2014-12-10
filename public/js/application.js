@@ -12,7 +12,7 @@ $(window).load(function() {
 
 function initSkrollr() {
 	s = skrollr.init({
-		skrollrBody: 'skrollr-body',
+		skrollrBody: '#main_container',
 		keyframe: function(element, name, direction) {
 			if ($(element).attr('id') == 'section-projects') getProjectsSkrollrEvents(name, direction);
 			else if ($(element).attr('id') == 'section-solutions') getSolutionsSkrollrEvents(name, direction);
