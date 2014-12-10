@@ -24,6 +24,9 @@ ul.nav {
         margin: 20px;
         width: 300px;
         float: left;
+        @media(max-height: $screen-sm-height) {
+            margin: 10px 20px;
+        }
         @media(max-width: $screen-sm-min) {
             width: 145px;
             margin: 25px 8px 10px;
@@ -31,7 +34,6 @@ ul.nav {
                 width: 145px;
             }            
         }
-
     }
     .language-btn {
         float: right;
@@ -160,6 +162,9 @@ h3 {
         p.text {
             line-height: 28px;
         }
+    }
+    @media(max-height: $screen-sm-height) {
+        padding-top: $menu-height - 20px;
     }
     @media(max-width: $screen-sm-min) {
         padding-top: 100px;

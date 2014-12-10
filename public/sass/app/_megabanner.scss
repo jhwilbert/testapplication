@@ -9,6 +9,9 @@
     .megabanner-container {
         margin-top: $menu-height;
         width: auto;
+        @media(max-height: $screen-sm-height) {
+            margin-top: $menu-height - 20px;
+        }
         @media(max-width: $screen-sm-min) {
             margin-top: 75px;
         }
