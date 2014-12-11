@@ -185,7 +185,7 @@ section.section-gray {
 /* Slide Navigation */
 
 .slidesjs-navigation {
-    @include hide-text(32px, 32px);
+    @include vv-hide-text(32px, 32px);
     position: absolute;
 }
     

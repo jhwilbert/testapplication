@@ -1,3 +1,4 @@
+/* bootstrap vars */
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, ../sass/bootstrap/_normalize.scss */
 html {
@@ -327,7 +328,7 @@ img {
 }
 
 /* line 81, ../sass/bootstrap/_scaffolding.scss */
-.img-responsive, .gallery-modal .slides .slidesjs-slide img {
+.img-responsive, .gallery-modal .slides .slidesjs-slide img, .gallery-modal .slides img.slidesjs-slide {
   display: block;
   max-width: 100%;
   height: auto;
@@ -335,7 +336,7 @@ img {
 
 /* line 86, ../sass/bootstrap/_scaffolding.scss */
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 93, ../sass/bootstrap/_scaffolding.scss */
@@ -344,7 +345,7 @@ img {
   line-height: 1.42857;
   background-color: white;
   border: 1px solid #dddddd;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1597,7 +1598,7 @@ output {
   background-color: white;
   background-image: none;
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1763,7 +1764,7 @@ input[type="checkbox"] {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 79, ../sass/bootstrap/mixins/_forms.scss */
@@ -1784,7 +1785,7 @@ select[multiple].input-sm, .form-group-sm .form-control {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 79, ../sass/bootstrap/mixins/_forms.scss */
@@ -2129,7 +2130,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 11, ../sass/bootstrap/_navbar.scss */
   .navbar {
-    border-radius: 4px;
+    border-radius: 0;
   }
 }
 
@@ -2304,7 +2305,7 @@ tbody.collapse.in {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 /* line 207, ../sass/bootstrap/_navbar.scss */
 .navbar-toggle:focus {
@@ -2486,8 +2487,8 @@ tbody.collapse.in {
 
 /* line 333, ../sass/bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -2864,7 +2865,7 @@ button.close {
   background-color: white;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -2955,7 +2956,7 @@ button.close {
 @media (min-width: 768px) {
   /* line 134, ../sass/bootstrap/_modals.scss */
   .modal-dialog {
-    width: 600px;
+    width: 900px;
     margin: 30px auto;
   }
 
@@ -2973,7 +2974,7 @@ button.close {
 @media (min-width: 992px) {
   /* line 147, ../sass/bootstrap/_modals.scss */
   .modal-lg {
-    width: 900px;
+    width: 1170px;
   }
 }
 /* line 15, ../sass/bootstrap/mixins/_clearfix.scss */
@@ -3325,7 +3326,6 @@ button.close {
     display: none !important;
   }
 }
-/* bootstrap vars */
 /* line 2, ../sass/app/_main.scss */
 html * {
   font-family: "Montserrat", sans-serif;
@@ -3731,110 +3731,118 @@ body.mobile #section-megabanner .megabanner-container {
 .gallery-modal .slidesjs-container {
   max-height: 570px;
 }
-/* line 16, ../sass/app/_modal.scss */
+/* line 15, ../sass/app/_modal.scss */
+.gallery-modal .slides .slidesjs-slide {
+  max-width: 100%;
+}
+/* line 17, ../sass/app/_modal.scss */
 .gallery-modal .slides .slidesjs-slide img {
   margin: 0 auto;
 }
-/* line 20, ../sass/app/_modal.scss */
+/* line 21, ../sass/app/_modal.scss */
 .gallery-modal .slides .slidesjs-slide span.subtitle {
   display: block;
   text-align: center;
   margin: 10px 0;
 }
-/* line 28, ../sass/app/_modal.scss */
+/* line 27, ../sass/app/_modal.scss */
+.gallery-modal .slides img.slidesjs-slide {
+  margin: 0 auto;
+}
+/* line 33, ../sass/app/_modal.scss */
 .gallery-modal .slidesjs-navigation {
   z-index: 10;
 }
 @media (max-width: 992px) {
-  /* line 28, ../sass/app/_modal.scss */
+  /* line 33, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-navigation {
     margin-top: -200px;
   }
 }
 @media (min-width: 992px) {
-  /* line 28, ../sass/app/_modal.scss */
+  /* line 33, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-navigation {
     margin-top: -260px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 28, ../sass/app/_modal.scss */
+  /* line 33, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-navigation {
     margin-top: -300px;
   }
 }
-/* line 41, ../sass/app/_modal.scss */
+/* line 46, ../sass/app/_modal.scss */
 .gallery-modal .slidesjs-previous {
   left: 220px;
 }
 @media (max-width: 992px) {
-  /* line 41, ../sass/app/_modal.scss */
+  /* line 46, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-previous {
     left: 30px;
   }
 }
 @media (min-width: 992px) {
-  /* line 41, ../sass/app/_modal.scss */
+  /* line 46, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-previous {
     left: 30px;
   }
 }
-/* line 50, ../sass/app/_modal.scss */
+/* line 55, ../sass/app/_modal.scss */
 .gallery-modal .slidesjs-next {
   right: 220px;
 }
 @media (max-width: 992px) {
-  /* line 50, ../sass/app/_modal.scss */
+  /* line 55, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-next {
     right: 30px;
   }
 }
 @media (min-width: 992px) {
-  /* line 50, ../sass/app/_modal.scss */
+  /* line 55, ../sass/app/_modal.scss */
   .gallery-modal .slidesjs-next {
     right: 30px;
   }
 }
 
-/* line 61, ../sass/app/_modal.scss */
+/* line 66, ../sass/app/_modal.scss */
 .modal-lg {
   /* Small devices (tablets, 768px and up) */
   /* Medium devices (desktops, 992px and up) */
   /* Large devices (large desktops, 1200px and up) */
 }
 @media (max-width: 992px) {
-  /* line 61, ../sass/app/_modal.scss */
+  /* line 66, ../sass/app/_modal.scss */
   .modal-lg {
-    width: 700px;
+    width: 95%;
   }
 }
 @media (min-width: 992px) {
-  /* line 61, ../sass/app/_modal.scss */
+  /* line 66, ../sass/app/_modal.scss */
   .modal-lg {
     width: 900px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 61, ../sass/app/_modal.scss */
+  /* line 66, ../sass/app/_modal.scss */
   .modal-lg {
     width: 1170px;
   }
 }
 
-/* line 78, ../sass/app/_modal.scss */
+/* line 83, ../sass/app/_modal.scss */
 .modal-backdrop {
   background-color: #FFFFFF;
 }
-/* line 80, ../sass/app/_modal.scss */
+/* line 85, ../sass/app/_modal.scss */
 .modal-backdrop.in {
   opacity: 0;
 }
 
-/* line 85, ../sass/app/_modal.scss */
+/* line 90, ../sass/app/_modal.scss */
 .modal-header {
   border-bottom: none;
 }
-/* line 87, ../sass/app/_modal.scss */
+/* line 92, ../sass/app/_modal.scss */
 .modal-header .close {
   background-image: url(../img/close_btn.png);
   background-repeat: no-repeat;
@@ -3908,8 +3916,9 @@ a#home-arrow-dn {
 #show-project .slides {
   width: 640px;
   margin: 0 auto;
+  max-width: 100%;
 }
-/* line 49, ../sass/app/_projects.scss */
+/* line 50, ../sass/app/_projects.scss */
 #show-project h3 {
   color: #878787;
   text-align: left;
