@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('Victor.local'),
+	'local' => array('Victor.local', 'Victor-PC'),
 
 ));
 
