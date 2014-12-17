@@ -5,8 +5,11 @@
         margin-top: 0;
     }
     .modal-dialog {
-        margin-top: $menu-height + 100px;
+        margin-top: $menu-height + 10px;
         z-index: $zindex-modal + 1;
+        body.mobile & {
+            margin-top: 10px;
+        }
     }
     .slidesjs-container {
         max-height: 570px;
