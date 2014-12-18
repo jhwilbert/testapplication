@@ -24,7 +24,7 @@ ul.nav {
 #main-menu {
     width: 100%;
     background-color: white;
-    z-index: 1999;
+    z-index: $zindex-modal - 1;
     border: none;
     .logo {
         display: block;
