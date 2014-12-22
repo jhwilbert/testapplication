@@ -5,7 +5,6 @@
   <title>Projesom Admin</title>
 
   <!-- Bootstrap -->
-  {{ HTML::style('public/css/bootstrap.css'); }}
   {{ HTML::style('public/css/admin.css'); }}
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,7 +17,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   {{ HTML::script('public/js/vendor/jquery-1.11.1.min.js'); }}
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  {{ HTML::script('public/js/vendor/bootstrap.min.js'); }}
+  {{ HTML::script('public/js/vendor/bootstrap.js'); }}
   {{ HTML::script('public/js/vendor/tinymce/tinymce.min.js'); }}
   {{ HTML::script('public/js/admin.js'); }}
   

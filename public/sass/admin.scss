@@ -1,0 +1,14 @@
+
+span.glyphicon-ok {
+  color: green;	
+}
+span.glyphicon-remove {
+  color: red;
+}
+
+@import "bootstrap";
+
+
+.btn-xs, .btn-group-xs > .btn {
+    font-size: 12px;
+}
