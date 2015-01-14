@@ -1,0 +1,71 @@
+
+/* CONTACT */
+
+div.contact {
+    div.col-md-6 {
+        padding: 30px 0 30px 30px;
+        margin-top: 30px;
+    }
+    p {
+        margin-bottom: 35px;
+        font-size: 21px;
+        margin-top: 10px;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: $primary-color;
+    border-bottom: 2px solid $secondary-color;
+    height: 71px;
+    a {
+        color: white;
+        display: block;
+        font-size: 18px;
+        margin-top: 25px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/* 5 columns */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}

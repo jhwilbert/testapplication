@@ -23,9 +23,12 @@
 			@endif
 		</h3>
 
-		<div class="clients core-contents">
+		<div class="clients core-contents row">
+			<?php $i = 0; ?>
 			@foreach($clients as $client_slug => $client_name)
-				<img src="{{ asset('public/img/clients/'.$client_slug.'.gif') }}" class="client" alt="{{{$client_name}}}">
+				<div class="col-md-5ths col-sm-3">
+					<img src="{{ asset('public/img/clients/'.$client_slug.'.png') }}" class="client" alt="{{{$client_name}}}">
+				</div>
 			@endforeach
 		</div>
 

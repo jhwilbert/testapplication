@@ -1,18 +1,29 @@
 <?php
 
 return array(
-	'nav' => array(
-		'company' => 'A Empresa',
-		'projects' => 'Projetos',
-		'solutions' => 'Soluções',
-		'clients' => 'Clientes',
-		'contact' => 'Contato',
+	'back_to_top' => 'Voltar para o topo',
+	'clients' => array(
+		'title' => 'Clientes',
+		'intro' => 'Conheça algumas empresas e instituições que confiaram à Projesom seus projetos',
+	),
+	'contact' => array(
+		'title' => 'Contato',
+	),
+	'company' => array(
+		'title' => 'A Empresa',
 	),
 	'home' => array(
 		'title_projects' => 'Trabalhos',
 		'intro_projects' => 'Nossos trabalhos mais recentes',
 		'intro_solutions' => 'Conheça nossos serviços',
 		'intro_clients' => 'Parceiros comerciais de tradição',
+	),
+	'nav' => array(
+		'company' => 'A Empresa',
+		'projects' => 'Projetos',
+		'solutions' => 'Soluções',
+		'clients' => 'Clientes',
+		'contact' => 'Contato',
 	),
 	'projects' => array(
 		'title' => 'Projetos',
@@ -34,24 +45,13 @@ return array(
 			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
 		),
 	),
+	'structure' => array(
+		'title' => 'Estrutura',
+	),	
 	'timeline' => array(
 		'title' => 'Linha do tempo',
 		'intro' => 'Experiência de X anos aliada a muita pesquisa e trabalho',
 	),
-	'clients' => array(
-		'title' => 'Clientes',
-		'intro' => 'Conheça algumas empresas e instituições que confiaram à Projesom seus projetos',
-	),
-	'contact' => array(
-		'title' => 'Contato',
-	),
-	'company' => array(
-		'title' => 'A Empresa',
-	),
-	'structure' => array(
-		'title' => 'Estrutura',
-	),	
-	'back_to_top' => 'Voltar para o topo',
 
 );
 
