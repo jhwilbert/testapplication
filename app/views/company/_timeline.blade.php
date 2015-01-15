@@ -10,7 +10,8 @@
 	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
 	$skData .= ' data-'.($skPos+=400).'="top:0%"';
 	// timeline vars
-	$qt = 400; $ps = 4;
+	$qt = 400; 	// size in pixels of each scroll stage
+	$ps = 4; 	// number of scroll stages (1 entrance, 2 steady and 1 exit)
 	$scrollpos = $skPos;
 	$skPosOffset = $total_events * $ps * $qt;
 
@@ -27,7 +28,7 @@
 		<h3>{{Lang::get('messages.timeline.intro')}}</h3>
 		<div id="timeline-container">
 			<?php
-				$eps = 5; // events per scroll
+				$eps = 5; // timeline events per scroll
 				$scroll_h = 370;
 				$nscrolls = ceil($total_events / $eps);
 				$skData_ul  = '';
@@ -45,6 +46,7 @@
 				<?php 
 					$left = true;
 					$bull = 'background-image:!url(public/img/timeline/bullet.png)';
+					$l = 0;
 				?>
 				@foreach($timelineEvents as $event)
 					<?php
@@ -66,7 +68,7 @@
 					?>
 					<li class="year-{{ $left ? 'left' : 'right' }}"{{ $skData_li }}>
 						<div class="year"><span>{{{ date('Y', strtotime($event->date)) }}}</span></div>
-						<div class="description"{{ $skData_desc }}>
+						<div class="description y-{{ $l }}"{{ $skData_desc }}>
 							<div class="d-arrow"></div>
 							<div class="description-container">
 								@if($event->file_name)
@@ -79,6 +81,7 @@
 					<?php
 						$scrollpos += $ps*$qt;
 						$left = !$left;
+						$l = ($l >= $eps - 1) ? 0 : $l + 1;
 					?>
 				@endforeach
 			</ul>

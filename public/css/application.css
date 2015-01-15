@@ -3742,7 +3742,7 @@ body.mobile #timeline-container {
   max-height: inherit;
 }
 
-/* line 51, ../sass/app/_company.scss */
+/* line 50, ../sass/app/_company.scss */
 ul.timeline {
   list-style: none;
   background-image: url(../img/timeline/timeline_line.gif);
@@ -3753,29 +3753,29 @@ ul.timeline {
   padding: 0 0 120px;
   position: relative !important;
 }
-/* line 60, ../sass/app/_company.scss */
+/* line 59, ../sass/app/_company.scss */
 ul.timeline li {
   background-image: url(../img/timeline/bullet.png);
   background-repeat: no-repeat;
   background-position: center 35px;
   height: 75px;
 }
-/* line 63, ../sass/app/_company.scss */
+/* line 62, ../sass/app/_company.scss */
 ul.timeline li div.year {
   width: 445px;
 }
-/* line 65, ../sass/app/_company.scss */
+/* line 64, ../sass/app/_company.scss */
 ul.timeline li div.year span {
   display: block;
   padding: 31px 30px 0;
   font-size: 18px;
 }
-/* line 71, ../sass/app/_company.scss */
+/* line 70, ../sass/app/_company.scss */
 ul.timeline li div.description {
   position: absolute !important;
   overflow: hidden;
 }
-/* line 74, ../sass/app/_company.scss */
+/* line 73, ../sass/app/_company.scss */
 ul.timeline li div.description div.description-container {
   background-color: #FFFFFF;
   width: 430px;
@@ -3785,50 +3785,104 @@ ul.timeline li div.description div.description-container {
   font-size: 16px;
   color: #aeaeae;
 }
-/* line 84, ../sass/app/_company.scss */
-ul.timeline li div.d-arrow {
+/* line 81, ../sass/app/_company.scss */
+ul.timeline li div.description div.description-container p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 8px;
+}
+/* line 87, ../sass/app/_company.scss */
+ul.timeline li div.description div.d-arrow {
   height: 29px;
   margin-top: 30px;
   width: 16px;
   position: absolute;
 }
-/* line 92, ../sass/app/_company.scss */
+/* line 95, ../sass/app/_company.scss */
+ul.timeline li div.description.y-1 {
+  margin-top: -36px;
+}
+/* line 98, ../sass/app/_company.scss */
+ul.timeline li div.description.y-1 div.d-arrow {
+  margin-top: 66px;
+}
+/* line 101, ../sass/app/_company.scss */
+ul.timeline li div.description.y-1 div.description-container {
+  min-height: 106px;
+}
+/* line 95, ../sass/app/_company.scss */
+ul.timeline li div.description.y-2 {
+  margin-top: -72px;
+}
+/* line 98, ../sass/app/_company.scss */
+ul.timeline li div.description.y-2 div.d-arrow {
+  margin-top: 102px;
+}
+/* line 101, ../sass/app/_company.scss */
+ul.timeline li div.description.y-2 div.description-container {
+  min-height: 142px;
+}
+/* line 95, ../sass/app/_company.scss */
+ul.timeline li div.description.y-3 {
+  margin-top: -108px;
+}
+/* line 98, ../sass/app/_company.scss */
+ul.timeline li div.description.y-3 div.d-arrow {
+  margin-top: 138px;
+}
+/* line 101, ../sass/app/_company.scss */
+ul.timeline li div.description.y-3 div.description-container {
+  min-height: 178px;
+}
+/* line 95, ../sass/app/_company.scss */
+ul.timeline li div.description.y-4 {
+  margin-top: -144px;
+}
+/* line 98, ../sass/app/_company.scss */
+ul.timeline li div.description.y-4 div.d-arrow {
+  margin-top: 174px;
+}
+/* line 101, ../sass/app/_company.scss */
+ul.timeline li div.description.y-4 div.description-container {
+  min-height: 214px;
+}
+/* line 110, ../sass/app/_company.scss */
 ul.timeline li.year-left div.year {
   text-align: right;
   float: left;
 }
-/* line 96, ../sass/app/_company.scss */
+/* line 114, ../sass/app/_company.scss */
 ul.timeline li.year-left div.description {
   left: 50%;
   margin-left: 20px;
 }
-/* line 100, ../sass/app/_company.scss */
+/* line 118, ../sass/app/_company.scss */
 ul.timeline li.year-left div.description-container {
   float: left;
   margin-left: 15px;
 }
-/* line 104, ../sass/app/_company.scss */
+/* line 122, ../sass/app/_company.scss */
 ul.timeline li.year-left div.d-arrow {
   background-image: url(../img/timeline/arrow_left.png);
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* line 109, ../sass/app/_company.scss */
+/* line 127, ../sass/app/_company.scss */
 ul.timeline li.year-right div.year {
   text-align: left;
   float: right;
 }
-/* line 113, ../sass/app/_company.scss */
+/* line 131, ../sass/app/_company.scss */
 ul.timeline li.year-right div.description {
   right: 50%;
   margin-right: 20px;
 }
-/* line 117, ../sass/app/_company.scss */
+/* line 135, ../sass/app/_company.scss */
 ul.timeline li.year-right div.description-container {
   float: right;
   margin-right: 15px;
 }
-/* line 121, ../sass/app/_company.scss */
+/* line 139, ../sass/app/_company.scss */
 ul.timeline li.year-right div.d-arrow {
   background-image: url(../img/timeline/arrow_right.png);
   background-repeat: no-repeat;

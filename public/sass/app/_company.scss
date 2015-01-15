@@ -47,7 +47,6 @@
 }
 
 
-
 ul.timeline {
 	list-style: none;
 	background-image: url(../img/timeline/timeline_line.gif);
@@ -79,15 +78,34 @@ ul.timeline {
 				text-align: left;
 				font-size: 16px;
 				color: #aeaeae;
+				p {
+					font-size: 14px;
+					line-height: 18px;
+					margin-top: 8px;			
+				}
 			}
+			div.d-arrow {
+				height: 29px;
+				margin-top: 30px;
+				width: 16px;
+				position: absolute;
+			}
+
+			@for $i from 1 through 4 {
+				&.y-#{$i} {
+					$pad: 36 * $i;
+					margin-top: -#{$pad}px;
+					div.d-arrow {
+						margin-top: 30px + $pad;
+					}
+					div.description-container {
+						min-height: 70px + $pad;
+					}
+				}
+			}
+
 		}
-		div.d-arrow {
-			height: 29px;
-			margin-top: 30px;
-			width: 16px;
-			position: absolute;
-			
-		}
+
 		&.year-left {
 			div.year {
 				text-align: right;
