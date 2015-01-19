@@ -56,20 +56,41 @@ ul.timeline {
 	margin: 0 auto;
 	padding: 0 0 120px;
 	position: relative !important;
+	@media(max-width: $screen-sm-min) {
+		background-position: 0px center;
+		position: inherit !important;
+		width: 100%;
+		padding-bottom: 20px;
+	}
 	li {
 		@include bg-norepeat("timeline/bullet.png", center 35px);
 		height: 75px;
+		@media(max-width: $screen-sm-min) {
+			height: auto;
+			background-position: -6px 80px;
+		}
 		div.year {
 			width: 445px;
+			@media(max-width: $screen-sm-min) {
+				float: none !important;
+				width: auto;
+				text-align: left !important;
+			}	
 			span {
 				display: block;
 				padding: 31px 30px 0;
 				font-size: 18px;
-			}			
+			}
 		}
 		div.description {
 			position: absolute !important;
 			overflow: hidden;
+			@media(max-width: $screen-sm-min) {
+				position: inherit !important;
+				margin-top: 10px !important;
+				margin-left: 16px !important;
+				margin-right: 5px !important;
+			}
 			div.description-container {
 				background-color: #FFFFFF;
 				width: 430px;
@@ -78,6 +99,16 @@ ul.timeline {
 				text-align: left;
 				font-size: 16px;
 				color: #aeaeae;
+				@media(max-width: $screen-sm-min) {
+					float: none !important;
+					margin-left: 15px;
+					padding: 10px 15px;
+					width: 100%;
+					min-height: auto !important;
+					img {
+						max-width: 100%;
+					}
+				}
 				p {
 					font-size: 14px;
 					line-height: 18px;
@@ -89,6 +120,11 @@ ul.timeline {
 				margin-top: 30px;
 				width: 16px;
 				position: absolute;
+				@media(max-width: $screen-sm-min) {
+					margin-top: 15px !important;
+					@include bg-norepeat("timeline/arrow_left.png");
+					right: auto;
+				}
 			}
 
 			@for $i from 1 through 4 {
