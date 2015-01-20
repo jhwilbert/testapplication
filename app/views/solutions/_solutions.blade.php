@@ -42,7 +42,7 @@
 				</div>
 				<h4>{{Lang::get('messages.solutions.item1.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item1.text')}}</p>
-				<a href="{{ route('show_solution', array(1, App::getLocale())) }}" class="solution-plus">+</a>
+				<!-- <a href="{{ route('show_solution', array(1, App::getLocale())) }}" class="solution-plus">+</a> -->
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
@@ -50,7 +50,7 @@
 				</div>
 				<h4>{{Lang::get('messages.solutions.item2.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item2.text')}}</p>
-				<a href="#" class="solution-plus">+</a>
+				<!-- <a href="#" class="solution-plus">+</a> -->
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
@@ -58,7 +58,7 @@
 				</div>
 				<h4>{{Lang::get('messages.solutions.item3.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item3.text')}}</p>
-				<a href="#" class="solution-plus">+</a>
+				<!-- <a href="#" class="solution-plus">+</a> -->
 			</div>
 		</div>
 	</div>
