@@ -4131,7 +4131,7 @@ body.mobile #section-megabanner .megabanner-container {
 }
 /* line 81, ../sass/app/_modal.scss */
 .modal-backdrop.in {
-  opacity: 0;
+  opacity: 1;
 }
 
 /* line 86, ../sass/app/_modal.scss */
