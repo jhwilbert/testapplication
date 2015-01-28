@@ -1,19 +1,17 @@
-
 <?php
 
-	global $skPos;
-	if (!$skPos) $skPos = 0;
-	else $skPos -= 500;
+	if ($skVars::$section > 0) $skVars::overlap();
 
 	$skData  = '';
-	if ($skPos != 0) $skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
-	$skData .= ' data-'.($skPos+=400).'="top:0%"';
-	$breakPointUp = $skPos;
-	$skData .= ' data-'.($skPos+=900).'="top:0%"';
-	$breakPointDown = $skPos;
-	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
+	if ($skVars::$section > 0) $skData  = ' data-'. $skVars::$pos .'="top[outCubic]:100%"';
+	$skData .= ' data-'.($skVars::addTrans()).'="top:0%"';
+	$breakPointUp = $skVars::$pos;
+	$skData .= ' data-'.($skVars::addCont()).'="top:0%"';
+	$breakPointDown = $skVars::$pos;
+	$skData .= ' data-'.($skVars::addTrans()).'="top:-100%"';
 	$skData .= ' data-emit-events';
 
+	$skVars::nextSection();
 ?>
 
 <script type="text/javascript">

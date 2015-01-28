@@ -2,16 +2,16 @@
 
 	<?php
 
-		global $skPos;
-		if (!$skPos) $skPos = 0;
-		else $skPos -= 500;
+		$skVars::addTrans();
+		$skVars::addCont();
+		$skVars::addTrans();
 
-		$skData  = '';
-		if ($skPos != 0) $skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
-		$skData .= ' data-'.($skPos+=400).'="top:0%"';
-		$skData .= ' data-'.($skPos+=900).'="top:0%"';
-		$skData .= ' data-'.($skPos+=400).'="top:-100%"';
-
+		$skData = '';
+		$skData .= ' data-0="bottom:0%;"';
+		$skData .= ' data-' . ($skVars::overlap()) . '="bottom:0%"';
+		$skData .= ' data-' . ($skVars::addPos(500)) . '="bottom:-100%"';
+		
+		$skVars::nextSection();
 	?>
 
 	<section class="section megabanner" id="section-megabanner">
@@ -29,18 +29,12 @@
 				@endforeach
 			</div>
 
-			<?php 
-				$skData = '';
-				$skData .= ' data-0="bottom:0%;"';
-				$skData .= ' data-' . ($skPos - 500) . '="bottom:0%"';
-				$skData .= ' data-' . ($skPos) . '="bottom:-100%"';
-			?>
-
 			<div class="megabanner-nav"{{$skData}}>
-				<a href="#section-projects" id="home-arrow-dn" data-menu-top="{{$skPos}}"><img src="{{ asset('public/img/nav_arrow_dn.png') }}"></a>
+				<a href="#section-projects" id="home-arrow-dn" data-menu-top="{{$skVars::$pos}}"><img src="{{ asset('public/img/nav_arrow_dn.png') }}"></a>
 			</div>
 			
 		</div>
 
 	</section>
+
 @endif

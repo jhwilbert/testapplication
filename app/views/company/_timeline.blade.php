@@ -1,23 +1,22 @@
-
 <?php
-
-	global $skPos;
-	if (!$skPos) $skPos = 0;
-	else $skPos -= 500;
 
 	$total_events = sizeof($timelineEvents);
 
-	$skData  = ' data-'. $skPos      .'="top[outCubic]:100%"';
-	$skData .= ' data-'.($skPos+=400).'="top:0%"';
+	if ($skVars::$section > 0) $skVars::overlap();
+
+	if ($skVars::$section > 0) $skData  = ' data-'. $skVars::$pos  .'="top[outCubic]:100%"';
+	$skData .= ' data-'.($skVars::addTrans()).'="top:0%"';
 	// timeline vars
 	$qt = 400; 	// size in pixels of each scroll stage
 	$ps = 4; 	// number of scroll stages (1 entrance, 2 steady and 1 exit)
-	$scrollpos = $skPos;
+	$scrollpos = $skVars::$pos;
 	$skPosOffset = $total_events * $ps * $qt;
 
-	$skData .= ' data-'.($skPos+=$skPosOffset).'="top:0%"';
-	$skData .= ' data-'.($skPos+=400).'="top:-100%"';
+	$skData .= ' data-'.($skVars::addPos($skPosOffset)).'="top:0%"';
+	$skData .= ' data-'.($skVars::addTrans()).'="top:-100%"';
 	$skData .= ' data-emit-events';
+
+	$skVars::nextSection();
 
 ?>
 
