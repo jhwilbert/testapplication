@@ -1,14 +1,7 @@
 <?php
 
-	if ($skVars::$section > 0) $skVars::overlap();
+	$skData = $skVars::build();
 
-	$skData  = '';
-	if ($skVars::$section > 0) $skData  = ' data-'. $skVars::$pos .'="top[outCubic]:100%"';
-	$skData .= ' data-'.($skVars::addTrans()).'="top:0%"';
-	$skData .= ' data-'.($skVars::addCont()).'="top:0%"';
-	$skData .= ' data-'.($skVars::addTrans()).'="top:-100%"';
-
-	$skVars::nextSection();
 ?>
 
 <section class="section skrollable" id="section-newsfeed"{{ $skData }}>

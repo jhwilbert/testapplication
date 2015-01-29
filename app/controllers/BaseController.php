@@ -61,6 +61,22 @@ class SkrollrVars {
 		self::$section++;
 	}
 
+	public static function build() {
+
+		if (self::$section > 0) self::overlap();
+
+		$skData  = '';
+		if (self::$section > 0) $skData  = ' data-'. self::$pos .'="top[outCubic]:100%"';
+		$skData .= ' data-'.(self::addTrans()).'="top:0%"';
+		$skData .= ' data-'.(self::addCont()).'="top:0%"';
+		$skData .= ' data-'.(self::addTrans()).'="top:-100%"';
+
+		self::nextSection();
+		
+		return $skData;
+
+	}
+
 }
 
 
