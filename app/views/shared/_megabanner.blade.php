@@ -37,4 +37,6 @@
 
 	</section>
 
+	<?php $skVars::addPos(-1000); ?>
+
 @endif
