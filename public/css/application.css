@@ -3983,39 +3983,50 @@ body.mobile #section-megabanner .megabanner-container {
 }
 /* line 23, ../sass/app/_megabanner.scss */
 #section-megabanner .slidesjs-container {
-  margin-bottom: 63px;
+  margin-bottom: 20px;
   overflow: visible !important;
 }
 /* line 27, ../sass/app/_megabanner.scss */
 #section-megabanner #megabanners {
   display: none;
 }
-/* line 31, ../sass/app/_megabanner.scss */
+/* line 30, ../sass/app/_megabanner.scss */
+#section-megabanner .megabanner-image {
+  height: 100%;
+  overflow: hidden;
+}
+/* line 33, ../sass/app/_megabanner.scss */
 #section-megabanner .megabanner-image img {
   width: 100%;
 }
-/* line 36, ../sass/app/_megabanner.scss */
+/* line 38, ../sass/app/_megabanner.scss */
 #section-megabanner .megabanner-nav {
-  z-index: 101;
-  padding: 50px 0;
+  z-index: 99;
+  padding: 50px 0 100px;
   width: 100% !important;
 }
-/* line 40, ../sass/app/_megabanner.scss */
+/* line 42, ../sass/app/_megabanner.scss */
 #section-megabanner .megabanner-nav a#home-arrow-dn {
   display: block;
   width: 34px;
   margin: 0 auto;
 }
 
-/* line 48, ../sass/app/_megabanner.scss */
+/* line 50, ../sass/app/_megabanner.scss */
 #section-megabanner .slidesjs-pagination {
   position: relative;
-  z-index: 102;
+  z-index: 100;
 }
 
-/* line 54, ../sass/app/_megabanner.scss */
+/* line 57, ../sass/app/_megabanner.scss */
 .megabanners h3 {
-  margin-top: 10px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
 }
 
 /* line 3, ../sass/app/_modal.scss */

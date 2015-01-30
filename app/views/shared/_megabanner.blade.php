@@ -11,6 +11,8 @@
 		$skData .= ' data-' . ($skVars::overlap()) . '="bottom:0%"';
 		$skData .= ' data-' . ($skVars::addPos(500)) . '="bottom:-100%"';
 		
+		$skVars::addPos(-1000);
+
 		$skVars::nextSection();
 	?>
 
@@ -36,7 +38,5 @@
 		</div>
 
 	</section>
-
-	<?php $skVars::addPos(-1000); ?>
 
 @endif
