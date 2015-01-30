@@ -6,7 +6,7 @@ class CompanyController extends BaseController {
 
 		$megabanners = Megabanner::where('active', 1)->where('show_in_company', 1)->get();
 
-		$timelineEvents = TimelineEvent::where('active', 1)->orderBy('date', 'ASC')->get();
+		$timelineEvents = TimelineEvent::where('active', 1)->orderBy('date', 'DESC')->get();
 
 		if (Route::currentRouteName() == 'company_en') {
 			App::setLocale('en');
