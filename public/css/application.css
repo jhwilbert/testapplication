@@ -3407,33 +3407,65 @@ html * {
   font-size: 16px;
 }
 
-/* line 9, ../sass/app/_main.scss */
+/* line 8, ../sass/app/_main.scss */
+body {
+  overflow: hidden;
+}
+/* line 10, ../sass/app/_main.scss */
 body.mobile {
   height: auto;
 }
-/* line 10, ../sass/app/_main.scss */
+/* line 11, ../sass/app/_main.scss */
 body.mobile .skrollable {
   position: inherit;
 }
 
-/* line 16, ../sass/app/_main.scss */
+/* line 18, ../sass/app/_main.scss */
 ul.nav {
   list-style: none;
   padding: 0;
 }
-/* line 19, ../sass/app/_main.scss */
+/* line 21, ../sass/app/_main.scss */
 ul.nav li {
   float: left;
 }
 
-/* line 24, ../sass/app/_main.scss */
+/* Preloader */
+/* line 27, ../sass/app/_main.scss */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1041;
+}
+/* line 36, ../sass/app/_main.scss */
+#preloader #status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+/* line 50, ../sass/app/_main.scss */
 #main-menu {
   width: 100%;
   background-color: white;
   z-index: 1039;
   border: none;
 }
-/* line 29, ../sass/app/_main.scss */
+/* line 55, ../sass/app/_main.scss */
 #main-menu .logo {
   display: block;
   margin: 20px;
@@ -3441,23 +3473,23 @@ ul.nav li {
   float: left;
 }
 @media (max-height: 700px) {
-  /* line 29, ../sass/app/_main.scss */
+  /* line 55, ../sass/app/_main.scss */
   #main-menu .logo {
     margin: 10px 20px;
   }
 }
 @media (max-width: 768px) {
-  /* line 29, ../sass/app/_main.scss */
+  /* line 55, ../sass/app/_main.scss */
   #main-menu .logo {
     width: 145px;
     margin: 25px 8px 10px;
   }
-  /* line 40, ../sass/app/_main.scss */
+  /* line 66, ../sass/app/_main.scss */
   #main-menu .logo img {
     width: 145px;
   }
 }
-/* line 45, ../sass/app/_main.scss */
+/* line 71, ../sass/app/_main.scss */
 #main-menu .language-btn {
   float: right;
   margin: 35px 30px 0 0;
@@ -3467,30 +3499,30 @@ ul.nav li {
   text-transform: uppercase;
   color: #d95a49;
 }
-/* line 53, ../sass/app/_main.scss */
+/* line 79, ../sass/app/_main.scss */
 #main-menu .language-btn:hover {
   background-color: #d95a49;
   color: #FFFFFF;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  /* line 45, ../sass/app/_main.scss */
+  /* line 71, ../sass/app/_main.scss */
   #main-menu .language-btn {
     float: left;
     margin: 25px 5px 0 20px;
   }
 }
-/* line 63, ../sass/app/_main.scss */
+/* line 89, ../sass/app/_main.scss */
 #main-menu .menu-container {
   width: 100%;
   background-color: #d95a49;
   border-bottom: 2px solid #b24538;
 }
-/* line 68, ../sass/app/_main.scss */
+/* line 94, ../sass/app/_main.scss */
 #main-menu .navbar-toggle {
   margin-top: 25px;
 }
-/* line 71, ../sass/app/_main.scss */
+/* line 97, ../sass/app/_main.scss */
 #main-menu ul.nav {
   border-left: 2px solid #b24538;
   width: 642px;
@@ -3500,12 +3532,12 @@ ul.nav li {
   z-index: 2;
   float: none;
 }
-/* line 79, ../sass/app/_main.scss */
+/* line 105, ../sass/app/_main.scss */
 #main-menu ul.nav li {
   text-transform: uppercase;
   border-right: 2px solid #b24538;
 }
-/* line 82, ../sass/app/_main.scss */
+/* line 108, ../sass/app/_main.scss */
 #main-menu ul.nav li a {
   color: white;
   font-size: 12px;
@@ -3515,36 +3547,36 @@ ul.nav li {
   padding: 13px 16px 0;
   position: static;
 }
-/* line 93, ../sass/app/_main.scss */
+/* line 119, ../sass/app/_main.scss */
 #main-menu li.newsfeed img {
   vertical-align: text-top;
 }
-/* line 97, ../sass/app/_main.scss */
+/* line 123, ../sass/app/_main.scss */
 #main-menu .in, #main-menu .collapsing {
   width: 100%;
   height: auto;
 }
-/* line 100, ../sass/app/_main.scss */
+/* line 126, ../sass/app/_main.scss */
 #main-menu .in ul, #main-menu .collapsing ul {
   width: 100%;
   height: auto;
   border: none !important;
 }
-/* line 105, ../sass/app/_main.scss */
+/* line 131, ../sass/app/_main.scss */
 #main-menu .in li, #main-menu .collapsing li {
   width: 100%;
   border: none !important;
 }
-/* line 108, ../sass/app/_main.scss */
+/* line 134, ../sass/app/_main.scss */
 #main-menu .in li a:hover, #main-menu .in li a.active, #main-menu .collapsing li a:hover, #main-menu .collapsing li a.active {
   background-color: #b24538;
 }
-/* line 112, ../sass/app/_main.scss */
+/* line 138, ../sass/app/_main.scss */
 #main-menu .in #menu_marker, #main-menu .collapsing #menu_marker {
   display: none !important;
 }
 
-/* line 119, ../sass/app/_main.scss */
+/* line 145, ../sass/app/_main.scss */
 #menu_marker {
   background-color: #b24538;
   height: 40px;
@@ -3555,13 +3587,13 @@ ul.nav li {
   display: none;
 }
 @media (max-height: 700px) {
-  /* line 119, ../sass/app/_main.scss */
+  /* line 145, ../sass/app/_main.scss */
   #menu_marker {
     top: 80px;
   }
 }
 
-/* line 138, ../sass/app/_main.scss */
+/* line 164, ../sass/app/_main.scss */
 h2 {
   display: table;
   width: 210px;
@@ -3573,7 +3605,7 @@ h2 {
   border: 4px solid #d95a49;
 }
 
-/* line 149, ../sass/app/_main.scss */
+/* line 175, ../sass/app/_main.scss */
 h3 {
   font-weight: normal;
   font-size: 22px;
@@ -3581,14 +3613,14 @@ h3 {
   margin-top: 40px;
 }
 
-/* line 156, ../sass/app/_main.scss */
+/* line 182, ../sass/app/_main.scss */
 #main_container {
   margin: 0;
   width: 100%;
   padding: 0;
 }
 
-/* line 162, ../sass/app/_main.scss */
+/* line 188, ../sass/app/_main.scss */
 #main_container section.section {
   padding: 40px 0;
   width: 100%;
@@ -3596,35 +3628,35 @@ h3 {
   overflow: auto;
   padding-top: 142px;
 }
-/* line 168, ../sass/app/_main.scss */
+/* line 194, ../sass/app/_main.scss */
 #main_container section.section .inner-content {
   margin: 0 auto;
 }
-/* line 170, ../sass/app/_main.scss */
+/* line 196, ../sass/app/_main.scss */
 #main_container section.section .inner-content p.text {
   line-height: 28px;
 }
 @media (max-height: 700px) {
-  /* line 162, ../sass/app/_main.scss */
+  /* line 188, ../sass/app/_main.scss */
   #main_container section.section {
     padding-top: 122px;
   }
 }
 @media (max-width: 768px) {
-  /* line 162, ../sass/app/_main.scss */
+  /* line 188, ../sass/app/_main.scss */
   #main_container section.section {
     padding-top: 100px;
   }
 }
 
-/* line 181, ../sass/app/_main.scss */
+/* line 207, ../sass/app/_main.scss */
 section.section-gray {
   background-color: #ebebeb;
   border-bottom: 5px solid #cecece;
 }
 
 /* Slide Navigation */
-/* line 188, ../sass/app/_main.scss */
+/* line 214, ../sass/app/_main.scss */
 .slidesjs-navigation {
   text-indent: 100%;
   white-space: nowrap;
@@ -3635,32 +3667,32 @@ section.section-gray {
   position: absolute;
 }
 
-/* line 193, ../sass/app/_main.scss */
+/* line 219, ../sass/app/_main.scss */
 .slidesjs-previous {
   background-image: url(../img/modal_prev_btn.png);
   background-repeat: no-repeat;
   background-position: left top;
 }
 
-/* line 196, ../sass/app/_main.scss */
+/* line 222, ../sass/app/_main.scss */
 .slidesjs-next {
   background-image: url(../img/modal_next_btn.png);
   background-repeat: no-repeat;
   background-position: left top;
 }
 
-/* line 201, ../sass/app/_main.scss */
+/* line 227, ../sass/app/_main.scss */
 .slidesjs-pagination {
   margin: 6px auto 0;
   list-style: none;
   padding: 0;
 }
-/* line 205, ../sass/app/_main.scss */
+/* line 231, ../sass/app/_main.scss */
 .slidesjs-pagination li {
   float: left;
   margin: 0 1px;
 }
-/* line 208, ../sass/app/_main.scss */
+/* line 234, ../sass/app/_main.scss */
 .slidesjs-pagination li a {
   display: block;
   width: 13px;
@@ -3672,11 +3704,11 @@ section.section-gray {
   float: left;
   overflow: hidden;
 }
-/* line 216, ../sass/app/_main.scss */
+/* line 242, ../sass/app/_main.scss */
 .slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
   background-position: 0 -13px;
 }
-/* line 219, ../sass/app/_main.scss */
+/* line 245, ../sass/app/_main.scss */
 .slidesjs-pagination li a:hover {
   background-position: 0 -26px;
 }

@@ -4,22 +4,25 @@
 <!--[if IE 8]>         <html lang="{{ App::getLocale() }}" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="{{ App::getLocale() }}" class="no-js"> <!--<![endif]-->
 
-    @include('shared._head')
-    
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    	@include('shared._nav')
-
-        <div class="main" role="main" id="skrollr-body">
-            <div class="container-fluid" id="main_container">
-		        @yield('content')
-		    </div>
+	@include('shared._head')
+	
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
 		</div>
-    	@include('shared._footer')
-        @yield('footer')
-    	@include('shared._footer_scripts')
-    </body>
-    
+		@include('shared._nav')
+
+		<div class="main" role="main" id="skrollr-body">
+			<div class="container-fluid" id="main_container">
+				@yield('content')
+			</div>
+		</div>
+		@include('shared._footer')
+		@yield('footer')
+		@include('shared._footer_scripts')
+	</body>
+	
 </html>

@@ -1,3 +1,4 @@
+
 var s;
 var is_mobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
 
@@ -6,11 +7,20 @@ $(document).ready(function() {
 	else initSkrollr();
 	initWindowResize();
 	turnMenuMouseEventsOn();
+	closePreloader();
 });
 
 $(window).load(function() {
 	setMenuPosition();
 });
+
+function closePreloader() {
+	$('#status').fadeOut(); // will first fade out the loading animation
+	$('#preloader').delay(350).fadeOut('slow', function() {
+		$('#status').remove();
+	});
+	$('body').delay(350).css({'overflow':'visible'});
+}
 
 function initSkrollr() {
 
