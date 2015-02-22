@@ -23,10 +23,12 @@ div.contact {
 /* FOOTER */
 
 footer {
-    width: 100%;
+    width: 60px;
+    position:absolute;
+    right:0px;
     background-color: $primary-color;
     border-bottom: 2px solid $secondary-color;
-    height: 71px;
+    height: 60px;
     a {
         color: white;
         display: block;
