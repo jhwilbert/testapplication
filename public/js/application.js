@@ -22,25 +22,6 @@ function closePreloader() {
 	$('body').delay(350).css({'overflow':'visible'});
 }
 
-function initSkrollr() {
-
-	// define scale according to the window's height
-	var scale = 460 / $(window).height();
-
-	s = skrollr.init({
-		skrollrBody: '#main_container',
-		keyframe: function(element, name, direction) {
-			if ($(element).attr('id') == 'section-projects') getProjectsSkrollrEvents(name, direction);
-			else if ($(element).attr('id') == 'section-solutions') getSolutionsSkrollrEvents(name, direction);
-		},
-		scale: 1
-	});
-
-	skrollr.menu.init(s);
-	s.destroy()
-}
-
-
 /* manage window resize actions */
 
 function initWindowResize() {
