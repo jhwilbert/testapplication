@@ -1,9 +1,4 @@
-<?php
-
-	$skData = $skVars::build();
-
-?>
-<section class="section skrollable" id="section-clients"{{ $skData }}>
+<section class="section" id="section-clients">
 
 	<div class="inner-content">
 		<h2>{{Lang::get('messages.clients.title')}}</h2>

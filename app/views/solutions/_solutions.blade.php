@@ -1,25 +1,4 @@
-<?php
-
-	if ($skVars::$section > 0) $skVars::overlap();
-
-	$skData  = '';
-	if ($skVars::$section > 0) $skData  = ' data-'. $skVars::$pos .'="top[outCubic]:100%"';
-	$skData .= ' data-'.($skVars::addTrans()).'="top:0%"';
-	$breakPointUp = $skVars::$pos;
-	$skData .= ' data-'.($skVars::addCont()).'="top:0%"';
-	$breakPointDown = $skVars::$pos;
-	$skData .= ' data-'.($skVars::addTrans()).'="top:-100%"';
-	$skData .= ' data-emit-events';
-
-	$skVars::nextSection();
-?>
-
-<script type="text/javascript">
-	var solutionsBpUp = 'data<?php echo $breakPointUp; ?>';
-	var solutionsBpDn = 'data<?php echo $breakPointDown; ?>';
-</script>
-
-<section class="section skrollable" id="section-solutions"{{ $skData }}>
+<section class="section" id="section-solutions">
 
 	<div class="inner-content container">
 		

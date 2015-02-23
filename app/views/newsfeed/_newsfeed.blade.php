@@ -1,10 +1,5 @@
-<?php
 
-	$skData = $skVars::build();
-
-?>
-
-<section class="section skrollable" id="section-newsfeed"{{ $skData }}>
+<section class="section" id="section-newsfeed">
 
 	<div class="inner-content container">
 		

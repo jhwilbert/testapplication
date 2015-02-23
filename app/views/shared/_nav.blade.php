@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default skrollable" role="navigation" id="main-menu">
+<nav class="navbar navbar-default" role="navigation" id="main-menu">
 	<?php
 		$crn = Route::currentRouteName(); 
 		$home_url = ($crn == 'home') ? '#section-megabanner' : route("home$lpr"); 
