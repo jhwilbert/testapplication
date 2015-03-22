@@ -1,6 +1,6 @@
 
 
-<section class="section section-gray" id="section-timeline">
+<section class="section section" id="section-timeline">
 
 	<div class="inner-content">
 		<h2>{{Lang::get('messages.timeline.title')}}</h2>

@@ -15,7 +15,7 @@
 		</div>
 		@include('shared._nav')
 
-		<div class="main" role="main" id="skrollr-body">
+		<div class="main" role="main">
 			<div class="container-fluid" id="main_container">
 				@yield('content')
 			</div>

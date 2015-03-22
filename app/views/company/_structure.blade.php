@@ -1,4 +1,4 @@
-<section class="section" id="section-company">
+<section class="section section-gray" id="section-company">
 
 	<div class="inner-content container">
 		<h2>{{Lang::get('messages.structure.title')}}</h2>
