@@ -6,6 +6,17 @@
 		
 		<h2>{{Lang::get('messages.contact.title')}}</h2>
 
+		<form action="action_page.php">
+			<fieldset>
+			First name:<br>
+			<input type="text" name="firstname" value="Mickey">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname" value="Mouse">
+			<br><br>
+			<input type="submit" value="Submit"></fieldset>
+		</form>
+
 		<div class="row contact">
 			<div class="col-md-6">
 				<img src="{{ asset('public/img/contact/address_icon.png') }}">	
