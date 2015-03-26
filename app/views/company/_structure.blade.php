@@ -3,7 +3,8 @@
 	<div class="inner-content container">
 		<h2>{{Lang::get('messages.structure.title')}}</h2>
 
-		<div class="structure core-contents" id="structure_slides">
+
+		<div class="structure core-contents">
 
 			<div class="row">
 				<div class="col-md-4">

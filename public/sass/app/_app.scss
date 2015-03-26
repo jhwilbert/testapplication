@@ -23,22 +23,17 @@ div.contact {
 /* FOOTER */
 
 footer {
-    width: 60px;
+    width: 50px;
     position:absolute;
     right:0px;
     background-color: $primary-color;
-    border-bottom: 2px solid $secondary-color;
-    height: 60px;
-    a {
-        color: white;
-        display: block;
-        font-size: 18px;
-        margin-top: 25px;
-        text-decoration: none;
-        text-align: center;
-    }
+    height: 50px;
 }
 
+footer.img {
+    padding:0px;
+    margin:0px;
+}
 /* 5 columns */
 
 .col-xs-5ths,

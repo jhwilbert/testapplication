@@ -11,6 +11,8 @@ return array(
 	),
 	'company' => array(
 		'title' => 'A Empresa',
+		'intro' => 'São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar. ',
+
 	),
 	'home' => array(
 		'title_projects' => 'Trabalhos',
@@ -27,7 +29,7 @@ return array(
 	),
 	'projects' => array(
 		'title' => 'Projetos',
-		'intro' => 'A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. Confira alguns projetos e instalações que deixam isso bem claro e mostram porque estamos no mercado há tanto tempo e continuaremos por muito mais.',
+		'intro' => 'A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. ',
 	),
 	'solutions' => array(
 		'title' => 'Soluções',

@@ -47,6 +47,7 @@ return array(
 	),
 	'company' => array(
 		'title' => 'The Company',
+		'intro' => '[en] São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar. ',
 	),
 	'structure' => array(
 		'title' => 'Structure',

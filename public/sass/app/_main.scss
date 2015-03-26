@@ -179,25 +179,28 @@ h3 {
     padding: 0;
 }
 
-#main_container section.section {
-    padding: 40px 0;
+#main_container section.section {    
     width: 100%;
-    height: 98%;
+
     overflow: auto;
-    .inner-content {
+    .inner-content { 
+        padding-top:20px;
         margin: 0 auto;
         p.text {
             line-height: 28px;
         }
     }
+    /*
     @media(max-height: $screen-sm-height) {
         padding-top: $menu-height - 20px;
     }
     @media(max-width: $screen-sm-min) {
         padding-top: 30px;
     }
+    */
 }
 section.section-gray {
+
     background-color: #ebebeb;
     border-bottom: 5px solid #cecece;
 }
