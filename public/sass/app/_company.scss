@@ -39,7 +39,7 @@
 }
 
 #timeline-container {
-	max-height: 450px;
+	/*max-height: 450px;*/
 	overflow: hidden;
 	body.mobile & {
 		max-height: inherit;
@@ -91,10 +91,20 @@ ul.timeline {
 				margin-left: 16px !important;
 				margin-right: 5px !important;
 			}
+
+			div.description-text {
+				float:right;
+				padding:5px;
+				width:200px;
+			}
+			div.description-image {
+				float:left;
+				width:50px;
+			}
 			div.description-container {
 				background-color: #FFFFFF;
-				width: 430px;
-				padding: 20px 35px;
+				width: 300px;
+				padding: 0px;
 				border-bottom: 3px solid #b2b2b2;
 				text-align: left;
 				font-size: 16px;
@@ -110,9 +120,14 @@ ul.timeline {
 					}
 				}
 				p {
-					font-size: 14px;
+					float:left;
+					font-size: 12px;
 					line-height: 18px;
 					margin-top: 8px;			
+				}
+				img {
+					width:100px;
+					height: 100px;
 				}
 			}
 			div.d-arrow {

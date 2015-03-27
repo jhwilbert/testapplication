@@ -7,7 +7,7 @@
 		<h2>{{Lang::get('messages.contact.title')}}</h2>
 
 		<form action="action_page.php">
-			<fieldset>
+			<fieldset>	
 			First name:<br>
 			<input type="text" name="firstname" value="Mickey">
 			<br>

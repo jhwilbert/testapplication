@@ -1,15 +1,15 @@
 <section class="section section-gray" id="section-projects">
 
 	<div class="inner-content container">
-		
-		@if (Route::currentRouteName() == 'home')
-			<h2>{{Lang::get('messages.home.title_projects')}}</h2>
-			<h3>{{Lang::get('messages.home.intro_projects')}}</h3>
-		@else
-			<h2>{{Lang::get('messages.projects.title')}}</h2>
-			<h3>{{Lang::get('messages.projects.intro')}}</h3>
-		@endif
-
+			@if (Route::currentRouteName() == 'home')
+				<h2>{{Lang::get('messages.home.title_projects')}}</h2>
+				<h3>{{Lang::get('messages.home.intro_projects')}}</h3>
+			@else
+				<h2>{{Lang::get('messages.projects.title')}}</h2>
+				<div class="intro-container">
+					<h3>{{Lang::get('messages.projects.intro')}}</h3>
+				</div>
+			@endif
 		<div class="projects row">
 			@foreach($projects as $project)
 				<div class="col-md-4">

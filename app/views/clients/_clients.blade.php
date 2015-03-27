@@ -2,15 +2,15 @@
 
 	<div class="inner-content">
 		<h2>{{Lang::get('messages.clients.title')}}</h2>
-
-		<h3>
-			@if (Route::currentRouteName() == 'home')
-				{{Lang::get('messages.home.intro_clients')}}
-			@else
-				{{Lang::get('messages.clients.intro')}}
-			@endif
-		</h3>
-
+		<div class="intro-container">
+			<h3>
+				@if (Route::currentRouteName() == 'home')
+					{{Lang::get('messages.home.intro_clients')}}
+				@else
+					{{Lang::get('messages.clients.intro')}}
+				@endif
+			</h3>
+		</div>
 		<div class="clients core-contents row">
 			<?php $i = 0; ?>
 			@foreach($clients as $client_slug => $client_name)

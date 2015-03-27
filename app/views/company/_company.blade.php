@@ -2,8 +2,10 @@
 
 	<div class="inner-content container">
 		<h2>{{Lang::get('messages.company.title')}}</h2>
-		<h3>{{Lang::get('messages.company.intro')}}</h3> <!-- TODO: replace this with company intro --> 
-		
+
+		<div class="intro-container">
+			<h3>{{Lang::get('messages.company.intro')}}</h3>
+		</div>
 		<div class="row company core-contents">
 
 			<div class="col-md-6">

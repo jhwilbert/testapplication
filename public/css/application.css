@@ -2218,6 +2218,16 @@ ul.nav {
     margin: -100px 0 0 -100px;
     /* is width and height divided by two */ }
 
+.intro-container {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto; }
+
+.company-img img {
+  border: 2px solid grey;
+  padding: 0px;
+  margin: 0px; }
+
 #main-menu {
   width: 100%;
   background-color: white;
@@ -2429,7 +2439,7 @@ section#section-clients div.clients {
   width: 280px; }
 
 #timeline-container {
-  max-height: 450px;
+  /*max-height: 450px;*/
   overflow: hidden; }
   body.mobile #timeline-container {
     max-height: inherit; }
@@ -2478,10 +2488,17 @@ ul.timeline {
           margin-top: 10px !important;
           margin-left: 16px !important;
           margin-right: 5px !important; } }
+      ul.timeline li div.description div.description-text {
+        float: right;
+        padding: 5px;
+        width: 200px; }
+      ul.timeline li div.description div.description-image {
+        float: left;
+        width: 50px; }
       ul.timeline li div.description div.description-container {
         background-color: #FFFFFF;
-        width: 430px;
-        padding: 20px 35px;
+        width: 300px;
+        padding: 0px;
         border-bottom: 3px solid #b2b2b2;
         text-align: left;
         font-size: 16px;
@@ -2496,9 +2513,13 @@ ul.timeline {
             ul.timeline li div.description div.description-container img {
               max-width: 100%; } }
         ul.timeline li div.description div.description-container p {
-          font-size: 14px;
+          float: left;
+          font-size: 12px;
           line-height: 18px;
           margin-top: 8px; }
+        ul.timeline li div.description div.description-container img {
+          width: 100px;
+          height: 100px; }
       ul.timeline li div.description div.d-arrow {
         height: 29px;
         margin-top: 30px;
