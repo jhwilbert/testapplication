@@ -2481,27 +2481,33 @@ ul.timeline {
         font-size: 18px; }
     ul.timeline li div.description {
       position: absolute !important;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 100px; }
       @media (max-width: 768px) {
         ul.timeline li div.description {
           position: inherit !important;
           margin-top: 10px !important;
           margin-left: 16px !important;
           margin-right: 5px !important; } }
-      ul.timeline li div.description div.description-text {
+      ul.timeline li div.description div.description-text-left {
         float: right;
-        padding: 5px;
         width: 200px; }
-      ul.timeline li div.description div.description-image {
+      ul.timeline li div.description div.description-text-right {
         float: left;
-        width: 50px; }
+        width: 200px; }
+      ul.timeline li div.description div.description-image-right {
+        float: left;
+        width: 100px; }
+      ul.timeline li div.description div.description-image-left {
+        float: right;
+        width: 100px; }
       ul.timeline li div.description div.description-container {
         background-color: #FFFFFF;
         width: 300px;
         padding: 0px;
         border-bottom: 3px solid #b2b2b2;
         text-align: left;
-        font-size: 16px;
+        font-size: 12px;
         color: #aeaeae; }
         @media (max-width: 768px) {
           ul.timeline li div.description div.description-container {

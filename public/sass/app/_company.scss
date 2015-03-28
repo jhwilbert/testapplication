@@ -85,6 +85,7 @@ ul.timeline {
 		div.description {
 			position: absolute !important;
 			overflow: hidden;
+			height:100px;
 			@media(max-width: $screen-sm-min) {
 				position: inherit !important;
 				margin-top: 10px !important;
@@ -92,22 +93,33 @@ ul.timeline {
 				margin-right: 5px !important;
 			}
 
-			div.description-text {
+			div.description-text-left {
 				float:right;
-				padding:5px;
 				width:200px;
 			}
-			div.description-image {
+
+			div.description-text-right {
 				float:left;
-				width:50px;
+				width:200px;
 			}
+			
+
+			div.description-image-right {
+				float:left;
+				width:100px;
+			}
+			div.description-image-left {
+				float:right;
+				width:100px;
+			}
+
 			div.description-container {
 				background-color: #FFFFFF;
 				width: 300px;
 				padding: 0px;
 				border-bottom: 3px solid #b2b2b2;
 				text-align: left;
-				font-size: 16px;
+				font-size: 12px;
 				color: #aeaeae;
 				@media(max-width: $screen-sm-min) {
 					float: none !important;

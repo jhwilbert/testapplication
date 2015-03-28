@@ -14,18 +14,19 @@
 					$l = 0;
 				?>
 				@foreach($timelineEvents as $event){{ $left = !$left }}
+				
 					<li class="year-{{ $left ? 'left' : 'right' }}">
 
 						<div class="year"><span>{{{ date('Y', strtotime($event->date)) }}}</span></div>
 						<div class="description y-{{ $l }}">
 							<div class="d-arrow"></div>
 							<div class="description-container">
-								<div class="description-image">
+								<div class="description-image-{{ $left ? 'left' : 'right' }}">
 								@if($event->file_name)
 									<img src="{{ asset($event->getImagePath('medium')) }}">
 								@endif
 								</div>
-								<div class="description-text">
+								<div class="description-text-{{ $left ? 'left' : 'right' }}">
 								{{ $event["text$lpr"] }}
 								</div>
 							</div>
