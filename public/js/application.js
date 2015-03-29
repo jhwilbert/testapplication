@@ -5,7 +5,7 @@ var is_mobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini
 $(document).ready(function() {
 	if (is_mobile) mobileHacks();
 	//else initSkrollr();
-	initWindowResize();
+	//initWindowResize();
 	turnMenuMouseEventsOn();
 	closePreloader();
 });

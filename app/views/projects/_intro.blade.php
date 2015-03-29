@@ -1,10 +1,10 @@
 <section class="section" id="section-company">
 
 	<div class="inner-content container">
-		<h2>{{Lang::get('messages.company.title')}}</h2>
+		<h2>{{Lang::get('messages.projects.title')}}</h2>
 
 		<div class="intro-container">
-			<h3>{{Lang::get('messages.company.intro')}}</h3>
+			<h3>{{Lang::get('messages.projects.intro')}}</h3>
 		</div>
 		<div class="row company core-contents">
 

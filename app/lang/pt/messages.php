@@ -29,7 +29,9 @@ return array(
 	),
 	'projects' => array(
 		'title' => 'Projetos',
+		'subtitle' => 'Highlights',
 		'intro' => 'A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. ',
+		'subintro' => 'Alguns exemplos de projetos executados pela Projesom nos ultimos 10 anos que demonstram a escala e complexidade.',
 	),
 	'solutions' => array(
 		'title' => 'Soluções',

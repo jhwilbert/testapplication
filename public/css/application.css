@@ -2223,11 +2223,6 @@ ul.nav {
   width: 80%;
   margin: auto; }
 
-.company-img img {
-  border: 2px solid grey;
-  padding: 0px;
-  margin: 0px; }
-
 #main-menu {
   width: 100%;
   background-color: white;
@@ -2434,6 +2429,13 @@ section#section-clients div.clients {
   height: 300px;
   overflow: hidden; }
 
+.company-img {
+  padding: 0px;
+  margin: 0px;
+  background-color: #dbdbdb;
+  margin-top: 10px;
+  margin-bottom: 25px; }
+
 /* TIMELINE */
 #section-timeline h2 {
   width: 280px; }
@@ -2460,7 +2462,7 @@ ul.timeline {
       width: 100%;
       padding-bottom: 20px; } }
   ul.timeline li {
-    background-image: url(../img/timeline/bullet.png);
+    background-image: url(../img/timeline/bullet_selected.png);
     background-repeat: no-repeat;
     background-position: center 35px;
     height: 75px; }
@@ -2491,21 +2493,30 @@ ul.timeline {
           margin-right: 5px !important; } }
       ul.timeline li div.description div.description-text-left {
         float: right;
-        width: 200px; }
+        width: 300px;
+        padding-right: 10px;
+        padding-left: 10px; }
       ul.timeline li div.description div.description-text-right {
         float: left;
-        width: 200px; }
+        width: 300px;
+        padding-right: 10px;
+        padding-left: 10px; }
       ul.timeline li div.description div.description-image-right {
         float: left;
-        width: 100px; }
+        margin-left: 3px;
+        margin-top: 3px;
+        border: 1px solid #e0e0e0; }
       ul.timeline li div.description div.description-image-left {
         float: right;
-        width: 100px; }
+        margin-right: 3px;
+        margin-top: 3px;
+        border: 1px solid #e0e0e0; }
       ul.timeline li div.description div.description-container {
-        background-color: #FFFFFF;
-        width: 300px;
+        background-color: #fafafa;
+        width: 400px;
+        height: 100px;
         padding: 0px;
-        border-bottom: 3px solid #b2b2b2;
+        border-bottom: 3px solid #e0e0e0;
         text-align: left;
         font-size: 12px;
         color: #aeaeae; }
@@ -2524,8 +2535,8 @@ ul.timeline {
           line-height: 18px;
           margin-top: 8px; }
         ul.timeline li div.description div.description-container img {
-          width: 100px;
-          height: 100px; }
+          width: 90px;
+          height: 90px; }
       ul.timeline li div.description div.d-arrow {
         height: 29px;
         margin-top: 30px;
@@ -2534,7 +2545,7 @@ ul.timeline {
         @media (max-width: 768px) {
           ul.timeline li div.description div.d-arrow {
             margin-top: 15px !important;
-            background-image: url(../img/timeline/arrow_left.png);
+            background-image: url(../img/timeline/arrow_left_gray.png);
             background-repeat: no-repeat;
             background-position: left top;
             right: auto; } }
@@ -2572,7 +2583,7 @@ ul.timeline {
       float: left;
       margin-left: 15px; }
     ul.timeline li.year-left div.d-arrow {
-      background-image: url(../img/timeline/arrow_left.png);
+      background-image: url(../img/timeline/arrow_left_gray.png);
       background-repeat: no-repeat;
       background-position: left top; }
     ul.timeline li.year-right div.year {
@@ -2585,7 +2596,7 @@ ul.timeline {
       float: right;
       margin-right: 15px; }
     ul.timeline li.year-right div.d-arrow {
-      background-image: url(../img/timeline/arrow_right.png);
+      background-image: url(../img/timeline/arrow_right_gray.png);
       background-repeat: no-repeat;
       background-position: left top;
       right: 0; }
@@ -2758,6 +2769,9 @@ div.feed {
   .project a:hover .hover {
     background-color: #FF0000;
     opacity: .5; }
+
+.projects {
+  margin-top: 30px; }
 
 .project-image {
   background-color: #FFFFFF;

@@ -7,10 +7,20 @@
 		<div class="structure core-contents">
 
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="company-img"><img src="{{ asset('public/img/company/IMG_20150113_172930.jpg') }}"></div>
 				</div>
-				<div class="col-md-8">
+
+				<div class="col-md-6">
+					<div class="company-img"> <img src="{{ asset('public/img/company/IMG_20150113_172731.jpg') }}"></div>
+				</div>
+				
+
+			</div>
+			
+			<div class="row">
+
+				<div class="col-md-6">
 					@if (App::getLocale() == 'en')
 						<h3>Tradição sempre atualizada</h3>	
 						<p class="text">
@@ -23,13 +33,9 @@
 						</p>
 					@endif
 				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md-4">
-					<div class="company-img"> <img src="{{ asset('public/img/company/IMG_20150113_172731.jpg') }}"></div>
-				</div>
-				<div class="col-md-8">
+
+
+				<div class="col-md-6">
 					@if (App::getLocale() == 'en')
 						<h3>Experiência internacional</h3>	
 						<p class="text">

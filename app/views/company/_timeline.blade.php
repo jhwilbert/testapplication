@@ -1,10 +1,12 @@
 
 
-<section class="section section-gray" id="section-timeline">
+<section class="section section" id="section-timeline">
 
 	<div class="inner-content">
 		<h2>{{Lang::get('messages.timeline.title')}}</h2>
-		<h3>{{Lang::get('messages.timeline.intro')}}</h3>
+		<div class="intro-container">
+			<h3>{{Lang::get('messages.timeline.intro')}}</h3>
+		</div>
 		<div id="timeline-container">
 
 			<ul class="timeline">
@@ -13,7 +15,8 @@
 					$bull = 'background-image:!url(public/img/timeline/bullet.png)';
 					$l = 0;
 				?>
-				@foreach($timelineEvents as $event){{ $left = !$left }}
+				@foreach($timelineEvents as $event) 
+				<?php $left = !$left ?>
 				
 					<li class="year-{{ $left ? 'left' : 'right' }}">
 

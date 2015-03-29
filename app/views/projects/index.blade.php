@@ -2,9 +2,9 @@
 
 @section('content')
 
-<!-- 	@include('shared/_megabanner') -->
+	@include('projects/_intro')
 	@include('projects/_projects')
-<!-- 	@include('contact/_contact') -->
+
 @stop
 
 @section('footer')
