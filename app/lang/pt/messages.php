@@ -15,6 +15,7 @@ return array(
 
 	),
 	'home' => array(
+		'title_megabanner' => 'São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar',
 		'title_projects' => 'Trabalhos',
 		'intro_projects' => 'Nossos trabalhos mais recentes',
 		'intro_solutions' => 'Conheça nossos serviços',
@@ -48,6 +49,23 @@ return array(
 			'title' => 'Estúdios de rádio e TV',
 			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
 		),
+
+		'item4' => array(
+			'title' => 'Estúdios de rádio e TV',
+			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+		),
+
+		'item5' => array(
+			'title' => 'Estúdios de rádio e TV',
+			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+		),
+
+		'item6' => array(
+			'title' => 'Estúdios de rádio e TV',
+			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+		),
+
+
 	),
 	'structure' => array(
 		'title' => 'Estrutura',

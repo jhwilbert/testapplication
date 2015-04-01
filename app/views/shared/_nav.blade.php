@@ -3,7 +3,7 @@
 		$crn = Route::currentRouteName(); 
 		$home_url = ($crn == 'home') ? '#section-megabanner' : route("home$lpr"); 
 	?>
-	<a class="logo" href="{{ $home_url }}" id="logo">{{ HTML::image('public/img/logo.png') }}</a>
+	<a class="logo" href="{{ $home_url }}" id="logo">{{ HTML::image('public/img/logo_sm.png') }}</a>
 	@if (App::getLocale() == 'en')
 		{{ link_to_route('home', 'Português', null, array('class' => 'language-btn')) }}
 	@else

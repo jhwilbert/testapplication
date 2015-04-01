@@ -1,4 +1,8 @@
-
+.modal-dialog {
+    border:1px solid blue;
+    width:100%;
+    padding:0px;
+}
 .gallery-modal {
     h3 {
         color: $primary-color;
@@ -6,6 +10,7 @@
     }
     .slidesjs-container {
         max-height: 570px;
+        background: #ebebeb;
     }
     .slides {
         .slidesjs-slide {
@@ -66,7 +71,12 @@
     }
 }
 
+.project-slides {
+    background: #ebebeb;
+}
+
 .modal-header {
+
     border-bottom: none;
     .close {
         @include bg-norepeat("close_btn.png", 0 0);
@@ -78,6 +88,7 @@
 }
 
 .modal-content {
-    border: none;
+    width:100%;
+    border:1px solid red;
     box-shadow: none;
 }

@@ -42,8 +42,8 @@
 				<div class="solution-image">
 					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
-				<h4>{{Lang::get('messages.solutions.item3.title')}}</h4>
-				<p>{{Lang::get('messages.solutions.item3.text')}}</p>
+				<h4>{{Lang::get('messages.solutions.item4.title')}}</h4>
+				<p>{{Lang::get('messages.solutions.item4.text')}}</p>
 				<!-- <a href="#" class="solution-plus">+</a> -->
 			</div>
 
@@ -52,8 +52,8 @@
 				<div class="solution-image">
 					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
-				<h4>{{Lang::get('messages.solutions.item3.title')}}</h4>
-				<p>{{Lang::get('messages.solutions.item3.text')}}</p>
+				<h4>{{Lang::get('messages.solutions.item5.title')}}</h4>
+				<p>{{Lang::get('messages.solutions.item5.text')}}</p>
 				<!-- <a href="#" class="solution-plus">+</a> -->
 			</div>
 
@@ -61,8 +61,8 @@
 				<div class="solution-image">
 					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
-				<h4>{{Lang::get('messages.solutions.item3.title')}}</h4>
-				<p>{{Lang::get('messages.solutions.item3.text')}}</p>
+				<h4>{{Lang::get('messages.solutions.item6.title')}}</h4>
+				<p>{{Lang::get('messages.solutions.item6.text')}}</p>
 				<!-- <a href="#" class="solution-plus">+</a> -->
 			</div>
 

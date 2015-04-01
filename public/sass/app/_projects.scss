@@ -28,15 +28,19 @@
     margin-top:30px;
     
 }
+
+.modal-body {
+    padding:0px !important;
+}
 .project-image {
     background-color: #FFFFFF;
     padding: 8px;
 }
 .project h4 {
-    text-align: center;
-    margin-top: 15px;
+    text-align: left;
+    margin-top: 5px;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
 }
 a#home-arrow-dn {
     display: block;
@@ -47,7 +51,7 @@ a#home-arrow-dn {
 /* modal projects */
 #show-project {
     .slides {
-        width: 640px;
+        width: 1200px;
         margin: 0 auto;
         max-width: 100%;
     }

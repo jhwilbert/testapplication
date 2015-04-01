@@ -1,3 +1,4 @@
+
 @if (count($megabanners) > 0)
 	<section class="section megabanner" id="section-megabanner">
 		<div class="megabanner-container">
@@ -13,6 +14,8 @@
 			</div>
 			
 		</div>
+
+
 
 	</section>
 

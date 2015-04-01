@@ -37,7 +37,7 @@ function initProjects() {
 					$('#project-slides').append('<img src="'+data.image_paths[i]+'">');
 				}
 				$('#project-slides').slidesjs({
-					width: 780,
+					width: 100,
 					navigation: false
 				});
 				var l = data.image_paths.length;
