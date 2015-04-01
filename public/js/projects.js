@@ -59,13 +59,3 @@ function initProjects() {
 	})
 
 }
-
-function getProjectsSkrollrEvents(name, direction) {
-	//console.log(name, direction);
-	if (projectsModalOpened && (
-		(name == projectsBpUp && direction == 'up') ||
-		(name == projectsBpDn && direction == 'down')
-	)) 
-		$('#show-project').modal('hide');
-
-}

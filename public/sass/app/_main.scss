@@ -266,7 +266,49 @@ section.section-gray {
 .form-field {
     border:none;
     background-color: #fafafa;
+    margin-top:10px;
+    border: 2px solid #e8e8e8;
+    margin-bottom:10px;
 
+
+}
+
+    .name {
+        height:50px;
+        width:450px;
+    }
+    .text {
+        height:250px;
+        width:450px;
+    }
+
+
+.form-button {
+    color: white;
+    padding:10px;
+    background:#d6d6d6;
+    border:0px;
+    margin:0px;
+}
+
+.contact-item {
+    margin-top:10px;
+    margin-bottom:10px;
+    width:300px;
+    float:left;
+    border:1px solid red;   
+
+
+}
+.contact-image {
+    float:left;
+    width:64px;
+    height:64px;
+    border:1px solid green;   
+}
+.contact-text {
+    position:relative;
+    border:1px solid blue; 
 }
 
 

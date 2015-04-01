@@ -8,28 +8,50 @@
 			<div class="row contact">
 				<div class="col-md-6">
 					<fieldset>	
-					First name:<br>
-					<input class="form-field" type="text" name="firstname" value="Nome">
-					<br>
-					Last name:<br>
-					<input class="form-field" type="text" name="lastname" value="Mouse">
+					<input class="form-field name" type="text" name="name" value="Nome">
+					<input class="form-field name" type="text" name="email" value="Email">					
+					<input class="form-field text" type="text" name="assunto" value="Assunto">
 					<br><br>
-					<input type="submit" value="Submit"></fieldset>
+					<input class="form-button" type="submit" value="Enviar">
+					<input class="form-button" type="submit" value="Apagar">
+
+					</fieldset>
 				</div>
 
 			<div class="col-md-4">
-				<img src="{{ asset('public/img/contact/address_icon.png') }}">	
-				<p>Rua Peru, 55 – Bairro Sion<br>
-				CEP 30320.040<br>
-				Belo Horizonte – MG<br>
-				Brasil
-				</p>
 
-				<img src="{{ asset('public/img/contact/phone_icon.png') }}">	
-				<p>(31) 32854999 </p>
+				<div class="contact-item">
+					<div class="contact-image">
+						<img src="{{ asset('public/img/contact/address_icon.png') }}">	
+					</div>	
+					<div class="contact-text">
+						Rua Peru, 55 – Bairro Sion<br>
+						CEP 30320.040<br>
+						Belo Horizonte – MG<br>
+						Brasil
+					</div>
+				</div>
+
+
+				<div class="contact-item">
+					<div class="contact-image">
+						<img src="{{ asset('public/img/contact/phone_icon.png') }}">
+					</div>	
+					<div class="contact-text">(31) 32854999</div>
+				</div>
+
 				
-				<img src="{{ asset('public/img/contact/email_icon.png') }}">	
-				<p><a href="mailto:projesom@projesom.com">projesom@projesom.com</a></p>
+				<div class="contact-item">
+					<div class="contact-image">
+						<img src="{{ asset('public/img/contact/email_icon.png') }}">	
+					</div>	
+					<div class="contact-text">
+						<a href="mailto:projesom@projesom.com">projesom@projesom.com</a>					</div>
+				</div>
+
+
+				
+				
 
 			</div>
 		</div>

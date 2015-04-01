@@ -1,4 +1,8 @@
-<section class="section" id="section-clients">
+@if (Route::currentRouteName() == 'home')
+	<section class="section section-gray" id="section-clients">	
+@else
+	<section class="section" id="section-clients">
+@endif
 
 	<div class="inner-content">
 		<h2>{{Lang::get('messages.clients.title')}}</h2>
