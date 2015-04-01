@@ -44,6 +44,7 @@ return array(
 	),
 	'contact' => array(
 		'title' => 'Contact',
+		'intro' => 'Entre em contato com a Projesom para fazer perguntas, cotações'
 	),
 	'company' => array(
 		'title' => 'The Company',

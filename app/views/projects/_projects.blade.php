@@ -4,6 +4,9 @@
 	<div class="inner-content container">
 			@if (Route::currentRouteName() == 'home')
 				<h2>{{Lang::get('messages.home.title_projects')}}</h2>
+				<div class="intro-container">
+					<h3>{{Lang::get('messages.projects.subintro')}}</h3>
+				</div>
 			@else
 				<h2>{{Lang::get('messages.projects.subtitle')}}</h2>
 				<div class="intro-container">

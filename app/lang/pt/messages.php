@@ -8,6 +8,9 @@ return array(
 	),
 	'contact' => array(
 		'title' => 'Contato',
+				'title' => 'Contato',
+				'intro' => 'Entre em contato com a Projesom por telefone, email ou faça-nos uma visita para saber mais sobre nosso serviços.'
+
 	),
 	'company' => array(
 		'title' => 'A Empresa',

@@ -195,8 +195,8 @@ h3 {
 #main_container section.section {    
     width: 100%;
 
-    padding-bottom:40px;
-    padding-top:40px;
+    padding-bottom:20px;
+    padding-top:20px;
 
     overflow: auto;
     .inner-content { 
@@ -263,6 +263,9 @@ section.section-gray {
 
 /* Contact Form */
 
+.contact {
+    padding:0px;
+}
 .form-field {
     border:none;
     background-color: #fafafa;
@@ -275,11 +278,11 @@ section.section-gray {
 
     .name {
         height:50px;
-        width:450px;
+        width:90%;
     }
     .text {
         height:250px;
-        width:450px;
+        width:90%;
     }
 
 
@@ -291,24 +294,32 @@ section.section-gray {
     margin:0px;
 }
 
+.contact {
+    padding:0px;
+}
 .contact-item {
     margin-top:10px;
     margin-bottom:10px;
     width:300px;
-    float:left;
-    border:1px solid red;   
-
-
+    float:left;   
 }
+
 .contact-image {
+    margin-right:10px;
     float:left;
     width:64px;
-    height:64px;
-    border:1px solid green;   
+    height:100px;
+  
 }
 .contact-text {
     position:relative;
-    border:1px solid blue; 
 }
 
+#email {
+    margin-top:20px;
+}
+#phone {
+    margin-top:20px;
+
+}
 

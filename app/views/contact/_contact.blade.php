@@ -5,6 +5,11 @@
 	<div class="inner-content container">
 		
 		<h2>{{Lang::get('messages.contact.title')}}</h2>
+		<div class="intro-container">
+			<h3>{{Lang::get('messages.contact.intro')}}</h3>
+		</div>
+	
+
 			<div class="row contact">
 				<div class="col-md-6">
 					<fieldset>	
@@ -18,7 +23,7 @@
 					</fieldset>
 				</div>
 
-			<div class="col-md-4">
+			<div class="col-md-6">
 
 				<div class="contact-item">
 					<div class="contact-image">
@@ -37,7 +42,7 @@
 					<div class="contact-image">
 						<img src="{{ asset('public/img/contact/phone_icon.png') }}">
 					</div>	
-					<div class="contact-text">(31) 32854999</div>
+					<div class="contact-text" id="phone">(31) 32854999</div>
 				</div>
 
 				
@@ -45,7 +50,7 @@
 					<div class="contact-image">
 						<img src="{{ asset('public/img/contact/email_icon.png') }}">	
 					</div>	
-					<div class="contact-text">
+					<div class="contact-text" id="email">
 						<a href="mailto:projesom@projesom.com">projesom@projesom.com</a>					</div>
 				</div>
 
