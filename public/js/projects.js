@@ -10,23 +10,58 @@ $(document).ready(function() {
 /*
 * initializes the Projects section
 */
+var projectOpen = false;
 
 function openProject(id) {
-	var pos  = id % 3;
+	projectOpen = true;
 
-	switch(pos) {
+	var col  = id % 3;
+	var row = $("#"+id).parent().parent().parent().attr("id");
+	
+	var arrow_col =  Math.round($("#" + row).width() / 3) ;
+	
+	var pos1 = arrow_col - ($(".project-image").width()/2);
+	var pos2 = (arrow_col * 2) - ($(".project-image").width()/2);
+	var pos3 = (arrow_col * 3) - ($(".project-image").width()/2);
+
+
+	console.log($(".project-image").width());
+
+	$("#" + row).append("<div id='modal' class='project-open'></div>");
+	$(".project-open").append('<div class="arrow-project" ><img src="../public/img/arrow_project.png"></div>');
+
+
+	switch(col) {
 		case 0:
-			console.debug("left");
+			console.debug("left",0);
+			$(".arrow-project").css("left", pos1);
+
 			break;
 		case 1:
-			console.debug("middle");
+			console.debug("middle",pos2);
+
+			$(".arrow-project").css("left", pos2);
 			break;
 		case 2:
-			console.debug("right");
+			console.debug("right",arrow_col * 3);
+			$(".arrow-project").css("left", pos3);
+			
 			break;
 	}
+	
+
+	console.debug($("#" + row).offset());
+	console.debug();
+
+
 
 }
+
+function closeProject() {
+	$("#modal").remove();	
+	projectOpen = false;
+}
+
 function initProjects() {
 
 	/* Projects */
@@ -35,8 +70,14 @@ function initProjects() {
 		//$(".project-open").css("top", "140px");
 
 
-
-		openProject($(this).attr('id'))
+		if(projectOpen == true) {
+			closeProject();
+			openProject($(this).attr('id'));
+		
+		} else {
+			openProject($(this).attr('id'))
+			
+		}
 		e.preventDefault();
 
 		//$('#show-project').modal();

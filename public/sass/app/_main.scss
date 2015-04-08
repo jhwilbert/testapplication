@@ -54,12 +54,19 @@ ul.nav {
 
 
 .project-open {
+    float:left;
     z-index:100000;
     width:100%;
     height:600px;
     background: #525252;    
 }
 
+.arrow-project {
+    border:1px solid red;
+    position:absolute;
+    
+
+}
 #main-menu {
     position:fixed;
     width: 100%;

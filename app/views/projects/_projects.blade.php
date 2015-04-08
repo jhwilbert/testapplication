@@ -13,11 +13,17 @@
 					<h3>{{Lang::get('messages.projects.subintro')}}</h3>
 				</div>
 			@endif
-		<div class="project-open"></div>
+
 		<div class="projects row">
-			<?php  $i=0 ?>
+			<?php  
+				$i=0;
+				$r=0; 
+			?>
 			@foreach($projects as $project)
-				
+				@if (!($i % 3))
+					<?php $r++ ?>
+					<div id="row_{{ $r }}">
+				@endif
 				<div class="col-md-4">
 					<div class="project">
 						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link" id="{{ $i }}">
@@ -33,6 +39,10 @@
 					</div>
 				</div>
 				<?php $i++ ?>
+				@if (!($i % 3))
+					</div>
+				@endif
+				
 			@endforeach
 		</div>
 
