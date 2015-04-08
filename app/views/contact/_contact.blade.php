@@ -15,7 +15,7 @@
 					<fieldset>	
 					<input class="form-field name" type="text" name="name" value="Nome">
 					<input class="form-field name" type="text" name="email" value="Email">					
-					<input class="form-field text" type="text" name="assunto" value="Assunto">
+					<textarea class="form-field text" type="text" rows="8">Assunto</textarea>
 					<br><br>
 					<input class="form-button" type="submit" value="Enviar">
 					<input class="form-button" type="submit" value="Apagar">

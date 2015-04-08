@@ -4,7 +4,7 @@ class Megabanner extends Eloquent {
 
 
 	public static $dimensions = array(
-		'big'  => array(1008, 352, true,  90),
+		'big'  => array(1280, 630, true,  100),
 	);
 
 	public static $areas = array('home', 'company', 'projects', 'solutions', 'clients', 'contact', 'newsfeed');

@@ -4,10 +4,12 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
+
 		"laravel/framework": "4.1.*",
 		"orchestra/imagine": "2.1.*",
 		"simplepie/simplepie": "dev-master",
 		"awjudd/feed-reader": "1.1.*"
+
 	},
 	"autoload": {
 		"classmap": [

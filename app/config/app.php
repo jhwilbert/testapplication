@@ -119,6 +119,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Orchestra\Imagine\ImagineServiceProvider',
 		'Awjudd\FeedReader\FeedReaderServiceProvider',
+		
 
 	),
 

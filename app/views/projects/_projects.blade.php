@@ -13,12 +13,14 @@
 					<h3>{{Lang::get('messages.projects.subintro')}}</h3>
 				</div>
 			@endif
-
+		<div class="project-open"></div>
 		<div class="projects row">
+			<?php  $i=0 ?>
 			@foreach($projects as $project)
+				
 				<div class="col-md-4">
 					<div class="project">
-						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link">
+						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link" id="{{ $i }}">
 							<div class="plus-icon"></div>
 							<div class="hover"></div>
 							<div class="project-image">
@@ -30,6 +32,7 @@
 						</a>
 					</div>
 				</div>
+				<?php $i++ ?>
 			@endforeach
 		</div>
 

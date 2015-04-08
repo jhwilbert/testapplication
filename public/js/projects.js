@@ -10,15 +10,36 @@ $(document).ready(function() {
 /*
 * initializes the Projects section
 */
+
+function openProject(id) {
+	var pos  = id % 3;
+
+	switch(pos) {
+		case 0:
+			console.debug("left");
+			break;
+		case 1:
+			console.debug("middle");
+			break;
+		case 2:
+			console.debug("right");
+			break;
+	}
+
+}
 function initProjects() {
 
 	/* Projects */
 
 	$('a.project-link').on('click', function(e) {
+		//$(".project-open").css("top", "140px");
 
+
+
+		openProject($(this).attr('id'))
 		e.preventDefault();
 
-		$('#show-project').modal();
+		//$('#show-project').modal();
 		projectsModalOpened = true;
 
 		/* get project data */
