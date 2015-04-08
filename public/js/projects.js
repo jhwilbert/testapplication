@@ -81,15 +81,26 @@ function initProjects() {
 		e.preventDefault();
 
 		//$('#show-project').modal();
+		//
 		projectsModalOpened = true;
 
 		/* get project data */
         $.get(
             $(this).attr('href'),
             function( data ) {
+
+
+            	$(".project-open").append("<div id='project-title'></div>");
+            	$(".project-open").append("<div id='project-description'></div>");
+            	$(".project-open").append("<div id='project-technology'></div>");
+            	$(".project-open").append("<div id='project-slides-container'></div>");
+            	
+            	$("#project-slides-container").append("<div id='project-slides'></div>");
+            	
                 $('#project-title').html(data.title);
                 $('#project-description').html('<p>'+data.description+'</p>');
                 $('#project-technology').html('<p>'+data.technology+'</p>');
+
 				if ($('#project-slides').data('plugin_slidesjs')) {
 					$('#project-slides').data('plugin_slidesjs').stop();
 					$('#project-slides').removeData('plugin_slidesjs');
@@ -114,10 +125,10 @@ function initProjects() {
         );
  
 	});
-
+	/*
 	$('#show-project').on('hidden.bs.modal', function (e) {
 		$('#project-title, #project-description, #project-slides').html('');
 		projectsModalOpened = false;
 	})
-
+	*/
 }

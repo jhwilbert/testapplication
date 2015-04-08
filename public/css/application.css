@@ -2231,9 +2231,12 @@ ul.nav {
   height: 600px;
   background: #525252; }
 
+.project-slides-container {
+  width: 400px; }
+
 .arrow-project {
-  border: 1px solid red;
-  position: absolute; }
+  position: absolute;
+  margin-top: -30px; }
 
 #main-menu {
   position: fixed;
@@ -2733,7 +2736,7 @@ ul.timeline {
   max-height: 570px;
   background: #ebebeb; }
 .gallery-modal .slides .slidesjs-slide {
-  max-width: 100%; }
+  max-width: 500; }
   .gallery-modal .slides .slidesjs-slide img {
     margin: 0 auto; }
   .gallery-modal .slides .slidesjs-slide span.subtitle {

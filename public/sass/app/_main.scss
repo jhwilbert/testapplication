@@ -61,10 +61,13 @@ ul.nav {
     background: #525252;    
 }
 
+.project-slides-container {
+    width:400px;
+}
+
 .arrow-project {
-    border:1px solid red;
     position:absolute;
-    
+    margin-top: -30px;
 
 }
 #main-menu {
@@ -234,6 +237,7 @@ section.section-gray {
 }
 
 /* Slide Navigation */
+
 
 .slidesjs-navigation {
     @include vv-hide-text(32px, 32px);
