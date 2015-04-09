@@ -24,7 +24,7 @@
 					<?php $r++ ?>
 					<div id="row_{{ $r }}">
 				@endif
-				<div class="col-md-4">
+				<div class="col-md-4" >
 					<div class="project">
 						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link" id="{{ $i }}">
 							<div class="plus-icon"></div>
