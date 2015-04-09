@@ -29,7 +29,7 @@ function openProject(id) {
 
 	$("#" + row).append("<div id='modal' class='project-open'></div>");
 	$(".project-open").append('<div class="arrow-project" ><img src="../public/img/arrow_project.png"></div>');
-
+	$(".project-open").append('<div class="close-project" ><img src="../public/img/close_btn.png"></div>');
 
 	switch(col) {
 		case 0:
@@ -90,16 +90,20 @@ function initProjects() {
             function( data ) {
 
 
-            	$(".project-open").append("<div id='project-title'></div>");
-            	$(".project-open").append("<div id='project-description'></div>");
-            	$(".project-open").append("<div id='project-technology'></div>");
             	$(".project-open").append("<div id='project-slides-container'></div>");
-            	
             	$("#project-slides-container").append("<div id='project-slides'></div>");
-            	
-                $('#project-title').html(data.title);
-                $('#project-description').html('<p>'+data.description+'</p>');
-                $('#project-technology').html('<p>'+data.technology+'</p>');
+            	$("#project-slides-container").css("width", 600);
+            	$("#project-slides-container").css("height", 400);
+
+            	$(".project-open").append("<div id='project-title-open'></div>");
+            	$(".project-open").append("<div id='project-description-open'></div>");
+            	$(".project-open").append("<div id='project-technology-open'></div>");
+
+                $('#project-title-open').html(data.title);
+                $('#project-description-open').html(data.description);
+                $('#project-technology-open').html(data.technology);
+
+
 
 				if ($('#project-slides').data('plugin_slidesjs')) {
 					$('#project-slides').data('plugin_slidesjs').stop();

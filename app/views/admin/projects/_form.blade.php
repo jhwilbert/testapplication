@@ -20,28 +20,28 @@
 	<div class="form-group">
 		{{ Form::label('description', Lang::get('validation.attributes.description'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::textarea('description', null, array('class' => 'form-control wysiwyg')) }}
+			{{ Form::textarea('description', null, array('class' => 'form-control ')) }}
 		</div>
 	</div>
 
 	<div class="form-group">
 		{{ Form::label('description_en', Lang::get('validation.attributes.description', array(), 'en'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::textarea('description_en', null, array('class' => 'form-control wysiwyg')) }}
+			{{ Form::textarea('description_en', null, array('class' => 'form-control ')) }}
 		</div>
 	</div>
 
 	<div class="form-group">
 		{{ Form::label('technology', Lang::get('validation.attributes.technology'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::textarea('technology', null, array('class' => 'form-control wysiwyg')) }}
+			{{ Form::textarea('technology', null, array('class' => 'form-control ')) }}
 		</div>
 	</div>
 
 	<div class="form-group">
 		{{ Form::label('technology_en', Lang::get('validation.attributes.technology', array(), 'en'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::textarea('technology_en', null, array('class' => 'form-control wysiwyg')) }}
+			{{ Form::textarea('technology_en', null, array('class' => 'form-control ')) }}
 		</div>
 	</div>
 
