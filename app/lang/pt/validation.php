@@ -105,6 +105,7 @@ return array(
 		'subtitle' => 'Legenda',
 		'technology' => 'Tecnologia',
 		'title' => 'Título',
+		'location' => 'Localidade',
 		'text' => 'Texto',
 		'updated_at' => 'Atualizado em',
 		'url' => 'Link',

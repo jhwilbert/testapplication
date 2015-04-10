@@ -2226,18 +2226,16 @@ ul.nav {
 
 #project-title-open {
   font-size: 22px;
-  color: #f2f2f2;
+  color: #878787;
   padding-left: 30px;
-  padding-bottom: 30px;
   padding-right: 30px;
-  color: white !important;
   float: left;
-  width: 500px; }
+  width: 400px; }
 
 #project-description-open {
   color: #bdbdbd !important;
   float: left;
-  width: 500px;
+  width: 400px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -2247,10 +2245,18 @@ ul.nav {
   font-variant: normal;
   font-weight: 400; }
 
+#project-location-open {
+  color: #bdbdbd !important;
+  float: left;
+  width: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px; }
+
 #project-technology-open {
   color: #bdbdbd !important;
   float: left;
-  width: 500px;
+  width: 400px;
   padding-left: 30px;
   padding-right: 30px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -2261,7 +2267,8 @@ ul.nav {
 
 .close-project {
   width: 100%;
-  float: left; }
+  float: left;
+  cursor: pointer; }
 
 .close-project img {
   float: right;
@@ -2278,11 +2285,9 @@ ul.nav {
   width: 100%; }
 
 .project-open {
-  color: white !important;
-  float: left;
   width: 100%;
-  z-index: 100000;
-  background: #525252;
+  float: left;
+  background: white;
   height: 506px;
   margin-bottom: 20px; }
 
@@ -2291,8 +2296,18 @@ ul.nav {
   color: white !important; }
 
 .arrow-project {
+  width: 40px;
   position: relative;
   margin-top: -22px; }
+
+.project-title {
+  text-align: center;
+  padding-top: 5px; }
+
+.project-location {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 12px; }
 
 #main-menu {
   position: fixed;
@@ -2412,7 +2427,6 @@ h3 {
   width: 100%;
   padding-bottom: 20px;
   padding-top: 20px;
-  overflow: auto;
   /*
   @media(max-height: $screen-sm-height) {
       padding-top: $menu-height - 20px;
@@ -2451,11 +2465,10 @@ section.section-gray {
   background-position: left top; }
 
 .slidesjs-pagination {
-  margin: 6px auto 0;
+  margin: 20px auto 0;
   list-style: none;
   padding: 0;
-  position: relative;
-  top: -80px; }
+  position: relative; }
   .slidesjs-pagination li {
     float: left;
     margin: 0 1px; }
@@ -2928,10 +2941,6 @@ a#home-arrow-dn {
   margin: 0 auto; }
 
 /* modal projects */
-#show-project .slides {
-  width: 1200px;
-  margin: 0 auto;
-  max-width: 100%; }
 #show-project h3 {
   color: #878787;
   text-align: left;

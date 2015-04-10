@@ -46,6 +46,7 @@ class ProjectController extends BaseController {
 		$result = array(
 			'title' => $project["title$lpr"],
 			'description' => $project["description$lpr"],
+			'location' => $project["location"],
 			'technology' => $project["technology$lpr"],
 			'image_paths' => $image_paths
 		);

@@ -34,7 +34,9 @@
 									<img src="{{ asset($project_image->getImagePath('thumb')) }}">
 								@endif
 							</div>
-							<h4>{{{ $project["title$lpr"] }}}</h4>
+							<div class='project-title'>{{{ $project["title$lpr"] }}}</div>
+							<div class='project-location'>{{{ $project["location"] }}}</div>
+							
 						</a>
 					</div>
 				</div>
@@ -42,7 +44,6 @@
 				@if (!($i % 3))
 					</div>
 				@endif
-				
 			@endforeach
 		</div>
 

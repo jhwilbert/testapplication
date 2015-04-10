@@ -8,7 +8,15 @@
 			{{ Form::text('title', null, array('class' => 'form-control')) }}
 		</div>
 	</div>
-    
+
+	<div class="form-group">
+		<?php $error_class = ($errors->first('location')) ? ' has-error' : ''; ?>
+		{{ Form::label('location', Lang::get('validation.attributes.location'), array('class' => 'col-sm-3 control-label')); }}
+		<div class="col-sm-9<?php echo $error_class ?>">
+			{{ Form::text('location', null, array('class' => 'form-control')) }}
+		</div>
+	</div>
+
 	<div class="form-group">
 		<?php $error_class = ($errors->first('title_en')) ? ' has-error' : ''; ?>
 		{{ Form::label('title_en', Lang::get('validation.attributes.title', array(), 'en'), array('class' => 'col-sm-3 control-label')); }}

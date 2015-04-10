@@ -53,14 +53,13 @@ ul.nav {
 }
 
 #project-title-open {
+
     font-size:22px;
-    color:#f2f2f2;
+    color:#878787;
     padding-left:30px;
-    padding-bottom:30px;
     padding-right: 30px;
-    color:white !important;
     float:left;
-    width: 500px;
+    width:400px;
  
 }
 
@@ -68,7 +67,7 @@ ul.nav {
 #project-description-open {
     color: #bdbdbd !important;
     float:left;
-    width: 500px;
+    width: 400px;
     padding-left:30px;
     padding-right: 30px;
     padding-bottom:30px;
@@ -84,12 +83,23 @@ ul.nav {
 
 }
 
+#project-location-open {
+    color: #bdbdbd !important;
+    float:left;
+    width:300px;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-bottom:30px;
+
+    
+}
+
 #project-technology-open  {
     color: #bdbdbd !important;
     float:left;
 
 
-    width: 500px;
+    width: 400px;
     padding-left:30px;
     padding-right: 30px;
 
@@ -103,6 +113,7 @@ ul.nav {
 .close-project {
     width:100%;
     float:left;
+    cursor: pointer;
 
 }
 
@@ -129,11 +140,9 @@ ul.nav {
 }
 
 .project-open {
-    color:white !important;
-    float:left;
     width:100%;
-    z-index:100000;
-    background: #525252;  
+    float:left;
+    background: white;  
     height:506px;
     margin-bottom:20px;
 
@@ -146,10 +155,23 @@ ul.nav {
 
 
 .arrow-project {
+    width:40px;
     position:relative;
     margin-top: -22px;
 
 }
+
+.project-title {
+    text-align:center;
+    padding-top:5px;
+}
+
+.project-location {
+    text-align:center;
+    padding-bottom:15px;
+    font-size:12px;
+}
+
 #main-menu {
     position:fixed;
     width: 100%;
@@ -294,7 +316,7 @@ h3 {
     padding-bottom:20px;
     padding-top:20px;
 
-    overflow: auto;
+
     .inner-content { 
         margin: 0 auto;
         p.text {
@@ -333,11 +355,11 @@ section.section-gray {
 }
 
 .slidesjs-pagination {
-    margin: 6px auto 0;
+    margin: 20px auto 0;
     list-style: none;
     padding: 0;
     position:relative;
-    top:-80px;
+
     li {
         float: left;
         margin: 0 1px;

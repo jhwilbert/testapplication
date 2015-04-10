@@ -109,6 +109,7 @@ class ProjectController extends AdminBaseController {
 
 		$project->title = Input::get('title');
 		$project->title_en = Input::get('title_en');
+		$project->location = Input::get('location');
 		$project->description = Input::get('description');
 		$project->description_en = Input::get('description_en');
 		$project->technology = Input::get('technology');

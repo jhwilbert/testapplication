@@ -20,16 +20,21 @@ function openProject(id) {
 	
 	var arrow_col =  Math.round($("#" + row).width() / 3) ;
 	
-	var pos1 = arrow_col - ($(".project-image").width()/2);
-	var pos2 = (arrow_col * 2) - ($(".project-image").width()/2);
-	var pos3 = (arrow_col * 3) - ($(".project-image").width()/2);
+	var pos1 = arrow_col - ($(".project-image").width() + 10);
+	var pos2 = (arrow_col * 2) - ($(".project-image").width() + 10);
+	var pos3 = (arrow_col * 3) - ($(".project-image").width() + 10);
 
 
-	console.log($(".project-image").width());
+	$("#" + row).append("<div id='modal-open' class='col-md-12'></div>");
+	$("#modal-open").append("<div class='project-open'></div>");
 
-	$("#" + row).append("<div id='modal' class='project-open'></div>");
 	$(".project-open").append('<div class="arrow-project" ><img src="../public/img/arrow_project.png"></div>');
 	$(".project-open").append('<div class="close-project" ><img src="../public/img/close_btn.png"></div>');
+
+	$('.close-project').on('click', function(e) { 
+		closeProject();
+	});
+
 
 	switch(col) {
 		case 0:
@@ -50,15 +55,12 @@ function openProject(id) {
 	}
 	
 
-	console.debug($("#" + row).offset());
-	console.debug();
-
 
 
 }
 
 function closeProject() {
-	$("#modal").remove();	
+	$("#modal-open").remove();	
 	projectOpen = false;
 }
 
@@ -82,7 +84,7 @@ function initProjects() {
 
 		//$('#show-project').modal();
 		//
-		projectsModalOpened = true;
+		//projectsModalOpened = true;
 
 		/* get project data */
         $.get(
@@ -96,12 +98,15 @@ function initProjects() {
             	$("#project-slides-container").css("height", 400);
 
             	$(".project-open").append("<div id='project-title-open'></div>");
+            	$(".project-open").append("<div id='project-location-open'></div>");
             	$(".project-open").append("<div id='project-description-open'></div>");
             	$(".project-open").append("<div id='project-technology-open'></div>");
+
 
                 $('#project-title-open').html(data.title);
                 $('#project-description-open').html(data.description);
                 $('#project-technology-open').html(data.technology);
+                $('#project-location-open').html(data.location);
 
 
 
@@ -114,8 +119,10 @@ function initProjects() {
 					$('#project-slides').append('<img src="'+data.image_paths[i]+'">');
 				}
 				$('#project-slides').slidesjs({
-					width: 100,
-					navigation: false
+					width: 600,
+					height: 400,
+					navigation: false,
+					active: true	
 				});
 				var l = data.image_paths.length;
 				if (l > 1) {
@@ -123,6 +130,8 @@ function initProjects() {
 				} else {
 					$('#project-slides .slidesjs-pagination').hide();
 				}
+
+
 
             },
             'json'
