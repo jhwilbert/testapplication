@@ -37,14 +37,14 @@
 	<div class="form-group">
 		{{ Form::label('text', Lang::get('validation.attributes.text'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::textarea('text', null, array('class' => 'form-control wysiwyg')) }}
+			{{ Form::textarea('text', null, array('class' => 'form-control ')) }}
 		</div>
 	</div>
 
 	<div class="form-group">
 		{{ Form::label('text_en', Lang::get('validation.attributes.text', array(), 'en'), array('class' => 'col-sm-3 control-label')); }}
 		<div class="col-sm-9">
-			{{ Form::textarea('text_en', null, array('class' => 'form-control wysiwyg')) }}
+			{{ Form::textarea('text_en', null, array('class' => 'form-control ')) }}
 		</div>
 	</div>
 

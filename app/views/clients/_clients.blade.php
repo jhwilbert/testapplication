@@ -19,7 +19,12 @@
 			<?php $i = 0; ?>
 			@foreach($clients as $client_slug => $client_name)
 				<div class="client col-md-5ths">
-					<img src="{{ asset('public/img/clients/'.$client_slug.'.png') }}" class="client" alt="{{{$client_name}}}">
+					@if (Route::currentRouteName() == 'home')
+						<img src="{{ asset('public/img/clients-grey/'.$client_slug.'.png') }}" class="client" alt="{{{$client_name}}}">
+					@else
+						<img src="{{ asset('public/img/clients/'.$client_slug.'.png') }}" class="client" alt="{{{$client_name}}}">
+					@endif
+
 				</div>
 			@endforeach
 		</div>

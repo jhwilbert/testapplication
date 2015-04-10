@@ -5,7 +5,7 @@
 	@include('shared/_megabanner')
 	@include('home/_intro')
 	@include('projects/_projects')
-	@include('solutions/_solutions')
+	@include('solutions/_solutions_intro')
 	@include('clients/_clients')
 	@include('contact/_contact')
 

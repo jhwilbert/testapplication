@@ -33,7 +33,7 @@ return array(
 	'different'        => 'The :attribute and :other must be different.',
 	'digits'           => 'The :attribute must be :digits digits.',
 	'digits_between'   => 'The :attribute must be between :min and :max digits.',
-	'email'            => 'The :attribute format is invalid.',
+	'email'            => 'O formato de :attribute é invalido.',
 	'exists'           => 'The selected :attribute is invalid.',
 	'image'            => 'The :attribute must be an image.',
 	'in'               => 'The selected :attribute is invalid.',
@@ -49,7 +49,7 @@ return array(
 	'min'              => array(
 		'numeric' => 'The :attribute must be at least :min.',
 		'file'    => 'The :attribute must be at least :min kilobytes.',
-		'string'  => 'The :attribute must be at least :min characters.',
+		'string'  => 'A mensagem deve ter no mínimo :min caracteres.',
 		'array'   => 'The :attribute must have at least :min items.',
 	),
 	'not_in'           => 'The selected :attribute is invalid.',

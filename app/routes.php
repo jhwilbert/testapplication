@@ -11,6 +11,10 @@
 |
 */
 
+
+//Contact Page
+
+
 Route::get('/', array('uses' => 'HomeController@splash', 'as' => 'splash'));
 Route::get('/home', array('uses' => 'HomeController@index', 'as' => 'home'));
 Route::get('/a-empresa', array('uses' => 'CompanyController@index', 'as' => 'company'));
@@ -18,6 +22,8 @@ Route::get('/projetos', array('uses' => 'ProjectController@index', 'as' => 'proj
 Route::get('/solucoes', array('uses' => 'SolutionController@index', 'as' => 'solutions'));
 Route::get('/clientes', array('uses' => 'ClientController@index', 'as' => 'clients'));
 Route::get('/contato', array('uses' => 'ContactController@index', 'as' => 'contact'));
+Route::post('/contact_request', array('uses' => 'ContactController@getForm', 'as' => 'contact_request'));
+
 Route::get('/newsfeed', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed'));
 
 Route::get('/project/{id}/{lang}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));

@@ -2,7 +2,7 @@
 
 @section('content')
 
-	@include('shared/_megabanner')
 	@include('contact/_contact')
+	@include('contact/_where')
 
 @stop

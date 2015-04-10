@@ -2,8 +2,8 @@
 
 @section('content')
 
-	@include('solutions/_solutions')
-
+	@include('solutions/_solutions_intro')
+	@include('solutions/_solutions_areas')
 @stop
 
 @section('footer')

@@ -12,15 +12,25 @@
 
 			<div class="row contact">
 				<div class="col-md-6">
-					<fieldset>	
-					<input class="form-field name" type="text" name="name" value="Nome">
-					<input class="form-field name" type="text" name="email" value="Email">					
-					<textarea class="form-field text" type="text" rows="8">Assunto</textarea>
-					<br><br>
-					<input class="form-button" type="submit" value="Enviar">
-					<input class="form-button" type="submit" value="Apagar">
 
-					</fieldset>
+					{{ Form::open(array('url' => '/contact_request')) }}
+    				{{ Form::text('nome', 'Nome', array('class' => 'form-field name')) }}
+    				<br>
+    				{{ Form::text('email', 'email@email.com', array('class' => 'form-field name')) }}
+    				<br>
+    				{{ Form::textarea('message', 'Mensagem', array('class' => 'form-field text','size' => '30x5') ) }}
+
+    				{{ Form::submit('Enviar',array('class' => 'form-button')); }}
+    				{{ Form::reset('Apagar',array('class' => 'form-button')); }}
+
+		            <ul class="errors">
+		                @foreach($errors->all('<li>:message</li>') as $message)
+		                {{ $message }}
+		                @endforeach
+		            </ul>
+
+					{{ Form::close() }}
+
 				</div>
 
 			<div class="col-md-6">
@@ -30,10 +40,10 @@
 						<img src="{{ asset('public/img/contact/address_icon.png') }}">	
 					</div>	
 					<div class="contact-text">
-						Rua Peru, 55 – Bairro Sion<br>
-						CEP 30320.040<br>
-						Belo Horizonte – MG<br>
-						Brasil
+						Av. Nossa Senhora do Carmo 1191<br>
+						5º andar • Bairro Sion <br>
+						CEP 30310 000<br>
+						Belo Horizonte • MG<br>
 					</div>
 				</div>
 
@@ -42,7 +52,7 @@
 					<div class="contact-image">
 						<img src="{{ asset('public/img/contact/phone_icon.png') }}">
 					</div>	
-					<div class="contact-text" id="phone">(31) 32854999</div>
+					<div class="contact-text" id="phone">+55 (31) 32854999</div>
 				</div>
 
 				

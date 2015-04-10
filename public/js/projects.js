@@ -27,7 +27,7 @@ function openProject(id) {
 
 	$("#" + row).append("<div id='modal-open' class='col-md-12'></div>");
 	$("#modal-open").append("<div class='project-open'></div>");
-
+	
 	$(".project-open").append('<div class="arrow-project" ><img src="../public/img/arrow_project.png"></div>');
 	$(".project-open").append('<div class="close-project" ><img src="../public/img/close_btn.png"></div>');
 
