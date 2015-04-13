@@ -446,8 +446,12 @@
       background-color: $navbar-default-toggle-hover-bg;
     }
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+      background-color: white;
     }
+  }
+
+  .navbar-header {
+    border: 1px solid blue;
   }
 
   .navbar-collapse,

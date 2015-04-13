@@ -1668,7 +1668,9 @@ tbody.collapse.in {
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
       background-color: #dddddd; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #888888; }
+      background-color: white; }
+  .navbar-default .navbar-header {
+    border: 1px solid blue; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #e7e7e7; }
@@ -2183,6 +2185,9 @@ html * {
   color: #878787;
   font-size: 16px; }
 
+.center-align {
+  margin: auto; }
+
 body {
   overflow: hidden; }
   body.mobile {
@@ -2224,41 +2229,31 @@ ul.nav {
   width: 80%;
   margin: auto; }
 
+#supercontainer {
+  float: left; }
+
 #project-title-open {
   font-size: 22px;
   color: #878787;
-  padding-left: 30px;
-  padding-right: 30px;
-  float: left;
-  width: 400px; }
+  float: left; }
+
+#project-location-open {
+  color: #bdbdbd !important;
+  float: left; }
 
 #project-description-open {
   color: #bdbdbd !important;
   float: left;
-  width: 400px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400; }
 
-#project-location-open {
-  color: #bdbdbd !important;
-  float: left;
-  width: 300px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px; }
-
 #project-technology-open {
   color: #bdbdbd !important;
   float: left;
-  width: 400px;
-  padding-left: 30px;
-  padding-right: 30px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2277,12 +2272,6 @@ ul.nav {
 
 .fix {
   float: right; }
-
-#project-slides-container {
-  padding-top: 10px;
-  padding-left: 28px;
-  float: left;
-  width: 100%; }
 
 .project-open {
   width: 100%;
@@ -2323,18 +2312,20 @@ ul.nav {
     float: left; }
     @media (max-height: 700px) {
       #main-menu .logo {
-        margin: 10px 20px; } }
+        /*margin: 10px 20px;*/ } }
     @media (max-width: 768px) {
       #main-menu .logo {
         width: 145px;
-        margin: 25px 8px 10px; }
+        /* margin: 20px 8px 10px; */ }
         #main-menu .logo img {
           width: 145px; } }
   #main-menu .language-btn {
-    float: right;
-    margin: 35px 30px 0 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    /*margin: 35px 30px 0 0;*/
     border: 2px solid #d95a49;
-    padding: 10px;
+    padding: 8px;
     font-size: 10px;
     text-transform: uppercase;
     color: #d95a49; }
@@ -2342,16 +2333,28 @@ ul.nav {
       background-color: #d95a49;
       color: #FFFFFF;
       text-decoration: none; }
+    @media (max-height: 700px) {
+      #main-menu .language-btn {
+        /*margin: 20px 10px;*/
+        right: 300px;
+        top: 19px; } }
     @media (max-width: 768px) {
       #main-menu .language-btn {
-        float: left;
-        margin: 25px 5px 0 20px; } }
+        margin: 0 !important;
+        position: absolute;
+        right: 81px;
+        top: 19px; } }
   #main-menu .menu-container {
     width: 100%;
     background-color: #d95a49;
     border-bottom: 2px solid #b24538; }
   #main-menu .navbar-toggle {
-    margin-top: 25px; }
+    margin: 0 !important;
+    position: absolute;
+    right: 25px;
+    top: 19px;
+    background: #d95a49;
+    /*margin-top: 25px;*/ }
   #main-menu ul.nav {
     border-left: 2px solid #b24538;
     width: 642px;
@@ -2429,27 +2432,31 @@ h3 {
 
 #main_container {
   position: absolute;
-  top: 180px;
-  margin-top: -20px;
+  margin-top: 140px;
   width: 100%;
   padding: 0; }
+  @media (max-height: 700px) {
+    #main_container {
+      margin-top: 55px; } }
+  @media (max-width: 768px) {
+    #main_container {
+      margin-top: 55px; } }
 
 #main_container section.section {
   width: 100%;
   padding-bottom: 20px;
-  padding-top: 20px;
-  /*
-  @media(max-height: $screen-sm-height) {
-      padding-top: $menu-height - 20px;
-  }
-  @media(max-width: $screen-sm-min) {
-      padding-top: 30px;
-  }
-  */ }
+  padding-top: 20px; }
   #main_container section.section .inner-content {
     margin: 0 auto; }
     #main_container section.section .inner-content p.text {
       line-height: 28px; }
+  @media (max-height: 700px) {
+    #main_container section.section {
+      border: 1px solid red;
+      padding-top: 122px; } }
+  @media (max-width: 768px) {
+    #main_container section.section {
+      padding-top: 30px; } }
 
 section.section-gray {
   background-color: #ebebeb;
@@ -2937,8 +2944,7 @@ div.feed {
     opacity: .5; }
 
 .projects {
-  margin-top: 30px;
-  margin-left: 46px; }
+  margin-top: 30px; }
 
 .modal-body {
   padding: 0px !important; }

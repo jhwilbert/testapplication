@@ -26,7 +26,7 @@ function openProject(id) {
 
 
 	$("#" + row).append("<div id='modal-open' class='col-md-12'></div>");
-	$("#modal-open").append("<div class='project-open'></div>");
+	$("#modal-open").append("<div class='project-open '></div>");
 	
 	$(".project-open").append('<div class="arrow-project" ><img src="../public/img/arrow_project.png"></div>');
 	$(".project-open").append('<div class="close-project" ><img src="../public/img/close_btn.png"></div>');
@@ -92,15 +92,17 @@ function initProjects() {
             function( data ) {
 
 
-            	$(".project-open").append("<div id='project-slides-container'></div>");
+            	$(".project-open").append("<div id='project-slides-container' class='col-md-8'></div>");
             	$("#project-slides-container").append("<div id='project-slides'></div>");
-            	$("#project-slides-container").css("width", 600);
-            	$("#project-slides-container").css("height", 400);
-
-            	$(".project-open").append("<div id='project-title-open'></div>");
-            	$(".project-open").append("<div id='project-location-open'></div>");
-            	$(".project-open").append("<div id='project-description-open'></div>");
-            	$(".project-open").append("<div id='project-technology-open'></div>");
+            	
+            	
+            	$("#project-slides-container").css("width", $("#project-slides-container").width());
+            	
+			
+            	$(".project-open").append("<div id='project-title-open' class='col-md-4'></div>");
+            	$(".project-open").append("<div id='project-location-open' class='col-md-4'></div>");
+            	$(".project-open").append("<div id='project-description-open' class='col-md-4'></div>");
+            	 $(".project-open").append("<div id='project-technology-open' class='col-md-4'></div>");
 
 
                 $('#project-title-open').html(data.title);
@@ -119,8 +121,7 @@ function initProjects() {
 					$('#project-slides').append('<img src="'+data.image_paths[i]+'">');
 				}
 				$('#project-slides').slidesjs({
-					width: 600,
-					height: 400,
+
 					navigation: false,
 					active: true	
 				});
