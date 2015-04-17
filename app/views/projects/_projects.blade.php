@@ -25,7 +25,7 @@
 					<div id="row_{{ $r }}" class="clearfix">
 				@endif
 				<div class="col-md-4 " >
-					<div class="project center-block">
+					<div id="{{ $i }}" class="project center-block">
 						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link" id="{{ $i }}">
 							<div class="plus-icon"></div>
 							<div class="hover"></div>

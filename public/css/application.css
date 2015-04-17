@@ -1669,8 +1669,6 @@ tbody.collapse.in {
       background-color: #dddddd; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: white; }
-  .navbar-default .navbar-header {
-    border: 1px solid blue; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #e7e7e7; }
@@ -2776,7 +2774,7 @@ ul.timeline {
         margin-top: 0px; } }
     @media (max-width: 768px) {
       #section-megabanner .megabanner-container {
-        margin-top: 75px; } }
+        margin-top: 0px; } }
     body.mobile #section-megabanner .megabanner-container {
       margin-top: 0; }
   #section-megabanner .slidesjs-container {

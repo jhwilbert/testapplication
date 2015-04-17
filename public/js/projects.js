@@ -12,30 +12,47 @@ $(document).ready(function() {
 */
 var projectOpen = false;
 
-function openProject(id) {
+function openProject(obj) {
 	projectOpen = true;
-
-	var col  = id % 3;
-	var row = $("#"+id).parent().parent().parent().attr("id");
 	
-	var arrow_col =  Math.round($("#" + row).width() / 3) ;
+	var id = $(obj).attr("id");
+	console.debug("id", id)
+	var num_cols;
+	var col  = id % num_cols;
+	var row;
+	var viewPortWidth = $(window).width();
 	
-	var pos1 = arrow_col - ($(".project-image").width() + 10);
-	var pos2 = (arrow_col * 2) - ($(".project-image").width() + 10);
-	var pos3 = (arrow_col * 3) - ($(".project-image").width() + 10);
+	if (viewPortWidth < 768) {
+		num_cols = 1;
+		console.debug("mobile")
+		//row = "row_" + $("#"+id).attr("id");
+		$("#" + col).append("<div id='modal-open-' class='col-md-12'></div>");
+	} else {
+		console.debug("desktop");
+		row = $("#"+id).parent().parent().parent().attr("id");
+		$("#" + row).append("<div id='modal-open' class='col-md-12'></div>");
+
+	}
+	
+	console.debug("row defined", row);
+
+	// var arrow_col =  Math.round($("#" + row).width() /  num_cols) ;
+	
+	// var pos1 = arrow_col - ($(".project-image").width() + 10);
+	// var pos2 = (arrow_col * 2) - ($(".project-image").width() + 10);
+	// var pos3 = (arrow_col * 3) - ($(".project-image").width() + 10);
 
 
-	$("#" + row).append("<div id='modal-open' class='col-md-12'></div>");
-	$("#modal-open").append("<div class='project-open '></div>");
+	
+	$("#modal-open").append("<div class='project-open'></div>");
 	
 	$(".project-open").append('<div class="arrow-project" ><img src="../public/img/arrow_project.png"></div>');
 	$(".project-open").append('<div class="close-project" ><img src="../public/img/close_btn.png"></div>');
 
 	$('.close-project').on('click', function(e) { 
-		closeProject();
-	});
+		closeProject();	});
 
-
+	/*
 	switch(col) {
 		case 0:
 			console.debug("left",0);
@@ -54,6 +71,7 @@ function openProject(id) {
 			break;
 	}
 	
+	*/
 
 
 
@@ -74,10 +92,10 @@ function initProjects() {
 
 		if(projectOpen == true) {
 			closeProject();
-			openProject($(this).attr('id'));
+			openProject(this);
 		
 		} else {
-			openProject($(this).attr('id'))
+			openProject(this)
 			
 		}
 		e.preventDefault();

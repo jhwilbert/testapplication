@@ -4,7 +4,7 @@ return array(
 	'back_to_top' => 'Voltar para o topo',
 	'clients' => array(
 		'title' => 'Clientes',
-		'intro' => 'Conheça algumas empresas e instituições que confiaram à Projesom seus projetos',
+		'intro' => 'Atuando no mercado desde 1977, sempre sob a mesma direção, a Projesom executou, desde então, mais de 1200 instalações em todo o Brasil e parceria com diversos clientes.',
 	),
 	'contact' => array(
 		'title' => 'Contato',
@@ -39,36 +39,36 @@ return array(
 	),
 	'solutions' => array(
 		'title' => 'Soluções',
-		'intro' => 'A Projesom oferece soluções em três areas de atuação. ',
+		'intro' => 'A Projesom oferece soluções em três estágios de um projeto.',
 
 		'title1' => 'Areas de Atuação',
-		'intro1' => 'Trabalhamos com projetos de diferentes ambientes que variam de setor, escala e complexidade.',
+		'intro1' => 'Trabalhamos com projetos em diferentes setores, escala e complexidade.',
 
 		'item1-group1' => array(
-			'title' => 'Projeto e instalação',
-			'text' => 'Salas de cinema, auditórios e plenários, equipamentos de tradução simultânea, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+			'title' => 'Dimensionamento e projeto para instalação',
+			'text' => 'Engenheiros e técnicos especializados, registrados no CREA, em diversos estados, visitam e estudam o espaço, dimensionam o equipamento necessário para um bom desempenho técnico, de acordo com as normas vigentes - ABNT.',
 		),
 		'item2-group1' => array(
-			'title' => 'Importação de equipamentos',
-			'text' => 'Projeto e montagem de salas de videoconferência profissionais, sistemas de tradução simultânea, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+			'title' => 'Venda de equipamento',
+			'text' => 'Após a aprovação do projeto pelo Cliente são apresentadas as diversas opções de equipamentos disponíveis no mercado nacional e internacional com preços competitivos e condições de pagamento que viabilizam a transação comercial.',
 		),
 		'item3-group1' => array(
-			'title' => 'Manutenção e assistência técnica',
-			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+			'title' => 'Instalação e manutenção',
+			'text' => 'Apoiada em um time de instaladores experientes, vinculados a empresa há mais de 20 anos, a instalação conta ainda com a supervisão dos engenheiros e técnicos, com a reposição de peças originais.',
 		),
 
 
 		'item1-group2' => array(
 			'title' => 'Entretenimento',
-			'text' => 'Salas de cinema, teatros, shows, salas multimídia, estúdios de audio e video',
+			'text' => 'Salas de cinema, salas multimídia, teatros, clubes.',
 		),
 		'item2-group2' => array(
 			'title' => 'Hoteleiro',
-			'text' => 'Hotéis, lofts, apartamentos, condominios',
+			'text' => 'Hotéis, lofts, apartamentos, condominios.',
 		),
 		'item3-group2' => array(
 			'title' => 'Educacional',
-			'text' => 'Escolas, universidades, faculdades, auditórios, clubes, ginásios',
+			'text' => 'Escolas, universidades, faculdades, ginásios esportivos.',
 		),
 
 		'item4-group2' => array(
@@ -77,12 +77,12 @@ return array(
 		),
 		'item5-group2' => array(
 			'title' => 'Orgãos públicos e privados',
-			'text' => 'Salas de videoconferência , sistemas de tradução simultânea',
+			'text' => 'Industrias, hotéis,  tribunais, fóruns, aeroportos,',
 		),
 
 		'item6-group2' => array(
 			'title' => 'Outros',
-			'text' => 'Industrias,restaurantes, shopping centers, concessionárias, condominios, residencial',
+			'text' => 'Rodoviárias, restaurantes, shopping centers, concessionárias, igrejas, templos.',
 		),
 
 
