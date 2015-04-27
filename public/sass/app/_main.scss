@@ -117,16 +117,31 @@ ul.nav {
 
 
 #project-slides-container {
+    float:left;
+}
+
+.project-slides {
+    float:left;
+    
+    background: #ebebeb;
+}
+
+.project-modal {
+    display:none;
+    width:100%;
+    position:fixed;
+    background: white;  
+    z-index:10000;
+
 
 }
 
-.project-open {
-    width:100%;
-    float:left;
-    background: white;  
-    height:506px;
-    margin-bottom:20px;
+.project-modal-open {
+    display:block;
+}
 
+.project-modal-close {
+    display:none;
 }
 
 .project-content {
@@ -335,6 +350,7 @@ h3 {
     @media(max-width: $screen-sm-min) {
         margin-top: 55px;
     }
+    
 }
 
 #main_container section.section {   
@@ -353,7 +369,6 @@ h3 {
     }
 
     @media(max-height: $screen-sm-height) {
-        border:1px solid red;
         padding-top: $menu-height - 20px;
 
     }

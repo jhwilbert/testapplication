@@ -1,5 +1,18 @@
 
 <section class="section section-gray" id="section-projects">
+	
+	<div class="project-modal">
+
+
+	<div class="close-project"><img src="../public/img/close_btn.png"></div>
+
+		<div id="next-btn">next</div>
+		<div id="prev-btn">prev</div>
+
+		<div id="modal-container"></div>
+
+
+	</div>
 
 	<div class="inner-content container">
 			@if (Route::currentRouteName() == 'home')
@@ -15,18 +28,10 @@
 			@endif
 
 		<div class="projects row">
-			<?php  
-				$i=0;
-				$r=0; 
-			?>
 			@foreach($projects as $project)
-				@if (!($i % 3))
-					<?php $r++ ?>
-					<div id="row_{{ $r }}" class="clearfix">
-				@endif
-				<div class="col-md-4 " >
-					<div id="{{ $i }}" class="project center-block">
-						<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link" id="{{ $i }}">
+				<a href="{{ route('show_project', array($project->id, App::getLocale())) }}" class="project-link">
+				<div class="col-md-4" >
+					<div class="project center-block">
 							<div class="plus-icon"></div>
 							<div class="hover"></div>
 							<div class="project-image">
@@ -37,13 +42,10 @@
 							<div class='project-title'>{{{ $project["title$lpr"] }}}</div>
 							<div class='project-location'>{{{ $project["location"] }}}</div>
 							
-						</a>
+						
 					</div>
 				</div>
-				<?php $i++ ?>
-				@if (!($i % 3))
-					</div>
-				@endif
+				</a>
 			@endforeach
 		</div>
 

@@ -4,7 +4,7 @@ return array(
 	'back_to_top' => 'Voltar para o topo',
 	'clients' => array(
 		'title' => 'Clientes',
-		'intro' => 'Atuando no mercado desde 1977, sempre sob a mesma direção, a Projesom executou, desde então, mais de 1200 instalações em todo o Brasil e parceria com diversos clientes.',
+		'intro' => 'Nos ultimos 40 anos executamos mais de 1200 instalações em todo o Brasil para diversos clientes.',
 	),
 	'contact' => array(
 		'title' => 'Contato',
@@ -18,10 +18,10 @@ return array(
 
 	),
 	'home' => array(
-		'title_megabanner' => 'São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar',
+		'title_megabanner' => 'Projesom é uma empresa com 40 anos de experiência em dimensionamento, projeto, venda e instalacão de equipamento audiovisual de alta tecnologia.',
 		'title_projects' => 'Trabalhos',
 		'intro_projects' => 'Nossos trabalhos mais recentes',
-		'intro_solutions' => 'Conheça nossos serviços',
+		'intro_solutions' => 'Trabalhamos três estágios da execução de um projeto.',
 		'intro_clients' => 'Parceiros comerciais de tradição',
 	),
 	'nav' => array(
@@ -46,11 +46,11 @@ return array(
 
 		'item1-group1' => array(
 			'title' => 'Dimensionamento e projeto para instalação',
-			'text' => 'Engenheiros e técnicos especializados, registrados no CREA, em diversos estados, visitam e estudam o espaço, dimensionam o equipamento necessário para um bom desempenho técnico, de acordo com as normas vigentes - ABNT.',
+			'text' => 'Engenheiros e técnicos credenciados (CREA) visitam e estudam o espaço, dimensionam o equipamento necessário para um bom desempenho técnico, de acordo com as normas vigentes (ABNT).',
 		),
 		'item2-group1' => array(
 			'title' => 'Venda de equipamento',
-			'text' => 'Após a aprovação do projeto pelo Cliente são apresentadas as diversas opções de equipamentos disponíveis no mercado nacional e internacional com preços competitivos e condições de pagamento que viabilizam a transação comercial.',
+			'text' => 'Após a aprovação do projeto são apresentadas as diversas opções de equipamentos disponíveis no mercado nacional e internacional com preços competitivos e condições de pagamento que viabilizam a transação comercial.',
 		),
 		'item3-group1' => array(
 			'title' => 'Instalação e manutenção',
