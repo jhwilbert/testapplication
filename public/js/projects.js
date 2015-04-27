@@ -1,17 +1,13 @@
 
 var projectsModalOpened = false;
 var interval = undefined;
+var projectsArray = [];
+var currId;
 
 $(document).ready(function() {
-    //interval = setInterval(getNext, 2000); // milliseconds
-
-
 	initProjects();
 
 });
-
-
-
 
 /*
 * initializes the Projects section
@@ -51,30 +47,34 @@ function closeProject() {
 
 
 
-function getNext(obj) {
-	console.debug();
-	console.debug("curr", $('.project-link'));
-	console.debug("first", $('.project-link').first());
-    var $curr = $('.project-link'),
-        $next = ($curr.next().length) ? $curr.next() : $('.project-link').first();
+function getNext() {
 
-    transition($curr, $next);
+	if(currId == projectsArray.length) {
+		currId = 0;
+	} else {
+		currId++;
+	}
+	console.debug("next",currId);
+
+	loadProjectContent(projectsArray[currId]);
+
+
 }
 
 function getPrev() {
-    var $curr = $('.project-link'),
-        $next = ($curr.prev().length) ? $curr.prev() : $('.project-link').last();
-    transition($curr, $next);
+
+	if (currId == 0) {
+		currId = projectsArray.length;
+	} else {
+		currId = currId - 1;
+	}
+
+	loadProjectContent(projectsArray[currId]);
+	console.debug("previous",currId);
+	
+
 }
 
-function transition($curr, $next) {
-    clearInterval(interval);
-
-    $next.css('z-index', 2).fadeIn('slow', function () {
-        $curr.hide().css('z-index', 0);
-        $next.css('z-index', 1);
-    });
-}
 
 /**********************************/
 function loadProjectContent(obj) {
@@ -85,14 +85,11 @@ function loadProjectContent(obj) {
             function( data ) {
 
     			if($(window).width() < 768) {
-    				console.debug("mobile");
-
 					$("#modal-container").append("<div id='project-slides-container' class='col-md-4'></div>");
 					$("#project-slides-container").css('width', "100%");
 			
 				
     			} else {
-    				console.debug("desktop");
 	    			$("#modal-container").append("<div id='project-slides-container' class='col-md-8'></div>");
 					$("#project-slides-container").css('width', 800);
     			}
@@ -100,27 +97,8 @@ function loadProjectContent(obj) {
             	$("#project-slides-container").append("<div id='project-slides'></div>");	
 
 
-    			$('#next-btn').on('click', function() {
-
-    				getNext();
-    			});
-    			$('#prev-btn').on('click', function(){
-    				getPrev()
-    			});
-
             	/* Nav */
             	/*
-				$('#next-btn').on('click', function(e) {
-					console.debug("clicked next");
-					console.debug($(obj).next().attr('href'));
-				});
-
-				$('#prev-btn').on('click', function(e) {
-					console.debug("clicked prev");
-					console.debug($(obj).prev().attr('href'));
-				});
-				*/
-			
       			/* Content */		
             	$("#modal-container").append("<div id='project-title-open' class='col-md-4'></div>");
             	$("#modal-container").append("<div id='project-location-open' class='col-md-4'></div>");
@@ -160,15 +138,33 @@ function loadProjectContent(obj) {
 
 }
 
-function initProjects() {
 
+
+
+function initProjects() {
 	/* Projects */
 
+	$('.projects').children().each(function(i,e) {
+		projectsArray.push(e);
+		$(e).attr("id",i);
+	});
+
 	$('a.project-link').on('click', function(e) {
+		console.debug();
+		currId = parseInt($(this).attr('id'));
 
 		e.preventDefault();
 		openModal();
-		loadProjectContent(this);
+		loadProjectContent(projectsArray[currId]);
+	});
+
+
+
+	$('#next-btn').on('click', function() {
+		getNext();
+	});
+	$('#prev-btn').on('click', function(){
+		getPrev()
 	});
 
 }

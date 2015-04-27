@@ -5,10 +5,11 @@
 
 
 	<div class="close-project"><img src="../public/img/close_btn.png"></div>
-
-		<div id="next-btn">next</div>
-		<div id="prev-btn">prev</div>
-
+		<div id="project-nav">
+			<div class="project-button" id="prev-btn">Anterior</div>
+			<div class="project-button" id="next-btn">Próximo</div>
+			
+		</div>
 		<div id="modal-container"></div>
 
 

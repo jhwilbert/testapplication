@@ -24,6 +24,19 @@ ul.nav {
     }
 }
 
+.project-button {
+    font-size:12px;
+    float:left;
+    padding:10px;
+    background:#676767;
+    color:white;
+    margin:5px;
+}
+
+#project-nav {
+    float:right;
+}
+
 /* Preloader */
 #preloader {
     position: fixed;
