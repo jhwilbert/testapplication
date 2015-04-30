@@ -19,9 +19,13 @@ function openModal() {
 	projectOpen = true;
 
 	$(".project-modal").addClass("project-modal-open");
+	$(".project-modal").addClass("col-md-12");
 	$(".project-modal").css("height", $(window).height() + "px");
 	$(".project-modal").css("top",$(".navbar").height() + "px");
 	$("body").css("overflow", "hidden");
+
+	$("#modal-container").addClass("col-md-12");
+//	$("#modal-container").addClass("center-block");
 
 	$('.close-project').on('click', function(e) {
 		closeProject();
@@ -91,7 +95,7 @@ function loadProjectContent(obj) {
 				
     			} else {
 	    			$("#modal-container").append("<div id='project-slides-container' class='col-md-8'></div>");
-					$("#project-slides-container").css('width', 800);
+					//$("#project-slides-container").css('width', 800);
     			}
             	
             	$("#project-slides-container").append("<div id='project-slides'></div>");	

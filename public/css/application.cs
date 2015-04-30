@@ -2197,6 +2197,17 @@ ul.nav {
   ul.nav li {
     float: left; }
 
+.project-button {
+  font-size: 12px;
+  float: left;
+  padding: 10px;
+  background: #676767;
+  color: white;
+  margin: 5px; }
+
+#project-nav {
+  float: right; }
+
 /* Preloader */
 #preloader {
   position: fixed;
@@ -2259,10 +2270,9 @@ ul.nav {
   font-weight: 400; }
 
 .close-project {
-  width: 20px;
-  float: right;
-  cursor: pointer;
-  margin-top: 10px; }
+  width: 100%;
+  float: left;
+  cursor: pointer; }
 
 .close-project img {
   float: right;
@@ -2273,7 +2283,6 @@ ul.nav {
   float: right; }
 
 #project-slides-container {
-  margin-left: -30px;
   float: left; }
 
 .project-slides {
@@ -2287,33 +2296,17 @@ ul.nav {
   background: white;
   z-index: 10000; }
 
-#modal-container {
-  display: block;
-  margin-top: 20px;
-  margin: auto; }
-
-#project-nav {
-  margin: 0 auto;
-  width: 100%;
-  float: left; }
-
-.project-button {
-  font-size: 12px;
-  float: left;
-  padding: 10px;
-  background: #676767;
-  color: white;
-  margin: 1px; }
-
 .project-modal-open {
-  display: block; }
+  display: block;
+  border: 1px solid red; }
 
 .project-modal-close {
   display: none; }
 
 .project-content {
   float: left;
-  color: white !important; }
+  color: white !important;
+  border: 1px solid blue; }
 
 .arrow-project {
   width: 40px;
@@ -2972,6 +2965,9 @@ div.feed {
 
 .projects {
   margin-top: 30px; }
+
+#modal-container {
+  float: left; }
 
 .modal-body {
   padding: 0px !important; }

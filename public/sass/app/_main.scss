@@ -24,18 +24,6 @@ ul.nav {
     }
 }
 
-.project-button {
-    font-size:12px;
-    float:left;
-    padding:10px;
-    background:#676767;
-    color:white;
-    margin:5px;
-}
-
-#project-nav {
-    float:right;
-}
 
 /* Preloader */
 #preloader {
@@ -110,9 +98,10 @@ ul.nav {
 }
 
 .close-project {
-    width:100%;
-    float:left;
+    width:20px;
+    float:right;
     cursor: pointer;
+    margin-top:10px;
 
 }
 
@@ -130,6 +119,7 @@ ul.nav {
 
 
 #project-slides-container {
+    margin-left:-30px;
     float:left;
 }
 
@@ -145,7 +135,33 @@ ul.nav {
     position:fixed;
     background: white;  
     z-index:10000;
+}
 
+
+
+#modal-container {
+    display:block;
+    margin-top:20px;
+    margin:auto;
+
+
+}
+
+#project-nav {
+    margin:0 auto;
+    width:100%;
+    float:left;
+}
+
+
+
+.project-button {
+    font-size:12px;
+    float:left;
+    padding:10px;
+    background:#676767;
+    color:white;
+    margin:1px;
 
 }
 
@@ -158,8 +174,10 @@ ul.nav {
 }
 
 .project-content {
+
     float:left;
     color: white !important;    
+
 }
 
 
