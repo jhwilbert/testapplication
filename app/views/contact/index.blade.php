@@ -3,6 +3,6 @@
 @section('content')
 
 	@include('contact/_contact')
-	@include('contact/_where')
+	<!-- @include('contact/_where') -->
 
 @stop
