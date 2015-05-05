@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 		$('#megabanners').slidesjs({
 			width: 1008,
-			height: 600,
+			/*height: 600,*/
 			navigation: false,
 			play: {
 				active: false,

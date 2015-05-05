@@ -5,6 +5,7 @@
 
 
 	<div class="close-project"><img src="../public/img/close_btn.png"></div>
+
 		<div id="project-nav">
 			<div class="project-button" id="prev-btn">Anterior</div>
 			<div class="project-button" id="next-btn">Próximo</div>

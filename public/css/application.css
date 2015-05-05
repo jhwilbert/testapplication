@@ -2602,8 +2602,11 @@ section#section-clients div.clients {
     text-align: center; }
     @media (max-width: 768px) {
       section#section-clients div.clients div.client {
-        width: auto;
-        margin: 15px 0; } }
+        width: 160px;
+        margin: 15px 10px; } }
+  @media (max-width: 768px) {
+    section#section-clients div.clients div.client img {
+      max-width: 140px; } }
 
 .inner-content .company {
   margin-top: 35px; }
@@ -2624,9 +2627,9 @@ section#section-clients div.clients {
   overflow: hidden; }
 
 .company-img {
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
-  background-color: #dbdbdb;
+  background-color: white;
   margin-top: 10px;
   margin-bottom: 25px; }
 
@@ -2659,7 +2662,7 @@ ul.timeline {
     background-image: url(../img/timeline/bullet_selected.png);
     background-repeat: no-repeat;
     background-position: center 35px;
-    height: 75px; }
+    height: 300px; }
     @media (max-width: 768px) {
       ul.timeline li {
         height: auto;
@@ -2677,8 +2680,7 @@ ul.timeline {
         font-size: 18px; }
     ul.timeline li div.description {
       position: absolute !important;
-      overflow: hidden;
-      height: 100px; }
+      overflow: hidden; }
       @media (max-width: 768px) {
         ul.timeline li div.description {
           position: inherit !important;
@@ -2686,29 +2688,25 @@ ul.timeline {
           margin-left: 16px !important;
           margin-right: 5px !important; } }
       ul.timeline li div.description div.description-text-left {
-        float: right;
-        width: 300px;
+        float: left;
         padding-right: 10px;
         padding-left: 10px; }
       ul.timeline li div.description div.description-text-right {
-        float: left;
-        width: 300px;
+        float: right;
         padding-right: 10px;
         padding-left: 10px; }
       ul.timeline li div.description div.description-image-right {
-        float: left;
+        float: right;
         margin-left: 3px;
         margin-top: 3px;
         border: 1px solid #e0e0e0; }
       ul.timeline li div.description div.description-image-left {
-        float: right;
+        float: left;
         margin-right: 3px;
         margin-top: 3px;
         border: 1px solid #e0e0e0; }
       ul.timeline li div.description div.description-container {
         background-color: #fafafa;
-        width: 400px;
-        height: 100px;
         padding: 0px;
         border-bottom: 3px solid #e0e0e0;
         text-align: left;
@@ -2728,9 +2726,6 @@ ul.timeline {
           font-size: 12px;
           line-height: 18px;
           margin-top: 8px; }
-        ul.timeline li div.description div.description-container img {
-          width: 90px;
-          height: 90px; }
       ul.timeline li div.description div.d-arrow {
         height: 29px;
         margin-top: 30px;

@@ -32,9 +32,9 @@
 
 
 .company-img {
-    padding:0px;
+    padding:10px;
     margin:0px;
-    background-color: #dbdbdb;
+    background-color: white;
     margin-top:10px;
  	margin-bottom:25px;
        
@@ -72,7 +72,7 @@ ul.timeline {
 	}
 	li {
 		@include bg-norepeat("timeline/bullet_selected.png", center 35px);
-		height: 75px;
+		height: 300px;
 		@media(max-width: $screen-sm-min) {
 			height: auto;
 			background-position: -6px 80px;
@@ -93,7 +93,6 @@ ul.timeline {
 		div.description {
 			position: absolute !important;
 			overflow: hidden;
-			height:100px;
 
 			@media(max-width: $screen-sm-min) {
 				position: inherit !important;
@@ -103,28 +102,27 @@ ul.timeline {
 			}
 
 			div.description-text-left {
-				float:right;
-				width:300px;
+				float:left;
 				padding-right:10px;
 				padding-left:10px;
 			}
 
 			div.description-text-right {
-				float:left;
-				width:300px;
+				float:right;
+
 				padding-right:10px;
 				padding-left:10px;
 			}
 			
 
 			div.description-image-right {
-				float:left;
+				float:right;
 				margin-left:3px;
 				margin-top:3px;
 				border:1px solid #e0e0e0;
 			}
 			div.description-image-left {
-				float:right;
+				float:left;
 				margin-right:3px;
 				margin-top:3px;
 				border:1px solid #e0e0e0;
@@ -133,13 +131,13 @@ ul.timeline {
 
 			div.description-container {
 				background-color: #fafafa;
-				width: 400px;
-				height:100px;
+
 				padding: 0px;
 				border-bottom: 3px solid #e0e0e0;
 				text-align: left;
 				font-size: 12px;
 				color: #aeaeae;
+
 				@media(max-width: $screen-sm-min) {
 					float: none !important;
 					margin-left: 15px;
@@ -157,8 +155,7 @@ ul.timeline {
 					margin-top: 8px;			
 				}
 				img {
-					width:90px;
-					height: 90px;
+
 
 				}
 			}

@@ -102,7 +102,10 @@ function loadProjectContent(obj) {
 
 
             	/* Nav */
-            	/*
+            	//$("#modal-container").append('<div class="col-md-4" id="btn-nav"><div class="project-button" id="prev-btn">Anterior</div><div class="project-button" id="next-btn">Próximo</div></div>')
+
+
+
       			/* Content */		
             	$("#modal-container").append("<div id='project-title-open' class='col-md-4'></div>");
             	$("#modal-container").append("<div id='project-location-open' class='col-md-4'></div>");
