@@ -10,14 +10,14 @@ section#section-clients {
         	height: 100px;
         	text-align: center;
         	@media(max-width: $screen-sm-min) {
-        		width: 160px;
+        		width: 120px;
         		margin: 15px 10px;
         	}
         }
 
         div.client img {
             @media(max-width: $screen-sm-min) {
-                max-width:140px;
+                max-width:120px;
             }
         }
     }

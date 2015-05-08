@@ -11,11 +11,12 @@
 			<div class="col-md-6">
 				<p class="text">
 					@if (App::getLocale() == 'en')
-						
-						[english] A evolução tecnológica ocorrida nas últimas décadas fez da Projesom mais que uma autoridade em engenharia de áudio e vídeo, mas uma especialista em pesquisas de novas tecnologias, atualização de produtos e desenvolvimento de técnicas inovadoras. Renovar-se foi fundamental para continuar surpreendendo clientes com imagens e sons. 
+						Inicialmente com o nome Disom Sonorização Profissional, a empresa foi fundada em junho de 1977, em Belo Horizonte, capital de Minas Gerais, com o objetivo de desbravar o setor de áudio e vídeo no Estado. 
+
 						
 					@else
-						A evolução tecnológica ocorrida nas últimas décadas fez da Projesom mais que uma autoridade em engenharia de áudio e vídeo, mas uma especialista em pesquisas de novas tecnologias, atualização de produtos e desenvolvimento de técnicas inovadoras. Renovar-se foi fundamental para continuar surpreendendo clientes com imagens e sons. 
+						Inicialmente com o nome Disom Sonorização Profissional, a empresa foi fundada em junho de 1977, em Belo Horizonte, capital de Minas Gerais, com o objetivo de desbravar o setor de áudio e vídeo no Estado. 
+
 					@endif
 				</p>
 			</div>
@@ -23,9 +24,11 @@
 			<div class="col-md-6">
 				<p class="text">
 					@if (App::getLocale() == 'en')
-						[english] Sediada em Belo Horizonte/ MG, a Projesom possui uma estrutura inteligente. Tem parceria sólida com as melhores marcas e fornecedores. Conta com uma equipe formada por engenheiros e técnicos qualificados, dirigidos pelos fundadores da empresa, Georgina Santos Wilbert e João Carlos Wilbert. 
+						De lá pra cá, são quase quarenta anos de evoluções constantes, acompanhando as incessantes inovações tecnológicas. Hoje, a Projesom conta, em seu currículo, com grandes projetos, para clientes em todo o país.
+
 					@else
-						Sediada em Belo Horizonte/ MG, a Projesom possui uma estrutura inteligente. Tem parceria sólida com as melhores marcas e fornecedores. Conta com uma equipe formada por engenheiros e técnicos qualificados, dirigidos pelos fundadores da empresa, Georgina Santos Wilbert e João Carlos Wilbert. 
+						De lá pra cá, são quase quarenta anos de evoluções constantes, acompanhando as incessantes inovações tecnológicas. Hoje, a Projesom conta, em seu currículo, com grandes projetos, para clientes em todo o país.
+
 					@endif				
 				</p>
 			</div>

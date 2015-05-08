@@ -2602,11 +2602,11 @@ section#section-clients div.clients {
     text-align: center; }
     @media (max-width: 768px) {
       section#section-clients div.clients div.client {
-        width: 160px;
+        width: 120px;
         margin: 15px 10px; } }
   @media (max-width: 768px) {
     section#section-clients div.clients div.client img {
-      max-width: 140px; } }
+      max-width: 120px; } }
 
 .inner-content .company {
   margin-top: 35px; }
@@ -2632,6 +2632,9 @@ section#section-clients div.clients {
   background-color: white;
   margin-top: 10px;
   margin-bottom: 25px; }
+
+.company-img img {
+  width: 100%; }
 
 /* TIMELINE */
 #section-timeline h2 {

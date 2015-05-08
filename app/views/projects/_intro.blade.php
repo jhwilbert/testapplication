@@ -11,11 +11,10 @@
 			<div class="col-md-6">
 				<p class="text">
 					@if (App::getLocale() == 'en')
-						
-						[english] A evolução tecnológica ocorrida nas últimas décadas fez da Projesom mais que uma autoridade em engenharia de áudio e vídeo, mas uma especialista em pesquisas de novas tecnologias, atualização de produtos e desenvolvimento de técnicas inovadoras. Renovar-se foi fundamental para continuar surpreendendo clientes com imagens e sons. 
+						 Capricho é fundamental em todas as etapas do trabalho: do dimensionamento do projeto à instalação dos equipamentos, preocupando-se também com a longevidade do sistema e sua manutenção.
 						
 					@else
-						A evolução tecnológica ocorrida nas últimas décadas fez da Projesom mais que uma autoridade em engenharia de áudio e vídeo, mas uma especialista em pesquisas de novas tecnologias, atualização de produtos e desenvolvimento de técnicas inovadoras. Renovar-se foi fundamental para continuar surpreendendo clientes com imagens e sons. 
+						 Capricho é fundamental em todas as etapas do trabalho: do dimensionamento do projeto à instalação dos equipamentos, preocupando-se também com a longevidade do sistema e sua manutenção. 
 					@endif
 				</p>
 			</div>
@@ -23,9 +22,10 @@
 			<div class="col-md-6">
 				<p class="text">
 					@if (App::getLocale() == 'en')
-						[english] Sediada em Belo Horizonte/ MG, a Projesom possui uma estrutura inteligente. Tem parceria sólida com as melhores marcas e fornecedores. Conta com uma equipe formada por engenheiros e técnicos qualificados, dirigidos pelos fundadores da empresa, Georgina Santos Wilbert e João Carlos Wilbert. 
+						Cada projeto é único e exige soluções específicas para atender as demandas do cliente. Confira.
 					@else
-						Sediada em Belo Horizonte/ MG, a Projesom possui uma estrutura inteligente. Tem parceria sólida com as melhores marcas e fornecedores. Conta com uma equipe formada por engenheiros e técnicos qualificados, dirigidos pelos fundadores da empresa, Georgina Santos Wilbert e João Carlos Wilbert. 
+						Cada projeto é único e exige soluções específicas para atender as demandas do cliente. Confira.
+
 					@endif				
 				</p>
 			</div>

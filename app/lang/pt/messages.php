@@ -14,11 +14,11 @@ return array(
 	),
 	'company' => array(
 		'title' => 'A Empresa',
-		'intro' => 'São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar. ',
+		'intro' => 'Pioneirismo e competência foram essenciais para fazer a Projesom se tornar uma referência em tecnologia audiovisual em todo o Brasil. ',
 
 	),
 	'home' => array(
-		'title_megabanner' => 'Projesom é uma empresa com 40 anos de experiência em dimensionamento, projeto, venda e instalacão de equipamento audiovisual de alta tecnologia.',
+		'title_megabanner' => 'Projesom: quarenta anos de experiência em dimensionamento, projeto, venda e instalação de sistemas audiovisuais de alta tecnologia.',
 		'title_projects' => 'Trabalhos',
 		'intro_projects' => 'Nossos trabalhos mais recentes',
 		'intro_solutions' => 'Trabalhamos três estágios da execução de um projeto.',
@@ -34,7 +34,7 @@ return array(
 	'projects' => array(
 		'title' => 'Projetos',
 		'subtitle' => 'Projetos Recentes',
-		'intro' => 'A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. ',
+		'intro' => 'Executar cada projeto da melhor forma possível obtendo elogios de clientes exigentes é o que enche a Projesom de orgulho. ',
 		'subintro' => 'Alguns exemplos de projetos executados pela Projesom nos ultimos 10 anos que demonstram a escala e complexidade.',
 	),
 	'solutions' => array(

@@ -8,7 +8,7 @@ $(document).ready(function() {
 		pagination: false
 	});
 
-
+	console.debug($(".description-container"));
 
 });
 
