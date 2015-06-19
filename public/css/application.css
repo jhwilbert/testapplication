@@ -2683,7 +2683,8 @@ ul.timeline {
         font-size: 18px; }
     ul.timeline li div.description {
       position: absolute !important;
-      overflow: hidden; }
+      overflow: hidden;
+      max-width: 300px; }
       @media (max-width: 768px) {
         ul.timeline li div.description {
           position: inherit !important;
@@ -2999,6 +3000,7 @@ a#home-arrow-dn {
 /* SOLUTIONS */
 .solutions-row .solution-image img {
   display: block;
+  width: 140px;
   margin: 0 auto; }
 .solutions-row h4 {
   color: #d95a49;

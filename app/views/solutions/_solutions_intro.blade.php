@@ -14,7 +14,7 @@
 		<div class="row solutions-row">
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/engenharia.gif') }}" alt="{{Lang::get('messages.solutions.item1.title')}}">
+					<img src="{{ asset('public/img/solutions/projeto.png') }}" alt="{{Lang::get('messages.solutions.item1.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item1-group1.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item1-group1.text')}}</p>
@@ -22,7 +22,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/conectividade.gif') }}" alt="{{Lang::get('messages.solutions.item2.title')}}">
+					<img src="{{ asset('public/img/solutions/venda.png') }}" alt="{{Lang::get('messages.solutions.item2.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item2-group1.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item2-group1.text')}}</p>
@@ -30,7 +30,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
+					<img src="{{ asset('public/img/solutions/instalacao.png') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item3-group1.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item3-group1.text')}}</p>

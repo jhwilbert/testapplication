@@ -23,7 +23,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/conectividade.gif') }}" alt="{{Lang::get('messages.solutions.item2.title')}}">
+					<img src="{{ asset('public/img/solutions/hoteleiro.png') }}" alt="{{Lang::get('messages.solutions.item2.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item2-group2.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item2-group2.text')}}</p>
@@ -31,7 +31,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
+					<img src="{{ asset('public/img/solutions/educacional.png') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item3-group2.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item3-group2.text')}}</p>
@@ -40,7 +40,7 @@
 
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
+					<img src="{{ asset('public/img/solutions/hospitalar.png') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item4-group2.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item4-group2.text')}}</p>
@@ -50,7 +50,7 @@
 
 			<div class="col-md-4">
 				<div class="solution-image">
-					<img src="{{ asset('public/img/solutions/estudios.gif') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
+					<img src="{{ asset('public/img/solutions/orgaos.png') }}" alt="{{Lang::get('messages.solutions.item3.title')}}">
 				</div>
 				<h4>{{Lang::get('messages.solutions.item5-group2.title')}}</h4>
 				<p>{{Lang::get('messages.solutions.item5-group2.text')}}</p>

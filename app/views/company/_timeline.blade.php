@@ -30,7 +30,7 @@
 								@endif
 								</div>
 								<div class="description-text-{{ $left ? 'left' : 'right' }}">
-								<!-- {{ $event["text$lpr"] }} -->
+									{{ $event["text$lpr"] }}
 								</div>
 							</div>
 						</div>
