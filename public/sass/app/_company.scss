@@ -68,6 +68,7 @@ ul.timeline {
 	width: 890px;
 	margin: 0 auto;
 	padding: 0 0 120px;
+	font-size: 12px !important;
 	position: relative !important;
 	@media(max-width: $screen-sm-min) {
 		background-position: 0px center;
@@ -98,8 +99,6 @@ ul.timeline {
 		div.description {
 			position: absolute !important;
 			overflow: hidden;
-
-			max-width:300px;
 
 			@media(max-width: $screen-sm-min) {
 				position: inherit !important;

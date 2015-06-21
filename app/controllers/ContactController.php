@@ -25,7 +25,7 @@ class ContactController extends BaseController {
 
 	    //Validation rules
         $rules = array (
-            'nome' => 'required|alpha',
+            'nome' => 'required|min:5',
             'email' => 'required|email',
             'message' => 'required|min:25'
         );
@@ -41,10 +41,11 @@ class ContactController extends BaseController {
 					//email 'From' field: Get users email add and name
                     $message->from($data['email'] , $data['nome']);
                     //email 'To' field: cahnge this to emails that you want to be notified.                    
-                    $message->to('jhwilbert@gmail.com', 'Joao Wilbert')->cc('jhwilbert@gmail.com')->subject('Contato Site');
+                    $message->to('projesom@projesom.com', 'Projesom Video')->cc('jhwilbert@gmail.com')->subject('Contato Site');
  
                 });
- 
+
+           
  		if (Route::currentRouteName() == 'contact_en') {
 			App::setLocale('en');
 			$lpr = '_en';
@@ -57,7 +58,7 @@ class ContactController extends BaseController {
 		));	
         
         }else{
-//return contact form with errors
+		//return contact form with errors
                 return Redirect::to('/contato')->withErrors($validator);
             }
         

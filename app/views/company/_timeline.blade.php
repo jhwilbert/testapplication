@@ -23,10 +23,19 @@
 						<div class="year"><span>{{{ date('Y', strtotime($event->date)) }}}</span></div>
 						<div class="description y-{{ $l }}">
 							<div class="d-arrow"></div>
-							<div class="description-container">
+
+
+							@if($event->file_name)
+							<?php 
+								list($width, $height) = getimagesize($event->getImagePath('medium'));?>
+							@endif
+
+							<div class="description-container" style="width : <?php echo $width ?>px">
 								<div class="description-image-{{ $left ? 'left' : 'right' }}">
 								@if($event->file_name)
+
 									<img src="{{ asset($event->getImagePath('medium')) }}">
+
 								@endif
 								</div>
 								<div class="description-text-{{ $left ? 'left' : 'right' }}">

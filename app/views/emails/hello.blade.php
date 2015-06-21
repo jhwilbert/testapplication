@@ -3,14 +3,13 @@
 //get the first name
 $first_name = Input::get('nome');
 $email = Input::get ('email');
-$message = Input::get ('mensagem');
+$message = Input::get ('message');
 $date_time = date("F j, Y, g:i a");
 $userIpAddress = Request::getClientIp();
 ?> 
 <p>
 Nome: <?php echo ($first_name); ?> <br>
 Email address: <?php echo ($email);?> <br>
-Subject: <?php echo ($subject); ?><br>
 Message: <?php echo ($message);?><br>
 
 Date: <?php echo($date_time);?><br>

@@ -13,6 +13,7 @@ body {
     overflow: hidden;
     &.mobile {
         height: auto;
+
     }
 }
 
@@ -135,6 +136,7 @@ ul.nav {
     position:fixed;
     background: white;  
     z-index:10000;
+    overflow:scroll;
 }
 
 
@@ -208,7 +210,6 @@ ul.nav {
     width: 100%;
     background-color: #f4f4f4;
     z-index: $zindex-modal - 1;
-    border: none;
     .logo {
         display: block;
         margin: 20px;
@@ -386,6 +387,10 @@ h3 {
     
 }
 
+.main {
+    width:100%;
+    border:1px solid green;
+}
 #main_container section.section {   
 
     width: 100%;

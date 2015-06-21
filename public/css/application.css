@@ -2285,7 +2285,8 @@ ul.nav {
   width: 100%;
   position: fixed;
   background: white;
-  z-index: 10000; }
+  z-index: 10000;
+  overflow: scroll; }
 
 #modal-container {
   display: block;
@@ -2335,8 +2336,7 @@ ul.nav {
   position: fixed;
   width: 100%;
   background-color: #f4f4f4;
-  z-index: 1039;
-  border: none; }
+  z-index: 1039; }
   #main-menu .logo {
     display: block;
     margin: 20px;
@@ -2473,6 +2473,10 @@ h3 {
   @media (max-width: 768px) {
     #main_container {
       margin-top: 55px; } }
+
+.main {
+  width: 100%;
+  border: 1px solid green; }
 
 #main_container section.section {
   width: 100%;
@@ -2654,6 +2658,7 @@ ul.timeline {
   width: 890px;
   margin: 0 auto;
   padding: 0 0 120px;
+  font-size: 12px !important;
   position: relative !important; }
   @media (max-width: 768px) {
     ul.timeline {
@@ -2683,8 +2688,7 @@ ul.timeline {
         font-size: 18px; }
     ul.timeline li div.description {
       position: absolute !important;
-      overflow: hidden;
-      max-width: 300px; }
+      overflow: hidden; }
       @media (max-width: 768px) {
         ul.timeline li div.description {
           position: inherit !important;
