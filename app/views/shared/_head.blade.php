@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Projesom Vídeo</title>
-    <meta name="description" content="Projesom Video: dimensionamento, projeto, venda e instalação de sistemas audiovisuais de alta tecnologia">
+    <meta name="description" content="Projesom Video: dimensionamento, projeto, venda e instalação de sistemas audiovisuais de alta tecnologia. Belo Horizonte - MG.">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="google-site-verification" content="zGplSeR4avNy9hiFmq4nVE5zfKzgr5GV0mQj50k9hS8" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->

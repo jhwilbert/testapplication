@@ -63,11 +63,6 @@
 					<div class="contact-text" id="email">
 						<a href="mailto:projesom@projesom.com">projesom@projesom.com</a>					</div>
 				</div>
-
-
-				
-				
-
 			</div>
 		</div>
 	</div>

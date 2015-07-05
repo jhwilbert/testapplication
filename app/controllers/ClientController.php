@@ -16,7 +16,7 @@ class ClientController extends BaseController {
 		'clientes-projesom_31' => 'BID',
 		'clientes-projesom_34' => 'Assembleia de Minas',
 		'clientes-projesom_42' => 'Hospital Madre Teresa',
-		'clientes-projesom_44' => 'Petrobras',
+		// 'clientes-projesom_44' => 'Petrobras',
 		'clientes-projesom_47' => 'Blue Tree Hotels',
 		'clientes-projesom_50' => 'UFMG',
 		'clientes-projesom_53' => 'Fundação Clóvis Salgado',

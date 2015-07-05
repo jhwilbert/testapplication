@@ -3,96 +3,100 @@
 return array(
 	'back_to_top' => 'Voltar para o topo',
 	'clients' => array(
-		'title' => 'Clientes',
-		'intro' => 'Conheça algumas empresas e instituições que confiaram à Projesom seus projetos',
+		'title' => 'Clients',
+		'intro' => 'Some public and private sector clients that we have worked with',
 	),
 	'contact' => array(
-		'title' => 'Contato',
-		'where' => 'Onde Estamos',
-		'intro' => 'Entre em contato com a Projesom por telefone, email ou faça-nos uma visita para saber mais sobre nosso serviços.'
+		'title' => 'Contact',
+		'where' => 'Location',
+		'intro' => 'Contact us via phone, email or book a visit to know more about our services and solutions.'
+
 
 	),
 	'company' => array(
-		'title' => 'A Empresa',
-		'intro' => 'São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar. ',
+		'title' => 'About',
+		'intro' => 'Projesom is a company with over 40 years of experience working with high end audio and video technologies',
+
 
 	),
 	'home' => array(
-		'title_megabanner' => 'São quase 40 anos no mercado, sempre oferecendo o que há de mais moderno em sistemas de áudio e vídeo customizados e prontos para usar',
-		'title_projects' => 'Trabalhos',
-		'intro_projects' => 'Nossos trabalhos mais recentes',
-		'intro_solutions' => 'Conheça nossos serviços',
-		'intro_clients' => 'Parceiros comerciais de tradição',
+		'title_megabanner' => 'A company with 40 years experience working with advanced audio and video technology for private and public sectors.',
+		'title_projects' => 'Projects',
+		'intro_projects' => 'Some of our recent projects',
+		'intro_solutions' => 'More about our services and solutions',
+		'intro_clients' => 'Clients we have worked with',
 	),
 	'nav' => array(
-		'company' => 'A Empresa',
-		'projects' => 'Projetos',
-		'solutions' => 'Soluções',
-		'clients' => 'Clientes',
-		'contact' => 'Contato',
+		'company' => 'About',
+		'projects' => 'Projects',
+		'solutions' => 'Solutions',
+		'clients' => 'Clients',
+		'contact' => 'Contact',
 	),
 	'projects' => array(
-		'title' => 'Projetos',
-		'subtitle' => 'Projetos Recentes',
-		'intro' => 'A Projesom sabe que a reputação de uma empresa é construída através de um relacionamento sólido e transparente e da competência na realização dos trabalhos. ',
-		'subintro' => 'Alguns exemplos de projetos executados pela Projesom nos ultimos 10 anos que demonstram a escala e complexidade.',
+		'title' => 'Projects',
+		'subtitle' => 'Selected Projects',
+		'intro' => 'Our reputation is built on competence when executing a project and mantaining a solid, transparent relationship with our clients.',
+		'subintro' => 'Selected projects in scales and complexity:',
+
 	),
 	'solutions' => array(
-		'title' => 'Soluções',
-		'intro' => 'A Projesom oferece soluções em três areas de atuação. ',
+		'title' => 'Solutions',
+		'intro' => 'Projesom offers solutions accross the following project stages. ',
 
-		'title1' => 'Areas de Atuação',
-		'intro1' => 'Trabalhamos com projetos de diferentes ambientes que variam de setor, escala e complexidade.',
+		'title1' => 'Sectors we work with',
+		'intro1' => 'We work across different sectors developing  projects that vary in scale and complexity.',
 
 		'item1-group1' => array(
-			'title' => 'Projeto e instalação',
-			'text' => 'Salas de cinema, auditórios e plenários, equipamentos de tradução simultânea, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+			'title' => 'Scoping', 
+			'text' => 'Engineers and technical experts study the space to scope and define the necessary equipment that supports the necessary technical performance required',
 		),
 		'item2-group1' => array(
-			'title' => 'Importação de equipamentos',
-			'text' => 'Projeto e montagem de salas de videoconferência profissionais, sistemas de tradução simultânea, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+			'title' => 'Sale',
+			'text' => 'ON approval we then provide the necessary equipment in both national and international markets offering options and competitive prices that make project commercially viable',
 		),
 		'item3-group1' => array(
-			'title' => 'Manutenção e assistência técnica',
-			'text' => 'Projeto e montagem de estúdios profissionais, tratamento e isolamento acústico, iluminação cênica, venda e importação de equipamentos, instalação, manutenção e assistência técnica',
+			'title' => 'Install',
+			'text' => 'A a team of experienced technical professionals install the equipment provided under the supervision of the responsible engineer including any necessary ongoing maintanance',
 		),
 
 
 		'item1-group2' => array(
-			'title' => 'Entretenimento',
-			'text' => 'Salas de cinema, teatros, shows, salas multimídia, estúdios de audio e video',
+			'title' => 'Entertainment',
+			'text' => 'Cinemas, theaters, concerts, multimedia spaces, audio and video studios',
+
 		),
 		'item2-group2' => array(
-			'title' => 'Hoteleiro',
-			'text' => 'Hotéis, lofts, apartamentos, condominios',
+			'title' => 'Hospitality',
+			'text' => 'Hotels, lofts, apartments, condominiums',
 		),
 		'item3-group2' => array(
-			'title' => 'Educacional',
-			'text' => 'Escolas, universidades, faculdades, auditórios, clubes, ginásios',
+			'title' => 'Educational',
+			'text' => 'Schools, universities, faculties, auditoriums, sport centers, gymnasiums',
 		),
 
 		'item4-group2' => array(
-			'title' => 'Hospitalar',
-			'text' => 'Consultórios, clinícas privadas, hospitais.',
+			'title' => 'Medical',
+			'text' => 'Public and private, clinics, hospitals, health centers.',
 		),
 		'item5-group2' => array(
-			'title' => 'Orgãos públicos e privados',
-			'text' => 'Salas de videoconferência , sistemas de tradução simultânea',
+			'title' => 'Governmental',
+			'text' => 'Video concerence rooms, real time translation systems, audio and video.',
 		),
 
 		'item6-group2' => array(
-			'title' => 'Outros',
-			'text' => 'Industrias,restaurantes, shopping centers, concessionárias, condominios, residencial',
+			'title' => 'Other',
+			'text' => 'Factories,restaurants, shopping centers, residential, gated communities.',
 		),
 
 
 	),
 	'structure' => array(
-		'title' => 'Estrutura',
+		'title' => 'Facts',
 	),	
 	'timeline' => array(
-		'title' => 'Linha do tempo',
-		'intro' => 'Experiência de X anos aliada a muita pesquisa e trabalho',
+		'title' => 'Timeline',
+		'intro' => '40 years of evolving experience and tradition',
 	),
 
 );

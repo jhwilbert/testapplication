@@ -1,4 +1,4 @@
-@if (Route::currentRouteName() == 'home')
+@if (Route::currentRouteName() == 'home' || Route::currentRouteName() == 'home_en')
 	<section class="section section-gray" id="section-clients">	
 @else
 	<section class="section" id="section-clients">
@@ -19,7 +19,7 @@
 			<?php $i = 0; ?>
 			@foreach($clients as $client_slug => $client_name)
 				<div class="client col-md-5ths">
-					@if (Route::currentRouteName() == 'home')
+					@if (Route::currentRouteName() == 'home'|| Route::currentRouteName() == 'home_en')
 						<img src="{{ asset('public/img/clients-grey/'.$client_slug.'.png') }}" class="client" alt="{{{$client_name}}}">
 					@else
 						<img src="{{ asset('public/img/clients/'.$client_slug.'.png') }}" class="client" alt="{{{$client_name}}}">

@@ -50,7 +50,11 @@ class ProjectController extends BaseController {
 			'technology' => $project["technology$lpr"],
 			'image_paths' => $image_paths
 		);
-		return Response::json( $result );
+		//return Response::json( $result );
+		//return View::make('project.index', $resources);
+				return View::make('project.index', array(
+			'result' => $result,'lpr' => $lpr, 'scripts' => array('projectview.js')
+		));	
 	}
 
 

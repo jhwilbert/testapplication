@@ -5,12 +5,12 @@
 	?>
 	<a class="logo" href="{{ $home_url }}" id="logo">{{ HTML::image('public/img/logo_sm.png') }}</a>
 	
-	<!-- @if (App::getLocale() == 'en')
+	@if (App::getLocale() == 'en')
 		{{ link_to_route('home', 'Português', null, array('class' => 'language-btn')) }}
 	@else
 		{{ link_to_route('home_en', 'English', null, array('class' => 'language-btn')) }}
 	@endif
- -->
+
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
 			<span class="sr-only">Toggle navigation</span>
