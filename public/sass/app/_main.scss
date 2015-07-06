@@ -85,7 +85,7 @@ ul.nav {
     color:#878787;
     float:left;
     font-size:32px !important;
-    padding-top:10px;
+    padding-top:50px;
 
 
 }
@@ -108,24 +108,12 @@ ul.nav {
     color: #bdbdbd !important;
     float:left;
     padding-top:10px;
-
-    font-size: 18px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-
 }
 
 
 #project-technology-open  {
     color: #bdbdbd !important;
     float:left;
-
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
 }
 
 .close-project {
@@ -151,7 +139,7 @@ ul.nav {
 #grey-bg {
     width: 100%;
     height:400px;
-    background:grey;
+    background:#ebebeb;
     position:absolute;
 
 }
@@ -482,7 +470,9 @@ section.section-gray {
 
 }
 .slidesjs-pagination {
+
     margin-left: auto;
+    margin-bottom:10px;
     list-style: none;
     padding: 0;
     position:relative;

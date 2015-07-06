@@ -26,7 +26,9 @@ Route::post('/contact_request', array('uses' => 'ContactController@getForm', 'as
 
 Route::get('/newsfeed', array('uses' => 'NewsfeedController@index', 'as' => 'newsfeed'));
 
+// Route::get('/project/{id}/{lang}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
 Route::get('/project/{id}/{lang}', array('uses' => 'ProjectController@show', 'as' => 'show_project'));
+
 Route::get('/solution/{id}/{lang}', array('uses' => 'SolutionController@show', 'as' => 'show_solution'));
 
 /* english routes */

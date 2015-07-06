@@ -5,7 +5,7 @@ var projectsArray = [];
 var currId;
 
 $(document).ready(function() {
-	initProjects();
+	//initProjects();
 
 });
 

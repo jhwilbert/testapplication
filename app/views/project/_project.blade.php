@@ -18,9 +18,8 @@
 		</div>
 		<div id='project-title-open'>{{$result['title']}}</div>
 		<div id='project-location-open'>{{$result['location']}}</div>
-		<div id='project-description-open'>{{$result['description']}}</div>
-<!-- 		<div id='project-technology-open'>{{$result['technology']}}</div>
- -->
+		<div id='project-description-open' class="col-md-6">{{$result['description']}}</div>
+		<div id='project-technology-open'  class="col-md-6">{{$result['technology']}}</div>
 	</div>
 </section>
 
